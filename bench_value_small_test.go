@@ -2,6 +2,8 @@ package nel
 
 import (
 	"testing"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 type valuesSmall struct {
@@ -42,10 +44,24 @@ func newValueSmall() valuesSmall {
 func callValueSmall(v valuesSmall) {
 }
 
+func callValueSmallJSON(v []byte) {
+}
+
 func BenchmarkValuesSmall(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueSmall()
 		callValueSmall(v)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkValuesSmallJSON(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newValueSmall()
+
+		enc, _ := jsoniter.Marshal(v)
+		callValueSmallJSON(enc)
 	}
 
 	b.StopTimer()

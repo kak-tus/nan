@@ -2,6 +2,8 @@ package nel
 
 import (
 	"testing"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 type valuesBig struct {
@@ -2030,10 +2032,24 @@ func newValueBig() valuesBig {
 func callValueBig(v valuesBig) {
 }
 
+func callValueBigJSON(v []byte) {
+}
+
 func BenchmarkValuesBig(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueBig()
 		callValueBig(v)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkValuesBigJSON(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newValueBig()
+
+		enc, _ := jsoniter.Marshal(v)
+		callValueBigJSON(enc)
 	}
 
 	b.StopTimer()
