@@ -30,8 +30,8 @@ func pointerSmallString() *string {
 	return &s
 }
 
-func newPointerSmall() pointersSmall {
-	return pointersSmall{
+func newPointerSmall() *pointersSmall {
+	return &pointersSmall{
 		field000: pointerSmallString(),
 		field001: pointerSmallString(),
 		field002: pointerSmallString(),
@@ -41,10 +41,55 @@ func newPointerSmall() pointersSmall {
 	}
 }
 
-func callPointerSmall(v pointersSmall) {
+func callPointerSmall(v *pointersSmall) {
 }
 
 func callPointerSmallJSON(v []byte) {
+}
+
+func callPointerSmallA(v *pointersSmall) {
+	callPointerSmallA1(v)
+	callPointerSmallA2(v)
+	callPointerSmallA3(v)
+}
+
+func callPointerSmallA1(v *pointersSmall) {
+}
+
+func callPointerSmallA2(v *pointersSmall) {
+}
+
+func callPointerSmallA3(v *pointersSmall) {
+}
+
+func callPointerSmallB(v *pointersSmall) {
+	callPointerSmallB1(v)
+	callPointerSmallB2(v)
+	callPointerSmallB3(v)
+}
+
+func callPointerSmallB1(v *pointersSmall) {
+}
+
+func callPointerSmallB2(v *pointersSmall) {
+}
+
+func callPointerSmallB3(v *pointersSmall) {
+}
+
+func callPointerSmallC(v *pointersSmall) {
+	callPointerSmallC1(v)
+	callPointerSmallC2(v)
+	callPointerSmallC3(v)
+}
+
+func callPointerSmallC1(v *pointersSmall) {
+}
+
+func callPointerSmallC2(v *pointersSmall) {
+}
+
+func callPointerSmallC3(v *pointersSmall) {
 }
 
 func BenchmarkPointersSmall(b *testing.B) {
@@ -62,6 +107,17 @@ func BenchmarkPointersSmallJSON(b *testing.B) {
 
 		enc, _ := jsoniter.Marshal(v)
 		callPointerSmallJSON(enc)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkPointerSmallChain(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newPointerSmall()
+		callPointerSmallA(v)
+		callPointerSmallB(v)
+		callPointerSmallC(v)
 	}
 
 	b.StopTimer()

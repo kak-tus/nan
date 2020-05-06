@@ -47,6 +47,51 @@ func callValueSmall(v valuesSmall) {
 func callValueSmallJSON(v []byte) {
 }
 
+func callValueSmallA(v valuesSmall) {
+	callValueSmallA1(v)
+	callValueSmallA2(v)
+	callValueSmallA3(v)
+}
+
+func callValueSmallA1(v valuesSmall) {
+}
+
+func callValueSmallA2(v valuesSmall) {
+}
+
+func callValueSmallA3(v valuesSmall) {
+}
+
+func callValueSmallB(v valuesSmall) {
+	callValueSmallB1(v)
+	callValueSmallB2(v)
+	callValueSmallB3(v)
+}
+
+func callValueSmallB1(v valuesSmall) {
+}
+
+func callValueSmallB2(v valuesSmall) {
+}
+
+func callValueSmallB3(v valuesSmall) {
+}
+
+func callValueSmallC(v valuesSmall) {
+	callValueSmallC1(v)
+	callValueSmallC2(v)
+	callValueSmallC3(v)
+}
+
+func callValueSmallC1(v valuesSmall) {
+}
+
+func callValueSmallC2(v valuesSmall) {
+}
+
+func callValueSmallC3(v valuesSmall) {
+}
+
 func BenchmarkValuesSmall(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueSmall()
@@ -62,6 +107,17 @@ func BenchmarkValuesSmallJSON(b *testing.B) {
 
 		enc, _ := jsoniter.Marshal(v)
 		callValueSmallJSON(enc)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkValuesSmallChain(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newValueSmall()
+		callValueSmallA(v)
+		callValueSmallB(v)
+		callValueSmallC(v)
 	}
 
 	b.StopTimer()

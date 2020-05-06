@@ -2032,6 +2032,51 @@ func newValueBig() valuesBig {
 func callValueBig(v valuesBig) {
 }
 
+func callValueBigA(v valuesBig) {
+	callValueBigA1(v)
+	callValueBigA2(v)
+	callValueBigA3(v)
+}
+
+func callValueBigA1(v valuesBig) {
+}
+
+func callValueBigA2(v valuesBig) {
+}
+
+func callValueBigA3(v valuesBig) {
+}
+
+func callValueBigB(v valuesBig) {
+	callValueBigB1(v)
+	callValueBigB2(v)
+	callValueBigB3(v)
+}
+
+func callValueBigB1(v valuesBig) {
+}
+
+func callValueBigB2(v valuesBig) {
+}
+
+func callValueBigB3(v valuesBig) {
+}
+
+func callValueBigC(v valuesBig) {
+	callValueBigC1(v)
+	callValueBigC2(v)
+	callValueBigC3(v)
+}
+
+func callValueBigC1(v valuesBig) {
+}
+
+func callValueBigC2(v valuesBig) {
+}
+
+func callValueBigC3(v valuesBig) {
+}
+
 func callValueBigJSON(v []byte) {
 }
 
@@ -2050,6 +2095,17 @@ func BenchmarkValuesBigJSON(b *testing.B) {
 
 		enc, _ := jsoniter.Marshal(v)
 		callValueBigJSON(enc)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkValuesBigChain(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newValueBig()
+		callValueBigA(v)
+		callValueBigB(v)
+		callValueBigC(v)
 	}
 
 	b.StopTimer()
