@@ -6,7 +6,7 @@
 
 ```
 BenchmarkPointersSmall-8       	1000000000	         0.604 ns/op	       0 B/op	       0 allocs/op
-BenchmarkValuesSmall-8         	183266614			        6.53 ns/op		     0 B/op	       0 allocs/op
+BenchmarkValuesSmall-8         	183266614	         6.53 ns/op	       0 B/op	       0 allocs/op
 ```
 
 ## Big values vs pointers
@@ -20,7 +20,7 @@ BenchmarkValuesBig-8           	  751268	      1618 ns/op	       0 B/op	       0
 
 ```
 BenchmarkPointerSmallChain-8   	1000000000	         0.305 ns/op	       0 B/op	       0 allocs/op
-BenchmarkValuesSmallChain-8    	56732866			        20.5 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValuesSmallChain-8    	56732866	        20.5 ns/op	       0 B/op	       0 allocs/op
 ```
 
 ## Big values vs pointers in function calls chain
