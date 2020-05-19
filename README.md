@@ -2,35 +2,35 @@
 
 # Benchmarks
 
-## Usual (small) values vs pointers
+## Usual (small) pointers vs values
 
 ```
 BenchmarkPointersSmall-8       	1000000000	         0.604 ns/op	       0 B/op	       0 allocs/op
 BenchmarkValuesSmall-8         	183266614	         6.53 ns/op	       0 B/op	       0 allocs/op
 ```
 
-## Big values vs pointers
+## Big pointers vs values
 
 ```
 BenchmarkPointersBig-8         	   37318	     31707 ns/op	   24192 B/op	    1001 allocs/op
 BenchmarkValuesBig-8           	  751268	      1618 ns/op	       0 B/op	       0 allocs/op
 ```
 
-## Small values vs pointers in function calls chain
+## Small pointers vs values in function calls chain
 
 ```
 BenchmarkPointerSmallChain-8   	1000000000	         0.305 ns/op	       0 B/op	       0 allocs/op
 BenchmarkValuesSmallChain-8    	56732866	        20.5 ns/op	       0 B/op	       0 allocs/op
 ```
 
-## Big values vs pointers in function calls chain
+## Big pointers vs values in function calls chain
 
 ```
 BenchmarkPointerBigChain-8     	   39541	     31800 ns/op	   24192 B/op	    1001 allocs/op
 BenchmarkValuesBigChain-8      	  321734	      3310 ns/op	       0 B/op	       0 allocs/op
 ```
 
-## Small and big values vs pointers in marshalling
+## Small and big pointers vs values in marshalling
 
 ```
 BenchmarkPointersSmallJSON-8   	 3215271	       363 ns/op	     154 B/op	       9 allocs/op
