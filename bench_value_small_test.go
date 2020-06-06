@@ -1,19 +1,10 @@
-package nel
+package nan
 
 import (
 	"testing"
 
 	jsoniter "github.com/json-iterator/go"
 )
-
-type valuesSmall struct {
-	field000 string
-	field001 string
-	field002 string
-	field003 string
-	field004 string
-	field005 string
-}
 
 func valueSmallString() string {
 	s := "01234567890012345678900123456789001234567890012345678900123456789001234567890012345678900123456789001234567890" +
@@ -32,19 +23,30 @@ func valueSmallString() string {
 
 func newValueSmall() valuesSmall {
 	return valuesSmall{
-		field000: valueSmallString(),
-		field001: valueSmallString(),
-		field002: valueSmallString(),
-		field003: valueSmallString(),
-		field004: valueSmallString(),
-		field005: valueSmallString(),
+		Field000: valueSmallString(),
+		Field001: valueSmallString(),
+		Field002: valueSmallString(),
+		Field003: valueSmallString(),
+		Field004: valueSmallString(),
+		Field005: valueSmallString(),
 	}
 }
 
 func callValueSmall(v valuesSmall) {
 }
 
-func callValueSmallJSON(v []byte) {
+func callValueSmallJSON(v []byte) valuesSmall {
+	var res valuesSmall
+	_ = jsoniter.Unmarshal(v, &res)
+
+	return res
+}
+
+func callValueSmallEasyJSON(v []byte) valuesSmall {
+	var res valuesSmall
+	_ = res.UnmarshalJSON(v)
+
+	return res
 }
 
 func callValueSmallA(v valuesSmall) {
@@ -106,7 +108,8 @@ func BenchmarkValuesSmallJSON(b *testing.B) {
 		v := newValueSmall()
 
 		enc, _ := jsoniter.Marshal(v)
-		callValueSmallJSON(enc)
+		dec := callValueSmallJSON(enc)
+		callValueSmall(dec)
 	}
 
 	b.StopTimer()
@@ -118,6 +121,18 @@ func BenchmarkValuesSmallChain(b *testing.B) {
 		callValueSmallA(v)
 		callValueSmallB(v)
 		callValueSmallC(v)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkValuesSmallEasyJSON(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newValueSmall()
+
+		enc, _ := v.MarshalJSON()
+		dec := callValueSmallEasyJSON(enc)
+		callValueSmall(dec)
 	}
 
 	b.StopTimer()

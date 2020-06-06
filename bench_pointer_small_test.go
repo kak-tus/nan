@@ -1,19 +1,10 @@
-package nel
+package nan
 
 import (
 	"testing"
 
 	jsoniter "github.com/json-iterator/go"
 )
-
-type pointersSmall struct {
-	field000 *string
-	field001 *string
-	field002 *string
-	field003 *string
-	field004 *string
-	field005 *string
-}
 
 func pointerSmallString() *string {
 	s := "01234567890012345678900123456789001234567890012345678900123456789001234567890012345678900123456789001234567890" +
@@ -32,19 +23,30 @@ func pointerSmallString() *string {
 
 func newPointerSmall() *pointersSmall {
 	return &pointersSmall{
-		field000: pointerSmallString(),
-		field001: pointerSmallString(),
-		field002: pointerSmallString(),
-		field003: pointerSmallString(),
-		field004: pointerSmallString(),
-		field005: pointerSmallString(),
+		Field000: pointerSmallString(),
+		Field001: pointerSmallString(),
+		Field002: pointerSmallString(),
+		Field003: pointerSmallString(),
+		Field004: pointerSmallString(),
+		Field005: pointerSmallString(),
 	}
 }
 
 func callPointerSmall(v *pointersSmall) {
 }
 
-func callPointerSmallJSON(v []byte) {
+func callPointerSmallJSON(v []byte) *pointersSmall {
+	var res *pointersSmall
+	_ = jsoniter.Unmarshal(v, res)
+
+	return res
+}
+
+func callPointerSmallEasyJSON(v []byte) *pointersSmall {
+	res := &pointersSmall{}
+	_ = res.UnmarshalJSON(v)
+
+	return res
 }
 
 func callPointerSmallA(v *pointersSmall) {
@@ -106,7 +108,8 @@ func BenchmarkPointersSmallJSON(b *testing.B) {
 		v := newPointerSmall()
 
 		enc, _ := jsoniter.Marshal(v)
-		callPointerSmallJSON(enc)
+		dec := callPointerSmallJSON(enc)
+		callPointerSmall(dec)
 	}
 
 	b.StopTimer()
@@ -118,6 +121,18 @@ func BenchmarkPointerSmallChain(b *testing.B) {
 		callPointerSmallA(v)
 		callPointerSmallB(v)
 		callPointerSmallC(v)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkPointersSmallEasyJSON(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newPointerSmall()
+
+		enc, _ := v.MarshalJSON()
+		dec := callPointerSmallEasyJSON(enc)
+		callPointerSmall(dec)
 	}
 
 	b.StopTimer()
