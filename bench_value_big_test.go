@@ -21,8 +21,8 @@ func valueBigString() string {
 	return s
 }
 
-func newValueBig() valuesBig {
-	return valuesBig{
+func newValueBig() valueBig {
+	return valueBig{
 		Field000: valueBigString(),
 		Field001: valueBigString(),
 		Field002: valueBigString(),
@@ -1026,69 +1026,72 @@ func newValueBig() valuesBig {
 	}
 }
 
-func callValueBig(v valuesBig) {
+func callValueBig(v valueBig) {
 }
 
-func callValueBigA(v valuesBig) {
+func callValueBigJSON(v valueBigJSON) {
+}
+
+func callValueBigA(v valueBig) {
 	callValueBigA1(v)
 	callValueBigA2(v)
 	callValueBigA3(v)
 }
 
-func callValueBigA1(v valuesBig) {
+func callValueBigA1(v valueBig) {
 }
 
-func callValueBigA2(v valuesBig) {
+func callValueBigA2(v valueBig) {
 }
 
-func callValueBigA3(v valuesBig) {
+func callValueBigA3(v valueBig) {
 }
 
-func callValueBigB(v valuesBig) {
+func callValueBigB(v valueBig) {
 	callValueBigB1(v)
 	callValueBigB2(v)
 	callValueBigB3(v)
 }
 
-func callValueBigB1(v valuesBig) {
+func callValueBigB1(v valueBig) {
 }
 
-func callValueBigB2(v valuesBig) {
+func callValueBigB2(v valueBig) {
 }
 
-func callValueBigB3(v valuesBig) {
+func callValueBigB3(v valueBig) {
 }
 
-func callValueBigC(v valuesBig) {
+func callValueBigC(v valueBig) {
 	callValueBigC1(v)
 	callValueBigC2(v)
 	callValueBigC3(v)
 }
 
-func callValueBigC1(v valuesBig) {
+func callValueBigC1(v valueBig) {
 }
 
-func callValueBigC2(v valuesBig) {
+func callValueBigC2(v valueBig) {
 }
 
-func callValueBigC3(v valuesBig) {
+func callValueBigC3(v valueBig) {
 }
 
-func callValueBigJSON(v []byte) valuesBig {
-	var res valuesBig
+func decodeValueBigJSON(v []byte) valueBigJSON {
+	var res valueBigJSON
 	_ = jsoniter.Unmarshal(v, &res)
 
 	return res
 }
 
-func callValueBigEasyJSON(v []byte) valuesBig {
-	var res valuesBig
+func decodeValueBigEasyJSON(v []byte) valueBig {
+	var res valueBig
 	_ = res.UnmarshalJSON(v)
 
 	return res
 }
 
-func BenchmarkValuesBig(b *testing.B) {
+func BenchmarkValueBig(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueBig()
 		callValueBig(v)
@@ -1097,19 +1100,19 @@ func BenchmarkValuesBig(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkValuesBigJSON(b *testing.B) {
+func BenchmarkValueBigJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueBig()
 
 		enc, _ := jsoniter.Marshal(v)
-		dec := callValueBigJSON(enc)
-		callValueBig(dec)
+		dec := decodeValueBigJSON(enc)
+		callValueBigJSON(dec)
 	}
 
 	b.StopTimer()
 }
 
-func BenchmarkValuesBigChain(b *testing.B) {
+func BenchmarkValueBigChain(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueBig()
 		callValueBigA(v)
@@ -1120,12 +1123,12 @@ func BenchmarkValuesBigChain(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkValuesBigEasyJSON(b *testing.B) {
+func BenchmarkValueBigEasyJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueBig()
 
 		enc, _ := v.MarshalJSON()
-		dec := callValueBigEasyJSON(enc)
+		dec := decodeValueBigEasyJSON(enc)
 		callValueBig(dec)
 	}
 

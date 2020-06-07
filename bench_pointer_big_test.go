@@ -21,8 +21,8 @@ func pointerBigString() *string {
 	return &s
 }
 
-func newPointerBig() *pointersBig {
-	return &pointersBig{
+func newPointerBig() *pointerBig {
+	return &pointerBig{
 		Field000: pointerBigString(),
 		Field001: pointerBigString(),
 		Field002: pointerBigString(),
@@ -1026,69 +1026,72 @@ func newPointerBig() *pointersBig {
 	}
 }
 
-func callPointerBig(v *pointersBig) {
+func callPointerBig(v *pointerBig) {
 }
 
-func callPointerBigJSON(v []byte) *pointersBig {
-	var res *pointersBig
+func callPointerBigJSON(v *pointerBigJSON) {
+}
+
+func decodePointerBigJSON(v []byte) *pointerBigJSON {
+	res := &pointerBigJSON{}
 	_ = jsoniter.Unmarshal(v, res)
 
 	return res
 }
 
-func callPointerBigEasyJSON(v []byte) *pointersBig {
-	res := &pointersBig{}
+func decodePointerBigEasyJSON(v []byte) *pointerBig {
+	res := &pointerBig{}
 	_ = res.UnmarshalJSON(v)
 
 	return res
 }
 
-func callPointerBigA(v *pointersBig) {
+func callPointerBigA(v *pointerBig) {
 	callPointerBigA1(v)
 	callPointerBigA2(v)
 	callPointerBigA3(v)
 }
 
-func callPointerBigA1(v *pointersBig) {
+func callPointerBigA1(v *pointerBig) {
 }
 
-func callPointerBigA2(v *pointersBig) {
+func callPointerBigA2(v *pointerBig) {
 }
 
-func callPointerBigA3(v *pointersBig) {
+func callPointerBigA3(v *pointerBig) {
 }
 
-func callPointerBigB(v *pointersBig) {
+func callPointerBigB(v *pointerBig) {
 	callPointerBigB1(v)
 	callPointerBigB2(v)
 	callPointerBigB3(v)
 }
 
-func callPointerBigB1(v *pointersBig) {
+func callPointerBigB1(v *pointerBig) {
 }
 
-func callPointerBigB2(v *pointersBig) {
+func callPointerBigB2(v *pointerBig) {
 }
 
-func callPointerBigB3(v *pointersBig) {
+func callPointerBigB3(v *pointerBig) {
 }
 
-func callPointerBigC(v *pointersBig) {
+func callPointerBigC(v *pointerBig) {
 	callPointerBigC1(v)
 	callPointerBigC2(v)
 	callPointerBigC3(v)
 }
 
-func callPointerBigC1(v *pointersBig) {
+func callPointerBigC1(v *pointerBig) {
 }
 
-func callPointerBigC2(v *pointersBig) {
+func callPointerBigC2(v *pointerBig) {
 }
 
-func callPointerBigC3(v *pointersBig) {
+func callPointerBigC3(v *pointerBig) {
 }
 
-func BenchmarkPointersBig(b *testing.B) {
+func BenchmarkPointerBig(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newPointerBig()
 		callPointerBig(v)
@@ -1097,13 +1100,13 @@ func BenchmarkPointersBig(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkPointersBigJSON(b *testing.B) {
+func BenchmarkPointerBigJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newPointerBig()
 
 		enc, _ := jsoniter.Marshal(v)
-		dec := callPointerBigJSON(enc)
-		callPointerBig(dec)
+		dec := decodePointerBigJSON(enc)
+		callPointerBigJSON(dec)
 	}
 
 	b.StopTimer()
@@ -1120,12 +1123,12 @@ func BenchmarkPointerBigChain(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkPointersBigEasyJSON(b *testing.B) {
+func BenchmarkPointerBigEasyJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newPointerBig()
 
 		enc, _ := v.MarshalJSON()
-		dec := callPointerBigEasyJSON(enc)
+		dec := decodePointerBigEasyJSON(enc)
 		callPointerBig(dec)
 	}
 

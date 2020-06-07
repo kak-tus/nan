@@ -21,8 +21,8 @@ func valueSmallString() string {
 	return s
 }
 
-func newValueSmall() valuesSmall {
-	return valuesSmall{
+func newValueSmall() valueSmall {
+	return valueSmall{
 		Field000: valueSmallString(),
 		Field001: valueSmallString(),
 		Field002: valueSmallString(),
@@ -32,69 +32,72 @@ func newValueSmall() valuesSmall {
 	}
 }
 
-func callValueSmall(v valuesSmall) {
+func callValueSmall(v valueSmall) {
 }
 
-func callValueSmallJSON(v []byte) valuesSmall {
-	var res valuesSmall
+func callValueSmallJSON(v valueSmallJSON) {
+}
+
+func decodeValueSmallJSON(v []byte) valueSmallJSON {
+	var res valueSmallJSON
 	_ = jsoniter.Unmarshal(v, &res)
 
 	return res
 }
 
-func callValueSmallEasyJSON(v []byte) valuesSmall {
-	var res valuesSmall
+func decodeValueSmallEasyJSON(v []byte) valueSmall {
+	var res valueSmall
 	_ = res.UnmarshalJSON(v)
 
 	return res
 }
 
-func callValueSmallA(v valuesSmall) {
+func callValueSmallA(v valueSmall) {
 	callValueSmallA1(v)
 	callValueSmallA2(v)
 	callValueSmallA3(v)
 }
 
-func callValueSmallA1(v valuesSmall) {
+func callValueSmallA1(v valueSmall) {
 }
 
-func callValueSmallA2(v valuesSmall) {
+func callValueSmallA2(v valueSmall) {
 }
 
-func callValueSmallA3(v valuesSmall) {
+func callValueSmallA3(v valueSmall) {
 }
 
-func callValueSmallB(v valuesSmall) {
+func callValueSmallB(v valueSmall) {
 	callValueSmallB1(v)
 	callValueSmallB2(v)
 	callValueSmallB3(v)
 }
 
-func callValueSmallB1(v valuesSmall) {
+func callValueSmallB1(v valueSmall) {
 }
 
-func callValueSmallB2(v valuesSmall) {
+func callValueSmallB2(v valueSmall) {
 }
 
-func callValueSmallB3(v valuesSmall) {
+func callValueSmallB3(v valueSmall) {
 }
 
-func callValueSmallC(v valuesSmall) {
+func callValueSmallC(v valueSmall) {
 	callValueSmallC1(v)
 	callValueSmallC2(v)
 	callValueSmallC3(v)
 }
 
-func callValueSmallC1(v valuesSmall) {
+func callValueSmallC1(v valueSmall) {
 }
 
-func callValueSmallC2(v valuesSmall) {
+func callValueSmallC2(v valueSmall) {
 }
 
-func callValueSmallC3(v valuesSmall) {
+func callValueSmallC3(v valueSmall) {
 }
 
-func BenchmarkValuesSmall(b *testing.B) {
+func BenchmarkValueSmall(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueSmall()
 		callValueSmall(v)
@@ -103,19 +106,19 @@ func BenchmarkValuesSmall(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkValuesSmallJSON(b *testing.B) {
+func BenchmarkValueSmallJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueSmall()
 
 		enc, _ := jsoniter.Marshal(v)
-		dec := callValueSmallJSON(enc)
-		callValueSmall(dec)
+		dec := decodeValueSmallJSON(enc)
+		callValueSmallJSON(dec)
 	}
 
 	b.StopTimer()
 }
 
-func BenchmarkValuesSmallChain(b *testing.B) {
+func BenchmarkValueSmallChain(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueSmall()
 		callValueSmallA(v)
@@ -126,12 +129,12 @@ func BenchmarkValuesSmallChain(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkValuesSmallEasyJSON(b *testing.B) {
+func BenchmarkValueSmallEasyJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newValueSmall()
 
 		enc, _ := v.MarshalJSON()
-		dec := callValueSmallEasyJSON(enc)
+		dec := decodeValueSmallEasyJSON(enc)
 		callValueSmall(dec)
 	}
 

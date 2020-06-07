@@ -17,7 +17,7 @@ var (
 	_ easyjson.Marshaler
 )
 
-func easyjson84ae5f89DecodeGithubComKakTusNan(in *jlexer.Lexer, out *valueSmall) {
+func easyjsonA10bbcbdDecodeGithubComKakTusNan(in *jlexer.Lexer, out *nanSmall) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -37,17 +37,29 @@ func easyjson84ae5f89DecodeGithubComKakTusNan(in *jlexer.Lexer, out *valueSmall)
 		}
 		switch key {
 		case "Field000":
-			out.Field000 = string(in.String())
+			if data := in.Raw(); in.Ok() {
+				in.AddError((out.Field000).UnmarshalJSON(data))
+			}
 		case "Field001":
-			out.Field001 = string(in.String())
+			if data := in.Raw(); in.Ok() {
+				in.AddError((out.Field001).UnmarshalJSON(data))
+			}
 		case "Field002":
-			out.Field002 = string(in.String())
+			if data := in.Raw(); in.Ok() {
+				in.AddError((out.Field002).UnmarshalJSON(data))
+			}
 		case "Field003":
-			out.Field003 = string(in.String())
+			if data := in.Raw(); in.Ok() {
+				in.AddError((out.Field003).UnmarshalJSON(data))
+			}
 		case "Field004":
-			out.Field004 = string(in.String())
+			if data := in.Raw(); in.Ok() {
+				in.AddError((out.Field004).UnmarshalJSON(data))
+			}
 		case "Field005":
-			out.Field005 = string(in.String())
+			if data := in.Raw(); in.Ok() {
+				in.AddError((out.Field005).UnmarshalJSON(data))
+			}
 		default:
 			in.SkipRecursive()
 		}
@@ -58,63 +70,63 @@ func easyjson84ae5f89DecodeGithubComKakTusNan(in *jlexer.Lexer, out *valueSmall)
 		in.Consumed()
 	}
 }
-func easyjson84ae5f89EncodeGithubComKakTusNan(out *jwriter.Writer, in valueSmall) {
+func easyjsonA10bbcbdEncodeGithubComKakTusNan(out *jwriter.Writer, in nanSmall) {
 	out.RawByte('{')
 	first := true
 	_ = first
 	{
 		const prefix string = ",\"Field000\":"
 		out.RawString(prefix[1:])
-		out.String(string(in.Field000))
+		out.Raw((in.Field000).MarshalJSON())
 	}
 	{
 		const prefix string = ",\"Field001\":"
 		out.RawString(prefix)
-		out.String(string(in.Field001))
+		out.Raw((in.Field001).MarshalJSON())
 	}
 	{
 		const prefix string = ",\"Field002\":"
 		out.RawString(prefix)
-		out.String(string(in.Field002))
+		out.Raw((in.Field002).MarshalJSON())
 	}
 	{
 		const prefix string = ",\"Field003\":"
 		out.RawString(prefix)
-		out.String(string(in.Field003))
+		out.Raw((in.Field003).MarshalJSON())
 	}
 	{
 		const prefix string = ",\"Field004\":"
 		out.RawString(prefix)
-		out.String(string(in.Field004))
+		out.Raw((in.Field004).MarshalJSON())
 	}
 	{
 		const prefix string = ",\"Field005\":"
 		out.RawString(prefix)
-		out.String(string(in.Field005))
+		out.Raw((in.Field005).MarshalJSON())
 	}
 	out.RawByte('}')
 }
 
 // MarshalJSON supports json.Marshaler interface
-func (v valueSmall) MarshalJSON() ([]byte, error) {
+func (v nanSmall) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson84ae5f89EncodeGithubComKakTusNan(&w, v)
+	easyjsonA10bbcbdEncodeGithubComKakTusNan(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
-func (v valueSmall) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson84ae5f89EncodeGithubComKakTusNan(w, v)
+func (v nanSmall) MarshalEasyJSON(w *jwriter.Writer) {
+	easyjsonA10bbcbdEncodeGithubComKakTusNan(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
-func (v *valueSmall) UnmarshalJSON(data []byte) error {
+func (v *nanSmall) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson84ae5f89DecodeGithubComKakTusNan(&r, v)
+	easyjsonA10bbcbdDecodeGithubComKakTusNan(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
-func (v *valueSmall) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson84ae5f89DecodeGithubComKakTusNan(l, v)
+func (v *nanSmall) UnmarshalEasyJSON(l *jlexer.Lexer) {
+	easyjsonA10bbcbdDecodeGithubComKakTusNan(l, v)
 }
