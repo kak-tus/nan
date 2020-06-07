@@ -32,6 +32,17 @@ func newValueSmall() valueSmall {
 	}
 }
 
+func newValueSmallJSON() valueSmallJSON {
+	return valueSmallJSON{
+		Field000: valueSmallString(),
+		Field001: valueSmallString(),
+		Field002: valueSmallString(),
+		Field003: valueSmallString(),
+		Field004: valueSmallString(),
+		Field005: valueSmallString(),
+	}
+}
+
 func callValueSmall(v valueSmall) {
 }
 
@@ -108,7 +119,7 @@ func BenchmarkValueSmall(b *testing.B) {
 
 func BenchmarkValueSmallJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		v := newValueSmall()
+		v := newValueSmallJSON()
 
 		enc, _ := jsoniter.Marshal(v)
 		dec := decodeValueSmallJSON(enc)

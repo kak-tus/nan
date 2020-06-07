@@ -32,6 +32,17 @@ func newPointerSmall() *pointerSmall {
 	}
 }
 
+func newPointerSmallJSON() *pointerSmallJSON {
+	return &pointerSmallJSON{
+		Field000: pointerSmallString(),
+		Field001: pointerSmallString(),
+		Field002: pointerSmallString(),
+		Field003: pointerSmallString(),
+		Field004: pointerSmallString(),
+		Field005: pointerSmallString(),
+	}
+}
+
 func callPointerSmall(v *pointerSmall) {
 }
 
@@ -97,7 +108,7 @@ func callPointerSmallC2(v *pointerSmall) {
 func callPointerSmallC3(v *pointerSmall) {
 }
 
-func BenchmarkPointersSmall(b *testing.B) {
+func BenchmarkPointerSmall(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newPointerSmall()
 		callPointerSmall(v)
@@ -106,9 +117,9 @@ func BenchmarkPointersSmall(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkPointersSmallJSON(b *testing.B) {
+func BenchmarkPointerSmallJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		v := newPointerSmall()
+		v := newPointerSmallJSON()
 
 		enc, _ := jsoniter.Marshal(v)
 		dec := decodePointerSmallJSON(enc)
@@ -129,7 +140,7 @@ func BenchmarkPointerSmallChain(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkPointersSmallEasyJSON(b *testing.B) {
+func BenchmarkPointerSmallEasyJSON(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newPointerSmall()
 
