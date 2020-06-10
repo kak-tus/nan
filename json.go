@@ -1,33 +1,24 @@
 package nan
 
 import (
-	"bytes"
-
-	jsoniter "github.com/json-iterator/go"
+	jlexer "github.com/mailru/easyjson/jlexer"
+	jwriter "github.com/mailru/easyjson/jwriter"
 )
 
-func (n NullString) MarshalJSON() ([]byte, error) {
+func (n NullString) MarshalEasyJSON(out *jwriter.Writer) {
 	if !n.Valid {
-		return []byte("null"), nil
+		out.RawString("null")
+		return
 	}
 
-	return jsoniter.Marshal(n.String)
+	out.String(n.String)
 }
 
-func (n *NullString) UnmarshalJSON(b []byte) error {
-	if bytes.Equal(b, []byte("null")) {
-		*n = NullString{}
-		return nil
+func (n *NullString) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	if in.IsNull() {
+		in.Skip()
+		return
 	}
 
-	var dec string
-
-	err := jsoniter.Unmarshal(b, &dec)
-	if err != nil {
-		return err
-	}
-
-	*n = NullString{String: dec, Valid: true}
-
-	return nil
+	*n = NullString{String: in.String(), Valid: true}
 }

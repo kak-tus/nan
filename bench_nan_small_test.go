@@ -2,8 +2,6 @@ package nan
 
 import (
 	"testing"
-
-	jsoniter "github.com/json-iterator/go"
 )
 
 func nanSmallString() string {
@@ -32,22 +30,26 @@ func newNanSmall() nanSmall {
 	}
 }
 
+func newNanSmallJSON() nanSmallJSON {
+	return nanSmallJSON{
+		Field000: StringToNullString(nanSmallString()),
+		Field001: StringToNullString(nanSmallString()),
+		Field002: StringToNullString(nanSmallString()),
+		Field003: StringToNullString(nanSmallString()),
+		Field004: StringToNullString(nanSmallString()),
+		Field005: StringToNullString(nanSmallString()),
+	}
+}
+
 func callNanSmall(v nanSmall) {
 }
 
-func callNanSmallJSON(v []byte) nanSmall {
+func decodeNanSmallEasyJSON(v []byte) nanSmall {
 	var res nanSmall
-	_ = jsoniter.Unmarshal(v, &res)
+	_ = res.UnmarshalJSON(v)
 
 	return res
 }
-
-// func callNanSmallEasyJSON(v []byte) nanSmall {
-// 	var res nanSmall
-// 	_ = res.UnmarshalJSON(v)
-
-// 	return res
-// }
 
 func callNanSmallA(v nanSmall) {
 	callNanSmallA1(v)
@@ -103,18 +105,6 @@ func BenchmarkNanSmall(b *testing.B) {
 	b.StopTimer()
 }
 
-func BenchmarkNanSmallJSON(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		v := newNanSmall()
-
-		enc, _ := jsoniter.Marshal(v)
-		dec := callNanSmallJSON(enc)
-		callNanSmall(dec)
-	}
-
-	b.StopTimer()
-}
-
 func BenchmarkNanSmallChain(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		v := newNanSmall()
@@ -126,14 +116,14 @@ func BenchmarkNanSmallChain(b *testing.B) {
 	b.StopTimer()
 }
 
-// func BenchmarknanSmallEasyJSON(b *testing.B) {
-// 	for i := 0; i < b.N; i++ {
-// 		v := newNanSmall()
+func BenchmarkNanSmallEasyJSON(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newNanSmall()
 
-// 		enc, _ := v.MarshalJSON()
-// 		dec := callNanSmallEasyJSON(enc)
-// 		callNanSmall(dec)
-// 	}
+		enc, _ := v.MarshalJSON()
+		dec := decodeNanSmallEasyJSON(enc)
+		callNanSmall(dec)
+	}
 
-// 	b.StopTimer()
-// }
+	b.StopTimer()
+}

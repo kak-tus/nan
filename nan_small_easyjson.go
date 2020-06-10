@@ -37,29 +37,17 @@ func easyjsonA10bbcbdDecodeGithubComKakTusNan(in *jlexer.Lexer, out *nanSmall) {
 		}
 		switch key {
 		case "Field000":
-			if data := in.Raw(); in.Ok() {
-				in.AddError((out.Field000).UnmarshalJSON(data))
-			}
+			(out.Field000).UnmarshalEasyJSON(in)
 		case "Field001":
-			if data := in.Raw(); in.Ok() {
-				in.AddError((out.Field001).UnmarshalJSON(data))
-			}
+			(out.Field001).UnmarshalEasyJSON(in)
 		case "Field002":
-			if data := in.Raw(); in.Ok() {
-				in.AddError((out.Field002).UnmarshalJSON(data))
-			}
+			(out.Field002).UnmarshalEasyJSON(in)
 		case "Field003":
-			if data := in.Raw(); in.Ok() {
-				in.AddError((out.Field003).UnmarshalJSON(data))
-			}
+			(out.Field003).UnmarshalEasyJSON(in)
 		case "Field004":
-			if data := in.Raw(); in.Ok() {
-				in.AddError((out.Field004).UnmarshalJSON(data))
-			}
+			(out.Field004).UnmarshalEasyJSON(in)
 		case "Field005":
-			if data := in.Raw(); in.Ok() {
-				in.AddError((out.Field005).UnmarshalJSON(data))
-			}
+			(out.Field005).UnmarshalEasyJSON(in)
 		default:
 			in.SkipRecursive()
 		}
@@ -77,32 +65,32 @@ func easyjsonA10bbcbdEncodeGithubComKakTusNan(out *jwriter.Writer, in nanSmall) 
 	{
 		const prefix string = ",\"Field000\":"
 		out.RawString(prefix[1:])
-		out.Raw((in.Field000).MarshalJSON())
+		(in.Field000).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field001\":"
 		out.RawString(prefix)
-		out.Raw((in.Field001).MarshalJSON())
+		(in.Field001).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field002\":"
 		out.RawString(prefix)
-		out.Raw((in.Field002).MarshalJSON())
+		(in.Field002).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field003\":"
 		out.RawString(prefix)
-		out.Raw((in.Field003).MarshalJSON())
+		(in.Field003).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field004\":"
 		out.RawString(prefix)
-		out.Raw((in.Field004).MarshalJSON())
+		(in.Field004).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field005\":"
 		out.RawString(prefix)
-		out.Raw((in.Field005).MarshalJSON())
+		(in.Field005).MarshalEasyJSON(out)
 	}
 	out.RawByte('}')
 }
