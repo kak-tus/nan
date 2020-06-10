@@ -2,6 +2,8 @@ package nan
 
 import (
 	"testing"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 func nanSmallString() string {
@@ -42,6 +44,16 @@ func newNanSmallJSON() nanSmallJSON {
 }
 
 func callNanSmall(v nanSmall) {
+}
+
+func callNanSmallJSON(v nanSmallJSON) {
+}
+
+func decodeNanSmallJSON(v []byte) nanSmallJSON {
+	var res nanSmallJSON
+	_ = jsoniter.Unmarshal(v, &res)
+
+	return res
 }
 
 func decodeNanSmallEasyJSON(v []byte) nanSmall {
@@ -111,6 +123,18 @@ func BenchmarkNanSmallChain(b *testing.B) {
 		callNanSmallA(v)
 		callNanSmallB(v)
 		callNanSmallC(v)
+	}
+
+	b.StopTimer()
+}
+
+func BenchmarkNanSmallJSON(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		v := newNanSmallJSON()
+
+		enc, _ := jsoniter.Marshal(v)
+		dec := decodeNanSmallJSON(enc)
+		callNanSmallJSON(dec)
 	}
 
 	b.StopTimer()
