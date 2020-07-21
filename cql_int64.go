@@ -12,6 +12,7 @@ func (n NullInt64) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 
 func (n *NullInt64) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if len(data) != 8 {
+		*n = NullInt64{}
 		return nil
 	}
 

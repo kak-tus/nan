@@ -4,19 +4,12 @@ import (
 	"testing"
 
 	"github.com/gocql/gocql"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestNullInt64(t *testing.T) {
-	n1 := NullInt64{Valid: true, Int64: 7676}
+	v1, v2 := int64(7676), int64(7676)
+	doCQLTest(t, gocql.TypeBigInt, &v1, &v2, &NullInt64{Int64: v1, Valid: true}, &NullInt64{})
 
-	b, err := n1.MarshalCQL(gocql.TupleTypeInfo{})
-	assert.NoError(t, err)
-
-	var n2 NullInt64
-
-	err = n2.UnmarshalCQL(gocql.TupleTypeInfo{}, b)
-	assert.NoError(t, err)
-
-	assert.Equal(t, n1, n2)
+	doCQLTest(t, gocql.TypeBigInt, nil, nil, &NullInt64{Valid: false}, &NullInt64{})
+	doCQLTest(t, gocql.TypeBigInt, nil, nil, &NullInt64{Valid: false}, &NullInt64{Valid: true})
 }

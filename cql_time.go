@@ -21,6 +21,7 @@ func (n NullTime) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 
 func (n *NullTime) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if len(data) != 8 {
+		*n = NullTime{}
 		return nil
 	}
 

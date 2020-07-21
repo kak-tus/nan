@@ -4,37 +4,15 @@ import (
 	"testing"
 
 	"github.com/gocql/gocql"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestNullBool(t *testing.T) {
-	nan1 := NullBool{Bool: true, Valid: true}
+	v1, v2 := true, true
+	doCQLTest(t, gocql.TypeBoolean, &v1, &v2, &NullBool{Bool: v1, Valid: true}, &NullBool{})
 
-	encoded1, err := nan1.MarshalCQL(gocql.TupleTypeInfo{})
-	assert.NoError(t, err)
+	v1, v2 = false, false
+	doCQLTest(t, gocql.TypeBoolean, &v1, &v2, &NullBool{Bool: false, Valid: true}, &NullBool{})
 
-	cType := gocql.NewNativeType(5, gocql.TypeBoolean, "")
-
-	val1 := true
-
-	encoded2, err := gocql.Marshal(cType, &val1)
-	assert.NoError(t, err)
-
-	assert.Equal(t, encoded1, encoded2)
-
-	var nan2 NullBool
-
-	err = nan2.UnmarshalCQL(gocql.TupleTypeInfo{}, encoded1)
-	assert.NoError(t, err)
-
-	assert.Equal(t, nan1, nan2)
-
-	var val2 bool
-
-	err = gocql.Unmarshal(cType, encoded2, &val2)
-	assert.NoError(t, err)
-
-	assert.Equal(t, val1, val2)
-
-	assert.Equal(t, nan1.Bool, val2)
+	doCQLTest(t, gocql.TypeBoolean, nil, nil, &NullBool{Valid: false}, &NullBool{})
+	doCQLTest(t, gocql.TypeBoolean, nil, nil, &NullBool{Valid: false}, &NullBool{Valid: true})
 }

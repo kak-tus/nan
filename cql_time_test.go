@@ -5,22 +5,13 @@ import (
 	"time"
 
 	"github.com/gocql/gocql"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestNullTime(t *testing.T) {
 	// Cassandra truncates it
-	tm := time.Now().UTC().Truncate(time.Millisecond)
+	v1 := time.Now().UTC().Truncate(time.Millisecond)
+	doCQLTest(t, gocql.TypeTimestamp, &v1, &time.Time{}, &NullTime{Time: v1, Valid: true}, &NullTime{})
 
-	n1 := NullTime{Valid: true, Time: tm}
-
-	b, err := n1.MarshalCQL(gocql.TupleTypeInfo{})
-	assert.NoError(t, err)
-
-	var n2 NullTime
-
-	err = n2.UnmarshalCQL(gocql.TupleTypeInfo{}, b)
-	assert.NoError(t, err)
-
-	assert.Equal(t, n1, n2)
+	doCQLTest(t, gocql.TypeTimestamp, nil, nil, &NullTime{Valid: false}, &NullTime{})
+	doCQLTest(t, gocql.TypeTimestamp, nil, nil, &NullTime{Valid: false}, &NullTime{Valid: true})
 }

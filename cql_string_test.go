@@ -4,19 +4,12 @@ import (
 	"testing"
 
 	"github.com/gocql/gocql"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestNullString(t *testing.T) {
-	n1 := NullString{Valid: true, String: "7676"}
+	v1, v2 := "7676", "7676"
+	doCQLTest(t, gocql.TypeVarchar, &v1, &v2, &NullString{String: v1, Valid: true}, &NullString{})
 
-	b, err := n1.MarshalCQL(gocql.TupleTypeInfo{})
-	assert.NoError(t, err)
-
-	var n2 NullString
-
-	err = n2.UnmarshalCQL(gocql.TupleTypeInfo{}, b)
-	assert.NoError(t, err)
-
-	assert.Equal(t, n1, n2)
+	doCQLTest(t, gocql.TypeVarchar, nil, nil, &NullString{Valid: false}, &NullString{})
+	doCQLTest(t, gocql.TypeVarchar, nil, nil, &NullString{Valid: false}, &NullString{Valid: true})
 }
