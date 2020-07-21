@@ -9,6 +9,7 @@ Supported types:
 - time.Time
 - string
 - int
+- bool
 
 Supported marshallers:
 - JSON

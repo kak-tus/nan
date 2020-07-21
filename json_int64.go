@@ -11,67 +11,67 @@ import (
 
 func init() {
 	jsoniter.RegisterTypeDecoderFunc(
-		"nan.NullString",
+		"nan.NullInt64",
 		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
 			if iter.ReadNil() {
 				return
 			}
 
-			*((*NullString)(ptr)) = NullString{String: iter.ReadString(), Valid: true}
+			*((*NullInt64)(ptr)) = NullInt64{Int64: iter.ReadInt64(), Valid: true}
 		},
 	)
 
 	jsoniter.RegisterTypeEncoderFunc(
-		"nan.NullString",
+		"nan.NullInt64",
 		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
-			t := *((*NullString)(ptr))
-			stream.WriteString(t.String)
+			t := *((*NullInt64)(ptr))
+			stream.WriteInt64(t.Int64)
 		},
 		func(ptr unsafe.Pointer) bool {
-			return !(*NullString)(ptr).Valid
+			return !(*NullInt64)(ptr).Valid
 		},
 	)
 }
 
-func (n NullString) MarshalJSON() ([]byte, error) {
+func (n NullInt64) MarshalJSON() ([]byte, error) {
 	if !n.Valid {
 		return []byte("null"), nil
 	}
 
-	return jsoniter.Marshal(n.String)
+	return jsoniter.Marshal(n.Int64)
 }
 
-func (n *NullString) UnmarshalJSON(data []byte) error {
+func (n *NullInt64) UnmarshalJSON(data []byte) error {
 	if bytes.Equal(data, []byte("null")) {
 		return nil
 	}
 
-	var res string
+	var res int64
 
 	err := jsoniter.Unmarshal(data, &res)
 	if err != nil {
 		return err
 	}
 
-	*n = NullString{String: res, Valid: true}
+	*n = NullInt64{Int64: res, Valid: true}
 
 	return nil
 }
 
-func (n NullString) MarshalEasyJSON(out *jwriter.Writer) {
+func (n NullInt64) MarshalEasyJSON(out *jwriter.Writer) {
 	if !n.Valid {
 		out.RawString("null")
 		return
 	}
 
-	out.String(n.String)
+	out.Int64(n.Int64)
 }
 
-func (n *NullString) UnmarshalEasyJSON(in *jlexer.Lexer) {
+func (n *NullInt64) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
 		in.Skip()
 		return
 	}
 
-	*n = NullString{String: in.String(), Valid: true}
+	*n = NullInt64{Int64: in.Int64(), Valid: true}
 }
