@@ -1,6 +1,6 @@
 package nan
 
-//go:generate easyjson pointer_big.go
+//go:generate easyjson bench_pointer_big.go
 
 //easyjson:json
 type pointerBig struct {

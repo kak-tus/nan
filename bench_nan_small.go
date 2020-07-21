@@ -1,6 +1,6 @@
 package nan
 
-//go:generate easyjson nan_small.go
+//go:generate easyjson bench_nan_small.go
 
 //easyjson:json
 type nanSmall struct {
