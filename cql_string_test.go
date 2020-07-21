@@ -6,7 +6,7 @@ import (
 	"github.com/gocql/gocql"
 )
 
-func TestNullString(t *testing.T) {
+func TestCQLNullString(t *testing.T) {
 	v1, v2 := "7676", "7676"
 	doCQLTest(t, gocql.TypeVarchar, &v1, &v2, &NullString{String: v1, Valid: true}, &NullString{})
 

@@ -6,7 +6,7 @@ import (
 	"github.com/gocql/gocql"
 )
 
-func TestNullBool(t *testing.T) {
+func TestCQLNullBool(t *testing.T) {
 	v1, v2 := true, true
 	doCQLTest(t, gocql.TypeBoolean, &v1, &v2, &NullBool{Bool: v1, Valid: true}, &NullBool{})
 

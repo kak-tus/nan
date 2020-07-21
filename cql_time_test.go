@@ -7,7 +7,7 @@ import (
 	"github.com/gocql/gocql"
 )
 
-func TestNullTime(t *testing.T) {
+func TestCQLNullTime(t *testing.T) {
 	// Cassandra truncates it
 	v1 := time.Now().UTC().Truncate(time.Millisecond)
 	doCQLTest(t, gocql.TypeTimestamp, &v1, &time.Time{}, &NullTime{Time: v1, Valid: true}, &NullTime{})
