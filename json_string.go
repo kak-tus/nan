@@ -25,11 +25,15 @@ func init() {
 		"nan.NullString",
 		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
 			t := *((*NullString)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
 			stream.WriteString(t.String)
 		},
-		func(ptr unsafe.Pointer) bool {
-			return !(*NullString)(ptr).Valid
-		},
+		nil,
 	)
 }
 
@@ -43,6 +47,7 @@ func (n NullString) MarshalJSON() ([]byte, error) {
 
 func (n *NullString) UnmarshalJSON(data []byte) error {
 	if bytes.Equal(data, []byte("null")) {
+		*n = NullString{}
 		return nil
 	}
 
@@ -69,7 +74,10 @@ func (n NullString) MarshalEasyJSON(out *jwriter.Writer) {
 
 func (n *NullString) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
+		*n = NullString{}
+
 		in.Skip()
+
 		return
 	}
 

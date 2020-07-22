@@ -25,7 +25,7 @@ func init() {
 				return
 			}
 
-			tm, err := time.Parse(time.RFC3339, val)
+			tm, err := time.Parse(time.RFC3339Nano, val)
 			if err != nil {
 				msg := fmt.Sprintf("%v: invalid value for time decoding \"%s\"", err, val)
 				iter.ReportError("NullTime", msg)
@@ -40,11 +40,15 @@ func init() {
 		"nan.NullTime",
 		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
 			t := *((*NullTime)(ptr))
-			stream.WriteString(t.Time.Format(time.RFC3339))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
+			stream.WriteString(t.Time.Format(time.RFC3339Nano))
 		},
-		func(ptr unsafe.Pointer) bool {
-			return !(*NullTime)(ptr).Valid
-		},
+		nil,
 	)
 }
 
@@ -53,15 +57,23 @@ func (n NullTime) MarshalJSON() ([]byte, error) {
 		return []byte("null"), nil
 	}
 
-	return jsoniter.Marshal(n.Time.Format(time.RFC3339))
+	return jsoniter.Marshal(n.Time.Format(time.RFC3339Nano))
 }
 
 func (n *NullTime) UnmarshalJSON(data []byte) error {
 	if bytes.Equal(data, []byte("null")) {
+		*n = NullTime{}
 		return nil
 	}
 
-	res, err := time.Parse(time.RFC3339, string(data))
+	var dec string
+
+	err := jsoniter.Unmarshal(data, &dec)
+	if err != nil {
+		return err
+	}
+
+	res, err := time.Parse(time.RFC3339Nano, string(dec))
 	if err != nil {
 		return err
 	}
@@ -77,16 +89,19 @@ func (n NullTime) MarshalEasyJSON(out *jwriter.Writer) {
 		return
 	}
 
-	out.String(n.Time.Format(time.RFC3339))
+	out.String(n.Time.Format(time.RFC3339Nano))
 }
 
 func (n *NullTime) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
+		*n = NullTime{}
+
 		in.Skip()
+
 		return
 	}
 
-	res, err := time.Parse(time.RFC3339, in.String())
+	res, err := time.Parse(time.RFC3339Nano, in.String())
 	if err != nil {
 		in.AddError(err)
 		return

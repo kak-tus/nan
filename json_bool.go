@@ -2,7 +2,6 @@ package nan
 
 import (
 	"bytes"
-	"fmt"
 	"unsafe"
 
 	jsoniter "github.com/json-iterator/go"
@@ -17,7 +16,6 @@ func init() {
 			if iter.ReadNil() {
 				return
 			}
-			fmt.Println(1)
 
 			*((*NullBool)(ptr)) = NullBool{Bool: iter.ReadBool(), Valid: true}
 		},
@@ -77,6 +75,7 @@ func (n NullBool) MarshalEasyJSON(out *jwriter.Writer) {
 func (n *NullBool) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
 		*n = NullBool{}
+
 		in.Skip()
 
 		return

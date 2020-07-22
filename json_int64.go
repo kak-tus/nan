@@ -25,11 +25,15 @@ func init() {
 		"nan.NullInt64",
 		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
 			t := *((*NullInt64)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
 			stream.WriteInt64(t.Int64)
 		},
-		func(ptr unsafe.Pointer) bool {
-			return !(*NullInt64)(ptr).Valid
-		},
+		nil,
 	)
 }
 
@@ -43,6 +47,7 @@ func (n NullInt64) MarshalJSON() ([]byte, error) {
 
 func (n *NullInt64) UnmarshalJSON(data []byte) error {
 	if bytes.Equal(data, []byte("null")) {
+		*n = NullInt64{}
 		return nil
 	}
 
@@ -69,7 +74,10 @@ func (n NullInt64) MarshalEasyJSON(out *jwriter.Writer) {
 
 func (n *NullInt64) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
+		*n = NullInt64{}
+
 		in.Skip()
+
 		return
 	}
 
