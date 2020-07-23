@@ -5,6 +5,7 @@ marshallers and unmarshallers.
 
 Features:
 - short name "nan"
+- handy conversion functions
 
 Supported types:
 - time.Time
