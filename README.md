@@ -11,6 +11,7 @@ Supported types:
 - string
 - int64
 - bool
+- more types will be added at necessary
 
 Supported marshallers:
 - Standart JSON
