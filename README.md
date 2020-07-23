@@ -8,14 +8,46 @@ Features:
 Supported types:
 - time.Time
 - string
-- int
+- int64
 - bool
 
 Supported marshallers:
-- JSON
+- Standart JSON
+- jsoniter
+- easyjson
 - Scylla and Cassandra (gocql, gocqlx)
 
-# Benchmarks
+## Usage
+
+Simply create struct field or variable with one of exported types and use it without any changes in external API.
+
+JSON input/output will be converted to null or non null values. Scylla and Cassandra will be save this variables correctly.
+
+```
+	var data struct {
+		Code nan.NullString `json:"code"`
+	}
+
+	b, err := jsoniter.Marshal(data)
+	if err != nil {
+		panic(err)
+	}
+
+	// {"code":null}
+	fmt.Println(string(b))
+
+	data.Code = nan.StringToNullString("1")
+
+	b, err = jsoniter.Marshal(data)
+	if err != nil {
+		panic(err)
+	}
+
+	// {"code":"1"}
+	fmt.Println(string(b))
+```
+
+## Benchmarks
 
 In Go code you usually use structures with some Pointer fields like this
 
