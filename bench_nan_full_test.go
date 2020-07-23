@@ -95,8 +95,6 @@ func BenchmarkNanFull(b *testing.B) {
 		v := newNanFull()
 		callNanFull(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkNanFullChain(b *testing.B) {
@@ -106,8 +104,6 @@ func BenchmarkNanFullChain(b *testing.B) {
 		callNanFullB(v)
 		callNanFullC(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkNanFullJSON(b *testing.B) {
@@ -118,8 +114,6 @@ func BenchmarkNanFullJSON(b *testing.B) {
 		dec := decodeNanFullJSON(enc)
 		callNanFullJSON(dec)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkNanFullEasyJSON(b *testing.B) {
@@ -130,6 +124,4 @@ func BenchmarkNanFullEasyJSON(b *testing.B) {
 		dec := decodeNanFullEasyJSON(enc)
 		callNanFull(dec)
 	}
-
-	b.StopTimer()
 }

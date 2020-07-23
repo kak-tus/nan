@@ -2101,8 +2101,6 @@ func BenchmarkValueBig(b *testing.B) {
 		v := newValueBig()
 		callValueBig(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkValueBigJSON(b *testing.B) {
@@ -2113,8 +2111,6 @@ func BenchmarkValueBigJSON(b *testing.B) {
 		dec := decodeValueBigJSON(enc)
 		callValueBigJSON(dec)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkValueBigChain(b *testing.B) {
@@ -2124,8 +2120,6 @@ func BenchmarkValueBigChain(b *testing.B) {
 		callValueBigB(v)
 		callValueBigC(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkValueBigEasyJSON(b *testing.B) {
@@ -2136,6 +2130,4 @@ func BenchmarkValueBigEasyJSON(b *testing.B) {
 		dec := decodeValueBigEasyJSON(enc)
 		callValueBig(dec)
 	}
-
-	b.StopTimer()
 }

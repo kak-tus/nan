@@ -113,8 +113,6 @@ func BenchmarkNanBig(b *testing.B) {
 		v := newNanBig()
 		callNanBig(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkNanBigChain(b *testing.B) {
@@ -124,8 +122,6 @@ func BenchmarkNanBigChain(b *testing.B) {
 		callNanBigB(v)
 		callNanBigC(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkNanBigJSON(b *testing.B) {
@@ -136,8 +132,6 @@ func BenchmarkNanBigJSON(b *testing.B) {
 		dec := decodeNanBigJSON(enc)
 		callNanBigJSON(dec)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkNanBigEasyJSON(b *testing.B) {
@@ -148,6 +142,4 @@ func BenchmarkNanBigEasyJSON(b *testing.B) {
 		dec := decodeNanBigEasyJSON(enc)
 		callNanBig(dec)
 	}
-
-	b.StopTimer()
 }

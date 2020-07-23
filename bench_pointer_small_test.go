@@ -113,8 +113,6 @@ func BenchmarkPointerSmall(b *testing.B) {
 		v := newPointerSmall()
 		callPointerSmall(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkPointerSmallJSON(b *testing.B) {
@@ -125,8 +123,6 @@ func BenchmarkPointerSmallJSON(b *testing.B) {
 		dec := decodePointerSmallJSON(enc)
 		callPointerSmallJSON(dec)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkPointerSmallChain(b *testing.B) {
@@ -136,8 +132,6 @@ func BenchmarkPointerSmallChain(b *testing.B) {
 		callPointerSmallB(v)
 		callPointerSmallC(v)
 	}
-
-	b.StopTimer()
 }
 
 func BenchmarkPointerSmallEasyJSON(b *testing.B) {
@@ -148,6 +142,4 @@ func BenchmarkPointerSmallEasyJSON(b *testing.B) {
 		dec := decodePointerSmallEasyJSON(enc)
 		callPointerSmall(dec)
 	}
-
-	b.StopTimer()
 }
