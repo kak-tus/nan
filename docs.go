@@ -44,3 +44,4 @@ JSON input/output will be converted to null or non null values. Scylla and Cassa
 	// {"code":"1"}
 	fmt.Println(string(b))
 */
+package nan
