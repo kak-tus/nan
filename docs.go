@@ -1,5 +1,6 @@
 /*
-Package nan - Zero allocation Nullable structures in one library with handy conversion functions, marshallers and unmarshallers.
+Package nan - Zero allocation Nullable structures in one library with handy conversion functions,
+marshallers and unmarshallers.
 
 Features:
 - short name "nan"
@@ -20,7 +21,8 @@ Usage
 
 Simply create struct field or variable with one of exported types and use it without any changes in external API.
 
-JSON input/output will be converted to null or non null values. Scylla and Cassandra will be save this variables correctly.
+JSON input/output will be converted to null or non null values. Scylla and Cassandra will
+be save this variables correctly.
 
 	var data struct {
 		Code nan.NullString `json:"code"`
