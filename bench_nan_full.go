@@ -8,6 +8,7 @@ type nanFull struct {
 	Field001 NullBool
 	Field002 NullInt64
 	Field003 NullTime
+	Field004 NullFloat64
 }
 
 // Use separate value for encoding with jsoniter to ignore generated easyjson
@@ -17,4 +18,5 @@ type nanFullJSON struct {
 	Field001 NullBool
 	Field002 NullInt64
 	Field003 NullTime
+	Field004 NullFloat64
 }

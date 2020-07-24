@@ -17,3 +17,7 @@ func Int64ToNullInt64(v int64) NullInt64 {
 func TimeToNullTime(v time.Time) NullTime {
 	return NullTime{Time: v, Valid: true}
 }
+
+func Float64ToNullFloat64(v float64) NullFloat64 {
+	return NullFloat64{Float64: v, Valid: true}
+}
