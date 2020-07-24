@@ -10,6 +10,7 @@ Supported types:
 - string
 - int64
 - bool
+- float64
 - more types will be added at necessary
 
 Supported marshallers:
