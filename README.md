@@ -41,8 +41,8 @@ be save this variables correctly.
 	fmt.Println(string(b))
 
 	data.Code = nan.StringToNullString("1")
-  // Or
-  // data.Code = nan.NullString{String: "1", Valid: true}
+	// Or
+	// data.Code = nan.NullString{String: "1", Valid: true}
 
 	b, err = jsoniter.Marshal(data)
 	if err != nil {
