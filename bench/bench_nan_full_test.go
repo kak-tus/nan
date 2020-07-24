@@ -5,23 +5,24 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
+	"github.com/kak-tus/nan"
 )
 
 func newNanFull() nanFull {
 	return nanFull{
-		Field000: StringToNullString("7676"),
-		Field001: BoolToNullBool(true),
-		Field002: Int64ToNullInt64(7676),
-		Field003: TimeToNullTime(time.Now()),
+		Field000: nan.StringToNullString("7676"),
+		Field001: nan.BoolToNullBool(true),
+		Field002: nan.Int64ToNullInt64(7676),
+		Field003: nan.TimeToNullTime(time.Now()),
 	}
 }
 
 func newNanFullJSON() nanFullJSON {
 	return nanFullJSON{
-		Field000: StringToNullString("7676"),
-		Field001: BoolToNullBool(true),
-		Field002: Int64ToNullInt64(7676),
-		Field003: TimeToNullTime(time.Now()),
+		Field000: nan.StringToNullString("7676"),
+		Field001: nan.BoolToNullBool(true),
+		Field002: nan.Int64ToNullInt64(7676),
+		Field003: nan.TimeToNullTime(time.Now()),
 	}
 }
 

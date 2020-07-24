@@ -17,7 +17,7 @@ var (
 	_ easyjson.Marshaler
 )
 
-func easyjson3c41e46eDecodeGithubComKakTusNan(in *jlexer.Lexer, out *pointerSmall) {
+func easyjson3c41e46eDecodeGithubComKakTusNanBench(in *jlexer.Lexer, out *pointerSmall) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -106,7 +106,7 @@ func easyjson3c41e46eDecodeGithubComKakTusNan(in *jlexer.Lexer, out *pointerSmal
 		in.Consumed()
 	}
 }
-func easyjson3c41e46eEncodeGithubComKakTusNan(out *jwriter.Writer, in pointerSmall) {
+func easyjson3c41e46eEncodeGithubComKakTusNanBench(out *jwriter.Writer, in pointerSmall) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -170,23 +170,23 @@ func easyjson3c41e46eEncodeGithubComKakTusNan(out *jwriter.Writer, in pointerSma
 // MarshalJSON supports json.Marshaler interface
 func (v pointerSmall) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson3c41e46eEncodeGithubComKakTusNan(&w, v)
+	easyjson3c41e46eEncodeGithubComKakTusNanBench(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v pointerSmall) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson3c41e46eEncodeGithubComKakTusNan(w, v)
+	easyjson3c41e46eEncodeGithubComKakTusNanBench(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *pointerSmall) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson3c41e46eDecodeGithubComKakTusNan(&r, v)
+	easyjson3c41e46eDecodeGithubComKakTusNanBench(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *pointerSmall) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson3c41e46eDecodeGithubComKakTusNan(l, v)
+	easyjson3c41e46eDecodeGithubComKakTusNanBench(l, v)
 }

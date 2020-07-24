@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	jsoniter "github.com/json-iterator/go"
+	"github.com/kak-tus/nan"
 )
 
 func nanSmallString() string {
@@ -23,23 +24,23 @@ func nanSmallString() string {
 
 func newNanSmall() nanSmall {
 	return nanSmall{
-		Field000: StringToNullString(nanSmallString()),
-		Field001: StringToNullString(nanSmallString()),
-		Field002: StringToNullString(nanSmallString()),
-		Field003: StringToNullString(nanSmallString()),
-		Field004: StringToNullString(nanSmallString()),
-		Field005: StringToNullString(nanSmallString()),
+		Field000: nan.StringToNullString(nanSmallString()),
+		Field001: nan.StringToNullString(nanSmallString()),
+		Field002: nan.StringToNullString(nanSmallString()),
+		Field003: nan.StringToNullString(nanSmallString()),
+		Field004: nan.StringToNullString(nanSmallString()),
+		Field005: nan.StringToNullString(nanSmallString()),
 	}
 }
 
 func newNanSmallJSON() nanSmallJSON {
 	return nanSmallJSON{
-		Field000: StringToNullString(nanSmallString()),
-		Field001: StringToNullString(nanSmallString()),
-		Field002: StringToNullString(nanSmallString()),
-		Field003: StringToNullString(nanSmallString()),
-		Field004: StringToNullString(nanSmallString()),
-		Field005: StringToNullString(nanSmallString()),
+		Field000: nan.StringToNullString(nanSmallString()),
+		Field001: nan.StringToNullString(nanSmallString()),
+		Field002: nan.StringToNullString(nanSmallString()),
+		Field003: nan.StringToNullString(nanSmallString()),
+		Field004: nan.StringToNullString(nanSmallString()),
+		Field005: nan.StringToNullString(nanSmallString()),
 	}
 }
 

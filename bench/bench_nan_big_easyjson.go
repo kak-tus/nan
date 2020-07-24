@@ -17,7 +17,7 @@ var (
 	_ easyjson.Marshaler
 )
 
-func easyjson8e3959a1DecodeGithubComKakTusNan(in *jlexer.Lexer, out *valueBig) {
+func easyjson1a4aeb6dDecodeGithubComKakTusNanBench(in *jlexer.Lexer, out *nanBig) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -37,2005 +37,2005 @@ func easyjson8e3959a1DecodeGithubComKakTusNan(in *jlexer.Lexer, out *valueBig) {
 		}
 		switch key {
 		case "Field000":
-			out.Field000 = string(in.String())
+			(out.Field000).UnmarshalEasyJSON(in)
 		case "Field001":
-			out.Field001 = string(in.String())
+			(out.Field001).UnmarshalEasyJSON(in)
 		case "Field002":
-			out.Field002 = string(in.String())
+			(out.Field002).UnmarshalEasyJSON(in)
 		case "Field003":
-			out.Field003 = string(in.String())
+			(out.Field003).UnmarshalEasyJSON(in)
 		case "Field004":
-			out.Field004 = string(in.String())
+			(out.Field004).UnmarshalEasyJSON(in)
 		case "Field005":
-			out.Field005 = string(in.String())
+			(out.Field005).UnmarshalEasyJSON(in)
 		case "Field006":
-			out.Field006 = string(in.String())
+			(out.Field006).UnmarshalEasyJSON(in)
 		case "Field007":
-			out.Field007 = string(in.String())
+			(out.Field007).UnmarshalEasyJSON(in)
 		case "Field008":
-			out.Field008 = string(in.String())
+			(out.Field008).UnmarshalEasyJSON(in)
 		case "Field009":
-			out.Field009 = string(in.String())
+			(out.Field009).UnmarshalEasyJSON(in)
 		case "Field010":
-			out.Field010 = string(in.String())
+			(out.Field010).UnmarshalEasyJSON(in)
 		case "Field011":
-			out.Field011 = string(in.String())
+			(out.Field011).UnmarshalEasyJSON(in)
 		case "Field012":
-			out.Field012 = string(in.String())
+			(out.Field012).UnmarshalEasyJSON(in)
 		case "Field013":
-			out.Field013 = string(in.String())
+			(out.Field013).UnmarshalEasyJSON(in)
 		case "Field014":
-			out.Field014 = string(in.String())
+			(out.Field014).UnmarshalEasyJSON(in)
 		case "Field015":
-			out.Field015 = string(in.String())
+			(out.Field015).UnmarshalEasyJSON(in)
 		case "Field016":
-			out.Field016 = string(in.String())
+			(out.Field016).UnmarshalEasyJSON(in)
 		case "Field017":
-			out.Field017 = string(in.String())
+			(out.Field017).UnmarshalEasyJSON(in)
 		case "Field018":
-			out.Field018 = string(in.String())
+			(out.Field018).UnmarshalEasyJSON(in)
 		case "Field019":
-			out.Field019 = string(in.String())
+			(out.Field019).UnmarshalEasyJSON(in)
 		case "Field020":
-			out.Field020 = string(in.String())
+			(out.Field020).UnmarshalEasyJSON(in)
 		case "Field021":
-			out.Field021 = string(in.String())
+			(out.Field021).UnmarshalEasyJSON(in)
 		case "Field022":
-			out.Field022 = string(in.String())
+			(out.Field022).UnmarshalEasyJSON(in)
 		case "Field023":
-			out.Field023 = string(in.String())
+			(out.Field023).UnmarshalEasyJSON(in)
 		case "Field024":
-			out.Field024 = string(in.String())
+			(out.Field024).UnmarshalEasyJSON(in)
 		case "Field025":
-			out.Field025 = string(in.String())
+			(out.Field025).UnmarshalEasyJSON(in)
 		case "Field026":
-			out.Field026 = string(in.String())
+			(out.Field026).UnmarshalEasyJSON(in)
 		case "Field027":
-			out.Field027 = string(in.String())
+			(out.Field027).UnmarshalEasyJSON(in)
 		case "Field028":
-			out.Field028 = string(in.String())
+			(out.Field028).UnmarshalEasyJSON(in)
 		case "Field029":
-			out.Field029 = string(in.String())
+			(out.Field029).UnmarshalEasyJSON(in)
 		case "Field030":
-			out.Field030 = string(in.String())
+			(out.Field030).UnmarshalEasyJSON(in)
 		case "Field031":
-			out.Field031 = string(in.String())
+			(out.Field031).UnmarshalEasyJSON(in)
 		case "Field032":
-			out.Field032 = string(in.String())
+			(out.Field032).UnmarshalEasyJSON(in)
 		case "Field033":
-			out.Field033 = string(in.String())
+			(out.Field033).UnmarshalEasyJSON(in)
 		case "Field034":
-			out.Field034 = string(in.String())
+			(out.Field034).UnmarshalEasyJSON(in)
 		case "Field035":
-			out.Field035 = string(in.String())
+			(out.Field035).UnmarshalEasyJSON(in)
 		case "Field036":
-			out.Field036 = string(in.String())
+			(out.Field036).UnmarshalEasyJSON(in)
 		case "Field037":
-			out.Field037 = string(in.String())
+			(out.Field037).UnmarshalEasyJSON(in)
 		case "Field038":
-			out.Field038 = string(in.String())
+			(out.Field038).UnmarshalEasyJSON(in)
 		case "Field039":
-			out.Field039 = string(in.String())
+			(out.Field039).UnmarshalEasyJSON(in)
 		case "Field040":
-			out.Field040 = string(in.String())
+			(out.Field040).UnmarshalEasyJSON(in)
 		case "Field041":
-			out.Field041 = string(in.String())
+			(out.Field041).UnmarshalEasyJSON(in)
 		case "Field042":
-			out.Field042 = string(in.String())
+			(out.Field042).UnmarshalEasyJSON(in)
 		case "Field043":
-			out.Field043 = string(in.String())
+			(out.Field043).UnmarshalEasyJSON(in)
 		case "Field044":
-			out.Field044 = string(in.String())
+			(out.Field044).UnmarshalEasyJSON(in)
 		case "Field045":
-			out.Field045 = string(in.String())
+			(out.Field045).UnmarshalEasyJSON(in)
 		case "Field046":
-			out.Field046 = string(in.String())
+			(out.Field046).UnmarshalEasyJSON(in)
 		case "Field047":
-			out.Field047 = string(in.String())
+			(out.Field047).UnmarshalEasyJSON(in)
 		case "Field048":
-			out.Field048 = string(in.String())
+			(out.Field048).UnmarshalEasyJSON(in)
 		case "Field049":
-			out.Field049 = string(in.String())
+			(out.Field049).UnmarshalEasyJSON(in)
 		case "Field050":
-			out.Field050 = string(in.String())
+			(out.Field050).UnmarshalEasyJSON(in)
 		case "Field051":
-			out.Field051 = string(in.String())
+			(out.Field051).UnmarshalEasyJSON(in)
 		case "Field052":
-			out.Field052 = string(in.String())
+			(out.Field052).UnmarshalEasyJSON(in)
 		case "Field053":
-			out.Field053 = string(in.String())
+			(out.Field053).UnmarshalEasyJSON(in)
 		case "Field054":
-			out.Field054 = string(in.String())
+			(out.Field054).UnmarshalEasyJSON(in)
 		case "Field055":
-			out.Field055 = string(in.String())
+			(out.Field055).UnmarshalEasyJSON(in)
 		case "Field056":
-			out.Field056 = string(in.String())
+			(out.Field056).UnmarshalEasyJSON(in)
 		case "Field057":
-			out.Field057 = string(in.String())
+			(out.Field057).UnmarshalEasyJSON(in)
 		case "Field058":
-			out.Field058 = string(in.String())
+			(out.Field058).UnmarshalEasyJSON(in)
 		case "Field059":
-			out.Field059 = string(in.String())
+			(out.Field059).UnmarshalEasyJSON(in)
 		case "Field060":
-			out.Field060 = string(in.String())
+			(out.Field060).UnmarshalEasyJSON(in)
 		case "Field061":
-			out.Field061 = string(in.String())
+			(out.Field061).UnmarshalEasyJSON(in)
 		case "Field062":
-			out.Field062 = string(in.String())
+			(out.Field062).UnmarshalEasyJSON(in)
 		case "Field063":
-			out.Field063 = string(in.String())
+			(out.Field063).UnmarshalEasyJSON(in)
 		case "Field064":
-			out.Field064 = string(in.String())
+			(out.Field064).UnmarshalEasyJSON(in)
 		case "Field065":
-			out.Field065 = string(in.String())
+			(out.Field065).UnmarshalEasyJSON(in)
 		case "Field066":
-			out.Field066 = string(in.String())
+			(out.Field066).UnmarshalEasyJSON(in)
 		case "Field067":
-			out.Field067 = string(in.String())
+			(out.Field067).UnmarshalEasyJSON(in)
 		case "Field068":
-			out.Field068 = string(in.String())
+			(out.Field068).UnmarshalEasyJSON(in)
 		case "Field069":
-			out.Field069 = string(in.String())
+			(out.Field069).UnmarshalEasyJSON(in)
 		case "Field070":
-			out.Field070 = string(in.String())
+			(out.Field070).UnmarshalEasyJSON(in)
 		case "Field071":
-			out.Field071 = string(in.String())
+			(out.Field071).UnmarshalEasyJSON(in)
 		case "Field072":
-			out.Field072 = string(in.String())
+			(out.Field072).UnmarshalEasyJSON(in)
 		case "Field073":
-			out.Field073 = string(in.String())
+			(out.Field073).UnmarshalEasyJSON(in)
 		case "Field074":
-			out.Field074 = string(in.String())
+			(out.Field074).UnmarshalEasyJSON(in)
 		case "Field075":
-			out.Field075 = string(in.String())
+			(out.Field075).UnmarshalEasyJSON(in)
 		case "Field076":
-			out.Field076 = string(in.String())
+			(out.Field076).UnmarshalEasyJSON(in)
 		case "Field077":
-			out.Field077 = string(in.String())
+			(out.Field077).UnmarshalEasyJSON(in)
 		case "Field078":
-			out.Field078 = string(in.String())
+			(out.Field078).UnmarshalEasyJSON(in)
 		case "Field079":
-			out.Field079 = string(in.String())
+			(out.Field079).UnmarshalEasyJSON(in)
 		case "Field080":
-			out.Field080 = string(in.String())
+			(out.Field080).UnmarshalEasyJSON(in)
 		case "Field081":
-			out.Field081 = string(in.String())
+			(out.Field081).UnmarshalEasyJSON(in)
 		case "Field082":
-			out.Field082 = string(in.String())
+			(out.Field082).UnmarshalEasyJSON(in)
 		case "Field083":
-			out.Field083 = string(in.String())
+			(out.Field083).UnmarshalEasyJSON(in)
 		case "Field084":
-			out.Field084 = string(in.String())
+			(out.Field084).UnmarshalEasyJSON(in)
 		case "Field085":
-			out.Field085 = string(in.String())
+			(out.Field085).UnmarshalEasyJSON(in)
 		case "Field086":
-			out.Field086 = string(in.String())
+			(out.Field086).UnmarshalEasyJSON(in)
 		case "Field087":
-			out.Field087 = string(in.String())
+			(out.Field087).UnmarshalEasyJSON(in)
 		case "Field088":
-			out.Field088 = string(in.String())
+			(out.Field088).UnmarshalEasyJSON(in)
 		case "Field089":
-			out.Field089 = string(in.String())
+			(out.Field089).UnmarshalEasyJSON(in)
 		case "Field090":
-			out.Field090 = string(in.String())
+			(out.Field090).UnmarshalEasyJSON(in)
 		case "Field091":
-			out.Field091 = string(in.String())
+			(out.Field091).UnmarshalEasyJSON(in)
 		case "Field092":
-			out.Field092 = string(in.String())
+			(out.Field092).UnmarshalEasyJSON(in)
 		case "Field093":
-			out.Field093 = string(in.String())
+			(out.Field093).UnmarshalEasyJSON(in)
 		case "Field094":
-			out.Field094 = string(in.String())
+			(out.Field094).UnmarshalEasyJSON(in)
 		case "Field095":
-			out.Field095 = string(in.String())
+			(out.Field095).UnmarshalEasyJSON(in)
 		case "Field096":
-			out.Field096 = string(in.String())
+			(out.Field096).UnmarshalEasyJSON(in)
 		case "Field097":
-			out.Field097 = string(in.String())
+			(out.Field097).UnmarshalEasyJSON(in)
 		case "Field098":
-			out.Field098 = string(in.String())
+			(out.Field098).UnmarshalEasyJSON(in)
 		case "Field099":
-			out.Field099 = string(in.String())
+			(out.Field099).UnmarshalEasyJSON(in)
 		case "Field100":
-			out.Field100 = string(in.String())
+			(out.Field100).UnmarshalEasyJSON(in)
 		case "Field101":
-			out.Field101 = string(in.String())
+			(out.Field101).UnmarshalEasyJSON(in)
 		case "Field102":
-			out.Field102 = string(in.String())
+			(out.Field102).UnmarshalEasyJSON(in)
 		case "Field103":
-			out.Field103 = string(in.String())
+			(out.Field103).UnmarshalEasyJSON(in)
 		case "Field104":
-			out.Field104 = string(in.String())
+			(out.Field104).UnmarshalEasyJSON(in)
 		case "Field105":
-			out.Field105 = string(in.String())
+			(out.Field105).UnmarshalEasyJSON(in)
 		case "Field106":
-			out.Field106 = string(in.String())
+			(out.Field106).UnmarshalEasyJSON(in)
 		case "Field107":
-			out.Field107 = string(in.String())
+			(out.Field107).UnmarshalEasyJSON(in)
 		case "Field108":
-			out.Field108 = string(in.String())
+			(out.Field108).UnmarshalEasyJSON(in)
 		case "Field109":
-			out.Field109 = string(in.String())
+			(out.Field109).UnmarshalEasyJSON(in)
 		case "Field110":
-			out.Field110 = string(in.String())
+			(out.Field110).UnmarshalEasyJSON(in)
 		case "Field111":
-			out.Field111 = string(in.String())
+			(out.Field111).UnmarshalEasyJSON(in)
 		case "Field112":
-			out.Field112 = string(in.String())
+			(out.Field112).UnmarshalEasyJSON(in)
 		case "Field113":
-			out.Field113 = string(in.String())
+			(out.Field113).UnmarshalEasyJSON(in)
 		case "Field114":
-			out.Field114 = string(in.String())
+			(out.Field114).UnmarshalEasyJSON(in)
 		case "Field115":
-			out.Field115 = string(in.String())
+			(out.Field115).UnmarshalEasyJSON(in)
 		case "Field116":
-			out.Field116 = string(in.String())
+			(out.Field116).UnmarshalEasyJSON(in)
 		case "Field117":
-			out.Field117 = string(in.String())
+			(out.Field117).UnmarshalEasyJSON(in)
 		case "Field118":
-			out.Field118 = string(in.String())
+			(out.Field118).UnmarshalEasyJSON(in)
 		case "Field119":
-			out.Field119 = string(in.String())
+			(out.Field119).UnmarshalEasyJSON(in)
 		case "Field120":
-			out.Field120 = string(in.String())
+			(out.Field120).UnmarshalEasyJSON(in)
 		case "Field121":
-			out.Field121 = string(in.String())
+			(out.Field121).UnmarshalEasyJSON(in)
 		case "Field122":
-			out.Field122 = string(in.String())
+			(out.Field122).UnmarshalEasyJSON(in)
 		case "Field123":
-			out.Field123 = string(in.String())
+			(out.Field123).UnmarshalEasyJSON(in)
 		case "Field124":
-			out.Field124 = string(in.String())
+			(out.Field124).UnmarshalEasyJSON(in)
 		case "Field125":
-			out.Field125 = string(in.String())
+			(out.Field125).UnmarshalEasyJSON(in)
 		case "Field126":
-			out.Field126 = string(in.String())
+			(out.Field126).UnmarshalEasyJSON(in)
 		case "Field127":
-			out.Field127 = string(in.String())
+			(out.Field127).UnmarshalEasyJSON(in)
 		case "Field128":
-			out.Field128 = string(in.String())
+			(out.Field128).UnmarshalEasyJSON(in)
 		case "Field129":
-			out.Field129 = string(in.String())
+			(out.Field129).UnmarshalEasyJSON(in)
 		case "Field130":
-			out.Field130 = string(in.String())
+			(out.Field130).UnmarshalEasyJSON(in)
 		case "Field131":
-			out.Field131 = string(in.String())
+			(out.Field131).UnmarshalEasyJSON(in)
 		case "Field132":
-			out.Field132 = string(in.String())
+			(out.Field132).UnmarshalEasyJSON(in)
 		case "Field133":
-			out.Field133 = string(in.String())
+			(out.Field133).UnmarshalEasyJSON(in)
 		case "Field134":
-			out.Field134 = string(in.String())
+			(out.Field134).UnmarshalEasyJSON(in)
 		case "Field135":
-			out.Field135 = string(in.String())
+			(out.Field135).UnmarshalEasyJSON(in)
 		case "Field136":
-			out.Field136 = string(in.String())
+			(out.Field136).UnmarshalEasyJSON(in)
 		case "Field137":
-			out.Field137 = string(in.String())
+			(out.Field137).UnmarshalEasyJSON(in)
 		case "Field138":
-			out.Field138 = string(in.String())
+			(out.Field138).UnmarshalEasyJSON(in)
 		case "Field139":
-			out.Field139 = string(in.String())
+			(out.Field139).UnmarshalEasyJSON(in)
 		case "Field140":
-			out.Field140 = string(in.String())
+			(out.Field140).UnmarshalEasyJSON(in)
 		case "Field141":
-			out.Field141 = string(in.String())
+			(out.Field141).UnmarshalEasyJSON(in)
 		case "Field142":
-			out.Field142 = string(in.String())
+			(out.Field142).UnmarshalEasyJSON(in)
 		case "Field143":
-			out.Field143 = string(in.String())
+			(out.Field143).UnmarshalEasyJSON(in)
 		case "Field144":
-			out.Field144 = string(in.String())
+			(out.Field144).UnmarshalEasyJSON(in)
 		case "Field145":
-			out.Field145 = string(in.String())
+			(out.Field145).UnmarshalEasyJSON(in)
 		case "Field146":
-			out.Field146 = string(in.String())
+			(out.Field146).UnmarshalEasyJSON(in)
 		case "Field147":
-			out.Field147 = string(in.String())
+			(out.Field147).UnmarshalEasyJSON(in)
 		case "Field148":
-			out.Field148 = string(in.String())
+			(out.Field148).UnmarshalEasyJSON(in)
 		case "Field149":
-			out.Field149 = string(in.String())
+			(out.Field149).UnmarshalEasyJSON(in)
 		case "Field150":
-			out.Field150 = string(in.String())
+			(out.Field150).UnmarshalEasyJSON(in)
 		case "Field151":
-			out.Field151 = string(in.String())
+			(out.Field151).UnmarshalEasyJSON(in)
 		case "Field152":
-			out.Field152 = string(in.String())
+			(out.Field152).UnmarshalEasyJSON(in)
 		case "Field153":
-			out.Field153 = string(in.String())
+			(out.Field153).UnmarshalEasyJSON(in)
 		case "Field154":
-			out.Field154 = string(in.String())
+			(out.Field154).UnmarshalEasyJSON(in)
 		case "Field155":
-			out.Field155 = string(in.String())
+			(out.Field155).UnmarshalEasyJSON(in)
 		case "Field156":
-			out.Field156 = string(in.String())
+			(out.Field156).UnmarshalEasyJSON(in)
 		case "Field157":
-			out.Field157 = string(in.String())
+			(out.Field157).UnmarshalEasyJSON(in)
 		case "Field158":
-			out.Field158 = string(in.String())
+			(out.Field158).UnmarshalEasyJSON(in)
 		case "Field159":
-			out.Field159 = string(in.String())
+			(out.Field159).UnmarshalEasyJSON(in)
 		case "Field160":
-			out.Field160 = string(in.String())
+			(out.Field160).UnmarshalEasyJSON(in)
 		case "Field161":
-			out.Field161 = string(in.String())
+			(out.Field161).UnmarshalEasyJSON(in)
 		case "Field162":
-			out.Field162 = string(in.String())
+			(out.Field162).UnmarshalEasyJSON(in)
 		case "Field163":
-			out.Field163 = string(in.String())
+			(out.Field163).UnmarshalEasyJSON(in)
 		case "Field164":
-			out.Field164 = string(in.String())
+			(out.Field164).UnmarshalEasyJSON(in)
 		case "Field165":
-			out.Field165 = string(in.String())
+			(out.Field165).UnmarshalEasyJSON(in)
 		case "Field166":
-			out.Field166 = string(in.String())
+			(out.Field166).UnmarshalEasyJSON(in)
 		case "Field167":
-			out.Field167 = string(in.String())
+			(out.Field167).UnmarshalEasyJSON(in)
 		case "Field168":
-			out.Field168 = string(in.String())
+			(out.Field168).UnmarshalEasyJSON(in)
 		case "Field169":
-			out.Field169 = string(in.String())
+			(out.Field169).UnmarshalEasyJSON(in)
 		case "Field170":
-			out.Field170 = string(in.String())
+			(out.Field170).UnmarshalEasyJSON(in)
 		case "Field171":
-			out.Field171 = string(in.String())
+			(out.Field171).UnmarshalEasyJSON(in)
 		case "Field172":
-			out.Field172 = string(in.String())
+			(out.Field172).UnmarshalEasyJSON(in)
 		case "Field173":
-			out.Field173 = string(in.String())
+			(out.Field173).UnmarshalEasyJSON(in)
 		case "Field174":
-			out.Field174 = string(in.String())
+			(out.Field174).UnmarshalEasyJSON(in)
 		case "Field175":
-			out.Field175 = string(in.String())
+			(out.Field175).UnmarshalEasyJSON(in)
 		case "Field176":
-			out.Field176 = string(in.String())
+			(out.Field176).UnmarshalEasyJSON(in)
 		case "Field177":
-			out.Field177 = string(in.String())
+			(out.Field177).UnmarshalEasyJSON(in)
 		case "Field178":
-			out.Field178 = string(in.String())
+			(out.Field178).UnmarshalEasyJSON(in)
 		case "Field179":
-			out.Field179 = string(in.String())
+			(out.Field179).UnmarshalEasyJSON(in)
 		case "Field180":
-			out.Field180 = string(in.String())
+			(out.Field180).UnmarshalEasyJSON(in)
 		case "Field181":
-			out.Field181 = string(in.String())
+			(out.Field181).UnmarshalEasyJSON(in)
 		case "Field182":
-			out.Field182 = string(in.String())
+			(out.Field182).UnmarshalEasyJSON(in)
 		case "Field183":
-			out.Field183 = string(in.String())
+			(out.Field183).UnmarshalEasyJSON(in)
 		case "Field184":
-			out.Field184 = string(in.String())
+			(out.Field184).UnmarshalEasyJSON(in)
 		case "Field185":
-			out.Field185 = string(in.String())
+			(out.Field185).UnmarshalEasyJSON(in)
 		case "Field186":
-			out.Field186 = string(in.String())
+			(out.Field186).UnmarshalEasyJSON(in)
 		case "Field187":
-			out.Field187 = string(in.String())
+			(out.Field187).UnmarshalEasyJSON(in)
 		case "Field188":
-			out.Field188 = string(in.String())
+			(out.Field188).UnmarshalEasyJSON(in)
 		case "Field189":
-			out.Field189 = string(in.String())
+			(out.Field189).UnmarshalEasyJSON(in)
 		case "Field190":
-			out.Field190 = string(in.String())
+			(out.Field190).UnmarshalEasyJSON(in)
 		case "Field191":
-			out.Field191 = string(in.String())
+			(out.Field191).UnmarshalEasyJSON(in)
 		case "Field192":
-			out.Field192 = string(in.String())
+			(out.Field192).UnmarshalEasyJSON(in)
 		case "Field193":
-			out.Field193 = string(in.String())
+			(out.Field193).UnmarshalEasyJSON(in)
 		case "Field194":
-			out.Field194 = string(in.String())
+			(out.Field194).UnmarshalEasyJSON(in)
 		case "Field195":
-			out.Field195 = string(in.String())
+			(out.Field195).UnmarshalEasyJSON(in)
 		case "Field196":
-			out.Field196 = string(in.String())
+			(out.Field196).UnmarshalEasyJSON(in)
 		case "Field197":
-			out.Field197 = string(in.String())
+			(out.Field197).UnmarshalEasyJSON(in)
 		case "Field198":
-			out.Field198 = string(in.String())
+			(out.Field198).UnmarshalEasyJSON(in)
 		case "Field199":
-			out.Field199 = string(in.String())
+			(out.Field199).UnmarshalEasyJSON(in)
 		case "Field200":
-			out.Field200 = string(in.String())
+			(out.Field200).UnmarshalEasyJSON(in)
 		case "Field201":
-			out.Field201 = string(in.String())
+			(out.Field201).UnmarshalEasyJSON(in)
 		case "Field202":
-			out.Field202 = string(in.String())
+			(out.Field202).UnmarshalEasyJSON(in)
 		case "Field203":
-			out.Field203 = string(in.String())
+			(out.Field203).UnmarshalEasyJSON(in)
 		case "Field204":
-			out.Field204 = string(in.String())
+			(out.Field204).UnmarshalEasyJSON(in)
 		case "Field205":
-			out.Field205 = string(in.String())
+			(out.Field205).UnmarshalEasyJSON(in)
 		case "Field206":
-			out.Field206 = string(in.String())
+			(out.Field206).UnmarshalEasyJSON(in)
 		case "Field207":
-			out.Field207 = string(in.String())
+			(out.Field207).UnmarshalEasyJSON(in)
 		case "Field208":
-			out.Field208 = string(in.String())
+			(out.Field208).UnmarshalEasyJSON(in)
 		case "Field209":
-			out.Field209 = string(in.String())
+			(out.Field209).UnmarshalEasyJSON(in)
 		case "Field210":
-			out.Field210 = string(in.String())
+			(out.Field210).UnmarshalEasyJSON(in)
 		case "Field211":
-			out.Field211 = string(in.String())
+			(out.Field211).UnmarshalEasyJSON(in)
 		case "Field212":
-			out.Field212 = string(in.String())
+			(out.Field212).UnmarshalEasyJSON(in)
 		case "Field213":
-			out.Field213 = string(in.String())
+			(out.Field213).UnmarshalEasyJSON(in)
 		case "Field214":
-			out.Field214 = string(in.String())
+			(out.Field214).UnmarshalEasyJSON(in)
 		case "Field215":
-			out.Field215 = string(in.String())
+			(out.Field215).UnmarshalEasyJSON(in)
 		case "Field216":
-			out.Field216 = string(in.String())
+			(out.Field216).UnmarshalEasyJSON(in)
 		case "Field217":
-			out.Field217 = string(in.String())
+			(out.Field217).UnmarshalEasyJSON(in)
 		case "Field218":
-			out.Field218 = string(in.String())
+			(out.Field218).UnmarshalEasyJSON(in)
 		case "Field219":
-			out.Field219 = string(in.String())
+			(out.Field219).UnmarshalEasyJSON(in)
 		case "Field220":
-			out.Field220 = string(in.String())
+			(out.Field220).UnmarshalEasyJSON(in)
 		case "Field221":
-			out.Field221 = string(in.String())
+			(out.Field221).UnmarshalEasyJSON(in)
 		case "Field222":
-			out.Field222 = string(in.String())
+			(out.Field222).UnmarshalEasyJSON(in)
 		case "Field223":
-			out.Field223 = string(in.String())
+			(out.Field223).UnmarshalEasyJSON(in)
 		case "Field224":
-			out.Field224 = string(in.String())
+			(out.Field224).UnmarshalEasyJSON(in)
 		case "Field225":
-			out.Field225 = string(in.String())
+			(out.Field225).UnmarshalEasyJSON(in)
 		case "Field226":
-			out.Field226 = string(in.String())
+			(out.Field226).UnmarshalEasyJSON(in)
 		case "Field227":
-			out.Field227 = string(in.String())
+			(out.Field227).UnmarshalEasyJSON(in)
 		case "Field228":
-			out.Field228 = string(in.String())
+			(out.Field228).UnmarshalEasyJSON(in)
 		case "Field229":
-			out.Field229 = string(in.String())
+			(out.Field229).UnmarshalEasyJSON(in)
 		case "Field230":
-			out.Field230 = string(in.String())
+			(out.Field230).UnmarshalEasyJSON(in)
 		case "Field231":
-			out.Field231 = string(in.String())
+			(out.Field231).UnmarshalEasyJSON(in)
 		case "Field232":
-			out.Field232 = string(in.String())
+			(out.Field232).UnmarshalEasyJSON(in)
 		case "Field233":
-			out.Field233 = string(in.String())
+			(out.Field233).UnmarshalEasyJSON(in)
 		case "Field234":
-			out.Field234 = string(in.String())
+			(out.Field234).UnmarshalEasyJSON(in)
 		case "Field235":
-			out.Field235 = string(in.String())
+			(out.Field235).UnmarshalEasyJSON(in)
 		case "Field236":
-			out.Field236 = string(in.String())
+			(out.Field236).UnmarshalEasyJSON(in)
 		case "Field237":
-			out.Field237 = string(in.String())
+			(out.Field237).UnmarshalEasyJSON(in)
 		case "Field238":
-			out.Field238 = string(in.String())
+			(out.Field238).UnmarshalEasyJSON(in)
 		case "Field239":
-			out.Field239 = string(in.String())
+			(out.Field239).UnmarshalEasyJSON(in)
 		case "Field240":
-			out.Field240 = string(in.String())
+			(out.Field240).UnmarshalEasyJSON(in)
 		case "Field241":
-			out.Field241 = string(in.String())
+			(out.Field241).UnmarshalEasyJSON(in)
 		case "Field242":
-			out.Field242 = string(in.String())
+			(out.Field242).UnmarshalEasyJSON(in)
 		case "Field243":
-			out.Field243 = string(in.String())
+			(out.Field243).UnmarshalEasyJSON(in)
 		case "Field244":
-			out.Field244 = string(in.String())
+			(out.Field244).UnmarshalEasyJSON(in)
 		case "Field245":
-			out.Field245 = string(in.String())
+			(out.Field245).UnmarshalEasyJSON(in)
 		case "Field246":
-			out.Field246 = string(in.String())
+			(out.Field246).UnmarshalEasyJSON(in)
 		case "Field247":
-			out.Field247 = string(in.String())
+			(out.Field247).UnmarshalEasyJSON(in)
 		case "Field248":
-			out.Field248 = string(in.String())
+			(out.Field248).UnmarshalEasyJSON(in)
 		case "Field249":
-			out.Field249 = string(in.String())
+			(out.Field249).UnmarshalEasyJSON(in)
 		case "Field250":
-			out.Field250 = string(in.String())
+			(out.Field250).UnmarshalEasyJSON(in)
 		case "Field251":
-			out.Field251 = string(in.String())
+			(out.Field251).UnmarshalEasyJSON(in)
 		case "Field252":
-			out.Field252 = string(in.String())
+			(out.Field252).UnmarshalEasyJSON(in)
 		case "Field253":
-			out.Field253 = string(in.String())
+			(out.Field253).UnmarshalEasyJSON(in)
 		case "Field254":
-			out.Field254 = string(in.String())
+			(out.Field254).UnmarshalEasyJSON(in)
 		case "Field255":
-			out.Field255 = string(in.String())
+			(out.Field255).UnmarshalEasyJSON(in)
 		case "Field256":
-			out.Field256 = string(in.String())
+			(out.Field256).UnmarshalEasyJSON(in)
 		case "Field257":
-			out.Field257 = string(in.String())
+			(out.Field257).UnmarshalEasyJSON(in)
 		case "Field258":
-			out.Field258 = string(in.String())
+			(out.Field258).UnmarshalEasyJSON(in)
 		case "Field259":
-			out.Field259 = string(in.String())
+			(out.Field259).UnmarshalEasyJSON(in)
 		case "Field260":
-			out.Field260 = string(in.String())
+			(out.Field260).UnmarshalEasyJSON(in)
 		case "Field261":
-			out.Field261 = string(in.String())
+			(out.Field261).UnmarshalEasyJSON(in)
 		case "Field262":
-			out.Field262 = string(in.String())
+			(out.Field262).UnmarshalEasyJSON(in)
 		case "Field263":
-			out.Field263 = string(in.String())
+			(out.Field263).UnmarshalEasyJSON(in)
 		case "Field264":
-			out.Field264 = string(in.String())
+			(out.Field264).UnmarshalEasyJSON(in)
 		case "Field265":
-			out.Field265 = string(in.String())
+			(out.Field265).UnmarshalEasyJSON(in)
 		case "Field266":
-			out.Field266 = string(in.String())
+			(out.Field266).UnmarshalEasyJSON(in)
 		case "Field267":
-			out.Field267 = string(in.String())
+			(out.Field267).UnmarshalEasyJSON(in)
 		case "Field268":
-			out.Field268 = string(in.String())
+			(out.Field268).UnmarshalEasyJSON(in)
 		case "Field269":
-			out.Field269 = string(in.String())
+			(out.Field269).UnmarshalEasyJSON(in)
 		case "Field270":
-			out.Field270 = string(in.String())
+			(out.Field270).UnmarshalEasyJSON(in)
 		case "Field271":
-			out.Field271 = string(in.String())
+			(out.Field271).UnmarshalEasyJSON(in)
 		case "Field272":
-			out.Field272 = string(in.String())
+			(out.Field272).UnmarshalEasyJSON(in)
 		case "Field273":
-			out.Field273 = string(in.String())
+			(out.Field273).UnmarshalEasyJSON(in)
 		case "Field274":
-			out.Field274 = string(in.String())
+			(out.Field274).UnmarshalEasyJSON(in)
 		case "Field275":
-			out.Field275 = string(in.String())
+			(out.Field275).UnmarshalEasyJSON(in)
 		case "Field276":
-			out.Field276 = string(in.String())
+			(out.Field276).UnmarshalEasyJSON(in)
 		case "Field277":
-			out.Field277 = string(in.String())
+			(out.Field277).UnmarshalEasyJSON(in)
 		case "Field278":
-			out.Field278 = string(in.String())
+			(out.Field278).UnmarshalEasyJSON(in)
 		case "Field279":
-			out.Field279 = string(in.String())
+			(out.Field279).UnmarshalEasyJSON(in)
 		case "Field280":
-			out.Field280 = string(in.String())
+			(out.Field280).UnmarshalEasyJSON(in)
 		case "Field281":
-			out.Field281 = string(in.String())
+			(out.Field281).UnmarshalEasyJSON(in)
 		case "Field282":
-			out.Field282 = string(in.String())
+			(out.Field282).UnmarshalEasyJSON(in)
 		case "Field283":
-			out.Field283 = string(in.String())
+			(out.Field283).UnmarshalEasyJSON(in)
 		case "Field284":
-			out.Field284 = string(in.String())
+			(out.Field284).UnmarshalEasyJSON(in)
 		case "Field285":
-			out.Field285 = string(in.String())
+			(out.Field285).UnmarshalEasyJSON(in)
 		case "Field286":
-			out.Field286 = string(in.String())
+			(out.Field286).UnmarshalEasyJSON(in)
 		case "Field287":
-			out.Field287 = string(in.String())
+			(out.Field287).UnmarshalEasyJSON(in)
 		case "Field288":
-			out.Field288 = string(in.String())
+			(out.Field288).UnmarshalEasyJSON(in)
 		case "Field289":
-			out.Field289 = string(in.String())
+			(out.Field289).UnmarshalEasyJSON(in)
 		case "Field290":
-			out.Field290 = string(in.String())
+			(out.Field290).UnmarshalEasyJSON(in)
 		case "Field291":
-			out.Field291 = string(in.String())
+			(out.Field291).UnmarshalEasyJSON(in)
 		case "Field292":
-			out.Field292 = string(in.String())
+			(out.Field292).UnmarshalEasyJSON(in)
 		case "Field293":
-			out.Field293 = string(in.String())
+			(out.Field293).UnmarshalEasyJSON(in)
 		case "Field294":
-			out.Field294 = string(in.String())
+			(out.Field294).UnmarshalEasyJSON(in)
 		case "Field295":
-			out.Field295 = string(in.String())
+			(out.Field295).UnmarshalEasyJSON(in)
 		case "Field296":
-			out.Field296 = string(in.String())
+			(out.Field296).UnmarshalEasyJSON(in)
 		case "Field297":
-			out.Field297 = string(in.String())
+			(out.Field297).UnmarshalEasyJSON(in)
 		case "Field298":
-			out.Field298 = string(in.String())
+			(out.Field298).UnmarshalEasyJSON(in)
 		case "Field299":
-			out.Field299 = string(in.String())
+			(out.Field299).UnmarshalEasyJSON(in)
 		case "Field300":
-			out.Field300 = string(in.String())
+			(out.Field300).UnmarshalEasyJSON(in)
 		case "Field301":
-			out.Field301 = string(in.String())
+			(out.Field301).UnmarshalEasyJSON(in)
 		case "Field302":
-			out.Field302 = string(in.String())
+			(out.Field302).UnmarshalEasyJSON(in)
 		case "Field303":
-			out.Field303 = string(in.String())
+			(out.Field303).UnmarshalEasyJSON(in)
 		case "Field304":
-			out.Field304 = string(in.String())
+			(out.Field304).UnmarshalEasyJSON(in)
 		case "Field305":
-			out.Field305 = string(in.String())
+			(out.Field305).UnmarshalEasyJSON(in)
 		case "Field306":
-			out.Field306 = string(in.String())
+			(out.Field306).UnmarshalEasyJSON(in)
 		case "Field307":
-			out.Field307 = string(in.String())
+			(out.Field307).UnmarshalEasyJSON(in)
 		case "Field308":
-			out.Field308 = string(in.String())
+			(out.Field308).UnmarshalEasyJSON(in)
 		case "Field309":
-			out.Field309 = string(in.String())
+			(out.Field309).UnmarshalEasyJSON(in)
 		case "Field310":
-			out.Field310 = string(in.String())
+			(out.Field310).UnmarshalEasyJSON(in)
 		case "Field311":
-			out.Field311 = string(in.String())
+			(out.Field311).UnmarshalEasyJSON(in)
 		case "Field312":
-			out.Field312 = string(in.String())
+			(out.Field312).UnmarshalEasyJSON(in)
 		case "Field313":
-			out.Field313 = string(in.String())
+			(out.Field313).UnmarshalEasyJSON(in)
 		case "Field314":
-			out.Field314 = string(in.String())
+			(out.Field314).UnmarshalEasyJSON(in)
 		case "Field315":
-			out.Field315 = string(in.String())
+			(out.Field315).UnmarshalEasyJSON(in)
 		case "Field316":
-			out.Field316 = string(in.String())
+			(out.Field316).UnmarshalEasyJSON(in)
 		case "Field317":
-			out.Field317 = string(in.String())
+			(out.Field317).UnmarshalEasyJSON(in)
 		case "Field318":
-			out.Field318 = string(in.String())
+			(out.Field318).UnmarshalEasyJSON(in)
 		case "Field319":
-			out.Field319 = string(in.String())
+			(out.Field319).UnmarshalEasyJSON(in)
 		case "Field320":
-			out.Field320 = string(in.String())
+			(out.Field320).UnmarshalEasyJSON(in)
 		case "Field321":
-			out.Field321 = string(in.String())
+			(out.Field321).UnmarshalEasyJSON(in)
 		case "Field322":
-			out.Field322 = string(in.String())
+			(out.Field322).UnmarshalEasyJSON(in)
 		case "Field323":
-			out.Field323 = string(in.String())
+			(out.Field323).UnmarshalEasyJSON(in)
 		case "Field324":
-			out.Field324 = string(in.String())
+			(out.Field324).UnmarshalEasyJSON(in)
 		case "Field325":
-			out.Field325 = string(in.String())
+			(out.Field325).UnmarshalEasyJSON(in)
 		case "Field326":
-			out.Field326 = string(in.String())
+			(out.Field326).UnmarshalEasyJSON(in)
 		case "Field327":
-			out.Field327 = string(in.String())
+			(out.Field327).UnmarshalEasyJSON(in)
 		case "Field328":
-			out.Field328 = string(in.String())
+			(out.Field328).UnmarshalEasyJSON(in)
 		case "Field329":
-			out.Field329 = string(in.String())
+			(out.Field329).UnmarshalEasyJSON(in)
 		case "Field330":
-			out.Field330 = string(in.String())
+			(out.Field330).UnmarshalEasyJSON(in)
 		case "Field331":
-			out.Field331 = string(in.String())
+			(out.Field331).UnmarshalEasyJSON(in)
 		case "Field332":
-			out.Field332 = string(in.String())
+			(out.Field332).UnmarshalEasyJSON(in)
 		case "Field333":
-			out.Field333 = string(in.String())
+			(out.Field333).UnmarshalEasyJSON(in)
 		case "Field334":
-			out.Field334 = string(in.String())
+			(out.Field334).UnmarshalEasyJSON(in)
 		case "Field335":
-			out.Field335 = string(in.String())
+			(out.Field335).UnmarshalEasyJSON(in)
 		case "Field336":
-			out.Field336 = string(in.String())
+			(out.Field336).UnmarshalEasyJSON(in)
 		case "Field337":
-			out.Field337 = string(in.String())
+			(out.Field337).UnmarshalEasyJSON(in)
 		case "Field338":
-			out.Field338 = string(in.String())
+			(out.Field338).UnmarshalEasyJSON(in)
 		case "Field339":
-			out.Field339 = string(in.String())
+			(out.Field339).UnmarshalEasyJSON(in)
 		case "Field340":
-			out.Field340 = string(in.String())
+			(out.Field340).UnmarshalEasyJSON(in)
 		case "Field341":
-			out.Field341 = string(in.String())
+			(out.Field341).UnmarshalEasyJSON(in)
 		case "Field342":
-			out.Field342 = string(in.String())
+			(out.Field342).UnmarshalEasyJSON(in)
 		case "Field343":
-			out.Field343 = string(in.String())
+			(out.Field343).UnmarshalEasyJSON(in)
 		case "Field344":
-			out.Field344 = string(in.String())
+			(out.Field344).UnmarshalEasyJSON(in)
 		case "Field345":
-			out.Field345 = string(in.String())
+			(out.Field345).UnmarshalEasyJSON(in)
 		case "Field346":
-			out.Field346 = string(in.String())
+			(out.Field346).UnmarshalEasyJSON(in)
 		case "Field347":
-			out.Field347 = string(in.String())
+			(out.Field347).UnmarshalEasyJSON(in)
 		case "Field348":
-			out.Field348 = string(in.String())
+			(out.Field348).UnmarshalEasyJSON(in)
 		case "Field349":
-			out.Field349 = string(in.String())
+			(out.Field349).UnmarshalEasyJSON(in)
 		case "Field350":
-			out.Field350 = string(in.String())
+			(out.Field350).UnmarshalEasyJSON(in)
 		case "Field351":
-			out.Field351 = string(in.String())
+			(out.Field351).UnmarshalEasyJSON(in)
 		case "Field352":
-			out.Field352 = string(in.String())
+			(out.Field352).UnmarshalEasyJSON(in)
 		case "Field353":
-			out.Field353 = string(in.String())
+			(out.Field353).UnmarshalEasyJSON(in)
 		case "Field354":
-			out.Field354 = string(in.String())
+			(out.Field354).UnmarshalEasyJSON(in)
 		case "Field355":
-			out.Field355 = string(in.String())
+			(out.Field355).UnmarshalEasyJSON(in)
 		case "Field356":
-			out.Field356 = string(in.String())
+			(out.Field356).UnmarshalEasyJSON(in)
 		case "Field357":
-			out.Field357 = string(in.String())
+			(out.Field357).UnmarshalEasyJSON(in)
 		case "Field358":
-			out.Field358 = string(in.String())
+			(out.Field358).UnmarshalEasyJSON(in)
 		case "Field359":
-			out.Field359 = string(in.String())
+			(out.Field359).UnmarshalEasyJSON(in)
 		case "Field360":
-			out.Field360 = string(in.String())
+			(out.Field360).UnmarshalEasyJSON(in)
 		case "Field361":
-			out.Field361 = string(in.String())
+			(out.Field361).UnmarshalEasyJSON(in)
 		case "Field362":
-			out.Field362 = string(in.String())
+			(out.Field362).UnmarshalEasyJSON(in)
 		case "Field363":
-			out.Field363 = string(in.String())
+			(out.Field363).UnmarshalEasyJSON(in)
 		case "Field364":
-			out.Field364 = string(in.String())
+			(out.Field364).UnmarshalEasyJSON(in)
 		case "Field365":
-			out.Field365 = string(in.String())
+			(out.Field365).UnmarshalEasyJSON(in)
 		case "Field366":
-			out.Field366 = string(in.String())
+			(out.Field366).UnmarshalEasyJSON(in)
 		case "Field367":
-			out.Field367 = string(in.String())
+			(out.Field367).UnmarshalEasyJSON(in)
 		case "Field368":
-			out.Field368 = string(in.String())
+			(out.Field368).UnmarshalEasyJSON(in)
 		case "Field369":
-			out.Field369 = string(in.String())
+			(out.Field369).UnmarshalEasyJSON(in)
 		case "Field370":
-			out.Field370 = string(in.String())
+			(out.Field370).UnmarshalEasyJSON(in)
 		case "Field371":
-			out.Field371 = string(in.String())
+			(out.Field371).UnmarshalEasyJSON(in)
 		case "Field372":
-			out.Field372 = string(in.String())
+			(out.Field372).UnmarshalEasyJSON(in)
 		case "Field373":
-			out.Field373 = string(in.String())
+			(out.Field373).UnmarshalEasyJSON(in)
 		case "Field374":
-			out.Field374 = string(in.String())
+			(out.Field374).UnmarshalEasyJSON(in)
 		case "Field375":
-			out.Field375 = string(in.String())
+			(out.Field375).UnmarshalEasyJSON(in)
 		case "Field376":
-			out.Field376 = string(in.String())
+			(out.Field376).UnmarshalEasyJSON(in)
 		case "Field377":
-			out.Field377 = string(in.String())
+			(out.Field377).UnmarshalEasyJSON(in)
 		case "Field378":
-			out.Field378 = string(in.String())
+			(out.Field378).UnmarshalEasyJSON(in)
 		case "Field379":
-			out.Field379 = string(in.String())
+			(out.Field379).UnmarshalEasyJSON(in)
 		case "Field380":
-			out.Field380 = string(in.String())
+			(out.Field380).UnmarshalEasyJSON(in)
 		case "Field381":
-			out.Field381 = string(in.String())
+			(out.Field381).UnmarshalEasyJSON(in)
 		case "Field382":
-			out.Field382 = string(in.String())
+			(out.Field382).UnmarshalEasyJSON(in)
 		case "Field383":
-			out.Field383 = string(in.String())
+			(out.Field383).UnmarshalEasyJSON(in)
 		case "Field384":
-			out.Field384 = string(in.String())
+			(out.Field384).UnmarshalEasyJSON(in)
 		case "Field385":
-			out.Field385 = string(in.String())
+			(out.Field385).UnmarshalEasyJSON(in)
 		case "Field386":
-			out.Field386 = string(in.String())
+			(out.Field386).UnmarshalEasyJSON(in)
 		case "Field387":
-			out.Field387 = string(in.String())
+			(out.Field387).UnmarshalEasyJSON(in)
 		case "Field388":
-			out.Field388 = string(in.String())
+			(out.Field388).UnmarshalEasyJSON(in)
 		case "Field389":
-			out.Field389 = string(in.String())
+			(out.Field389).UnmarshalEasyJSON(in)
 		case "Field390":
-			out.Field390 = string(in.String())
+			(out.Field390).UnmarshalEasyJSON(in)
 		case "Field391":
-			out.Field391 = string(in.String())
+			(out.Field391).UnmarshalEasyJSON(in)
 		case "Field392":
-			out.Field392 = string(in.String())
+			(out.Field392).UnmarshalEasyJSON(in)
 		case "Field393":
-			out.Field393 = string(in.String())
+			(out.Field393).UnmarshalEasyJSON(in)
 		case "Field394":
-			out.Field394 = string(in.String())
+			(out.Field394).UnmarshalEasyJSON(in)
 		case "Field395":
-			out.Field395 = string(in.String())
+			(out.Field395).UnmarshalEasyJSON(in)
 		case "Field396":
-			out.Field396 = string(in.String())
+			(out.Field396).UnmarshalEasyJSON(in)
 		case "Field397":
-			out.Field397 = string(in.String())
+			(out.Field397).UnmarshalEasyJSON(in)
 		case "Field398":
-			out.Field398 = string(in.String())
+			(out.Field398).UnmarshalEasyJSON(in)
 		case "Field399":
-			out.Field399 = string(in.String())
+			(out.Field399).UnmarshalEasyJSON(in)
 		case "Field400":
-			out.Field400 = string(in.String())
+			(out.Field400).UnmarshalEasyJSON(in)
 		case "Field401":
-			out.Field401 = string(in.String())
+			(out.Field401).UnmarshalEasyJSON(in)
 		case "Field402":
-			out.Field402 = string(in.String())
+			(out.Field402).UnmarshalEasyJSON(in)
 		case "Field403":
-			out.Field403 = string(in.String())
+			(out.Field403).UnmarshalEasyJSON(in)
 		case "Field404":
-			out.Field404 = string(in.String())
+			(out.Field404).UnmarshalEasyJSON(in)
 		case "Field405":
-			out.Field405 = string(in.String())
+			(out.Field405).UnmarshalEasyJSON(in)
 		case "Field406":
-			out.Field406 = string(in.String())
+			(out.Field406).UnmarshalEasyJSON(in)
 		case "Field407":
-			out.Field407 = string(in.String())
+			(out.Field407).UnmarshalEasyJSON(in)
 		case "Field408":
-			out.Field408 = string(in.String())
+			(out.Field408).UnmarshalEasyJSON(in)
 		case "Field409":
-			out.Field409 = string(in.String())
+			(out.Field409).UnmarshalEasyJSON(in)
 		case "Field410":
-			out.Field410 = string(in.String())
+			(out.Field410).UnmarshalEasyJSON(in)
 		case "Field411":
-			out.Field411 = string(in.String())
+			(out.Field411).UnmarshalEasyJSON(in)
 		case "Field412":
-			out.Field412 = string(in.String())
+			(out.Field412).UnmarshalEasyJSON(in)
 		case "Field413":
-			out.Field413 = string(in.String())
+			(out.Field413).UnmarshalEasyJSON(in)
 		case "Field414":
-			out.Field414 = string(in.String())
+			(out.Field414).UnmarshalEasyJSON(in)
 		case "Field415":
-			out.Field415 = string(in.String())
+			(out.Field415).UnmarshalEasyJSON(in)
 		case "Field416":
-			out.Field416 = string(in.String())
+			(out.Field416).UnmarshalEasyJSON(in)
 		case "Field417":
-			out.Field417 = string(in.String())
+			(out.Field417).UnmarshalEasyJSON(in)
 		case "Field418":
-			out.Field418 = string(in.String())
+			(out.Field418).UnmarshalEasyJSON(in)
 		case "Field419":
-			out.Field419 = string(in.String())
+			(out.Field419).UnmarshalEasyJSON(in)
 		case "Field420":
-			out.Field420 = string(in.String())
+			(out.Field420).UnmarshalEasyJSON(in)
 		case "Field421":
-			out.Field421 = string(in.String())
+			(out.Field421).UnmarshalEasyJSON(in)
 		case "Field422":
-			out.Field422 = string(in.String())
+			(out.Field422).UnmarshalEasyJSON(in)
 		case "Field423":
-			out.Field423 = string(in.String())
+			(out.Field423).UnmarshalEasyJSON(in)
 		case "Field424":
-			out.Field424 = string(in.String())
+			(out.Field424).UnmarshalEasyJSON(in)
 		case "Field425":
-			out.Field425 = string(in.String())
+			(out.Field425).UnmarshalEasyJSON(in)
 		case "Field426":
-			out.Field426 = string(in.String())
+			(out.Field426).UnmarshalEasyJSON(in)
 		case "Field427":
-			out.Field427 = string(in.String())
+			(out.Field427).UnmarshalEasyJSON(in)
 		case "Field428":
-			out.Field428 = string(in.String())
+			(out.Field428).UnmarshalEasyJSON(in)
 		case "Field429":
-			out.Field429 = string(in.String())
+			(out.Field429).UnmarshalEasyJSON(in)
 		case "Field430":
-			out.Field430 = string(in.String())
+			(out.Field430).UnmarshalEasyJSON(in)
 		case "Field431":
-			out.Field431 = string(in.String())
+			(out.Field431).UnmarshalEasyJSON(in)
 		case "Field432":
-			out.Field432 = string(in.String())
+			(out.Field432).UnmarshalEasyJSON(in)
 		case "Field433":
-			out.Field433 = string(in.String())
+			(out.Field433).UnmarshalEasyJSON(in)
 		case "Field434":
-			out.Field434 = string(in.String())
+			(out.Field434).UnmarshalEasyJSON(in)
 		case "Field435":
-			out.Field435 = string(in.String())
+			(out.Field435).UnmarshalEasyJSON(in)
 		case "Field436":
-			out.Field436 = string(in.String())
+			(out.Field436).UnmarshalEasyJSON(in)
 		case "Field437":
-			out.Field437 = string(in.String())
+			(out.Field437).UnmarshalEasyJSON(in)
 		case "Field438":
-			out.Field438 = string(in.String())
+			(out.Field438).UnmarshalEasyJSON(in)
 		case "Field439":
-			out.Field439 = string(in.String())
+			(out.Field439).UnmarshalEasyJSON(in)
 		case "Field440":
-			out.Field440 = string(in.String())
+			(out.Field440).UnmarshalEasyJSON(in)
 		case "Field441":
-			out.Field441 = string(in.String())
+			(out.Field441).UnmarshalEasyJSON(in)
 		case "Field442":
-			out.Field442 = string(in.String())
+			(out.Field442).UnmarshalEasyJSON(in)
 		case "Field443":
-			out.Field443 = string(in.String())
+			(out.Field443).UnmarshalEasyJSON(in)
 		case "Field444":
-			out.Field444 = string(in.String())
+			(out.Field444).UnmarshalEasyJSON(in)
 		case "Field445":
-			out.Field445 = string(in.String())
+			(out.Field445).UnmarshalEasyJSON(in)
 		case "Field446":
-			out.Field446 = string(in.String())
+			(out.Field446).UnmarshalEasyJSON(in)
 		case "Field447":
-			out.Field447 = string(in.String())
+			(out.Field447).UnmarshalEasyJSON(in)
 		case "Field448":
-			out.Field448 = string(in.String())
+			(out.Field448).UnmarshalEasyJSON(in)
 		case "Field449":
-			out.Field449 = string(in.String())
+			(out.Field449).UnmarshalEasyJSON(in)
 		case "Field450":
-			out.Field450 = string(in.String())
+			(out.Field450).UnmarshalEasyJSON(in)
 		case "Field451":
-			out.Field451 = string(in.String())
+			(out.Field451).UnmarshalEasyJSON(in)
 		case "Field452":
-			out.Field452 = string(in.String())
+			(out.Field452).UnmarshalEasyJSON(in)
 		case "Field453":
-			out.Field453 = string(in.String())
+			(out.Field453).UnmarshalEasyJSON(in)
 		case "Field454":
-			out.Field454 = string(in.String())
+			(out.Field454).UnmarshalEasyJSON(in)
 		case "Field455":
-			out.Field455 = string(in.String())
+			(out.Field455).UnmarshalEasyJSON(in)
 		case "Field456":
-			out.Field456 = string(in.String())
+			(out.Field456).UnmarshalEasyJSON(in)
 		case "Field457":
-			out.Field457 = string(in.String())
+			(out.Field457).UnmarshalEasyJSON(in)
 		case "Field458":
-			out.Field458 = string(in.String())
+			(out.Field458).UnmarshalEasyJSON(in)
 		case "Field459":
-			out.Field459 = string(in.String())
+			(out.Field459).UnmarshalEasyJSON(in)
 		case "Field460":
-			out.Field460 = string(in.String())
+			(out.Field460).UnmarshalEasyJSON(in)
 		case "Field461":
-			out.Field461 = string(in.String())
+			(out.Field461).UnmarshalEasyJSON(in)
 		case "Field462":
-			out.Field462 = string(in.String())
+			(out.Field462).UnmarshalEasyJSON(in)
 		case "Field463":
-			out.Field463 = string(in.String())
+			(out.Field463).UnmarshalEasyJSON(in)
 		case "Field464":
-			out.Field464 = string(in.String())
+			(out.Field464).UnmarshalEasyJSON(in)
 		case "Field465":
-			out.Field465 = string(in.String())
+			(out.Field465).UnmarshalEasyJSON(in)
 		case "Field466":
-			out.Field466 = string(in.String())
+			(out.Field466).UnmarshalEasyJSON(in)
 		case "Field467":
-			out.Field467 = string(in.String())
+			(out.Field467).UnmarshalEasyJSON(in)
 		case "Field468":
-			out.Field468 = string(in.String())
+			(out.Field468).UnmarshalEasyJSON(in)
 		case "Field469":
-			out.Field469 = string(in.String())
+			(out.Field469).UnmarshalEasyJSON(in)
 		case "Field470":
-			out.Field470 = string(in.String())
+			(out.Field470).UnmarshalEasyJSON(in)
 		case "Field471":
-			out.Field471 = string(in.String())
+			(out.Field471).UnmarshalEasyJSON(in)
 		case "Field472":
-			out.Field472 = string(in.String())
+			(out.Field472).UnmarshalEasyJSON(in)
 		case "Field473":
-			out.Field473 = string(in.String())
+			(out.Field473).UnmarshalEasyJSON(in)
 		case "Field474":
-			out.Field474 = string(in.String())
+			(out.Field474).UnmarshalEasyJSON(in)
 		case "Field475":
-			out.Field475 = string(in.String())
+			(out.Field475).UnmarshalEasyJSON(in)
 		case "Field476":
-			out.Field476 = string(in.String())
+			(out.Field476).UnmarshalEasyJSON(in)
 		case "Field477":
-			out.Field477 = string(in.String())
+			(out.Field477).UnmarshalEasyJSON(in)
 		case "Field478":
-			out.Field478 = string(in.String())
+			(out.Field478).UnmarshalEasyJSON(in)
 		case "Field479":
-			out.Field479 = string(in.String())
+			(out.Field479).UnmarshalEasyJSON(in)
 		case "Field480":
-			out.Field480 = string(in.String())
+			(out.Field480).UnmarshalEasyJSON(in)
 		case "Field481":
-			out.Field481 = string(in.String())
+			(out.Field481).UnmarshalEasyJSON(in)
 		case "Field482":
-			out.Field482 = string(in.String())
+			(out.Field482).UnmarshalEasyJSON(in)
 		case "Field483":
-			out.Field483 = string(in.String())
+			(out.Field483).UnmarshalEasyJSON(in)
 		case "Field484":
-			out.Field484 = string(in.String())
+			(out.Field484).UnmarshalEasyJSON(in)
 		case "Field485":
-			out.Field485 = string(in.String())
+			(out.Field485).UnmarshalEasyJSON(in)
 		case "Field486":
-			out.Field486 = string(in.String())
+			(out.Field486).UnmarshalEasyJSON(in)
 		case "Field487":
-			out.Field487 = string(in.String())
+			(out.Field487).UnmarshalEasyJSON(in)
 		case "Field488":
-			out.Field488 = string(in.String())
+			(out.Field488).UnmarshalEasyJSON(in)
 		case "Field489":
-			out.Field489 = string(in.String())
+			(out.Field489).UnmarshalEasyJSON(in)
 		case "Field490":
-			out.Field490 = string(in.String())
+			(out.Field490).UnmarshalEasyJSON(in)
 		case "Field491":
-			out.Field491 = string(in.String())
+			(out.Field491).UnmarshalEasyJSON(in)
 		case "Field492":
-			out.Field492 = string(in.String())
+			(out.Field492).UnmarshalEasyJSON(in)
 		case "Field493":
-			out.Field493 = string(in.String())
+			(out.Field493).UnmarshalEasyJSON(in)
 		case "Field494":
-			out.Field494 = string(in.String())
+			(out.Field494).UnmarshalEasyJSON(in)
 		case "Field495":
-			out.Field495 = string(in.String())
+			(out.Field495).UnmarshalEasyJSON(in)
 		case "Field496":
-			out.Field496 = string(in.String())
+			(out.Field496).UnmarshalEasyJSON(in)
 		case "Field497":
-			out.Field497 = string(in.String())
+			(out.Field497).UnmarshalEasyJSON(in)
 		case "Field498":
-			out.Field498 = string(in.String())
+			(out.Field498).UnmarshalEasyJSON(in)
 		case "Field499":
-			out.Field499 = string(in.String())
+			(out.Field499).UnmarshalEasyJSON(in)
 		case "Field500":
-			out.Field500 = string(in.String())
+			(out.Field500).UnmarshalEasyJSON(in)
 		case "Field501":
-			out.Field501 = string(in.String())
+			(out.Field501).UnmarshalEasyJSON(in)
 		case "Field502":
-			out.Field502 = string(in.String())
+			(out.Field502).UnmarshalEasyJSON(in)
 		case "Field503":
-			out.Field503 = string(in.String())
+			(out.Field503).UnmarshalEasyJSON(in)
 		case "Field504":
-			out.Field504 = string(in.String())
+			(out.Field504).UnmarshalEasyJSON(in)
 		case "Field505":
-			out.Field505 = string(in.String())
+			(out.Field505).UnmarshalEasyJSON(in)
 		case "Field506":
-			out.Field506 = string(in.String())
+			(out.Field506).UnmarshalEasyJSON(in)
 		case "Field507":
-			out.Field507 = string(in.String())
+			(out.Field507).UnmarshalEasyJSON(in)
 		case "Field508":
-			out.Field508 = string(in.String())
+			(out.Field508).UnmarshalEasyJSON(in)
 		case "Field509":
-			out.Field509 = string(in.String())
+			(out.Field509).UnmarshalEasyJSON(in)
 		case "Field510":
-			out.Field510 = string(in.String())
+			(out.Field510).UnmarshalEasyJSON(in)
 		case "Field511":
-			out.Field511 = string(in.String())
+			(out.Field511).UnmarshalEasyJSON(in)
 		case "Field512":
-			out.Field512 = string(in.String())
+			(out.Field512).UnmarshalEasyJSON(in)
 		case "Field513":
-			out.Field513 = string(in.String())
+			(out.Field513).UnmarshalEasyJSON(in)
 		case "Field514":
-			out.Field514 = string(in.String())
+			(out.Field514).UnmarshalEasyJSON(in)
 		case "Field515":
-			out.Field515 = string(in.String())
+			(out.Field515).UnmarshalEasyJSON(in)
 		case "Field516":
-			out.Field516 = string(in.String())
+			(out.Field516).UnmarshalEasyJSON(in)
 		case "Field517":
-			out.Field517 = string(in.String())
+			(out.Field517).UnmarshalEasyJSON(in)
 		case "Field518":
-			out.Field518 = string(in.String())
+			(out.Field518).UnmarshalEasyJSON(in)
 		case "Field519":
-			out.Field519 = string(in.String())
+			(out.Field519).UnmarshalEasyJSON(in)
 		case "Field520":
-			out.Field520 = string(in.String())
+			(out.Field520).UnmarshalEasyJSON(in)
 		case "Field521":
-			out.Field521 = string(in.String())
+			(out.Field521).UnmarshalEasyJSON(in)
 		case "Field522":
-			out.Field522 = string(in.String())
+			(out.Field522).UnmarshalEasyJSON(in)
 		case "Field523":
-			out.Field523 = string(in.String())
+			(out.Field523).UnmarshalEasyJSON(in)
 		case "Field524":
-			out.Field524 = string(in.String())
+			(out.Field524).UnmarshalEasyJSON(in)
 		case "Field525":
-			out.Field525 = string(in.String())
+			(out.Field525).UnmarshalEasyJSON(in)
 		case "Field526":
-			out.Field526 = string(in.String())
+			(out.Field526).UnmarshalEasyJSON(in)
 		case "Field527":
-			out.Field527 = string(in.String())
+			(out.Field527).UnmarshalEasyJSON(in)
 		case "Field528":
-			out.Field528 = string(in.String())
+			(out.Field528).UnmarshalEasyJSON(in)
 		case "Field529":
-			out.Field529 = string(in.String())
+			(out.Field529).UnmarshalEasyJSON(in)
 		case "Field530":
-			out.Field530 = string(in.String())
+			(out.Field530).UnmarshalEasyJSON(in)
 		case "Field531":
-			out.Field531 = string(in.String())
+			(out.Field531).UnmarshalEasyJSON(in)
 		case "Field532":
-			out.Field532 = string(in.String())
+			(out.Field532).UnmarshalEasyJSON(in)
 		case "Field533":
-			out.Field533 = string(in.String())
+			(out.Field533).UnmarshalEasyJSON(in)
 		case "Field534":
-			out.Field534 = string(in.String())
+			(out.Field534).UnmarshalEasyJSON(in)
 		case "Field535":
-			out.Field535 = string(in.String())
+			(out.Field535).UnmarshalEasyJSON(in)
 		case "Field536":
-			out.Field536 = string(in.String())
+			(out.Field536).UnmarshalEasyJSON(in)
 		case "Field537":
-			out.Field537 = string(in.String())
+			(out.Field537).UnmarshalEasyJSON(in)
 		case "Field538":
-			out.Field538 = string(in.String())
+			(out.Field538).UnmarshalEasyJSON(in)
 		case "Field539":
-			out.Field539 = string(in.String())
+			(out.Field539).UnmarshalEasyJSON(in)
 		case "Field540":
-			out.Field540 = string(in.String())
+			(out.Field540).UnmarshalEasyJSON(in)
 		case "Field541":
-			out.Field541 = string(in.String())
+			(out.Field541).UnmarshalEasyJSON(in)
 		case "Field542":
-			out.Field542 = string(in.String())
+			(out.Field542).UnmarshalEasyJSON(in)
 		case "Field543":
-			out.Field543 = string(in.String())
+			(out.Field543).UnmarshalEasyJSON(in)
 		case "Field544":
-			out.Field544 = string(in.String())
+			(out.Field544).UnmarshalEasyJSON(in)
 		case "Field545":
-			out.Field545 = string(in.String())
+			(out.Field545).UnmarshalEasyJSON(in)
 		case "Field546":
-			out.Field546 = string(in.String())
+			(out.Field546).UnmarshalEasyJSON(in)
 		case "Field547":
-			out.Field547 = string(in.String())
+			(out.Field547).UnmarshalEasyJSON(in)
 		case "Field548":
-			out.Field548 = string(in.String())
+			(out.Field548).UnmarshalEasyJSON(in)
 		case "Field549":
-			out.Field549 = string(in.String())
+			(out.Field549).UnmarshalEasyJSON(in)
 		case "Field550":
-			out.Field550 = string(in.String())
+			(out.Field550).UnmarshalEasyJSON(in)
 		case "Field551":
-			out.Field551 = string(in.String())
+			(out.Field551).UnmarshalEasyJSON(in)
 		case "Field552":
-			out.Field552 = string(in.String())
+			(out.Field552).UnmarshalEasyJSON(in)
 		case "Field553":
-			out.Field553 = string(in.String())
+			(out.Field553).UnmarshalEasyJSON(in)
 		case "Field554":
-			out.Field554 = string(in.String())
+			(out.Field554).UnmarshalEasyJSON(in)
 		case "Field555":
-			out.Field555 = string(in.String())
+			(out.Field555).UnmarshalEasyJSON(in)
 		case "Field556":
-			out.Field556 = string(in.String())
+			(out.Field556).UnmarshalEasyJSON(in)
 		case "Field557":
-			out.Field557 = string(in.String())
+			(out.Field557).UnmarshalEasyJSON(in)
 		case "Field558":
-			out.Field558 = string(in.String())
+			(out.Field558).UnmarshalEasyJSON(in)
 		case "Field559":
-			out.Field559 = string(in.String())
+			(out.Field559).UnmarshalEasyJSON(in)
 		case "Field560":
-			out.Field560 = string(in.String())
+			(out.Field560).UnmarshalEasyJSON(in)
 		case "Field561":
-			out.Field561 = string(in.String())
+			(out.Field561).UnmarshalEasyJSON(in)
 		case "Field562":
-			out.Field562 = string(in.String())
+			(out.Field562).UnmarshalEasyJSON(in)
 		case "Field563":
-			out.Field563 = string(in.String())
+			(out.Field563).UnmarshalEasyJSON(in)
 		case "Field564":
-			out.Field564 = string(in.String())
+			(out.Field564).UnmarshalEasyJSON(in)
 		case "Field565":
-			out.Field565 = string(in.String())
+			(out.Field565).UnmarshalEasyJSON(in)
 		case "Field566":
-			out.Field566 = string(in.String())
+			(out.Field566).UnmarshalEasyJSON(in)
 		case "Field567":
-			out.Field567 = string(in.String())
+			(out.Field567).UnmarshalEasyJSON(in)
 		case "Field568":
-			out.Field568 = string(in.String())
+			(out.Field568).UnmarshalEasyJSON(in)
 		case "Field569":
-			out.Field569 = string(in.String())
+			(out.Field569).UnmarshalEasyJSON(in)
 		case "Field570":
-			out.Field570 = string(in.String())
+			(out.Field570).UnmarshalEasyJSON(in)
 		case "Field571":
-			out.Field571 = string(in.String())
+			(out.Field571).UnmarshalEasyJSON(in)
 		case "Field572":
-			out.Field572 = string(in.String())
+			(out.Field572).UnmarshalEasyJSON(in)
 		case "Field573":
-			out.Field573 = string(in.String())
+			(out.Field573).UnmarshalEasyJSON(in)
 		case "Field574":
-			out.Field574 = string(in.String())
+			(out.Field574).UnmarshalEasyJSON(in)
 		case "Field575":
-			out.Field575 = string(in.String())
+			(out.Field575).UnmarshalEasyJSON(in)
 		case "Field576":
-			out.Field576 = string(in.String())
+			(out.Field576).UnmarshalEasyJSON(in)
 		case "Field577":
-			out.Field577 = string(in.String())
+			(out.Field577).UnmarshalEasyJSON(in)
 		case "Field578":
-			out.Field578 = string(in.String())
+			(out.Field578).UnmarshalEasyJSON(in)
 		case "Field579":
-			out.Field579 = string(in.String())
+			(out.Field579).UnmarshalEasyJSON(in)
 		case "Field580":
-			out.Field580 = string(in.String())
+			(out.Field580).UnmarshalEasyJSON(in)
 		case "Field581":
-			out.Field581 = string(in.String())
+			(out.Field581).UnmarshalEasyJSON(in)
 		case "Field582":
-			out.Field582 = string(in.String())
+			(out.Field582).UnmarshalEasyJSON(in)
 		case "Field583":
-			out.Field583 = string(in.String())
+			(out.Field583).UnmarshalEasyJSON(in)
 		case "Field584":
-			out.Field584 = string(in.String())
+			(out.Field584).UnmarshalEasyJSON(in)
 		case "Field585":
-			out.Field585 = string(in.String())
+			(out.Field585).UnmarshalEasyJSON(in)
 		case "Field586":
-			out.Field586 = string(in.String())
+			(out.Field586).UnmarshalEasyJSON(in)
 		case "Field587":
-			out.Field587 = string(in.String())
+			(out.Field587).UnmarshalEasyJSON(in)
 		case "Field588":
-			out.Field588 = string(in.String())
+			(out.Field588).UnmarshalEasyJSON(in)
 		case "Field589":
-			out.Field589 = string(in.String())
+			(out.Field589).UnmarshalEasyJSON(in)
 		case "Field590":
-			out.Field590 = string(in.String())
+			(out.Field590).UnmarshalEasyJSON(in)
 		case "Field591":
-			out.Field591 = string(in.String())
+			(out.Field591).UnmarshalEasyJSON(in)
 		case "Field592":
-			out.Field592 = string(in.String())
+			(out.Field592).UnmarshalEasyJSON(in)
 		case "Field593":
-			out.Field593 = string(in.String())
+			(out.Field593).UnmarshalEasyJSON(in)
 		case "Field594":
-			out.Field594 = string(in.String())
+			(out.Field594).UnmarshalEasyJSON(in)
 		case "Field595":
-			out.Field595 = string(in.String())
+			(out.Field595).UnmarshalEasyJSON(in)
 		case "Field596":
-			out.Field596 = string(in.String())
+			(out.Field596).UnmarshalEasyJSON(in)
 		case "Field597":
-			out.Field597 = string(in.String())
+			(out.Field597).UnmarshalEasyJSON(in)
 		case "Field598":
-			out.Field598 = string(in.String())
+			(out.Field598).UnmarshalEasyJSON(in)
 		case "Field599":
-			out.Field599 = string(in.String())
+			(out.Field599).UnmarshalEasyJSON(in)
 		case "Field600":
-			out.Field600 = string(in.String())
+			(out.Field600).UnmarshalEasyJSON(in)
 		case "Field601":
-			out.Field601 = string(in.String())
+			(out.Field601).UnmarshalEasyJSON(in)
 		case "Field602":
-			out.Field602 = string(in.String())
+			(out.Field602).UnmarshalEasyJSON(in)
 		case "Field603":
-			out.Field603 = string(in.String())
+			(out.Field603).UnmarshalEasyJSON(in)
 		case "Field604":
-			out.Field604 = string(in.String())
+			(out.Field604).UnmarshalEasyJSON(in)
 		case "Field605":
-			out.Field605 = string(in.String())
+			(out.Field605).UnmarshalEasyJSON(in)
 		case "Field606":
-			out.Field606 = string(in.String())
+			(out.Field606).UnmarshalEasyJSON(in)
 		case "Field607":
-			out.Field607 = string(in.String())
+			(out.Field607).UnmarshalEasyJSON(in)
 		case "Field608":
-			out.Field608 = string(in.String())
+			(out.Field608).UnmarshalEasyJSON(in)
 		case "Field609":
-			out.Field609 = string(in.String())
+			(out.Field609).UnmarshalEasyJSON(in)
 		case "Field610":
-			out.Field610 = string(in.String())
+			(out.Field610).UnmarshalEasyJSON(in)
 		case "Field611":
-			out.Field611 = string(in.String())
+			(out.Field611).UnmarshalEasyJSON(in)
 		case "Field612":
-			out.Field612 = string(in.String())
+			(out.Field612).UnmarshalEasyJSON(in)
 		case "Field613":
-			out.Field613 = string(in.String())
+			(out.Field613).UnmarshalEasyJSON(in)
 		case "Field614":
-			out.Field614 = string(in.String())
+			(out.Field614).UnmarshalEasyJSON(in)
 		case "Field615":
-			out.Field615 = string(in.String())
+			(out.Field615).UnmarshalEasyJSON(in)
 		case "Field616":
-			out.Field616 = string(in.String())
+			(out.Field616).UnmarshalEasyJSON(in)
 		case "Field617":
-			out.Field617 = string(in.String())
+			(out.Field617).UnmarshalEasyJSON(in)
 		case "Field618":
-			out.Field618 = string(in.String())
+			(out.Field618).UnmarshalEasyJSON(in)
 		case "Field619":
-			out.Field619 = string(in.String())
+			(out.Field619).UnmarshalEasyJSON(in)
 		case "Field620":
-			out.Field620 = string(in.String())
+			(out.Field620).UnmarshalEasyJSON(in)
 		case "Field621":
-			out.Field621 = string(in.String())
+			(out.Field621).UnmarshalEasyJSON(in)
 		case "Field622":
-			out.Field622 = string(in.String())
+			(out.Field622).UnmarshalEasyJSON(in)
 		case "Field623":
-			out.Field623 = string(in.String())
+			(out.Field623).UnmarshalEasyJSON(in)
 		case "Field624":
-			out.Field624 = string(in.String())
+			(out.Field624).UnmarshalEasyJSON(in)
 		case "Field625":
-			out.Field625 = string(in.String())
+			(out.Field625).UnmarshalEasyJSON(in)
 		case "Field626":
-			out.Field626 = string(in.String())
+			(out.Field626).UnmarshalEasyJSON(in)
 		case "Field627":
-			out.Field627 = string(in.String())
+			(out.Field627).UnmarshalEasyJSON(in)
 		case "Field628":
-			out.Field628 = string(in.String())
+			(out.Field628).UnmarshalEasyJSON(in)
 		case "Field629":
-			out.Field629 = string(in.String())
+			(out.Field629).UnmarshalEasyJSON(in)
 		case "Field630":
-			out.Field630 = string(in.String())
+			(out.Field630).UnmarshalEasyJSON(in)
 		case "Field631":
-			out.Field631 = string(in.String())
+			(out.Field631).UnmarshalEasyJSON(in)
 		case "Field632":
-			out.Field632 = string(in.String())
+			(out.Field632).UnmarshalEasyJSON(in)
 		case "Field633":
-			out.Field633 = string(in.String())
+			(out.Field633).UnmarshalEasyJSON(in)
 		case "Field634":
-			out.Field634 = string(in.String())
+			(out.Field634).UnmarshalEasyJSON(in)
 		case "Field635":
-			out.Field635 = string(in.String())
+			(out.Field635).UnmarshalEasyJSON(in)
 		case "Field636":
-			out.Field636 = string(in.String())
+			(out.Field636).UnmarshalEasyJSON(in)
 		case "Field637":
-			out.Field637 = string(in.String())
+			(out.Field637).UnmarshalEasyJSON(in)
 		case "Field638":
-			out.Field638 = string(in.String())
+			(out.Field638).UnmarshalEasyJSON(in)
 		case "Field639":
-			out.Field639 = string(in.String())
+			(out.Field639).UnmarshalEasyJSON(in)
 		case "Field640":
-			out.Field640 = string(in.String())
+			(out.Field640).UnmarshalEasyJSON(in)
 		case "Field641":
-			out.Field641 = string(in.String())
+			(out.Field641).UnmarshalEasyJSON(in)
 		case "Field642":
-			out.Field642 = string(in.String())
+			(out.Field642).UnmarshalEasyJSON(in)
 		case "Field643":
-			out.Field643 = string(in.String())
+			(out.Field643).UnmarshalEasyJSON(in)
 		case "Field644":
-			out.Field644 = string(in.String())
+			(out.Field644).UnmarshalEasyJSON(in)
 		case "Field645":
-			out.Field645 = string(in.String())
+			(out.Field645).UnmarshalEasyJSON(in)
 		case "Field646":
-			out.Field646 = string(in.String())
+			(out.Field646).UnmarshalEasyJSON(in)
 		case "Field647":
-			out.Field647 = string(in.String())
+			(out.Field647).UnmarshalEasyJSON(in)
 		case "Field648":
-			out.Field648 = string(in.String())
+			(out.Field648).UnmarshalEasyJSON(in)
 		case "Field649":
-			out.Field649 = string(in.String())
+			(out.Field649).UnmarshalEasyJSON(in)
 		case "Field650":
-			out.Field650 = string(in.String())
+			(out.Field650).UnmarshalEasyJSON(in)
 		case "Field651":
-			out.Field651 = string(in.String())
+			(out.Field651).UnmarshalEasyJSON(in)
 		case "Field652":
-			out.Field652 = string(in.String())
+			(out.Field652).UnmarshalEasyJSON(in)
 		case "Field653":
-			out.Field653 = string(in.String())
+			(out.Field653).UnmarshalEasyJSON(in)
 		case "Field654":
-			out.Field654 = string(in.String())
+			(out.Field654).UnmarshalEasyJSON(in)
 		case "Field655":
-			out.Field655 = string(in.String())
+			(out.Field655).UnmarshalEasyJSON(in)
 		case "Field656":
-			out.Field656 = string(in.String())
+			(out.Field656).UnmarshalEasyJSON(in)
 		case "Field657":
-			out.Field657 = string(in.String())
+			(out.Field657).UnmarshalEasyJSON(in)
 		case "Field658":
-			out.Field658 = string(in.String())
+			(out.Field658).UnmarshalEasyJSON(in)
 		case "Field659":
-			out.Field659 = string(in.String())
+			(out.Field659).UnmarshalEasyJSON(in)
 		case "Field660":
-			out.Field660 = string(in.String())
+			(out.Field660).UnmarshalEasyJSON(in)
 		case "Field661":
-			out.Field661 = string(in.String())
+			(out.Field661).UnmarshalEasyJSON(in)
 		case "Field662":
-			out.Field662 = string(in.String())
+			(out.Field662).UnmarshalEasyJSON(in)
 		case "Field663":
-			out.Field663 = string(in.String())
+			(out.Field663).UnmarshalEasyJSON(in)
 		case "Field664":
-			out.Field664 = string(in.String())
+			(out.Field664).UnmarshalEasyJSON(in)
 		case "Field665":
-			out.Field665 = string(in.String())
+			(out.Field665).UnmarshalEasyJSON(in)
 		case "Field666":
-			out.Field666 = string(in.String())
+			(out.Field666).UnmarshalEasyJSON(in)
 		case "Field667":
-			out.Field667 = string(in.String())
+			(out.Field667).UnmarshalEasyJSON(in)
 		case "Field668":
-			out.Field668 = string(in.String())
+			(out.Field668).UnmarshalEasyJSON(in)
 		case "Field669":
-			out.Field669 = string(in.String())
+			(out.Field669).UnmarshalEasyJSON(in)
 		case "Field670":
-			out.Field670 = string(in.String())
+			(out.Field670).UnmarshalEasyJSON(in)
 		case "Field671":
-			out.Field671 = string(in.String())
+			(out.Field671).UnmarshalEasyJSON(in)
 		case "Field672":
-			out.Field672 = string(in.String())
+			(out.Field672).UnmarshalEasyJSON(in)
 		case "Field673":
-			out.Field673 = string(in.String())
+			(out.Field673).UnmarshalEasyJSON(in)
 		case "Field674":
-			out.Field674 = string(in.String())
+			(out.Field674).UnmarshalEasyJSON(in)
 		case "Field675":
-			out.Field675 = string(in.String())
+			(out.Field675).UnmarshalEasyJSON(in)
 		case "Field676":
-			out.Field676 = string(in.String())
+			(out.Field676).UnmarshalEasyJSON(in)
 		case "Field677":
-			out.Field677 = string(in.String())
+			(out.Field677).UnmarshalEasyJSON(in)
 		case "Field678":
-			out.Field678 = string(in.String())
+			(out.Field678).UnmarshalEasyJSON(in)
 		case "Field679":
-			out.Field679 = string(in.String())
+			(out.Field679).UnmarshalEasyJSON(in)
 		case "Field680":
-			out.Field680 = string(in.String())
+			(out.Field680).UnmarshalEasyJSON(in)
 		case "Field681":
-			out.Field681 = string(in.String())
+			(out.Field681).UnmarshalEasyJSON(in)
 		case "Field682":
-			out.Field682 = string(in.String())
+			(out.Field682).UnmarshalEasyJSON(in)
 		case "Field683":
-			out.Field683 = string(in.String())
+			(out.Field683).UnmarshalEasyJSON(in)
 		case "Field684":
-			out.Field684 = string(in.String())
+			(out.Field684).UnmarshalEasyJSON(in)
 		case "Field685":
-			out.Field685 = string(in.String())
+			(out.Field685).UnmarshalEasyJSON(in)
 		case "Field686":
-			out.Field686 = string(in.String())
+			(out.Field686).UnmarshalEasyJSON(in)
 		case "Field687":
-			out.Field687 = string(in.String())
+			(out.Field687).UnmarshalEasyJSON(in)
 		case "Field688":
-			out.Field688 = string(in.String())
+			(out.Field688).UnmarshalEasyJSON(in)
 		case "Field689":
-			out.Field689 = string(in.String())
+			(out.Field689).UnmarshalEasyJSON(in)
 		case "Field690":
-			out.Field690 = string(in.String())
+			(out.Field690).UnmarshalEasyJSON(in)
 		case "Field691":
-			out.Field691 = string(in.String())
+			(out.Field691).UnmarshalEasyJSON(in)
 		case "Field692":
-			out.Field692 = string(in.String())
+			(out.Field692).UnmarshalEasyJSON(in)
 		case "Field693":
-			out.Field693 = string(in.String())
+			(out.Field693).UnmarshalEasyJSON(in)
 		case "Field694":
-			out.Field694 = string(in.String())
+			(out.Field694).UnmarshalEasyJSON(in)
 		case "Field695":
-			out.Field695 = string(in.String())
+			(out.Field695).UnmarshalEasyJSON(in)
 		case "Field696":
-			out.Field696 = string(in.String())
+			(out.Field696).UnmarshalEasyJSON(in)
 		case "Field697":
-			out.Field697 = string(in.String())
+			(out.Field697).UnmarshalEasyJSON(in)
 		case "Field698":
-			out.Field698 = string(in.String())
+			(out.Field698).UnmarshalEasyJSON(in)
 		case "Field699":
-			out.Field699 = string(in.String())
+			(out.Field699).UnmarshalEasyJSON(in)
 		case "Field700":
-			out.Field700 = string(in.String())
+			(out.Field700).UnmarshalEasyJSON(in)
 		case "Field701":
-			out.Field701 = string(in.String())
+			(out.Field701).UnmarshalEasyJSON(in)
 		case "Field702":
-			out.Field702 = string(in.String())
+			(out.Field702).UnmarshalEasyJSON(in)
 		case "Field703":
-			out.Field703 = string(in.String())
+			(out.Field703).UnmarshalEasyJSON(in)
 		case "Field704":
-			out.Field704 = string(in.String())
+			(out.Field704).UnmarshalEasyJSON(in)
 		case "Field705":
-			out.Field705 = string(in.String())
+			(out.Field705).UnmarshalEasyJSON(in)
 		case "Field706":
-			out.Field706 = string(in.String())
+			(out.Field706).UnmarshalEasyJSON(in)
 		case "Field707":
-			out.Field707 = string(in.String())
+			(out.Field707).UnmarshalEasyJSON(in)
 		case "Field708":
-			out.Field708 = string(in.String())
+			(out.Field708).UnmarshalEasyJSON(in)
 		case "Field709":
-			out.Field709 = string(in.String())
+			(out.Field709).UnmarshalEasyJSON(in)
 		case "Field710":
-			out.Field710 = string(in.String())
+			(out.Field710).UnmarshalEasyJSON(in)
 		case "Field711":
-			out.Field711 = string(in.String())
+			(out.Field711).UnmarshalEasyJSON(in)
 		case "Field712":
-			out.Field712 = string(in.String())
+			(out.Field712).UnmarshalEasyJSON(in)
 		case "Field713":
-			out.Field713 = string(in.String())
+			(out.Field713).UnmarshalEasyJSON(in)
 		case "Field714":
-			out.Field714 = string(in.String())
+			(out.Field714).UnmarshalEasyJSON(in)
 		case "Field715":
-			out.Field715 = string(in.String())
+			(out.Field715).UnmarshalEasyJSON(in)
 		case "Field716":
-			out.Field716 = string(in.String())
+			(out.Field716).UnmarshalEasyJSON(in)
 		case "Field717":
-			out.Field717 = string(in.String())
+			(out.Field717).UnmarshalEasyJSON(in)
 		case "Field718":
-			out.Field718 = string(in.String())
+			(out.Field718).UnmarshalEasyJSON(in)
 		case "Field719":
-			out.Field719 = string(in.String())
+			(out.Field719).UnmarshalEasyJSON(in)
 		case "Field720":
-			out.Field720 = string(in.String())
+			(out.Field720).UnmarshalEasyJSON(in)
 		case "Field721":
-			out.Field721 = string(in.String())
+			(out.Field721).UnmarshalEasyJSON(in)
 		case "Field722":
-			out.Field722 = string(in.String())
+			(out.Field722).UnmarshalEasyJSON(in)
 		case "Field723":
-			out.Field723 = string(in.String())
+			(out.Field723).UnmarshalEasyJSON(in)
 		case "Field724":
-			out.Field724 = string(in.String())
+			(out.Field724).UnmarshalEasyJSON(in)
 		case "Field725":
-			out.Field725 = string(in.String())
+			(out.Field725).UnmarshalEasyJSON(in)
 		case "Field726":
-			out.Field726 = string(in.String())
+			(out.Field726).UnmarshalEasyJSON(in)
 		case "Field727":
-			out.Field727 = string(in.String())
+			(out.Field727).UnmarshalEasyJSON(in)
 		case "Field728":
-			out.Field728 = string(in.String())
+			(out.Field728).UnmarshalEasyJSON(in)
 		case "Field729":
-			out.Field729 = string(in.String())
+			(out.Field729).UnmarshalEasyJSON(in)
 		case "Field730":
-			out.Field730 = string(in.String())
+			(out.Field730).UnmarshalEasyJSON(in)
 		case "Field731":
-			out.Field731 = string(in.String())
+			(out.Field731).UnmarshalEasyJSON(in)
 		case "Field732":
-			out.Field732 = string(in.String())
+			(out.Field732).UnmarshalEasyJSON(in)
 		case "Field733":
-			out.Field733 = string(in.String())
+			(out.Field733).UnmarshalEasyJSON(in)
 		case "Field734":
-			out.Field734 = string(in.String())
+			(out.Field734).UnmarshalEasyJSON(in)
 		case "Field735":
-			out.Field735 = string(in.String())
+			(out.Field735).UnmarshalEasyJSON(in)
 		case "Field736":
-			out.Field736 = string(in.String())
+			(out.Field736).UnmarshalEasyJSON(in)
 		case "Field737":
-			out.Field737 = string(in.String())
+			(out.Field737).UnmarshalEasyJSON(in)
 		case "Field738":
-			out.Field738 = string(in.String())
+			(out.Field738).UnmarshalEasyJSON(in)
 		case "Field739":
-			out.Field739 = string(in.String())
+			(out.Field739).UnmarshalEasyJSON(in)
 		case "Field740":
-			out.Field740 = string(in.String())
+			(out.Field740).UnmarshalEasyJSON(in)
 		case "Field741":
-			out.Field741 = string(in.String())
+			(out.Field741).UnmarshalEasyJSON(in)
 		case "Field742":
-			out.Field742 = string(in.String())
+			(out.Field742).UnmarshalEasyJSON(in)
 		case "Field743":
-			out.Field743 = string(in.String())
+			(out.Field743).UnmarshalEasyJSON(in)
 		case "Field744":
-			out.Field744 = string(in.String())
+			(out.Field744).UnmarshalEasyJSON(in)
 		case "Field745":
-			out.Field745 = string(in.String())
+			(out.Field745).UnmarshalEasyJSON(in)
 		case "Field746":
-			out.Field746 = string(in.String())
+			(out.Field746).UnmarshalEasyJSON(in)
 		case "Field747":
-			out.Field747 = string(in.String())
+			(out.Field747).UnmarshalEasyJSON(in)
 		case "Field748":
-			out.Field748 = string(in.String())
+			(out.Field748).UnmarshalEasyJSON(in)
 		case "Field749":
-			out.Field749 = string(in.String())
+			(out.Field749).UnmarshalEasyJSON(in)
 		case "Field750":
-			out.Field750 = string(in.String())
+			(out.Field750).UnmarshalEasyJSON(in)
 		case "Field751":
-			out.Field751 = string(in.String())
+			(out.Field751).UnmarshalEasyJSON(in)
 		case "Field752":
-			out.Field752 = string(in.String())
+			(out.Field752).UnmarshalEasyJSON(in)
 		case "Field753":
-			out.Field753 = string(in.String())
+			(out.Field753).UnmarshalEasyJSON(in)
 		case "Field754":
-			out.Field754 = string(in.String())
+			(out.Field754).UnmarshalEasyJSON(in)
 		case "Field755":
-			out.Field755 = string(in.String())
+			(out.Field755).UnmarshalEasyJSON(in)
 		case "Field756":
-			out.Field756 = string(in.String())
+			(out.Field756).UnmarshalEasyJSON(in)
 		case "Field757":
-			out.Field757 = string(in.String())
+			(out.Field757).UnmarshalEasyJSON(in)
 		case "Field758":
-			out.Field758 = string(in.String())
+			(out.Field758).UnmarshalEasyJSON(in)
 		case "Field759":
-			out.Field759 = string(in.String())
+			(out.Field759).UnmarshalEasyJSON(in)
 		case "Field760":
-			out.Field760 = string(in.String())
+			(out.Field760).UnmarshalEasyJSON(in)
 		case "Field761":
-			out.Field761 = string(in.String())
+			(out.Field761).UnmarshalEasyJSON(in)
 		case "Field762":
-			out.Field762 = string(in.String())
+			(out.Field762).UnmarshalEasyJSON(in)
 		case "Field763":
-			out.Field763 = string(in.String())
+			(out.Field763).UnmarshalEasyJSON(in)
 		case "Field764":
-			out.Field764 = string(in.String())
+			(out.Field764).UnmarshalEasyJSON(in)
 		case "Field765":
-			out.Field765 = string(in.String())
+			(out.Field765).UnmarshalEasyJSON(in)
 		case "Field766":
-			out.Field766 = string(in.String())
+			(out.Field766).UnmarshalEasyJSON(in)
 		case "Field767":
-			out.Field767 = string(in.String())
+			(out.Field767).UnmarshalEasyJSON(in)
 		case "Field768":
-			out.Field768 = string(in.String())
+			(out.Field768).UnmarshalEasyJSON(in)
 		case "Field769":
-			out.Field769 = string(in.String())
+			(out.Field769).UnmarshalEasyJSON(in)
 		case "Field770":
-			out.Field770 = string(in.String())
+			(out.Field770).UnmarshalEasyJSON(in)
 		case "Field771":
-			out.Field771 = string(in.String())
+			(out.Field771).UnmarshalEasyJSON(in)
 		case "Field772":
-			out.Field772 = string(in.String())
+			(out.Field772).UnmarshalEasyJSON(in)
 		case "Field773":
-			out.Field773 = string(in.String())
+			(out.Field773).UnmarshalEasyJSON(in)
 		case "Field774":
-			out.Field774 = string(in.String())
+			(out.Field774).UnmarshalEasyJSON(in)
 		case "Field775":
-			out.Field775 = string(in.String())
+			(out.Field775).UnmarshalEasyJSON(in)
 		case "Field776":
-			out.Field776 = string(in.String())
+			(out.Field776).UnmarshalEasyJSON(in)
 		case "Field777":
-			out.Field777 = string(in.String())
+			(out.Field777).UnmarshalEasyJSON(in)
 		case "Field778":
-			out.Field778 = string(in.String())
+			(out.Field778).UnmarshalEasyJSON(in)
 		case "Field779":
-			out.Field779 = string(in.String())
+			(out.Field779).UnmarshalEasyJSON(in)
 		case "Field780":
-			out.Field780 = string(in.String())
+			(out.Field780).UnmarshalEasyJSON(in)
 		case "Field781":
-			out.Field781 = string(in.String())
+			(out.Field781).UnmarshalEasyJSON(in)
 		case "Field782":
-			out.Field782 = string(in.String())
+			(out.Field782).UnmarshalEasyJSON(in)
 		case "Field783":
-			out.Field783 = string(in.String())
+			(out.Field783).UnmarshalEasyJSON(in)
 		case "Field784":
-			out.Field784 = string(in.String())
+			(out.Field784).UnmarshalEasyJSON(in)
 		case "Field785":
-			out.Field785 = string(in.String())
+			(out.Field785).UnmarshalEasyJSON(in)
 		case "Field786":
-			out.Field786 = string(in.String())
+			(out.Field786).UnmarshalEasyJSON(in)
 		case "Field787":
-			out.Field787 = string(in.String())
+			(out.Field787).UnmarshalEasyJSON(in)
 		case "Field788":
-			out.Field788 = string(in.String())
+			(out.Field788).UnmarshalEasyJSON(in)
 		case "Field789":
-			out.Field789 = string(in.String())
+			(out.Field789).UnmarshalEasyJSON(in)
 		case "Field790":
-			out.Field790 = string(in.String())
+			(out.Field790).UnmarshalEasyJSON(in)
 		case "Field791":
-			out.Field791 = string(in.String())
+			(out.Field791).UnmarshalEasyJSON(in)
 		case "Field792":
-			out.Field792 = string(in.String())
+			(out.Field792).UnmarshalEasyJSON(in)
 		case "Field793":
-			out.Field793 = string(in.String())
+			(out.Field793).UnmarshalEasyJSON(in)
 		case "Field794":
-			out.Field794 = string(in.String())
+			(out.Field794).UnmarshalEasyJSON(in)
 		case "Field795":
-			out.Field795 = string(in.String())
+			(out.Field795).UnmarshalEasyJSON(in)
 		case "Field796":
-			out.Field796 = string(in.String())
+			(out.Field796).UnmarshalEasyJSON(in)
 		case "Field797":
-			out.Field797 = string(in.String())
+			(out.Field797).UnmarshalEasyJSON(in)
 		case "Field798":
-			out.Field798 = string(in.String())
+			(out.Field798).UnmarshalEasyJSON(in)
 		case "Field799":
-			out.Field799 = string(in.String())
+			(out.Field799).UnmarshalEasyJSON(in)
 		case "Field800":
-			out.Field800 = string(in.String())
+			(out.Field800).UnmarshalEasyJSON(in)
 		case "Field801":
-			out.Field801 = string(in.String())
+			(out.Field801).UnmarshalEasyJSON(in)
 		case "Field802":
-			out.Field802 = string(in.String())
+			(out.Field802).UnmarshalEasyJSON(in)
 		case "Field803":
-			out.Field803 = string(in.String())
+			(out.Field803).UnmarshalEasyJSON(in)
 		case "Field804":
-			out.Field804 = string(in.String())
+			(out.Field804).UnmarshalEasyJSON(in)
 		case "Field805":
-			out.Field805 = string(in.String())
+			(out.Field805).UnmarshalEasyJSON(in)
 		case "Field806":
-			out.Field806 = string(in.String())
+			(out.Field806).UnmarshalEasyJSON(in)
 		case "Field807":
-			out.Field807 = string(in.String())
+			(out.Field807).UnmarshalEasyJSON(in)
 		case "Field808":
-			out.Field808 = string(in.String())
+			(out.Field808).UnmarshalEasyJSON(in)
 		case "Field809":
-			out.Field809 = string(in.String())
+			(out.Field809).UnmarshalEasyJSON(in)
 		case "Field810":
-			out.Field810 = string(in.String())
+			(out.Field810).UnmarshalEasyJSON(in)
 		case "Field811":
-			out.Field811 = string(in.String())
+			(out.Field811).UnmarshalEasyJSON(in)
 		case "Field812":
-			out.Field812 = string(in.String())
+			(out.Field812).UnmarshalEasyJSON(in)
 		case "Field813":
-			out.Field813 = string(in.String())
+			(out.Field813).UnmarshalEasyJSON(in)
 		case "Field814":
-			out.Field814 = string(in.String())
+			(out.Field814).UnmarshalEasyJSON(in)
 		case "Field815":
-			out.Field815 = string(in.String())
+			(out.Field815).UnmarshalEasyJSON(in)
 		case "Field816":
-			out.Field816 = string(in.String())
+			(out.Field816).UnmarshalEasyJSON(in)
 		case "Field817":
-			out.Field817 = string(in.String())
+			(out.Field817).UnmarshalEasyJSON(in)
 		case "Field818":
-			out.Field818 = string(in.String())
+			(out.Field818).UnmarshalEasyJSON(in)
 		case "Field819":
-			out.Field819 = string(in.String())
+			(out.Field819).UnmarshalEasyJSON(in)
 		case "Field820":
-			out.Field820 = string(in.String())
+			(out.Field820).UnmarshalEasyJSON(in)
 		case "Field821":
-			out.Field821 = string(in.String())
+			(out.Field821).UnmarshalEasyJSON(in)
 		case "Field822":
-			out.Field822 = string(in.String())
+			(out.Field822).UnmarshalEasyJSON(in)
 		case "Field823":
-			out.Field823 = string(in.String())
+			(out.Field823).UnmarshalEasyJSON(in)
 		case "Field824":
-			out.Field824 = string(in.String())
+			(out.Field824).UnmarshalEasyJSON(in)
 		case "Field825":
-			out.Field825 = string(in.String())
+			(out.Field825).UnmarshalEasyJSON(in)
 		case "Field826":
-			out.Field826 = string(in.String())
+			(out.Field826).UnmarshalEasyJSON(in)
 		case "Field827":
-			out.Field827 = string(in.String())
+			(out.Field827).UnmarshalEasyJSON(in)
 		case "Field828":
-			out.Field828 = string(in.String())
+			(out.Field828).UnmarshalEasyJSON(in)
 		case "Field829":
-			out.Field829 = string(in.String())
+			(out.Field829).UnmarshalEasyJSON(in)
 		case "Field830":
-			out.Field830 = string(in.String())
+			(out.Field830).UnmarshalEasyJSON(in)
 		case "Field831":
-			out.Field831 = string(in.String())
+			(out.Field831).UnmarshalEasyJSON(in)
 		case "Field832":
-			out.Field832 = string(in.String())
+			(out.Field832).UnmarshalEasyJSON(in)
 		case "Field833":
-			out.Field833 = string(in.String())
+			(out.Field833).UnmarshalEasyJSON(in)
 		case "Field834":
-			out.Field834 = string(in.String())
+			(out.Field834).UnmarshalEasyJSON(in)
 		case "Field835":
-			out.Field835 = string(in.String())
+			(out.Field835).UnmarshalEasyJSON(in)
 		case "Field836":
-			out.Field836 = string(in.String())
+			(out.Field836).UnmarshalEasyJSON(in)
 		case "Field837":
-			out.Field837 = string(in.String())
+			(out.Field837).UnmarshalEasyJSON(in)
 		case "Field838":
-			out.Field838 = string(in.String())
+			(out.Field838).UnmarshalEasyJSON(in)
 		case "Field839":
-			out.Field839 = string(in.String())
+			(out.Field839).UnmarshalEasyJSON(in)
 		case "Field840":
-			out.Field840 = string(in.String())
+			(out.Field840).UnmarshalEasyJSON(in)
 		case "Field841":
-			out.Field841 = string(in.String())
+			(out.Field841).UnmarshalEasyJSON(in)
 		case "Field842":
-			out.Field842 = string(in.String())
+			(out.Field842).UnmarshalEasyJSON(in)
 		case "Field843":
-			out.Field843 = string(in.String())
+			(out.Field843).UnmarshalEasyJSON(in)
 		case "Field844":
-			out.Field844 = string(in.String())
+			(out.Field844).UnmarshalEasyJSON(in)
 		case "Field845":
-			out.Field845 = string(in.String())
+			(out.Field845).UnmarshalEasyJSON(in)
 		case "Field846":
-			out.Field846 = string(in.String())
+			(out.Field846).UnmarshalEasyJSON(in)
 		case "Field847":
-			out.Field847 = string(in.String())
+			(out.Field847).UnmarshalEasyJSON(in)
 		case "Field848":
-			out.Field848 = string(in.String())
+			(out.Field848).UnmarshalEasyJSON(in)
 		case "Field849":
-			out.Field849 = string(in.String())
+			(out.Field849).UnmarshalEasyJSON(in)
 		case "Field850":
-			out.Field850 = string(in.String())
+			(out.Field850).UnmarshalEasyJSON(in)
 		case "Field851":
-			out.Field851 = string(in.String())
+			(out.Field851).UnmarshalEasyJSON(in)
 		case "Field852":
-			out.Field852 = string(in.String())
+			(out.Field852).UnmarshalEasyJSON(in)
 		case "Field853":
-			out.Field853 = string(in.String())
+			(out.Field853).UnmarshalEasyJSON(in)
 		case "Field854":
-			out.Field854 = string(in.String())
+			(out.Field854).UnmarshalEasyJSON(in)
 		case "Field855":
-			out.Field855 = string(in.String())
+			(out.Field855).UnmarshalEasyJSON(in)
 		case "Field856":
-			out.Field856 = string(in.String())
+			(out.Field856).UnmarshalEasyJSON(in)
 		case "Field857":
-			out.Field857 = string(in.String())
+			(out.Field857).UnmarshalEasyJSON(in)
 		case "Field858":
-			out.Field858 = string(in.String())
+			(out.Field858).UnmarshalEasyJSON(in)
 		case "Field859":
-			out.Field859 = string(in.String())
+			(out.Field859).UnmarshalEasyJSON(in)
 		case "Field860":
-			out.Field860 = string(in.String())
+			(out.Field860).UnmarshalEasyJSON(in)
 		case "Field861":
-			out.Field861 = string(in.String())
+			(out.Field861).UnmarshalEasyJSON(in)
 		case "Field862":
-			out.Field862 = string(in.String())
+			(out.Field862).UnmarshalEasyJSON(in)
 		case "Field863":
-			out.Field863 = string(in.String())
+			(out.Field863).UnmarshalEasyJSON(in)
 		case "Field864":
-			out.Field864 = string(in.String())
+			(out.Field864).UnmarshalEasyJSON(in)
 		case "Field865":
-			out.Field865 = string(in.String())
+			(out.Field865).UnmarshalEasyJSON(in)
 		case "Field866":
-			out.Field866 = string(in.String())
+			(out.Field866).UnmarshalEasyJSON(in)
 		case "Field867":
-			out.Field867 = string(in.String())
+			(out.Field867).UnmarshalEasyJSON(in)
 		case "Field868":
-			out.Field868 = string(in.String())
+			(out.Field868).UnmarshalEasyJSON(in)
 		case "Field869":
-			out.Field869 = string(in.String())
+			(out.Field869).UnmarshalEasyJSON(in)
 		case "Field870":
-			out.Field870 = string(in.String())
+			(out.Field870).UnmarshalEasyJSON(in)
 		case "Field871":
-			out.Field871 = string(in.String())
+			(out.Field871).UnmarshalEasyJSON(in)
 		case "Field872":
-			out.Field872 = string(in.String())
+			(out.Field872).UnmarshalEasyJSON(in)
 		case "Field873":
-			out.Field873 = string(in.String())
+			(out.Field873).UnmarshalEasyJSON(in)
 		case "Field874":
-			out.Field874 = string(in.String())
+			(out.Field874).UnmarshalEasyJSON(in)
 		case "Field875":
-			out.Field875 = string(in.String())
+			(out.Field875).UnmarshalEasyJSON(in)
 		case "Field876":
-			out.Field876 = string(in.String())
+			(out.Field876).UnmarshalEasyJSON(in)
 		case "Field877":
-			out.Field877 = string(in.String())
+			(out.Field877).UnmarshalEasyJSON(in)
 		case "Field878":
-			out.Field878 = string(in.String())
+			(out.Field878).UnmarshalEasyJSON(in)
 		case "Field879":
-			out.Field879 = string(in.String())
+			(out.Field879).UnmarshalEasyJSON(in)
 		case "Field880":
-			out.Field880 = string(in.String())
+			(out.Field880).UnmarshalEasyJSON(in)
 		case "Field881":
-			out.Field881 = string(in.String())
+			(out.Field881).UnmarshalEasyJSON(in)
 		case "Field882":
-			out.Field882 = string(in.String())
+			(out.Field882).UnmarshalEasyJSON(in)
 		case "Field883":
-			out.Field883 = string(in.String())
+			(out.Field883).UnmarshalEasyJSON(in)
 		case "Field884":
-			out.Field884 = string(in.String())
+			(out.Field884).UnmarshalEasyJSON(in)
 		case "Field885":
-			out.Field885 = string(in.String())
+			(out.Field885).UnmarshalEasyJSON(in)
 		case "Field886":
-			out.Field886 = string(in.String())
+			(out.Field886).UnmarshalEasyJSON(in)
 		case "Field887":
-			out.Field887 = string(in.String())
+			(out.Field887).UnmarshalEasyJSON(in)
 		case "Field888":
-			out.Field888 = string(in.String())
+			(out.Field888).UnmarshalEasyJSON(in)
 		case "Field889":
-			out.Field889 = string(in.String())
+			(out.Field889).UnmarshalEasyJSON(in)
 		case "Field890":
-			out.Field890 = string(in.String())
+			(out.Field890).UnmarshalEasyJSON(in)
 		case "Field891":
-			out.Field891 = string(in.String())
+			(out.Field891).UnmarshalEasyJSON(in)
 		case "Field892":
-			out.Field892 = string(in.String())
+			(out.Field892).UnmarshalEasyJSON(in)
 		case "Field893":
-			out.Field893 = string(in.String())
+			(out.Field893).UnmarshalEasyJSON(in)
 		case "Field894":
-			out.Field894 = string(in.String())
+			(out.Field894).UnmarshalEasyJSON(in)
 		case "Field895":
-			out.Field895 = string(in.String())
+			(out.Field895).UnmarshalEasyJSON(in)
 		case "Field896":
-			out.Field896 = string(in.String())
+			(out.Field896).UnmarshalEasyJSON(in)
 		case "Field897":
-			out.Field897 = string(in.String())
+			(out.Field897).UnmarshalEasyJSON(in)
 		case "Field898":
-			out.Field898 = string(in.String())
+			(out.Field898).UnmarshalEasyJSON(in)
 		case "Field899":
-			out.Field899 = string(in.String())
+			(out.Field899).UnmarshalEasyJSON(in)
 		case "Field900":
-			out.Field900 = string(in.String())
+			(out.Field900).UnmarshalEasyJSON(in)
 		case "Field901":
-			out.Field901 = string(in.String())
+			(out.Field901).UnmarshalEasyJSON(in)
 		case "Field902":
-			out.Field902 = string(in.String())
+			(out.Field902).UnmarshalEasyJSON(in)
 		case "Field903":
-			out.Field903 = string(in.String())
+			(out.Field903).UnmarshalEasyJSON(in)
 		case "Field904":
-			out.Field904 = string(in.String())
+			(out.Field904).UnmarshalEasyJSON(in)
 		case "Field905":
-			out.Field905 = string(in.String())
+			(out.Field905).UnmarshalEasyJSON(in)
 		case "Field906":
-			out.Field906 = string(in.String())
+			(out.Field906).UnmarshalEasyJSON(in)
 		case "Field907":
-			out.Field907 = string(in.String())
+			(out.Field907).UnmarshalEasyJSON(in)
 		case "Field908":
-			out.Field908 = string(in.String())
+			(out.Field908).UnmarshalEasyJSON(in)
 		case "Field909":
-			out.Field909 = string(in.String())
+			(out.Field909).UnmarshalEasyJSON(in)
 		case "Field910":
-			out.Field910 = string(in.String())
+			(out.Field910).UnmarshalEasyJSON(in)
 		case "Field911":
-			out.Field911 = string(in.String())
+			(out.Field911).UnmarshalEasyJSON(in)
 		case "Field912":
-			out.Field912 = string(in.String())
+			(out.Field912).UnmarshalEasyJSON(in)
 		case "Field913":
-			out.Field913 = string(in.String())
+			(out.Field913).UnmarshalEasyJSON(in)
 		case "Field914":
-			out.Field914 = string(in.String())
+			(out.Field914).UnmarshalEasyJSON(in)
 		case "Field915":
-			out.Field915 = string(in.String())
+			(out.Field915).UnmarshalEasyJSON(in)
 		case "Field916":
-			out.Field916 = string(in.String())
+			(out.Field916).UnmarshalEasyJSON(in)
 		case "Field917":
-			out.Field917 = string(in.String())
+			(out.Field917).UnmarshalEasyJSON(in)
 		case "Field918":
-			out.Field918 = string(in.String())
+			(out.Field918).UnmarshalEasyJSON(in)
 		case "Field919":
-			out.Field919 = string(in.String())
+			(out.Field919).UnmarshalEasyJSON(in)
 		case "Field920":
-			out.Field920 = string(in.String())
+			(out.Field920).UnmarshalEasyJSON(in)
 		case "Field921":
-			out.Field921 = string(in.String())
+			(out.Field921).UnmarshalEasyJSON(in)
 		case "Field922":
-			out.Field922 = string(in.String())
+			(out.Field922).UnmarshalEasyJSON(in)
 		case "Field923":
-			out.Field923 = string(in.String())
+			(out.Field923).UnmarshalEasyJSON(in)
 		case "Field924":
-			out.Field924 = string(in.String())
+			(out.Field924).UnmarshalEasyJSON(in)
 		case "Field925":
-			out.Field925 = string(in.String())
+			(out.Field925).UnmarshalEasyJSON(in)
 		case "Field926":
-			out.Field926 = string(in.String())
+			(out.Field926).UnmarshalEasyJSON(in)
 		case "Field927":
-			out.Field927 = string(in.String())
+			(out.Field927).UnmarshalEasyJSON(in)
 		case "Field928":
-			out.Field928 = string(in.String())
+			(out.Field928).UnmarshalEasyJSON(in)
 		case "Field929":
-			out.Field929 = string(in.String())
+			(out.Field929).UnmarshalEasyJSON(in)
 		case "Field930":
-			out.Field930 = string(in.String())
+			(out.Field930).UnmarshalEasyJSON(in)
 		case "Field931":
-			out.Field931 = string(in.String())
+			(out.Field931).UnmarshalEasyJSON(in)
 		case "Field932":
-			out.Field932 = string(in.String())
+			(out.Field932).UnmarshalEasyJSON(in)
 		case "Field933":
-			out.Field933 = string(in.String())
+			(out.Field933).UnmarshalEasyJSON(in)
 		case "Field934":
-			out.Field934 = string(in.String())
+			(out.Field934).UnmarshalEasyJSON(in)
 		case "Field935":
-			out.Field935 = string(in.String())
+			(out.Field935).UnmarshalEasyJSON(in)
 		case "Field936":
-			out.Field936 = string(in.String())
+			(out.Field936).UnmarshalEasyJSON(in)
 		case "Field937":
-			out.Field937 = string(in.String())
+			(out.Field937).UnmarshalEasyJSON(in)
 		case "Field938":
-			out.Field938 = string(in.String())
+			(out.Field938).UnmarshalEasyJSON(in)
 		case "Field939":
-			out.Field939 = string(in.String())
+			(out.Field939).UnmarshalEasyJSON(in)
 		case "Field940":
-			out.Field940 = string(in.String())
+			(out.Field940).UnmarshalEasyJSON(in)
 		case "Field941":
-			out.Field941 = string(in.String())
+			(out.Field941).UnmarshalEasyJSON(in)
 		case "Field942":
-			out.Field942 = string(in.String())
+			(out.Field942).UnmarshalEasyJSON(in)
 		case "Field943":
-			out.Field943 = string(in.String())
+			(out.Field943).UnmarshalEasyJSON(in)
 		case "Field944":
-			out.Field944 = string(in.String())
+			(out.Field944).UnmarshalEasyJSON(in)
 		case "Field945":
-			out.Field945 = string(in.String())
+			(out.Field945).UnmarshalEasyJSON(in)
 		case "Field946":
-			out.Field946 = string(in.String())
+			(out.Field946).UnmarshalEasyJSON(in)
 		case "Field947":
-			out.Field947 = string(in.String())
+			(out.Field947).UnmarshalEasyJSON(in)
 		case "Field948":
-			out.Field948 = string(in.String())
+			(out.Field948).UnmarshalEasyJSON(in)
 		case "Field949":
-			out.Field949 = string(in.String())
+			(out.Field949).UnmarshalEasyJSON(in)
 		case "Field950":
-			out.Field950 = string(in.String())
+			(out.Field950).UnmarshalEasyJSON(in)
 		case "Field951":
-			out.Field951 = string(in.String())
+			(out.Field951).UnmarshalEasyJSON(in)
 		case "Field952":
-			out.Field952 = string(in.String())
+			(out.Field952).UnmarshalEasyJSON(in)
 		case "Field953":
-			out.Field953 = string(in.String())
+			(out.Field953).UnmarshalEasyJSON(in)
 		case "Field954":
-			out.Field954 = string(in.String())
+			(out.Field954).UnmarshalEasyJSON(in)
 		case "Field955":
-			out.Field955 = string(in.String())
+			(out.Field955).UnmarshalEasyJSON(in)
 		case "Field956":
-			out.Field956 = string(in.String())
+			(out.Field956).UnmarshalEasyJSON(in)
 		case "Field957":
-			out.Field957 = string(in.String())
+			(out.Field957).UnmarshalEasyJSON(in)
 		case "Field958":
-			out.Field958 = string(in.String())
+			(out.Field958).UnmarshalEasyJSON(in)
 		case "Field959":
-			out.Field959 = string(in.String())
+			(out.Field959).UnmarshalEasyJSON(in)
 		case "Field960":
-			out.Field960 = string(in.String())
+			(out.Field960).UnmarshalEasyJSON(in)
 		case "Field961":
-			out.Field961 = string(in.String())
+			(out.Field961).UnmarshalEasyJSON(in)
 		case "Field962":
-			out.Field962 = string(in.String())
+			(out.Field962).UnmarshalEasyJSON(in)
 		case "Field963":
-			out.Field963 = string(in.String())
+			(out.Field963).UnmarshalEasyJSON(in)
 		case "Field964":
-			out.Field964 = string(in.String())
+			(out.Field964).UnmarshalEasyJSON(in)
 		case "Field965":
-			out.Field965 = string(in.String())
+			(out.Field965).UnmarshalEasyJSON(in)
 		case "Field966":
-			out.Field966 = string(in.String())
+			(out.Field966).UnmarshalEasyJSON(in)
 		case "Field967":
-			out.Field967 = string(in.String())
+			(out.Field967).UnmarshalEasyJSON(in)
 		case "Field968":
-			out.Field968 = string(in.String())
+			(out.Field968).UnmarshalEasyJSON(in)
 		case "Field969":
-			out.Field969 = string(in.String())
+			(out.Field969).UnmarshalEasyJSON(in)
 		case "Field970":
-			out.Field970 = string(in.String())
+			(out.Field970).UnmarshalEasyJSON(in)
 		case "Field971":
-			out.Field971 = string(in.String())
+			(out.Field971).UnmarshalEasyJSON(in)
 		case "Field972":
-			out.Field972 = string(in.String())
+			(out.Field972).UnmarshalEasyJSON(in)
 		case "Field973":
-			out.Field973 = string(in.String())
+			(out.Field973).UnmarshalEasyJSON(in)
 		case "Field974":
-			out.Field974 = string(in.String())
+			(out.Field974).UnmarshalEasyJSON(in)
 		case "Field975":
-			out.Field975 = string(in.String())
+			(out.Field975).UnmarshalEasyJSON(in)
 		case "Field976":
-			out.Field976 = string(in.String())
+			(out.Field976).UnmarshalEasyJSON(in)
 		case "Field977":
-			out.Field977 = string(in.String())
+			(out.Field977).UnmarshalEasyJSON(in)
 		case "Field978":
-			out.Field978 = string(in.String())
+			(out.Field978).UnmarshalEasyJSON(in)
 		case "Field979":
-			out.Field979 = string(in.String())
+			(out.Field979).UnmarshalEasyJSON(in)
 		case "Field980":
-			out.Field980 = string(in.String())
+			(out.Field980).UnmarshalEasyJSON(in)
 		case "Field981":
-			out.Field981 = string(in.String())
+			(out.Field981).UnmarshalEasyJSON(in)
 		case "Field982":
-			out.Field982 = string(in.String())
+			(out.Field982).UnmarshalEasyJSON(in)
 		case "Field983":
-			out.Field983 = string(in.String())
+			(out.Field983).UnmarshalEasyJSON(in)
 		case "Field984":
-			out.Field984 = string(in.String())
+			(out.Field984).UnmarshalEasyJSON(in)
 		case "Field985":
-			out.Field985 = string(in.String())
+			(out.Field985).UnmarshalEasyJSON(in)
 		case "Field986":
-			out.Field986 = string(in.String())
+			(out.Field986).UnmarshalEasyJSON(in)
 		case "Field987":
-			out.Field987 = string(in.String())
+			(out.Field987).UnmarshalEasyJSON(in)
 		case "Field988":
-			out.Field988 = string(in.String())
+			(out.Field988).UnmarshalEasyJSON(in)
 		case "Field989":
-			out.Field989 = string(in.String())
+			(out.Field989).UnmarshalEasyJSON(in)
 		case "Field990":
-			out.Field990 = string(in.String())
+			(out.Field990).UnmarshalEasyJSON(in)
 		case "Field991":
-			out.Field991 = string(in.String())
+			(out.Field991).UnmarshalEasyJSON(in)
 		case "Field992":
-			out.Field992 = string(in.String())
+			(out.Field992).UnmarshalEasyJSON(in)
 		case "Field993":
-			out.Field993 = string(in.String())
+			(out.Field993).UnmarshalEasyJSON(in)
 		case "Field994":
-			out.Field994 = string(in.String())
+			(out.Field994).UnmarshalEasyJSON(in)
 		case "Field995":
-			out.Field995 = string(in.String())
+			(out.Field995).UnmarshalEasyJSON(in)
 		case "Field996":
-			out.Field996 = string(in.String())
+			(out.Field996).UnmarshalEasyJSON(in)
 		case "Field997":
-			out.Field997 = string(in.String())
+			(out.Field997).UnmarshalEasyJSON(in)
 		case "Field998":
-			out.Field998 = string(in.String())
+			(out.Field998).UnmarshalEasyJSON(in)
 		case "Field999":
-			out.Field999 = string(in.String())
+			(out.Field999).UnmarshalEasyJSON(in)
 		default:
 			in.SkipRecursive()
 		}
@@ -2046,5033 +2046,5033 @@ func easyjson8e3959a1DecodeGithubComKakTusNan(in *jlexer.Lexer, out *valueBig) {
 		in.Consumed()
 	}
 }
-func easyjson8e3959a1EncodeGithubComKakTusNan(out *jwriter.Writer, in valueBig) {
+func easyjson1a4aeb6dEncodeGithubComKakTusNanBench(out *jwriter.Writer, in nanBig) {
 	out.RawByte('{')
 	first := true
 	_ = first
 	{
 		const prefix string = ",\"Field000\":"
 		out.RawString(prefix[1:])
-		out.String(string(in.Field000))
+		(in.Field000).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field001\":"
 		out.RawString(prefix)
-		out.String(string(in.Field001))
+		(in.Field001).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field002\":"
 		out.RawString(prefix)
-		out.String(string(in.Field002))
+		(in.Field002).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field003\":"
 		out.RawString(prefix)
-		out.String(string(in.Field003))
+		(in.Field003).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field004\":"
 		out.RawString(prefix)
-		out.String(string(in.Field004))
+		(in.Field004).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field005\":"
 		out.RawString(prefix)
-		out.String(string(in.Field005))
+		(in.Field005).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field006\":"
 		out.RawString(prefix)
-		out.String(string(in.Field006))
+		(in.Field006).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field007\":"
 		out.RawString(prefix)
-		out.String(string(in.Field007))
+		(in.Field007).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field008\":"
 		out.RawString(prefix)
-		out.String(string(in.Field008))
+		(in.Field008).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field009\":"
 		out.RawString(prefix)
-		out.String(string(in.Field009))
+		(in.Field009).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field010\":"
 		out.RawString(prefix)
-		out.String(string(in.Field010))
+		(in.Field010).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field011\":"
 		out.RawString(prefix)
-		out.String(string(in.Field011))
+		(in.Field011).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field012\":"
 		out.RawString(prefix)
-		out.String(string(in.Field012))
+		(in.Field012).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field013\":"
 		out.RawString(prefix)
-		out.String(string(in.Field013))
+		(in.Field013).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field014\":"
 		out.RawString(prefix)
-		out.String(string(in.Field014))
+		(in.Field014).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field015\":"
 		out.RawString(prefix)
-		out.String(string(in.Field015))
+		(in.Field015).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field016\":"
 		out.RawString(prefix)
-		out.String(string(in.Field016))
+		(in.Field016).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field017\":"
 		out.RawString(prefix)
-		out.String(string(in.Field017))
+		(in.Field017).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field018\":"
 		out.RawString(prefix)
-		out.String(string(in.Field018))
+		(in.Field018).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field019\":"
 		out.RawString(prefix)
-		out.String(string(in.Field019))
+		(in.Field019).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field020\":"
 		out.RawString(prefix)
-		out.String(string(in.Field020))
+		(in.Field020).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field021\":"
 		out.RawString(prefix)
-		out.String(string(in.Field021))
+		(in.Field021).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field022\":"
 		out.RawString(prefix)
-		out.String(string(in.Field022))
+		(in.Field022).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field023\":"
 		out.RawString(prefix)
-		out.String(string(in.Field023))
+		(in.Field023).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field024\":"
 		out.RawString(prefix)
-		out.String(string(in.Field024))
+		(in.Field024).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field025\":"
 		out.RawString(prefix)
-		out.String(string(in.Field025))
+		(in.Field025).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field026\":"
 		out.RawString(prefix)
-		out.String(string(in.Field026))
+		(in.Field026).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field027\":"
 		out.RawString(prefix)
-		out.String(string(in.Field027))
+		(in.Field027).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field028\":"
 		out.RawString(prefix)
-		out.String(string(in.Field028))
+		(in.Field028).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field029\":"
 		out.RawString(prefix)
-		out.String(string(in.Field029))
+		(in.Field029).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field030\":"
 		out.RawString(prefix)
-		out.String(string(in.Field030))
+		(in.Field030).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field031\":"
 		out.RawString(prefix)
-		out.String(string(in.Field031))
+		(in.Field031).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field032\":"
 		out.RawString(prefix)
-		out.String(string(in.Field032))
+		(in.Field032).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field033\":"
 		out.RawString(prefix)
-		out.String(string(in.Field033))
+		(in.Field033).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field034\":"
 		out.RawString(prefix)
-		out.String(string(in.Field034))
+		(in.Field034).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field035\":"
 		out.RawString(prefix)
-		out.String(string(in.Field035))
+		(in.Field035).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field036\":"
 		out.RawString(prefix)
-		out.String(string(in.Field036))
+		(in.Field036).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field037\":"
 		out.RawString(prefix)
-		out.String(string(in.Field037))
+		(in.Field037).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field038\":"
 		out.RawString(prefix)
-		out.String(string(in.Field038))
+		(in.Field038).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field039\":"
 		out.RawString(prefix)
-		out.String(string(in.Field039))
+		(in.Field039).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field040\":"
 		out.RawString(prefix)
-		out.String(string(in.Field040))
+		(in.Field040).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field041\":"
 		out.RawString(prefix)
-		out.String(string(in.Field041))
+		(in.Field041).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field042\":"
 		out.RawString(prefix)
-		out.String(string(in.Field042))
+		(in.Field042).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field043\":"
 		out.RawString(prefix)
-		out.String(string(in.Field043))
+		(in.Field043).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field044\":"
 		out.RawString(prefix)
-		out.String(string(in.Field044))
+		(in.Field044).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field045\":"
 		out.RawString(prefix)
-		out.String(string(in.Field045))
+		(in.Field045).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field046\":"
 		out.RawString(prefix)
-		out.String(string(in.Field046))
+		(in.Field046).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field047\":"
 		out.RawString(prefix)
-		out.String(string(in.Field047))
+		(in.Field047).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field048\":"
 		out.RawString(prefix)
-		out.String(string(in.Field048))
+		(in.Field048).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field049\":"
 		out.RawString(prefix)
-		out.String(string(in.Field049))
+		(in.Field049).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field050\":"
 		out.RawString(prefix)
-		out.String(string(in.Field050))
+		(in.Field050).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field051\":"
 		out.RawString(prefix)
-		out.String(string(in.Field051))
+		(in.Field051).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field052\":"
 		out.RawString(prefix)
-		out.String(string(in.Field052))
+		(in.Field052).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field053\":"
 		out.RawString(prefix)
-		out.String(string(in.Field053))
+		(in.Field053).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field054\":"
 		out.RawString(prefix)
-		out.String(string(in.Field054))
+		(in.Field054).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field055\":"
 		out.RawString(prefix)
-		out.String(string(in.Field055))
+		(in.Field055).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field056\":"
 		out.RawString(prefix)
-		out.String(string(in.Field056))
+		(in.Field056).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field057\":"
 		out.RawString(prefix)
-		out.String(string(in.Field057))
+		(in.Field057).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field058\":"
 		out.RawString(prefix)
-		out.String(string(in.Field058))
+		(in.Field058).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field059\":"
 		out.RawString(prefix)
-		out.String(string(in.Field059))
+		(in.Field059).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field060\":"
 		out.RawString(prefix)
-		out.String(string(in.Field060))
+		(in.Field060).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field061\":"
 		out.RawString(prefix)
-		out.String(string(in.Field061))
+		(in.Field061).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field062\":"
 		out.RawString(prefix)
-		out.String(string(in.Field062))
+		(in.Field062).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field063\":"
 		out.RawString(prefix)
-		out.String(string(in.Field063))
+		(in.Field063).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field064\":"
 		out.RawString(prefix)
-		out.String(string(in.Field064))
+		(in.Field064).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field065\":"
 		out.RawString(prefix)
-		out.String(string(in.Field065))
+		(in.Field065).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field066\":"
 		out.RawString(prefix)
-		out.String(string(in.Field066))
+		(in.Field066).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field067\":"
 		out.RawString(prefix)
-		out.String(string(in.Field067))
+		(in.Field067).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field068\":"
 		out.RawString(prefix)
-		out.String(string(in.Field068))
+		(in.Field068).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field069\":"
 		out.RawString(prefix)
-		out.String(string(in.Field069))
+		(in.Field069).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field070\":"
 		out.RawString(prefix)
-		out.String(string(in.Field070))
+		(in.Field070).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field071\":"
 		out.RawString(prefix)
-		out.String(string(in.Field071))
+		(in.Field071).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field072\":"
 		out.RawString(prefix)
-		out.String(string(in.Field072))
+		(in.Field072).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field073\":"
 		out.RawString(prefix)
-		out.String(string(in.Field073))
+		(in.Field073).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field074\":"
 		out.RawString(prefix)
-		out.String(string(in.Field074))
+		(in.Field074).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field075\":"
 		out.RawString(prefix)
-		out.String(string(in.Field075))
+		(in.Field075).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field076\":"
 		out.RawString(prefix)
-		out.String(string(in.Field076))
+		(in.Field076).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field077\":"
 		out.RawString(prefix)
-		out.String(string(in.Field077))
+		(in.Field077).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field078\":"
 		out.RawString(prefix)
-		out.String(string(in.Field078))
+		(in.Field078).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field079\":"
 		out.RawString(prefix)
-		out.String(string(in.Field079))
+		(in.Field079).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field080\":"
 		out.RawString(prefix)
-		out.String(string(in.Field080))
+		(in.Field080).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field081\":"
 		out.RawString(prefix)
-		out.String(string(in.Field081))
+		(in.Field081).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field082\":"
 		out.RawString(prefix)
-		out.String(string(in.Field082))
+		(in.Field082).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field083\":"
 		out.RawString(prefix)
-		out.String(string(in.Field083))
+		(in.Field083).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field084\":"
 		out.RawString(prefix)
-		out.String(string(in.Field084))
+		(in.Field084).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field085\":"
 		out.RawString(prefix)
-		out.String(string(in.Field085))
+		(in.Field085).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field086\":"
 		out.RawString(prefix)
-		out.String(string(in.Field086))
+		(in.Field086).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field087\":"
 		out.RawString(prefix)
-		out.String(string(in.Field087))
+		(in.Field087).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field088\":"
 		out.RawString(prefix)
-		out.String(string(in.Field088))
+		(in.Field088).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field089\":"
 		out.RawString(prefix)
-		out.String(string(in.Field089))
+		(in.Field089).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field090\":"
 		out.RawString(prefix)
-		out.String(string(in.Field090))
+		(in.Field090).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field091\":"
 		out.RawString(prefix)
-		out.String(string(in.Field091))
+		(in.Field091).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field092\":"
 		out.RawString(prefix)
-		out.String(string(in.Field092))
+		(in.Field092).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field093\":"
 		out.RawString(prefix)
-		out.String(string(in.Field093))
+		(in.Field093).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field094\":"
 		out.RawString(prefix)
-		out.String(string(in.Field094))
+		(in.Field094).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field095\":"
 		out.RawString(prefix)
-		out.String(string(in.Field095))
+		(in.Field095).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field096\":"
 		out.RawString(prefix)
-		out.String(string(in.Field096))
+		(in.Field096).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field097\":"
 		out.RawString(prefix)
-		out.String(string(in.Field097))
+		(in.Field097).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field098\":"
 		out.RawString(prefix)
-		out.String(string(in.Field098))
+		(in.Field098).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field099\":"
 		out.RawString(prefix)
-		out.String(string(in.Field099))
+		(in.Field099).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field100\":"
 		out.RawString(prefix)
-		out.String(string(in.Field100))
+		(in.Field100).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field101\":"
 		out.RawString(prefix)
-		out.String(string(in.Field101))
+		(in.Field101).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field102\":"
 		out.RawString(prefix)
-		out.String(string(in.Field102))
+		(in.Field102).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field103\":"
 		out.RawString(prefix)
-		out.String(string(in.Field103))
+		(in.Field103).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field104\":"
 		out.RawString(prefix)
-		out.String(string(in.Field104))
+		(in.Field104).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field105\":"
 		out.RawString(prefix)
-		out.String(string(in.Field105))
+		(in.Field105).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field106\":"
 		out.RawString(prefix)
-		out.String(string(in.Field106))
+		(in.Field106).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field107\":"
 		out.RawString(prefix)
-		out.String(string(in.Field107))
+		(in.Field107).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field108\":"
 		out.RawString(prefix)
-		out.String(string(in.Field108))
+		(in.Field108).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field109\":"
 		out.RawString(prefix)
-		out.String(string(in.Field109))
+		(in.Field109).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field110\":"
 		out.RawString(prefix)
-		out.String(string(in.Field110))
+		(in.Field110).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field111\":"
 		out.RawString(prefix)
-		out.String(string(in.Field111))
+		(in.Field111).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field112\":"
 		out.RawString(prefix)
-		out.String(string(in.Field112))
+		(in.Field112).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field113\":"
 		out.RawString(prefix)
-		out.String(string(in.Field113))
+		(in.Field113).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field114\":"
 		out.RawString(prefix)
-		out.String(string(in.Field114))
+		(in.Field114).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field115\":"
 		out.RawString(prefix)
-		out.String(string(in.Field115))
+		(in.Field115).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field116\":"
 		out.RawString(prefix)
-		out.String(string(in.Field116))
+		(in.Field116).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field117\":"
 		out.RawString(prefix)
-		out.String(string(in.Field117))
+		(in.Field117).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field118\":"
 		out.RawString(prefix)
-		out.String(string(in.Field118))
+		(in.Field118).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field119\":"
 		out.RawString(prefix)
-		out.String(string(in.Field119))
+		(in.Field119).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field120\":"
 		out.RawString(prefix)
-		out.String(string(in.Field120))
+		(in.Field120).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field121\":"
 		out.RawString(prefix)
-		out.String(string(in.Field121))
+		(in.Field121).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field122\":"
 		out.RawString(prefix)
-		out.String(string(in.Field122))
+		(in.Field122).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field123\":"
 		out.RawString(prefix)
-		out.String(string(in.Field123))
+		(in.Field123).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field124\":"
 		out.RawString(prefix)
-		out.String(string(in.Field124))
+		(in.Field124).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field125\":"
 		out.RawString(prefix)
-		out.String(string(in.Field125))
+		(in.Field125).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field126\":"
 		out.RawString(prefix)
-		out.String(string(in.Field126))
+		(in.Field126).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field127\":"
 		out.RawString(prefix)
-		out.String(string(in.Field127))
+		(in.Field127).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field128\":"
 		out.RawString(prefix)
-		out.String(string(in.Field128))
+		(in.Field128).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field129\":"
 		out.RawString(prefix)
-		out.String(string(in.Field129))
+		(in.Field129).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field130\":"
 		out.RawString(prefix)
-		out.String(string(in.Field130))
+		(in.Field130).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field131\":"
 		out.RawString(prefix)
-		out.String(string(in.Field131))
+		(in.Field131).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field132\":"
 		out.RawString(prefix)
-		out.String(string(in.Field132))
+		(in.Field132).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field133\":"
 		out.RawString(prefix)
-		out.String(string(in.Field133))
+		(in.Field133).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field134\":"
 		out.RawString(prefix)
-		out.String(string(in.Field134))
+		(in.Field134).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field135\":"
 		out.RawString(prefix)
-		out.String(string(in.Field135))
+		(in.Field135).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field136\":"
 		out.RawString(prefix)
-		out.String(string(in.Field136))
+		(in.Field136).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field137\":"
 		out.RawString(prefix)
-		out.String(string(in.Field137))
+		(in.Field137).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field138\":"
 		out.RawString(prefix)
-		out.String(string(in.Field138))
+		(in.Field138).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field139\":"
 		out.RawString(prefix)
-		out.String(string(in.Field139))
+		(in.Field139).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field140\":"
 		out.RawString(prefix)
-		out.String(string(in.Field140))
+		(in.Field140).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field141\":"
 		out.RawString(prefix)
-		out.String(string(in.Field141))
+		(in.Field141).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field142\":"
 		out.RawString(prefix)
-		out.String(string(in.Field142))
+		(in.Field142).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field143\":"
 		out.RawString(prefix)
-		out.String(string(in.Field143))
+		(in.Field143).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field144\":"
 		out.RawString(prefix)
-		out.String(string(in.Field144))
+		(in.Field144).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field145\":"
 		out.RawString(prefix)
-		out.String(string(in.Field145))
+		(in.Field145).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field146\":"
 		out.RawString(prefix)
-		out.String(string(in.Field146))
+		(in.Field146).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field147\":"
 		out.RawString(prefix)
-		out.String(string(in.Field147))
+		(in.Field147).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field148\":"
 		out.RawString(prefix)
-		out.String(string(in.Field148))
+		(in.Field148).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field149\":"
 		out.RawString(prefix)
-		out.String(string(in.Field149))
+		(in.Field149).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field150\":"
 		out.RawString(prefix)
-		out.String(string(in.Field150))
+		(in.Field150).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field151\":"
 		out.RawString(prefix)
-		out.String(string(in.Field151))
+		(in.Field151).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field152\":"
 		out.RawString(prefix)
-		out.String(string(in.Field152))
+		(in.Field152).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field153\":"
 		out.RawString(prefix)
-		out.String(string(in.Field153))
+		(in.Field153).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field154\":"
 		out.RawString(prefix)
-		out.String(string(in.Field154))
+		(in.Field154).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field155\":"
 		out.RawString(prefix)
-		out.String(string(in.Field155))
+		(in.Field155).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field156\":"
 		out.RawString(prefix)
-		out.String(string(in.Field156))
+		(in.Field156).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field157\":"
 		out.RawString(prefix)
-		out.String(string(in.Field157))
+		(in.Field157).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field158\":"
 		out.RawString(prefix)
-		out.String(string(in.Field158))
+		(in.Field158).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field159\":"
 		out.RawString(prefix)
-		out.String(string(in.Field159))
+		(in.Field159).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field160\":"
 		out.RawString(prefix)
-		out.String(string(in.Field160))
+		(in.Field160).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field161\":"
 		out.RawString(prefix)
-		out.String(string(in.Field161))
+		(in.Field161).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field162\":"
 		out.RawString(prefix)
-		out.String(string(in.Field162))
+		(in.Field162).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field163\":"
 		out.RawString(prefix)
-		out.String(string(in.Field163))
+		(in.Field163).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field164\":"
 		out.RawString(prefix)
-		out.String(string(in.Field164))
+		(in.Field164).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field165\":"
 		out.RawString(prefix)
-		out.String(string(in.Field165))
+		(in.Field165).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field166\":"
 		out.RawString(prefix)
-		out.String(string(in.Field166))
+		(in.Field166).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field167\":"
 		out.RawString(prefix)
-		out.String(string(in.Field167))
+		(in.Field167).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field168\":"
 		out.RawString(prefix)
-		out.String(string(in.Field168))
+		(in.Field168).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field169\":"
 		out.RawString(prefix)
-		out.String(string(in.Field169))
+		(in.Field169).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field170\":"
 		out.RawString(prefix)
-		out.String(string(in.Field170))
+		(in.Field170).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field171\":"
 		out.RawString(prefix)
-		out.String(string(in.Field171))
+		(in.Field171).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field172\":"
 		out.RawString(prefix)
-		out.String(string(in.Field172))
+		(in.Field172).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field173\":"
 		out.RawString(prefix)
-		out.String(string(in.Field173))
+		(in.Field173).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field174\":"
 		out.RawString(prefix)
-		out.String(string(in.Field174))
+		(in.Field174).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field175\":"
 		out.RawString(prefix)
-		out.String(string(in.Field175))
+		(in.Field175).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field176\":"
 		out.RawString(prefix)
-		out.String(string(in.Field176))
+		(in.Field176).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field177\":"
 		out.RawString(prefix)
-		out.String(string(in.Field177))
+		(in.Field177).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field178\":"
 		out.RawString(prefix)
-		out.String(string(in.Field178))
+		(in.Field178).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field179\":"
 		out.RawString(prefix)
-		out.String(string(in.Field179))
+		(in.Field179).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field180\":"
 		out.RawString(prefix)
-		out.String(string(in.Field180))
+		(in.Field180).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field181\":"
 		out.RawString(prefix)
-		out.String(string(in.Field181))
+		(in.Field181).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field182\":"
 		out.RawString(prefix)
-		out.String(string(in.Field182))
+		(in.Field182).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field183\":"
 		out.RawString(prefix)
-		out.String(string(in.Field183))
+		(in.Field183).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field184\":"
 		out.RawString(prefix)
-		out.String(string(in.Field184))
+		(in.Field184).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field185\":"
 		out.RawString(prefix)
-		out.String(string(in.Field185))
+		(in.Field185).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field186\":"
 		out.RawString(prefix)
-		out.String(string(in.Field186))
+		(in.Field186).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field187\":"
 		out.RawString(prefix)
-		out.String(string(in.Field187))
+		(in.Field187).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field188\":"
 		out.RawString(prefix)
-		out.String(string(in.Field188))
+		(in.Field188).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field189\":"
 		out.RawString(prefix)
-		out.String(string(in.Field189))
+		(in.Field189).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field190\":"
 		out.RawString(prefix)
-		out.String(string(in.Field190))
+		(in.Field190).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field191\":"
 		out.RawString(prefix)
-		out.String(string(in.Field191))
+		(in.Field191).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field192\":"
 		out.RawString(prefix)
-		out.String(string(in.Field192))
+		(in.Field192).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field193\":"
 		out.RawString(prefix)
-		out.String(string(in.Field193))
+		(in.Field193).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field194\":"
 		out.RawString(prefix)
-		out.String(string(in.Field194))
+		(in.Field194).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field195\":"
 		out.RawString(prefix)
-		out.String(string(in.Field195))
+		(in.Field195).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field196\":"
 		out.RawString(prefix)
-		out.String(string(in.Field196))
+		(in.Field196).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field197\":"
 		out.RawString(prefix)
-		out.String(string(in.Field197))
+		(in.Field197).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field198\":"
 		out.RawString(prefix)
-		out.String(string(in.Field198))
+		(in.Field198).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field199\":"
 		out.RawString(prefix)
-		out.String(string(in.Field199))
+		(in.Field199).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field200\":"
 		out.RawString(prefix)
-		out.String(string(in.Field200))
+		(in.Field200).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field201\":"
 		out.RawString(prefix)
-		out.String(string(in.Field201))
+		(in.Field201).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field202\":"
 		out.RawString(prefix)
-		out.String(string(in.Field202))
+		(in.Field202).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field203\":"
 		out.RawString(prefix)
-		out.String(string(in.Field203))
+		(in.Field203).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field204\":"
 		out.RawString(prefix)
-		out.String(string(in.Field204))
+		(in.Field204).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field205\":"
 		out.RawString(prefix)
-		out.String(string(in.Field205))
+		(in.Field205).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field206\":"
 		out.RawString(prefix)
-		out.String(string(in.Field206))
+		(in.Field206).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field207\":"
 		out.RawString(prefix)
-		out.String(string(in.Field207))
+		(in.Field207).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field208\":"
 		out.RawString(prefix)
-		out.String(string(in.Field208))
+		(in.Field208).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field209\":"
 		out.RawString(prefix)
-		out.String(string(in.Field209))
+		(in.Field209).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field210\":"
 		out.RawString(prefix)
-		out.String(string(in.Field210))
+		(in.Field210).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field211\":"
 		out.RawString(prefix)
-		out.String(string(in.Field211))
+		(in.Field211).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field212\":"
 		out.RawString(prefix)
-		out.String(string(in.Field212))
+		(in.Field212).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field213\":"
 		out.RawString(prefix)
-		out.String(string(in.Field213))
+		(in.Field213).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field214\":"
 		out.RawString(prefix)
-		out.String(string(in.Field214))
+		(in.Field214).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field215\":"
 		out.RawString(prefix)
-		out.String(string(in.Field215))
+		(in.Field215).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field216\":"
 		out.RawString(prefix)
-		out.String(string(in.Field216))
+		(in.Field216).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field217\":"
 		out.RawString(prefix)
-		out.String(string(in.Field217))
+		(in.Field217).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field218\":"
 		out.RawString(prefix)
-		out.String(string(in.Field218))
+		(in.Field218).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field219\":"
 		out.RawString(prefix)
-		out.String(string(in.Field219))
+		(in.Field219).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field220\":"
 		out.RawString(prefix)
-		out.String(string(in.Field220))
+		(in.Field220).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field221\":"
 		out.RawString(prefix)
-		out.String(string(in.Field221))
+		(in.Field221).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field222\":"
 		out.RawString(prefix)
-		out.String(string(in.Field222))
+		(in.Field222).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field223\":"
 		out.RawString(prefix)
-		out.String(string(in.Field223))
+		(in.Field223).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field224\":"
 		out.RawString(prefix)
-		out.String(string(in.Field224))
+		(in.Field224).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field225\":"
 		out.RawString(prefix)
-		out.String(string(in.Field225))
+		(in.Field225).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field226\":"
 		out.RawString(prefix)
-		out.String(string(in.Field226))
+		(in.Field226).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field227\":"
 		out.RawString(prefix)
-		out.String(string(in.Field227))
+		(in.Field227).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field228\":"
 		out.RawString(prefix)
-		out.String(string(in.Field228))
+		(in.Field228).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field229\":"
 		out.RawString(prefix)
-		out.String(string(in.Field229))
+		(in.Field229).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field230\":"
 		out.RawString(prefix)
-		out.String(string(in.Field230))
+		(in.Field230).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field231\":"
 		out.RawString(prefix)
-		out.String(string(in.Field231))
+		(in.Field231).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field232\":"
 		out.RawString(prefix)
-		out.String(string(in.Field232))
+		(in.Field232).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field233\":"
 		out.RawString(prefix)
-		out.String(string(in.Field233))
+		(in.Field233).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field234\":"
 		out.RawString(prefix)
-		out.String(string(in.Field234))
+		(in.Field234).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field235\":"
 		out.RawString(prefix)
-		out.String(string(in.Field235))
+		(in.Field235).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field236\":"
 		out.RawString(prefix)
-		out.String(string(in.Field236))
+		(in.Field236).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field237\":"
 		out.RawString(prefix)
-		out.String(string(in.Field237))
+		(in.Field237).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field238\":"
 		out.RawString(prefix)
-		out.String(string(in.Field238))
+		(in.Field238).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field239\":"
 		out.RawString(prefix)
-		out.String(string(in.Field239))
+		(in.Field239).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field240\":"
 		out.RawString(prefix)
-		out.String(string(in.Field240))
+		(in.Field240).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field241\":"
 		out.RawString(prefix)
-		out.String(string(in.Field241))
+		(in.Field241).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field242\":"
 		out.RawString(prefix)
-		out.String(string(in.Field242))
+		(in.Field242).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field243\":"
 		out.RawString(prefix)
-		out.String(string(in.Field243))
+		(in.Field243).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field244\":"
 		out.RawString(prefix)
-		out.String(string(in.Field244))
+		(in.Field244).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field245\":"
 		out.RawString(prefix)
-		out.String(string(in.Field245))
+		(in.Field245).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field246\":"
 		out.RawString(prefix)
-		out.String(string(in.Field246))
+		(in.Field246).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field247\":"
 		out.RawString(prefix)
-		out.String(string(in.Field247))
+		(in.Field247).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field248\":"
 		out.RawString(prefix)
-		out.String(string(in.Field248))
+		(in.Field248).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field249\":"
 		out.RawString(prefix)
-		out.String(string(in.Field249))
+		(in.Field249).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field250\":"
 		out.RawString(prefix)
-		out.String(string(in.Field250))
+		(in.Field250).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field251\":"
 		out.RawString(prefix)
-		out.String(string(in.Field251))
+		(in.Field251).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field252\":"
 		out.RawString(prefix)
-		out.String(string(in.Field252))
+		(in.Field252).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field253\":"
 		out.RawString(prefix)
-		out.String(string(in.Field253))
+		(in.Field253).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field254\":"
 		out.RawString(prefix)
-		out.String(string(in.Field254))
+		(in.Field254).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field255\":"
 		out.RawString(prefix)
-		out.String(string(in.Field255))
+		(in.Field255).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field256\":"
 		out.RawString(prefix)
-		out.String(string(in.Field256))
+		(in.Field256).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field257\":"
 		out.RawString(prefix)
-		out.String(string(in.Field257))
+		(in.Field257).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field258\":"
 		out.RawString(prefix)
-		out.String(string(in.Field258))
+		(in.Field258).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field259\":"
 		out.RawString(prefix)
-		out.String(string(in.Field259))
+		(in.Field259).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field260\":"
 		out.RawString(prefix)
-		out.String(string(in.Field260))
+		(in.Field260).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field261\":"
 		out.RawString(prefix)
-		out.String(string(in.Field261))
+		(in.Field261).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field262\":"
 		out.RawString(prefix)
-		out.String(string(in.Field262))
+		(in.Field262).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field263\":"
 		out.RawString(prefix)
-		out.String(string(in.Field263))
+		(in.Field263).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field264\":"
 		out.RawString(prefix)
-		out.String(string(in.Field264))
+		(in.Field264).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field265\":"
 		out.RawString(prefix)
-		out.String(string(in.Field265))
+		(in.Field265).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field266\":"
 		out.RawString(prefix)
-		out.String(string(in.Field266))
+		(in.Field266).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field267\":"
 		out.RawString(prefix)
-		out.String(string(in.Field267))
+		(in.Field267).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field268\":"
 		out.RawString(prefix)
-		out.String(string(in.Field268))
+		(in.Field268).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field269\":"
 		out.RawString(prefix)
-		out.String(string(in.Field269))
+		(in.Field269).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field270\":"
 		out.RawString(prefix)
-		out.String(string(in.Field270))
+		(in.Field270).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field271\":"
 		out.RawString(prefix)
-		out.String(string(in.Field271))
+		(in.Field271).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field272\":"
 		out.RawString(prefix)
-		out.String(string(in.Field272))
+		(in.Field272).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field273\":"
 		out.RawString(prefix)
-		out.String(string(in.Field273))
+		(in.Field273).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field274\":"
 		out.RawString(prefix)
-		out.String(string(in.Field274))
+		(in.Field274).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field275\":"
 		out.RawString(prefix)
-		out.String(string(in.Field275))
+		(in.Field275).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field276\":"
 		out.RawString(prefix)
-		out.String(string(in.Field276))
+		(in.Field276).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field277\":"
 		out.RawString(prefix)
-		out.String(string(in.Field277))
+		(in.Field277).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field278\":"
 		out.RawString(prefix)
-		out.String(string(in.Field278))
+		(in.Field278).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field279\":"
 		out.RawString(prefix)
-		out.String(string(in.Field279))
+		(in.Field279).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field280\":"
 		out.RawString(prefix)
-		out.String(string(in.Field280))
+		(in.Field280).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field281\":"
 		out.RawString(prefix)
-		out.String(string(in.Field281))
+		(in.Field281).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field282\":"
 		out.RawString(prefix)
-		out.String(string(in.Field282))
+		(in.Field282).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field283\":"
 		out.RawString(prefix)
-		out.String(string(in.Field283))
+		(in.Field283).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field284\":"
 		out.RawString(prefix)
-		out.String(string(in.Field284))
+		(in.Field284).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field285\":"
 		out.RawString(prefix)
-		out.String(string(in.Field285))
+		(in.Field285).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field286\":"
 		out.RawString(prefix)
-		out.String(string(in.Field286))
+		(in.Field286).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field287\":"
 		out.RawString(prefix)
-		out.String(string(in.Field287))
+		(in.Field287).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field288\":"
 		out.RawString(prefix)
-		out.String(string(in.Field288))
+		(in.Field288).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field289\":"
 		out.RawString(prefix)
-		out.String(string(in.Field289))
+		(in.Field289).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field290\":"
 		out.RawString(prefix)
-		out.String(string(in.Field290))
+		(in.Field290).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field291\":"
 		out.RawString(prefix)
-		out.String(string(in.Field291))
+		(in.Field291).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field292\":"
 		out.RawString(prefix)
-		out.String(string(in.Field292))
+		(in.Field292).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field293\":"
 		out.RawString(prefix)
-		out.String(string(in.Field293))
+		(in.Field293).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field294\":"
 		out.RawString(prefix)
-		out.String(string(in.Field294))
+		(in.Field294).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field295\":"
 		out.RawString(prefix)
-		out.String(string(in.Field295))
+		(in.Field295).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field296\":"
 		out.RawString(prefix)
-		out.String(string(in.Field296))
+		(in.Field296).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field297\":"
 		out.RawString(prefix)
-		out.String(string(in.Field297))
+		(in.Field297).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field298\":"
 		out.RawString(prefix)
-		out.String(string(in.Field298))
+		(in.Field298).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field299\":"
 		out.RawString(prefix)
-		out.String(string(in.Field299))
+		(in.Field299).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field300\":"
 		out.RawString(prefix)
-		out.String(string(in.Field300))
+		(in.Field300).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field301\":"
 		out.RawString(prefix)
-		out.String(string(in.Field301))
+		(in.Field301).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field302\":"
 		out.RawString(prefix)
-		out.String(string(in.Field302))
+		(in.Field302).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field303\":"
 		out.RawString(prefix)
-		out.String(string(in.Field303))
+		(in.Field303).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field304\":"
 		out.RawString(prefix)
-		out.String(string(in.Field304))
+		(in.Field304).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field305\":"
 		out.RawString(prefix)
-		out.String(string(in.Field305))
+		(in.Field305).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field306\":"
 		out.RawString(prefix)
-		out.String(string(in.Field306))
+		(in.Field306).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field307\":"
 		out.RawString(prefix)
-		out.String(string(in.Field307))
+		(in.Field307).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field308\":"
 		out.RawString(prefix)
-		out.String(string(in.Field308))
+		(in.Field308).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field309\":"
 		out.RawString(prefix)
-		out.String(string(in.Field309))
+		(in.Field309).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field310\":"
 		out.RawString(prefix)
-		out.String(string(in.Field310))
+		(in.Field310).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field311\":"
 		out.RawString(prefix)
-		out.String(string(in.Field311))
+		(in.Field311).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field312\":"
 		out.RawString(prefix)
-		out.String(string(in.Field312))
+		(in.Field312).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field313\":"
 		out.RawString(prefix)
-		out.String(string(in.Field313))
+		(in.Field313).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field314\":"
 		out.RawString(prefix)
-		out.String(string(in.Field314))
+		(in.Field314).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field315\":"
 		out.RawString(prefix)
-		out.String(string(in.Field315))
+		(in.Field315).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field316\":"
 		out.RawString(prefix)
-		out.String(string(in.Field316))
+		(in.Field316).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field317\":"
 		out.RawString(prefix)
-		out.String(string(in.Field317))
+		(in.Field317).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field318\":"
 		out.RawString(prefix)
-		out.String(string(in.Field318))
+		(in.Field318).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field319\":"
 		out.RawString(prefix)
-		out.String(string(in.Field319))
+		(in.Field319).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field320\":"
 		out.RawString(prefix)
-		out.String(string(in.Field320))
+		(in.Field320).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field321\":"
 		out.RawString(prefix)
-		out.String(string(in.Field321))
+		(in.Field321).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field322\":"
 		out.RawString(prefix)
-		out.String(string(in.Field322))
+		(in.Field322).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field323\":"
 		out.RawString(prefix)
-		out.String(string(in.Field323))
+		(in.Field323).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field324\":"
 		out.RawString(prefix)
-		out.String(string(in.Field324))
+		(in.Field324).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field325\":"
 		out.RawString(prefix)
-		out.String(string(in.Field325))
+		(in.Field325).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field326\":"
 		out.RawString(prefix)
-		out.String(string(in.Field326))
+		(in.Field326).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field327\":"
 		out.RawString(prefix)
-		out.String(string(in.Field327))
+		(in.Field327).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field328\":"
 		out.RawString(prefix)
-		out.String(string(in.Field328))
+		(in.Field328).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field329\":"
 		out.RawString(prefix)
-		out.String(string(in.Field329))
+		(in.Field329).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field330\":"
 		out.RawString(prefix)
-		out.String(string(in.Field330))
+		(in.Field330).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field331\":"
 		out.RawString(prefix)
-		out.String(string(in.Field331))
+		(in.Field331).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field332\":"
 		out.RawString(prefix)
-		out.String(string(in.Field332))
+		(in.Field332).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field333\":"
 		out.RawString(prefix)
-		out.String(string(in.Field333))
+		(in.Field333).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field334\":"
 		out.RawString(prefix)
-		out.String(string(in.Field334))
+		(in.Field334).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field335\":"
 		out.RawString(prefix)
-		out.String(string(in.Field335))
+		(in.Field335).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field336\":"
 		out.RawString(prefix)
-		out.String(string(in.Field336))
+		(in.Field336).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field337\":"
 		out.RawString(prefix)
-		out.String(string(in.Field337))
+		(in.Field337).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field338\":"
 		out.RawString(prefix)
-		out.String(string(in.Field338))
+		(in.Field338).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field339\":"
 		out.RawString(prefix)
-		out.String(string(in.Field339))
+		(in.Field339).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field340\":"
 		out.RawString(prefix)
-		out.String(string(in.Field340))
+		(in.Field340).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field341\":"
 		out.RawString(prefix)
-		out.String(string(in.Field341))
+		(in.Field341).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field342\":"
 		out.RawString(prefix)
-		out.String(string(in.Field342))
+		(in.Field342).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field343\":"
 		out.RawString(prefix)
-		out.String(string(in.Field343))
+		(in.Field343).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field344\":"
 		out.RawString(prefix)
-		out.String(string(in.Field344))
+		(in.Field344).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field345\":"
 		out.RawString(prefix)
-		out.String(string(in.Field345))
+		(in.Field345).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field346\":"
 		out.RawString(prefix)
-		out.String(string(in.Field346))
+		(in.Field346).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field347\":"
 		out.RawString(prefix)
-		out.String(string(in.Field347))
+		(in.Field347).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field348\":"
 		out.RawString(prefix)
-		out.String(string(in.Field348))
+		(in.Field348).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field349\":"
 		out.RawString(prefix)
-		out.String(string(in.Field349))
+		(in.Field349).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field350\":"
 		out.RawString(prefix)
-		out.String(string(in.Field350))
+		(in.Field350).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field351\":"
 		out.RawString(prefix)
-		out.String(string(in.Field351))
+		(in.Field351).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field352\":"
 		out.RawString(prefix)
-		out.String(string(in.Field352))
+		(in.Field352).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field353\":"
 		out.RawString(prefix)
-		out.String(string(in.Field353))
+		(in.Field353).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field354\":"
 		out.RawString(prefix)
-		out.String(string(in.Field354))
+		(in.Field354).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field355\":"
 		out.RawString(prefix)
-		out.String(string(in.Field355))
+		(in.Field355).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field356\":"
 		out.RawString(prefix)
-		out.String(string(in.Field356))
+		(in.Field356).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field357\":"
 		out.RawString(prefix)
-		out.String(string(in.Field357))
+		(in.Field357).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field358\":"
 		out.RawString(prefix)
-		out.String(string(in.Field358))
+		(in.Field358).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field359\":"
 		out.RawString(prefix)
-		out.String(string(in.Field359))
+		(in.Field359).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field360\":"
 		out.RawString(prefix)
-		out.String(string(in.Field360))
+		(in.Field360).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field361\":"
 		out.RawString(prefix)
-		out.String(string(in.Field361))
+		(in.Field361).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field362\":"
 		out.RawString(prefix)
-		out.String(string(in.Field362))
+		(in.Field362).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field363\":"
 		out.RawString(prefix)
-		out.String(string(in.Field363))
+		(in.Field363).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field364\":"
 		out.RawString(prefix)
-		out.String(string(in.Field364))
+		(in.Field364).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field365\":"
 		out.RawString(prefix)
-		out.String(string(in.Field365))
+		(in.Field365).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field366\":"
 		out.RawString(prefix)
-		out.String(string(in.Field366))
+		(in.Field366).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field367\":"
 		out.RawString(prefix)
-		out.String(string(in.Field367))
+		(in.Field367).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field368\":"
 		out.RawString(prefix)
-		out.String(string(in.Field368))
+		(in.Field368).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field369\":"
 		out.RawString(prefix)
-		out.String(string(in.Field369))
+		(in.Field369).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field370\":"
 		out.RawString(prefix)
-		out.String(string(in.Field370))
+		(in.Field370).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field371\":"
 		out.RawString(prefix)
-		out.String(string(in.Field371))
+		(in.Field371).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field372\":"
 		out.RawString(prefix)
-		out.String(string(in.Field372))
+		(in.Field372).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field373\":"
 		out.RawString(prefix)
-		out.String(string(in.Field373))
+		(in.Field373).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field374\":"
 		out.RawString(prefix)
-		out.String(string(in.Field374))
+		(in.Field374).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field375\":"
 		out.RawString(prefix)
-		out.String(string(in.Field375))
+		(in.Field375).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field376\":"
 		out.RawString(prefix)
-		out.String(string(in.Field376))
+		(in.Field376).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field377\":"
 		out.RawString(prefix)
-		out.String(string(in.Field377))
+		(in.Field377).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field378\":"
 		out.RawString(prefix)
-		out.String(string(in.Field378))
+		(in.Field378).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field379\":"
 		out.RawString(prefix)
-		out.String(string(in.Field379))
+		(in.Field379).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field380\":"
 		out.RawString(prefix)
-		out.String(string(in.Field380))
+		(in.Field380).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field381\":"
 		out.RawString(prefix)
-		out.String(string(in.Field381))
+		(in.Field381).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field382\":"
 		out.RawString(prefix)
-		out.String(string(in.Field382))
+		(in.Field382).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field383\":"
 		out.RawString(prefix)
-		out.String(string(in.Field383))
+		(in.Field383).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field384\":"
 		out.RawString(prefix)
-		out.String(string(in.Field384))
+		(in.Field384).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field385\":"
 		out.RawString(prefix)
-		out.String(string(in.Field385))
+		(in.Field385).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field386\":"
 		out.RawString(prefix)
-		out.String(string(in.Field386))
+		(in.Field386).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field387\":"
 		out.RawString(prefix)
-		out.String(string(in.Field387))
+		(in.Field387).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field388\":"
 		out.RawString(prefix)
-		out.String(string(in.Field388))
+		(in.Field388).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field389\":"
 		out.RawString(prefix)
-		out.String(string(in.Field389))
+		(in.Field389).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field390\":"
 		out.RawString(prefix)
-		out.String(string(in.Field390))
+		(in.Field390).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field391\":"
 		out.RawString(prefix)
-		out.String(string(in.Field391))
+		(in.Field391).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field392\":"
 		out.RawString(prefix)
-		out.String(string(in.Field392))
+		(in.Field392).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field393\":"
 		out.RawString(prefix)
-		out.String(string(in.Field393))
+		(in.Field393).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field394\":"
 		out.RawString(prefix)
-		out.String(string(in.Field394))
+		(in.Field394).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field395\":"
 		out.RawString(prefix)
-		out.String(string(in.Field395))
+		(in.Field395).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field396\":"
 		out.RawString(prefix)
-		out.String(string(in.Field396))
+		(in.Field396).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field397\":"
 		out.RawString(prefix)
-		out.String(string(in.Field397))
+		(in.Field397).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field398\":"
 		out.RawString(prefix)
-		out.String(string(in.Field398))
+		(in.Field398).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field399\":"
 		out.RawString(prefix)
-		out.String(string(in.Field399))
+		(in.Field399).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field400\":"
 		out.RawString(prefix)
-		out.String(string(in.Field400))
+		(in.Field400).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field401\":"
 		out.RawString(prefix)
-		out.String(string(in.Field401))
+		(in.Field401).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field402\":"
 		out.RawString(prefix)
-		out.String(string(in.Field402))
+		(in.Field402).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field403\":"
 		out.RawString(prefix)
-		out.String(string(in.Field403))
+		(in.Field403).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field404\":"
 		out.RawString(prefix)
-		out.String(string(in.Field404))
+		(in.Field404).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field405\":"
 		out.RawString(prefix)
-		out.String(string(in.Field405))
+		(in.Field405).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field406\":"
 		out.RawString(prefix)
-		out.String(string(in.Field406))
+		(in.Field406).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field407\":"
 		out.RawString(prefix)
-		out.String(string(in.Field407))
+		(in.Field407).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field408\":"
 		out.RawString(prefix)
-		out.String(string(in.Field408))
+		(in.Field408).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field409\":"
 		out.RawString(prefix)
-		out.String(string(in.Field409))
+		(in.Field409).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field410\":"
 		out.RawString(prefix)
-		out.String(string(in.Field410))
+		(in.Field410).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field411\":"
 		out.RawString(prefix)
-		out.String(string(in.Field411))
+		(in.Field411).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field412\":"
 		out.RawString(prefix)
-		out.String(string(in.Field412))
+		(in.Field412).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field413\":"
 		out.RawString(prefix)
-		out.String(string(in.Field413))
+		(in.Field413).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field414\":"
 		out.RawString(prefix)
-		out.String(string(in.Field414))
+		(in.Field414).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field415\":"
 		out.RawString(prefix)
-		out.String(string(in.Field415))
+		(in.Field415).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field416\":"
 		out.RawString(prefix)
-		out.String(string(in.Field416))
+		(in.Field416).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field417\":"
 		out.RawString(prefix)
-		out.String(string(in.Field417))
+		(in.Field417).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field418\":"
 		out.RawString(prefix)
-		out.String(string(in.Field418))
+		(in.Field418).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field419\":"
 		out.RawString(prefix)
-		out.String(string(in.Field419))
+		(in.Field419).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field420\":"
 		out.RawString(prefix)
-		out.String(string(in.Field420))
+		(in.Field420).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field421\":"
 		out.RawString(prefix)
-		out.String(string(in.Field421))
+		(in.Field421).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field422\":"
 		out.RawString(prefix)
-		out.String(string(in.Field422))
+		(in.Field422).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field423\":"
 		out.RawString(prefix)
-		out.String(string(in.Field423))
+		(in.Field423).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field424\":"
 		out.RawString(prefix)
-		out.String(string(in.Field424))
+		(in.Field424).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field425\":"
 		out.RawString(prefix)
-		out.String(string(in.Field425))
+		(in.Field425).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field426\":"
 		out.RawString(prefix)
-		out.String(string(in.Field426))
+		(in.Field426).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field427\":"
 		out.RawString(prefix)
-		out.String(string(in.Field427))
+		(in.Field427).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field428\":"
 		out.RawString(prefix)
-		out.String(string(in.Field428))
+		(in.Field428).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field429\":"
 		out.RawString(prefix)
-		out.String(string(in.Field429))
+		(in.Field429).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field430\":"
 		out.RawString(prefix)
-		out.String(string(in.Field430))
+		(in.Field430).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field431\":"
 		out.RawString(prefix)
-		out.String(string(in.Field431))
+		(in.Field431).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field432\":"
 		out.RawString(prefix)
-		out.String(string(in.Field432))
+		(in.Field432).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field433\":"
 		out.RawString(prefix)
-		out.String(string(in.Field433))
+		(in.Field433).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field434\":"
 		out.RawString(prefix)
-		out.String(string(in.Field434))
+		(in.Field434).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field435\":"
 		out.RawString(prefix)
-		out.String(string(in.Field435))
+		(in.Field435).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field436\":"
 		out.RawString(prefix)
-		out.String(string(in.Field436))
+		(in.Field436).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field437\":"
 		out.RawString(prefix)
-		out.String(string(in.Field437))
+		(in.Field437).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field438\":"
 		out.RawString(prefix)
-		out.String(string(in.Field438))
+		(in.Field438).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field439\":"
 		out.RawString(prefix)
-		out.String(string(in.Field439))
+		(in.Field439).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field440\":"
 		out.RawString(prefix)
-		out.String(string(in.Field440))
+		(in.Field440).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field441\":"
 		out.RawString(prefix)
-		out.String(string(in.Field441))
+		(in.Field441).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field442\":"
 		out.RawString(prefix)
-		out.String(string(in.Field442))
+		(in.Field442).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field443\":"
 		out.RawString(prefix)
-		out.String(string(in.Field443))
+		(in.Field443).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field444\":"
 		out.RawString(prefix)
-		out.String(string(in.Field444))
+		(in.Field444).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field445\":"
 		out.RawString(prefix)
-		out.String(string(in.Field445))
+		(in.Field445).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field446\":"
 		out.RawString(prefix)
-		out.String(string(in.Field446))
+		(in.Field446).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field447\":"
 		out.RawString(prefix)
-		out.String(string(in.Field447))
+		(in.Field447).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field448\":"
 		out.RawString(prefix)
-		out.String(string(in.Field448))
+		(in.Field448).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field449\":"
 		out.RawString(prefix)
-		out.String(string(in.Field449))
+		(in.Field449).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field450\":"
 		out.RawString(prefix)
-		out.String(string(in.Field450))
+		(in.Field450).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field451\":"
 		out.RawString(prefix)
-		out.String(string(in.Field451))
+		(in.Field451).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field452\":"
 		out.RawString(prefix)
-		out.String(string(in.Field452))
+		(in.Field452).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field453\":"
 		out.RawString(prefix)
-		out.String(string(in.Field453))
+		(in.Field453).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field454\":"
 		out.RawString(prefix)
-		out.String(string(in.Field454))
+		(in.Field454).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field455\":"
 		out.RawString(prefix)
-		out.String(string(in.Field455))
+		(in.Field455).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field456\":"
 		out.RawString(prefix)
-		out.String(string(in.Field456))
+		(in.Field456).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field457\":"
 		out.RawString(prefix)
-		out.String(string(in.Field457))
+		(in.Field457).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field458\":"
 		out.RawString(prefix)
-		out.String(string(in.Field458))
+		(in.Field458).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field459\":"
 		out.RawString(prefix)
-		out.String(string(in.Field459))
+		(in.Field459).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field460\":"
 		out.RawString(prefix)
-		out.String(string(in.Field460))
+		(in.Field460).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field461\":"
 		out.RawString(prefix)
-		out.String(string(in.Field461))
+		(in.Field461).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field462\":"
 		out.RawString(prefix)
-		out.String(string(in.Field462))
+		(in.Field462).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field463\":"
 		out.RawString(prefix)
-		out.String(string(in.Field463))
+		(in.Field463).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field464\":"
 		out.RawString(prefix)
-		out.String(string(in.Field464))
+		(in.Field464).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field465\":"
 		out.RawString(prefix)
-		out.String(string(in.Field465))
+		(in.Field465).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field466\":"
 		out.RawString(prefix)
-		out.String(string(in.Field466))
+		(in.Field466).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field467\":"
 		out.RawString(prefix)
-		out.String(string(in.Field467))
+		(in.Field467).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field468\":"
 		out.RawString(prefix)
-		out.String(string(in.Field468))
+		(in.Field468).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field469\":"
 		out.RawString(prefix)
-		out.String(string(in.Field469))
+		(in.Field469).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field470\":"
 		out.RawString(prefix)
-		out.String(string(in.Field470))
+		(in.Field470).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field471\":"
 		out.RawString(prefix)
-		out.String(string(in.Field471))
+		(in.Field471).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field472\":"
 		out.RawString(prefix)
-		out.String(string(in.Field472))
+		(in.Field472).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field473\":"
 		out.RawString(prefix)
-		out.String(string(in.Field473))
+		(in.Field473).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field474\":"
 		out.RawString(prefix)
-		out.String(string(in.Field474))
+		(in.Field474).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field475\":"
 		out.RawString(prefix)
-		out.String(string(in.Field475))
+		(in.Field475).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field476\":"
 		out.RawString(prefix)
-		out.String(string(in.Field476))
+		(in.Field476).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field477\":"
 		out.RawString(prefix)
-		out.String(string(in.Field477))
+		(in.Field477).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field478\":"
 		out.RawString(prefix)
-		out.String(string(in.Field478))
+		(in.Field478).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field479\":"
 		out.RawString(prefix)
-		out.String(string(in.Field479))
+		(in.Field479).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field480\":"
 		out.RawString(prefix)
-		out.String(string(in.Field480))
+		(in.Field480).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field481\":"
 		out.RawString(prefix)
-		out.String(string(in.Field481))
+		(in.Field481).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field482\":"
 		out.RawString(prefix)
-		out.String(string(in.Field482))
+		(in.Field482).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field483\":"
 		out.RawString(prefix)
-		out.String(string(in.Field483))
+		(in.Field483).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field484\":"
 		out.RawString(prefix)
-		out.String(string(in.Field484))
+		(in.Field484).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field485\":"
 		out.RawString(prefix)
-		out.String(string(in.Field485))
+		(in.Field485).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field486\":"
 		out.RawString(prefix)
-		out.String(string(in.Field486))
+		(in.Field486).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field487\":"
 		out.RawString(prefix)
-		out.String(string(in.Field487))
+		(in.Field487).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field488\":"
 		out.RawString(prefix)
-		out.String(string(in.Field488))
+		(in.Field488).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field489\":"
 		out.RawString(prefix)
-		out.String(string(in.Field489))
+		(in.Field489).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field490\":"
 		out.RawString(prefix)
-		out.String(string(in.Field490))
+		(in.Field490).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field491\":"
 		out.RawString(prefix)
-		out.String(string(in.Field491))
+		(in.Field491).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field492\":"
 		out.RawString(prefix)
-		out.String(string(in.Field492))
+		(in.Field492).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field493\":"
 		out.RawString(prefix)
-		out.String(string(in.Field493))
+		(in.Field493).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field494\":"
 		out.RawString(prefix)
-		out.String(string(in.Field494))
+		(in.Field494).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field495\":"
 		out.RawString(prefix)
-		out.String(string(in.Field495))
+		(in.Field495).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field496\":"
 		out.RawString(prefix)
-		out.String(string(in.Field496))
+		(in.Field496).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field497\":"
 		out.RawString(prefix)
-		out.String(string(in.Field497))
+		(in.Field497).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field498\":"
 		out.RawString(prefix)
-		out.String(string(in.Field498))
+		(in.Field498).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field499\":"
 		out.RawString(prefix)
-		out.String(string(in.Field499))
+		(in.Field499).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field500\":"
 		out.RawString(prefix)
-		out.String(string(in.Field500))
+		(in.Field500).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field501\":"
 		out.RawString(prefix)
-		out.String(string(in.Field501))
+		(in.Field501).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field502\":"
 		out.RawString(prefix)
-		out.String(string(in.Field502))
+		(in.Field502).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field503\":"
 		out.RawString(prefix)
-		out.String(string(in.Field503))
+		(in.Field503).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field504\":"
 		out.RawString(prefix)
-		out.String(string(in.Field504))
+		(in.Field504).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field505\":"
 		out.RawString(prefix)
-		out.String(string(in.Field505))
+		(in.Field505).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field506\":"
 		out.RawString(prefix)
-		out.String(string(in.Field506))
+		(in.Field506).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field507\":"
 		out.RawString(prefix)
-		out.String(string(in.Field507))
+		(in.Field507).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field508\":"
 		out.RawString(prefix)
-		out.String(string(in.Field508))
+		(in.Field508).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field509\":"
 		out.RawString(prefix)
-		out.String(string(in.Field509))
+		(in.Field509).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field510\":"
 		out.RawString(prefix)
-		out.String(string(in.Field510))
+		(in.Field510).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field511\":"
 		out.RawString(prefix)
-		out.String(string(in.Field511))
+		(in.Field511).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field512\":"
 		out.RawString(prefix)
-		out.String(string(in.Field512))
+		(in.Field512).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field513\":"
 		out.RawString(prefix)
-		out.String(string(in.Field513))
+		(in.Field513).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field514\":"
 		out.RawString(prefix)
-		out.String(string(in.Field514))
+		(in.Field514).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field515\":"
 		out.RawString(prefix)
-		out.String(string(in.Field515))
+		(in.Field515).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field516\":"
 		out.RawString(prefix)
-		out.String(string(in.Field516))
+		(in.Field516).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field517\":"
 		out.RawString(prefix)
-		out.String(string(in.Field517))
+		(in.Field517).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field518\":"
 		out.RawString(prefix)
-		out.String(string(in.Field518))
+		(in.Field518).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field519\":"
 		out.RawString(prefix)
-		out.String(string(in.Field519))
+		(in.Field519).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field520\":"
 		out.RawString(prefix)
-		out.String(string(in.Field520))
+		(in.Field520).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field521\":"
 		out.RawString(prefix)
-		out.String(string(in.Field521))
+		(in.Field521).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field522\":"
 		out.RawString(prefix)
-		out.String(string(in.Field522))
+		(in.Field522).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field523\":"
 		out.RawString(prefix)
-		out.String(string(in.Field523))
+		(in.Field523).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field524\":"
 		out.RawString(prefix)
-		out.String(string(in.Field524))
+		(in.Field524).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field525\":"
 		out.RawString(prefix)
-		out.String(string(in.Field525))
+		(in.Field525).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field526\":"
 		out.RawString(prefix)
-		out.String(string(in.Field526))
+		(in.Field526).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field527\":"
 		out.RawString(prefix)
-		out.String(string(in.Field527))
+		(in.Field527).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field528\":"
 		out.RawString(prefix)
-		out.String(string(in.Field528))
+		(in.Field528).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field529\":"
 		out.RawString(prefix)
-		out.String(string(in.Field529))
+		(in.Field529).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field530\":"
 		out.RawString(prefix)
-		out.String(string(in.Field530))
+		(in.Field530).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field531\":"
 		out.RawString(prefix)
-		out.String(string(in.Field531))
+		(in.Field531).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field532\":"
 		out.RawString(prefix)
-		out.String(string(in.Field532))
+		(in.Field532).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field533\":"
 		out.RawString(prefix)
-		out.String(string(in.Field533))
+		(in.Field533).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field534\":"
 		out.RawString(prefix)
-		out.String(string(in.Field534))
+		(in.Field534).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field535\":"
 		out.RawString(prefix)
-		out.String(string(in.Field535))
+		(in.Field535).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field536\":"
 		out.RawString(prefix)
-		out.String(string(in.Field536))
+		(in.Field536).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field537\":"
 		out.RawString(prefix)
-		out.String(string(in.Field537))
+		(in.Field537).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field538\":"
 		out.RawString(prefix)
-		out.String(string(in.Field538))
+		(in.Field538).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field539\":"
 		out.RawString(prefix)
-		out.String(string(in.Field539))
+		(in.Field539).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field540\":"
 		out.RawString(prefix)
-		out.String(string(in.Field540))
+		(in.Field540).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field541\":"
 		out.RawString(prefix)
-		out.String(string(in.Field541))
+		(in.Field541).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field542\":"
 		out.RawString(prefix)
-		out.String(string(in.Field542))
+		(in.Field542).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field543\":"
 		out.RawString(prefix)
-		out.String(string(in.Field543))
+		(in.Field543).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field544\":"
 		out.RawString(prefix)
-		out.String(string(in.Field544))
+		(in.Field544).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field545\":"
 		out.RawString(prefix)
-		out.String(string(in.Field545))
+		(in.Field545).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field546\":"
 		out.RawString(prefix)
-		out.String(string(in.Field546))
+		(in.Field546).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field547\":"
 		out.RawString(prefix)
-		out.String(string(in.Field547))
+		(in.Field547).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field548\":"
 		out.RawString(prefix)
-		out.String(string(in.Field548))
+		(in.Field548).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field549\":"
 		out.RawString(prefix)
-		out.String(string(in.Field549))
+		(in.Field549).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field550\":"
 		out.RawString(prefix)
-		out.String(string(in.Field550))
+		(in.Field550).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field551\":"
 		out.RawString(prefix)
-		out.String(string(in.Field551))
+		(in.Field551).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field552\":"
 		out.RawString(prefix)
-		out.String(string(in.Field552))
+		(in.Field552).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field553\":"
 		out.RawString(prefix)
-		out.String(string(in.Field553))
+		(in.Field553).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field554\":"
 		out.RawString(prefix)
-		out.String(string(in.Field554))
+		(in.Field554).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field555\":"
 		out.RawString(prefix)
-		out.String(string(in.Field555))
+		(in.Field555).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field556\":"
 		out.RawString(prefix)
-		out.String(string(in.Field556))
+		(in.Field556).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field557\":"
 		out.RawString(prefix)
-		out.String(string(in.Field557))
+		(in.Field557).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field558\":"
 		out.RawString(prefix)
-		out.String(string(in.Field558))
+		(in.Field558).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field559\":"
 		out.RawString(prefix)
-		out.String(string(in.Field559))
+		(in.Field559).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field560\":"
 		out.RawString(prefix)
-		out.String(string(in.Field560))
+		(in.Field560).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field561\":"
 		out.RawString(prefix)
-		out.String(string(in.Field561))
+		(in.Field561).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field562\":"
 		out.RawString(prefix)
-		out.String(string(in.Field562))
+		(in.Field562).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field563\":"
 		out.RawString(prefix)
-		out.String(string(in.Field563))
+		(in.Field563).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field564\":"
 		out.RawString(prefix)
-		out.String(string(in.Field564))
+		(in.Field564).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field565\":"
 		out.RawString(prefix)
-		out.String(string(in.Field565))
+		(in.Field565).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field566\":"
 		out.RawString(prefix)
-		out.String(string(in.Field566))
+		(in.Field566).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field567\":"
 		out.RawString(prefix)
-		out.String(string(in.Field567))
+		(in.Field567).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field568\":"
 		out.RawString(prefix)
-		out.String(string(in.Field568))
+		(in.Field568).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field569\":"
 		out.RawString(prefix)
-		out.String(string(in.Field569))
+		(in.Field569).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field570\":"
 		out.RawString(prefix)
-		out.String(string(in.Field570))
+		(in.Field570).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field571\":"
 		out.RawString(prefix)
-		out.String(string(in.Field571))
+		(in.Field571).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field572\":"
 		out.RawString(prefix)
-		out.String(string(in.Field572))
+		(in.Field572).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field573\":"
 		out.RawString(prefix)
-		out.String(string(in.Field573))
+		(in.Field573).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field574\":"
 		out.RawString(prefix)
-		out.String(string(in.Field574))
+		(in.Field574).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field575\":"
 		out.RawString(prefix)
-		out.String(string(in.Field575))
+		(in.Field575).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field576\":"
 		out.RawString(prefix)
-		out.String(string(in.Field576))
+		(in.Field576).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field577\":"
 		out.RawString(prefix)
-		out.String(string(in.Field577))
+		(in.Field577).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field578\":"
 		out.RawString(prefix)
-		out.String(string(in.Field578))
+		(in.Field578).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field579\":"
 		out.RawString(prefix)
-		out.String(string(in.Field579))
+		(in.Field579).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field580\":"
 		out.RawString(prefix)
-		out.String(string(in.Field580))
+		(in.Field580).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field581\":"
 		out.RawString(prefix)
-		out.String(string(in.Field581))
+		(in.Field581).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field582\":"
 		out.RawString(prefix)
-		out.String(string(in.Field582))
+		(in.Field582).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field583\":"
 		out.RawString(prefix)
-		out.String(string(in.Field583))
+		(in.Field583).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field584\":"
 		out.RawString(prefix)
-		out.String(string(in.Field584))
+		(in.Field584).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field585\":"
 		out.RawString(prefix)
-		out.String(string(in.Field585))
+		(in.Field585).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field586\":"
 		out.RawString(prefix)
-		out.String(string(in.Field586))
+		(in.Field586).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field587\":"
 		out.RawString(prefix)
-		out.String(string(in.Field587))
+		(in.Field587).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field588\":"
 		out.RawString(prefix)
-		out.String(string(in.Field588))
+		(in.Field588).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field589\":"
 		out.RawString(prefix)
-		out.String(string(in.Field589))
+		(in.Field589).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field590\":"
 		out.RawString(prefix)
-		out.String(string(in.Field590))
+		(in.Field590).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field591\":"
 		out.RawString(prefix)
-		out.String(string(in.Field591))
+		(in.Field591).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field592\":"
 		out.RawString(prefix)
-		out.String(string(in.Field592))
+		(in.Field592).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field593\":"
 		out.RawString(prefix)
-		out.String(string(in.Field593))
+		(in.Field593).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field594\":"
 		out.RawString(prefix)
-		out.String(string(in.Field594))
+		(in.Field594).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field595\":"
 		out.RawString(prefix)
-		out.String(string(in.Field595))
+		(in.Field595).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field596\":"
 		out.RawString(prefix)
-		out.String(string(in.Field596))
+		(in.Field596).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field597\":"
 		out.RawString(prefix)
-		out.String(string(in.Field597))
+		(in.Field597).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field598\":"
 		out.RawString(prefix)
-		out.String(string(in.Field598))
+		(in.Field598).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field599\":"
 		out.RawString(prefix)
-		out.String(string(in.Field599))
+		(in.Field599).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field600\":"
 		out.RawString(prefix)
-		out.String(string(in.Field600))
+		(in.Field600).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field601\":"
 		out.RawString(prefix)
-		out.String(string(in.Field601))
+		(in.Field601).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field602\":"
 		out.RawString(prefix)
-		out.String(string(in.Field602))
+		(in.Field602).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field603\":"
 		out.RawString(prefix)
-		out.String(string(in.Field603))
+		(in.Field603).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field604\":"
 		out.RawString(prefix)
-		out.String(string(in.Field604))
+		(in.Field604).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field605\":"
 		out.RawString(prefix)
-		out.String(string(in.Field605))
+		(in.Field605).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field606\":"
 		out.RawString(prefix)
-		out.String(string(in.Field606))
+		(in.Field606).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field607\":"
 		out.RawString(prefix)
-		out.String(string(in.Field607))
+		(in.Field607).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field608\":"
 		out.RawString(prefix)
-		out.String(string(in.Field608))
+		(in.Field608).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field609\":"
 		out.RawString(prefix)
-		out.String(string(in.Field609))
+		(in.Field609).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field610\":"
 		out.RawString(prefix)
-		out.String(string(in.Field610))
+		(in.Field610).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field611\":"
 		out.RawString(prefix)
-		out.String(string(in.Field611))
+		(in.Field611).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field612\":"
 		out.RawString(prefix)
-		out.String(string(in.Field612))
+		(in.Field612).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field613\":"
 		out.RawString(prefix)
-		out.String(string(in.Field613))
+		(in.Field613).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field614\":"
 		out.RawString(prefix)
-		out.String(string(in.Field614))
+		(in.Field614).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field615\":"
 		out.RawString(prefix)
-		out.String(string(in.Field615))
+		(in.Field615).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field616\":"
 		out.RawString(prefix)
-		out.String(string(in.Field616))
+		(in.Field616).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field617\":"
 		out.RawString(prefix)
-		out.String(string(in.Field617))
+		(in.Field617).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field618\":"
 		out.RawString(prefix)
-		out.String(string(in.Field618))
+		(in.Field618).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field619\":"
 		out.RawString(prefix)
-		out.String(string(in.Field619))
+		(in.Field619).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field620\":"
 		out.RawString(prefix)
-		out.String(string(in.Field620))
+		(in.Field620).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field621\":"
 		out.RawString(prefix)
-		out.String(string(in.Field621))
+		(in.Field621).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field622\":"
 		out.RawString(prefix)
-		out.String(string(in.Field622))
+		(in.Field622).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field623\":"
 		out.RawString(prefix)
-		out.String(string(in.Field623))
+		(in.Field623).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field624\":"
 		out.RawString(prefix)
-		out.String(string(in.Field624))
+		(in.Field624).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field625\":"
 		out.RawString(prefix)
-		out.String(string(in.Field625))
+		(in.Field625).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field626\":"
 		out.RawString(prefix)
-		out.String(string(in.Field626))
+		(in.Field626).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field627\":"
 		out.RawString(prefix)
-		out.String(string(in.Field627))
+		(in.Field627).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field628\":"
 		out.RawString(prefix)
-		out.String(string(in.Field628))
+		(in.Field628).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field629\":"
 		out.RawString(prefix)
-		out.String(string(in.Field629))
+		(in.Field629).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field630\":"
 		out.RawString(prefix)
-		out.String(string(in.Field630))
+		(in.Field630).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field631\":"
 		out.RawString(prefix)
-		out.String(string(in.Field631))
+		(in.Field631).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field632\":"
 		out.RawString(prefix)
-		out.String(string(in.Field632))
+		(in.Field632).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field633\":"
 		out.RawString(prefix)
-		out.String(string(in.Field633))
+		(in.Field633).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field634\":"
 		out.RawString(prefix)
-		out.String(string(in.Field634))
+		(in.Field634).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field635\":"
 		out.RawString(prefix)
-		out.String(string(in.Field635))
+		(in.Field635).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field636\":"
 		out.RawString(prefix)
-		out.String(string(in.Field636))
+		(in.Field636).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field637\":"
 		out.RawString(prefix)
-		out.String(string(in.Field637))
+		(in.Field637).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field638\":"
 		out.RawString(prefix)
-		out.String(string(in.Field638))
+		(in.Field638).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field639\":"
 		out.RawString(prefix)
-		out.String(string(in.Field639))
+		(in.Field639).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field640\":"
 		out.RawString(prefix)
-		out.String(string(in.Field640))
+		(in.Field640).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field641\":"
 		out.RawString(prefix)
-		out.String(string(in.Field641))
+		(in.Field641).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field642\":"
 		out.RawString(prefix)
-		out.String(string(in.Field642))
+		(in.Field642).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field643\":"
 		out.RawString(prefix)
-		out.String(string(in.Field643))
+		(in.Field643).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field644\":"
 		out.RawString(prefix)
-		out.String(string(in.Field644))
+		(in.Field644).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field645\":"
 		out.RawString(prefix)
-		out.String(string(in.Field645))
+		(in.Field645).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field646\":"
 		out.RawString(prefix)
-		out.String(string(in.Field646))
+		(in.Field646).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field647\":"
 		out.RawString(prefix)
-		out.String(string(in.Field647))
+		(in.Field647).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field648\":"
 		out.RawString(prefix)
-		out.String(string(in.Field648))
+		(in.Field648).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field649\":"
 		out.RawString(prefix)
-		out.String(string(in.Field649))
+		(in.Field649).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field650\":"
 		out.RawString(prefix)
-		out.String(string(in.Field650))
+		(in.Field650).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field651\":"
 		out.RawString(prefix)
-		out.String(string(in.Field651))
+		(in.Field651).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field652\":"
 		out.RawString(prefix)
-		out.String(string(in.Field652))
+		(in.Field652).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field653\":"
 		out.RawString(prefix)
-		out.String(string(in.Field653))
+		(in.Field653).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field654\":"
 		out.RawString(prefix)
-		out.String(string(in.Field654))
+		(in.Field654).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field655\":"
 		out.RawString(prefix)
-		out.String(string(in.Field655))
+		(in.Field655).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field656\":"
 		out.RawString(prefix)
-		out.String(string(in.Field656))
+		(in.Field656).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field657\":"
 		out.RawString(prefix)
-		out.String(string(in.Field657))
+		(in.Field657).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field658\":"
 		out.RawString(prefix)
-		out.String(string(in.Field658))
+		(in.Field658).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field659\":"
 		out.RawString(prefix)
-		out.String(string(in.Field659))
+		(in.Field659).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field660\":"
 		out.RawString(prefix)
-		out.String(string(in.Field660))
+		(in.Field660).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field661\":"
 		out.RawString(prefix)
-		out.String(string(in.Field661))
+		(in.Field661).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field662\":"
 		out.RawString(prefix)
-		out.String(string(in.Field662))
+		(in.Field662).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field663\":"
 		out.RawString(prefix)
-		out.String(string(in.Field663))
+		(in.Field663).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field664\":"
 		out.RawString(prefix)
-		out.String(string(in.Field664))
+		(in.Field664).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field665\":"
 		out.RawString(prefix)
-		out.String(string(in.Field665))
+		(in.Field665).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field666\":"
 		out.RawString(prefix)
-		out.String(string(in.Field666))
+		(in.Field666).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field667\":"
 		out.RawString(prefix)
-		out.String(string(in.Field667))
+		(in.Field667).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field668\":"
 		out.RawString(prefix)
-		out.String(string(in.Field668))
+		(in.Field668).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field669\":"
 		out.RawString(prefix)
-		out.String(string(in.Field669))
+		(in.Field669).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field670\":"
 		out.RawString(prefix)
-		out.String(string(in.Field670))
+		(in.Field670).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field671\":"
 		out.RawString(prefix)
-		out.String(string(in.Field671))
+		(in.Field671).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field672\":"
 		out.RawString(prefix)
-		out.String(string(in.Field672))
+		(in.Field672).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field673\":"
 		out.RawString(prefix)
-		out.String(string(in.Field673))
+		(in.Field673).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field674\":"
 		out.RawString(prefix)
-		out.String(string(in.Field674))
+		(in.Field674).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field675\":"
 		out.RawString(prefix)
-		out.String(string(in.Field675))
+		(in.Field675).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field676\":"
 		out.RawString(prefix)
-		out.String(string(in.Field676))
+		(in.Field676).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field677\":"
 		out.RawString(prefix)
-		out.String(string(in.Field677))
+		(in.Field677).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field678\":"
 		out.RawString(prefix)
-		out.String(string(in.Field678))
+		(in.Field678).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field679\":"
 		out.RawString(prefix)
-		out.String(string(in.Field679))
+		(in.Field679).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field680\":"
 		out.RawString(prefix)
-		out.String(string(in.Field680))
+		(in.Field680).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field681\":"
 		out.RawString(prefix)
-		out.String(string(in.Field681))
+		(in.Field681).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field682\":"
 		out.RawString(prefix)
-		out.String(string(in.Field682))
+		(in.Field682).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field683\":"
 		out.RawString(prefix)
-		out.String(string(in.Field683))
+		(in.Field683).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field684\":"
 		out.RawString(prefix)
-		out.String(string(in.Field684))
+		(in.Field684).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field685\":"
 		out.RawString(prefix)
-		out.String(string(in.Field685))
+		(in.Field685).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field686\":"
 		out.RawString(prefix)
-		out.String(string(in.Field686))
+		(in.Field686).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field687\":"
 		out.RawString(prefix)
-		out.String(string(in.Field687))
+		(in.Field687).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field688\":"
 		out.RawString(prefix)
-		out.String(string(in.Field688))
+		(in.Field688).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field689\":"
 		out.RawString(prefix)
-		out.String(string(in.Field689))
+		(in.Field689).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field690\":"
 		out.RawString(prefix)
-		out.String(string(in.Field690))
+		(in.Field690).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field691\":"
 		out.RawString(prefix)
-		out.String(string(in.Field691))
+		(in.Field691).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field692\":"
 		out.RawString(prefix)
-		out.String(string(in.Field692))
+		(in.Field692).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field693\":"
 		out.RawString(prefix)
-		out.String(string(in.Field693))
+		(in.Field693).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field694\":"
 		out.RawString(prefix)
-		out.String(string(in.Field694))
+		(in.Field694).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field695\":"
 		out.RawString(prefix)
-		out.String(string(in.Field695))
+		(in.Field695).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field696\":"
 		out.RawString(prefix)
-		out.String(string(in.Field696))
+		(in.Field696).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field697\":"
 		out.RawString(prefix)
-		out.String(string(in.Field697))
+		(in.Field697).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field698\":"
 		out.RawString(prefix)
-		out.String(string(in.Field698))
+		(in.Field698).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field699\":"
 		out.RawString(prefix)
-		out.String(string(in.Field699))
+		(in.Field699).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field700\":"
 		out.RawString(prefix)
-		out.String(string(in.Field700))
+		(in.Field700).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field701\":"
 		out.RawString(prefix)
-		out.String(string(in.Field701))
+		(in.Field701).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field702\":"
 		out.RawString(prefix)
-		out.String(string(in.Field702))
+		(in.Field702).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field703\":"
 		out.RawString(prefix)
-		out.String(string(in.Field703))
+		(in.Field703).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field704\":"
 		out.RawString(prefix)
-		out.String(string(in.Field704))
+		(in.Field704).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field705\":"
 		out.RawString(prefix)
-		out.String(string(in.Field705))
+		(in.Field705).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field706\":"
 		out.RawString(prefix)
-		out.String(string(in.Field706))
+		(in.Field706).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field707\":"
 		out.RawString(prefix)
-		out.String(string(in.Field707))
+		(in.Field707).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field708\":"
 		out.RawString(prefix)
-		out.String(string(in.Field708))
+		(in.Field708).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field709\":"
 		out.RawString(prefix)
-		out.String(string(in.Field709))
+		(in.Field709).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field710\":"
 		out.RawString(prefix)
-		out.String(string(in.Field710))
+		(in.Field710).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field711\":"
 		out.RawString(prefix)
-		out.String(string(in.Field711))
+		(in.Field711).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field712\":"
 		out.RawString(prefix)
-		out.String(string(in.Field712))
+		(in.Field712).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field713\":"
 		out.RawString(prefix)
-		out.String(string(in.Field713))
+		(in.Field713).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field714\":"
 		out.RawString(prefix)
-		out.String(string(in.Field714))
+		(in.Field714).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field715\":"
 		out.RawString(prefix)
-		out.String(string(in.Field715))
+		(in.Field715).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field716\":"
 		out.RawString(prefix)
-		out.String(string(in.Field716))
+		(in.Field716).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field717\":"
 		out.RawString(prefix)
-		out.String(string(in.Field717))
+		(in.Field717).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field718\":"
 		out.RawString(prefix)
-		out.String(string(in.Field718))
+		(in.Field718).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field719\":"
 		out.RawString(prefix)
-		out.String(string(in.Field719))
+		(in.Field719).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field720\":"
 		out.RawString(prefix)
-		out.String(string(in.Field720))
+		(in.Field720).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field721\":"
 		out.RawString(prefix)
-		out.String(string(in.Field721))
+		(in.Field721).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field722\":"
 		out.RawString(prefix)
-		out.String(string(in.Field722))
+		(in.Field722).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field723\":"
 		out.RawString(prefix)
-		out.String(string(in.Field723))
+		(in.Field723).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field724\":"
 		out.RawString(prefix)
-		out.String(string(in.Field724))
+		(in.Field724).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field725\":"
 		out.RawString(prefix)
-		out.String(string(in.Field725))
+		(in.Field725).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field726\":"
 		out.RawString(prefix)
-		out.String(string(in.Field726))
+		(in.Field726).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field727\":"
 		out.RawString(prefix)
-		out.String(string(in.Field727))
+		(in.Field727).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field728\":"
 		out.RawString(prefix)
-		out.String(string(in.Field728))
+		(in.Field728).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field729\":"
 		out.RawString(prefix)
-		out.String(string(in.Field729))
+		(in.Field729).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field730\":"
 		out.RawString(prefix)
-		out.String(string(in.Field730))
+		(in.Field730).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field731\":"
 		out.RawString(prefix)
-		out.String(string(in.Field731))
+		(in.Field731).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field732\":"
 		out.RawString(prefix)
-		out.String(string(in.Field732))
+		(in.Field732).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field733\":"
 		out.RawString(prefix)
-		out.String(string(in.Field733))
+		(in.Field733).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field734\":"
 		out.RawString(prefix)
-		out.String(string(in.Field734))
+		(in.Field734).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field735\":"
 		out.RawString(prefix)
-		out.String(string(in.Field735))
+		(in.Field735).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field736\":"
 		out.RawString(prefix)
-		out.String(string(in.Field736))
+		(in.Field736).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field737\":"
 		out.RawString(prefix)
-		out.String(string(in.Field737))
+		(in.Field737).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field738\":"
 		out.RawString(prefix)
-		out.String(string(in.Field738))
+		(in.Field738).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field739\":"
 		out.RawString(prefix)
-		out.String(string(in.Field739))
+		(in.Field739).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field740\":"
 		out.RawString(prefix)
-		out.String(string(in.Field740))
+		(in.Field740).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field741\":"
 		out.RawString(prefix)
-		out.String(string(in.Field741))
+		(in.Field741).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field742\":"
 		out.RawString(prefix)
-		out.String(string(in.Field742))
+		(in.Field742).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field743\":"
 		out.RawString(prefix)
-		out.String(string(in.Field743))
+		(in.Field743).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field744\":"
 		out.RawString(prefix)
-		out.String(string(in.Field744))
+		(in.Field744).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field745\":"
 		out.RawString(prefix)
-		out.String(string(in.Field745))
+		(in.Field745).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field746\":"
 		out.RawString(prefix)
-		out.String(string(in.Field746))
+		(in.Field746).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field747\":"
 		out.RawString(prefix)
-		out.String(string(in.Field747))
+		(in.Field747).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field748\":"
 		out.RawString(prefix)
-		out.String(string(in.Field748))
+		(in.Field748).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field749\":"
 		out.RawString(prefix)
-		out.String(string(in.Field749))
+		(in.Field749).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field750\":"
 		out.RawString(prefix)
-		out.String(string(in.Field750))
+		(in.Field750).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field751\":"
 		out.RawString(prefix)
-		out.String(string(in.Field751))
+		(in.Field751).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field752\":"
 		out.RawString(prefix)
-		out.String(string(in.Field752))
+		(in.Field752).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field753\":"
 		out.RawString(prefix)
-		out.String(string(in.Field753))
+		(in.Field753).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field754\":"
 		out.RawString(prefix)
-		out.String(string(in.Field754))
+		(in.Field754).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field755\":"
 		out.RawString(prefix)
-		out.String(string(in.Field755))
+		(in.Field755).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field756\":"
 		out.RawString(prefix)
-		out.String(string(in.Field756))
+		(in.Field756).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field757\":"
 		out.RawString(prefix)
-		out.String(string(in.Field757))
+		(in.Field757).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field758\":"
 		out.RawString(prefix)
-		out.String(string(in.Field758))
+		(in.Field758).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field759\":"
 		out.RawString(prefix)
-		out.String(string(in.Field759))
+		(in.Field759).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field760\":"
 		out.RawString(prefix)
-		out.String(string(in.Field760))
+		(in.Field760).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field761\":"
 		out.RawString(prefix)
-		out.String(string(in.Field761))
+		(in.Field761).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field762\":"
 		out.RawString(prefix)
-		out.String(string(in.Field762))
+		(in.Field762).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field763\":"
 		out.RawString(prefix)
-		out.String(string(in.Field763))
+		(in.Field763).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field764\":"
 		out.RawString(prefix)
-		out.String(string(in.Field764))
+		(in.Field764).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field765\":"
 		out.RawString(prefix)
-		out.String(string(in.Field765))
+		(in.Field765).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field766\":"
 		out.RawString(prefix)
-		out.String(string(in.Field766))
+		(in.Field766).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field767\":"
 		out.RawString(prefix)
-		out.String(string(in.Field767))
+		(in.Field767).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field768\":"
 		out.RawString(prefix)
-		out.String(string(in.Field768))
+		(in.Field768).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field769\":"
 		out.RawString(prefix)
-		out.String(string(in.Field769))
+		(in.Field769).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field770\":"
 		out.RawString(prefix)
-		out.String(string(in.Field770))
+		(in.Field770).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field771\":"
 		out.RawString(prefix)
-		out.String(string(in.Field771))
+		(in.Field771).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field772\":"
 		out.RawString(prefix)
-		out.String(string(in.Field772))
+		(in.Field772).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field773\":"
 		out.RawString(prefix)
-		out.String(string(in.Field773))
+		(in.Field773).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field774\":"
 		out.RawString(prefix)
-		out.String(string(in.Field774))
+		(in.Field774).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field775\":"
 		out.RawString(prefix)
-		out.String(string(in.Field775))
+		(in.Field775).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field776\":"
 		out.RawString(prefix)
-		out.String(string(in.Field776))
+		(in.Field776).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field777\":"
 		out.RawString(prefix)
-		out.String(string(in.Field777))
+		(in.Field777).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field778\":"
 		out.RawString(prefix)
-		out.String(string(in.Field778))
+		(in.Field778).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field779\":"
 		out.RawString(prefix)
-		out.String(string(in.Field779))
+		(in.Field779).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field780\":"
 		out.RawString(prefix)
-		out.String(string(in.Field780))
+		(in.Field780).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field781\":"
 		out.RawString(prefix)
-		out.String(string(in.Field781))
+		(in.Field781).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field782\":"
 		out.RawString(prefix)
-		out.String(string(in.Field782))
+		(in.Field782).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field783\":"
 		out.RawString(prefix)
-		out.String(string(in.Field783))
+		(in.Field783).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field784\":"
 		out.RawString(prefix)
-		out.String(string(in.Field784))
+		(in.Field784).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field785\":"
 		out.RawString(prefix)
-		out.String(string(in.Field785))
+		(in.Field785).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field786\":"
 		out.RawString(prefix)
-		out.String(string(in.Field786))
+		(in.Field786).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field787\":"
 		out.RawString(prefix)
-		out.String(string(in.Field787))
+		(in.Field787).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field788\":"
 		out.RawString(prefix)
-		out.String(string(in.Field788))
+		(in.Field788).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field789\":"
 		out.RawString(prefix)
-		out.String(string(in.Field789))
+		(in.Field789).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field790\":"
 		out.RawString(prefix)
-		out.String(string(in.Field790))
+		(in.Field790).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field791\":"
 		out.RawString(prefix)
-		out.String(string(in.Field791))
+		(in.Field791).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field792\":"
 		out.RawString(prefix)
-		out.String(string(in.Field792))
+		(in.Field792).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field793\":"
 		out.RawString(prefix)
-		out.String(string(in.Field793))
+		(in.Field793).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field794\":"
 		out.RawString(prefix)
-		out.String(string(in.Field794))
+		(in.Field794).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field795\":"
 		out.RawString(prefix)
-		out.String(string(in.Field795))
+		(in.Field795).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field796\":"
 		out.RawString(prefix)
-		out.String(string(in.Field796))
+		(in.Field796).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field797\":"
 		out.RawString(prefix)
-		out.String(string(in.Field797))
+		(in.Field797).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field798\":"
 		out.RawString(prefix)
-		out.String(string(in.Field798))
+		(in.Field798).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field799\":"
 		out.RawString(prefix)
-		out.String(string(in.Field799))
+		(in.Field799).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field800\":"
 		out.RawString(prefix)
-		out.String(string(in.Field800))
+		(in.Field800).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field801\":"
 		out.RawString(prefix)
-		out.String(string(in.Field801))
+		(in.Field801).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field802\":"
 		out.RawString(prefix)
-		out.String(string(in.Field802))
+		(in.Field802).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field803\":"
 		out.RawString(prefix)
-		out.String(string(in.Field803))
+		(in.Field803).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field804\":"
 		out.RawString(prefix)
-		out.String(string(in.Field804))
+		(in.Field804).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field805\":"
 		out.RawString(prefix)
-		out.String(string(in.Field805))
+		(in.Field805).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field806\":"
 		out.RawString(prefix)
-		out.String(string(in.Field806))
+		(in.Field806).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field807\":"
 		out.RawString(prefix)
-		out.String(string(in.Field807))
+		(in.Field807).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field808\":"
 		out.RawString(prefix)
-		out.String(string(in.Field808))
+		(in.Field808).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field809\":"
 		out.RawString(prefix)
-		out.String(string(in.Field809))
+		(in.Field809).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field810\":"
 		out.RawString(prefix)
-		out.String(string(in.Field810))
+		(in.Field810).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field811\":"
 		out.RawString(prefix)
-		out.String(string(in.Field811))
+		(in.Field811).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field812\":"
 		out.RawString(prefix)
-		out.String(string(in.Field812))
+		(in.Field812).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field813\":"
 		out.RawString(prefix)
-		out.String(string(in.Field813))
+		(in.Field813).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field814\":"
 		out.RawString(prefix)
-		out.String(string(in.Field814))
+		(in.Field814).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field815\":"
 		out.RawString(prefix)
-		out.String(string(in.Field815))
+		(in.Field815).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field816\":"
 		out.RawString(prefix)
-		out.String(string(in.Field816))
+		(in.Field816).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field817\":"
 		out.RawString(prefix)
-		out.String(string(in.Field817))
+		(in.Field817).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field818\":"
 		out.RawString(prefix)
-		out.String(string(in.Field818))
+		(in.Field818).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field819\":"
 		out.RawString(prefix)
-		out.String(string(in.Field819))
+		(in.Field819).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field820\":"
 		out.RawString(prefix)
-		out.String(string(in.Field820))
+		(in.Field820).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field821\":"
 		out.RawString(prefix)
-		out.String(string(in.Field821))
+		(in.Field821).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field822\":"
 		out.RawString(prefix)
-		out.String(string(in.Field822))
+		(in.Field822).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field823\":"
 		out.RawString(prefix)
-		out.String(string(in.Field823))
+		(in.Field823).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field824\":"
 		out.RawString(prefix)
-		out.String(string(in.Field824))
+		(in.Field824).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field825\":"
 		out.RawString(prefix)
-		out.String(string(in.Field825))
+		(in.Field825).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field826\":"
 		out.RawString(prefix)
-		out.String(string(in.Field826))
+		(in.Field826).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field827\":"
 		out.RawString(prefix)
-		out.String(string(in.Field827))
+		(in.Field827).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field828\":"
 		out.RawString(prefix)
-		out.String(string(in.Field828))
+		(in.Field828).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field829\":"
 		out.RawString(prefix)
-		out.String(string(in.Field829))
+		(in.Field829).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field830\":"
 		out.RawString(prefix)
-		out.String(string(in.Field830))
+		(in.Field830).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field831\":"
 		out.RawString(prefix)
-		out.String(string(in.Field831))
+		(in.Field831).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field832\":"
 		out.RawString(prefix)
-		out.String(string(in.Field832))
+		(in.Field832).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field833\":"
 		out.RawString(prefix)
-		out.String(string(in.Field833))
+		(in.Field833).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field834\":"
 		out.RawString(prefix)
-		out.String(string(in.Field834))
+		(in.Field834).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field835\":"
 		out.RawString(prefix)
-		out.String(string(in.Field835))
+		(in.Field835).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field836\":"
 		out.RawString(prefix)
-		out.String(string(in.Field836))
+		(in.Field836).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field837\":"
 		out.RawString(prefix)
-		out.String(string(in.Field837))
+		(in.Field837).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field838\":"
 		out.RawString(prefix)
-		out.String(string(in.Field838))
+		(in.Field838).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field839\":"
 		out.RawString(prefix)
-		out.String(string(in.Field839))
+		(in.Field839).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field840\":"
 		out.RawString(prefix)
-		out.String(string(in.Field840))
+		(in.Field840).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field841\":"
 		out.RawString(prefix)
-		out.String(string(in.Field841))
+		(in.Field841).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field842\":"
 		out.RawString(prefix)
-		out.String(string(in.Field842))
+		(in.Field842).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field843\":"
 		out.RawString(prefix)
-		out.String(string(in.Field843))
+		(in.Field843).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field844\":"
 		out.RawString(prefix)
-		out.String(string(in.Field844))
+		(in.Field844).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field845\":"
 		out.RawString(prefix)
-		out.String(string(in.Field845))
+		(in.Field845).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field846\":"
 		out.RawString(prefix)
-		out.String(string(in.Field846))
+		(in.Field846).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field847\":"
 		out.RawString(prefix)
-		out.String(string(in.Field847))
+		(in.Field847).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field848\":"
 		out.RawString(prefix)
-		out.String(string(in.Field848))
+		(in.Field848).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field849\":"
 		out.RawString(prefix)
-		out.String(string(in.Field849))
+		(in.Field849).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field850\":"
 		out.RawString(prefix)
-		out.String(string(in.Field850))
+		(in.Field850).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field851\":"
 		out.RawString(prefix)
-		out.String(string(in.Field851))
+		(in.Field851).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field852\":"
 		out.RawString(prefix)
-		out.String(string(in.Field852))
+		(in.Field852).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field853\":"
 		out.RawString(prefix)
-		out.String(string(in.Field853))
+		(in.Field853).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field854\":"
 		out.RawString(prefix)
-		out.String(string(in.Field854))
+		(in.Field854).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field855\":"
 		out.RawString(prefix)
-		out.String(string(in.Field855))
+		(in.Field855).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field856\":"
 		out.RawString(prefix)
-		out.String(string(in.Field856))
+		(in.Field856).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field857\":"
 		out.RawString(prefix)
-		out.String(string(in.Field857))
+		(in.Field857).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field858\":"
 		out.RawString(prefix)
-		out.String(string(in.Field858))
+		(in.Field858).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field859\":"
 		out.RawString(prefix)
-		out.String(string(in.Field859))
+		(in.Field859).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field860\":"
 		out.RawString(prefix)
-		out.String(string(in.Field860))
+		(in.Field860).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field861\":"
 		out.RawString(prefix)
-		out.String(string(in.Field861))
+		(in.Field861).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field862\":"
 		out.RawString(prefix)
-		out.String(string(in.Field862))
+		(in.Field862).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field863\":"
 		out.RawString(prefix)
-		out.String(string(in.Field863))
+		(in.Field863).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field864\":"
 		out.RawString(prefix)
-		out.String(string(in.Field864))
+		(in.Field864).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field865\":"
 		out.RawString(prefix)
-		out.String(string(in.Field865))
+		(in.Field865).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field866\":"
 		out.RawString(prefix)
-		out.String(string(in.Field866))
+		(in.Field866).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field867\":"
 		out.RawString(prefix)
-		out.String(string(in.Field867))
+		(in.Field867).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field868\":"
 		out.RawString(prefix)
-		out.String(string(in.Field868))
+		(in.Field868).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field869\":"
 		out.RawString(prefix)
-		out.String(string(in.Field869))
+		(in.Field869).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field870\":"
 		out.RawString(prefix)
-		out.String(string(in.Field870))
+		(in.Field870).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field871\":"
 		out.RawString(prefix)
-		out.String(string(in.Field871))
+		(in.Field871).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field872\":"
 		out.RawString(prefix)
-		out.String(string(in.Field872))
+		(in.Field872).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field873\":"
 		out.RawString(prefix)
-		out.String(string(in.Field873))
+		(in.Field873).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field874\":"
 		out.RawString(prefix)
-		out.String(string(in.Field874))
+		(in.Field874).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field875\":"
 		out.RawString(prefix)
-		out.String(string(in.Field875))
+		(in.Field875).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field876\":"
 		out.RawString(prefix)
-		out.String(string(in.Field876))
+		(in.Field876).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field877\":"
 		out.RawString(prefix)
-		out.String(string(in.Field877))
+		(in.Field877).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field878\":"
 		out.RawString(prefix)
-		out.String(string(in.Field878))
+		(in.Field878).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field879\":"
 		out.RawString(prefix)
-		out.String(string(in.Field879))
+		(in.Field879).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field880\":"
 		out.RawString(prefix)
-		out.String(string(in.Field880))
+		(in.Field880).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field881\":"
 		out.RawString(prefix)
-		out.String(string(in.Field881))
+		(in.Field881).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field882\":"
 		out.RawString(prefix)
-		out.String(string(in.Field882))
+		(in.Field882).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field883\":"
 		out.RawString(prefix)
-		out.String(string(in.Field883))
+		(in.Field883).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field884\":"
 		out.RawString(prefix)
-		out.String(string(in.Field884))
+		(in.Field884).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field885\":"
 		out.RawString(prefix)
-		out.String(string(in.Field885))
+		(in.Field885).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field886\":"
 		out.RawString(prefix)
-		out.String(string(in.Field886))
+		(in.Field886).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field887\":"
 		out.RawString(prefix)
-		out.String(string(in.Field887))
+		(in.Field887).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field888\":"
 		out.RawString(prefix)
-		out.String(string(in.Field888))
+		(in.Field888).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field889\":"
 		out.RawString(prefix)
-		out.String(string(in.Field889))
+		(in.Field889).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field890\":"
 		out.RawString(prefix)
-		out.String(string(in.Field890))
+		(in.Field890).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field891\":"
 		out.RawString(prefix)
-		out.String(string(in.Field891))
+		(in.Field891).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field892\":"
 		out.RawString(prefix)
-		out.String(string(in.Field892))
+		(in.Field892).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field893\":"
 		out.RawString(prefix)
-		out.String(string(in.Field893))
+		(in.Field893).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field894\":"
 		out.RawString(prefix)
-		out.String(string(in.Field894))
+		(in.Field894).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field895\":"
 		out.RawString(prefix)
-		out.String(string(in.Field895))
+		(in.Field895).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field896\":"
 		out.RawString(prefix)
-		out.String(string(in.Field896))
+		(in.Field896).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field897\":"
 		out.RawString(prefix)
-		out.String(string(in.Field897))
+		(in.Field897).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field898\":"
 		out.RawString(prefix)
-		out.String(string(in.Field898))
+		(in.Field898).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field899\":"
 		out.RawString(prefix)
-		out.String(string(in.Field899))
+		(in.Field899).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field900\":"
 		out.RawString(prefix)
-		out.String(string(in.Field900))
+		(in.Field900).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field901\":"
 		out.RawString(prefix)
-		out.String(string(in.Field901))
+		(in.Field901).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field902\":"
 		out.RawString(prefix)
-		out.String(string(in.Field902))
+		(in.Field902).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field903\":"
 		out.RawString(prefix)
-		out.String(string(in.Field903))
+		(in.Field903).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field904\":"
 		out.RawString(prefix)
-		out.String(string(in.Field904))
+		(in.Field904).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field905\":"
 		out.RawString(prefix)
-		out.String(string(in.Field905))
+		(in.Field905).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field906\":"
 		out.RawString(prefix)
-		out.String(string(in.Field906))
+		(in.Field906).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field907\":"
 		out.RawString(prefix)
-		out.String(string(in.Field907))
+		(in.Field907).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field908\":"
 		out.RawString(prefix)
-		out.String(string(in.Field908))
+		(in.Field908).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field909\":"
 		out.RawString(prefix)
-		out.String(string(in.Field909))
+		(in.Field909).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field910\":"
 		out.RawString(prefix)
-		out.String(string(in.Field910))
+		(in.Field910).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field911\":"
 		out.RawString(prefix)
-		out.String(string(in.Field911))
+		(in.Field911).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field912\":"
 		out.RawString(prefix)
-		out.String(string(in.Field912))
+		(in.Field912).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field913\":"
 		out.RawString(prefix)
-		out.String(string(in.Field913))
+		(in.Field913).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field914\":"
 		out.RawString(prefix)
-		out.String(string(in.Field914))
+		(in.Field914).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field915\":"
 		out.RawString(prefix)
-		out.String(string(in.Field915))
+		(in.Field915).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field916\":"
 		out.RawString(prefix)
-		out.String(string(in.Field916))
+		(in.Field916).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field917\":"
 		out.RawString(prefix)
-		out.String(string(in.Field917))
+		(in.Field917).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field918\":"
 		out.RawString(prefix)
-		out.String(string(in.Field918))
+		(in.Field918).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field919\":"
 		out.RawString(prefix)
-		out.String(string(in.Field919))
+		(in.Field919).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field920\":"
 		out.RawString(prefix)
-		out.String(string(in.Field920))
+		(in.Field920).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field921\":"
 		out.RawString(prefix)
-		out.String(string(in.Field921))
+		(in.Field921).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field922\":"
 		out.RawString(prefix)
-		out.String(string(in.Field922))
+		(in.Field922).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field923\":"
 		out.RawString(prefix)
-		out.String(string(in.Field923))
+		(in.Field923).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field924\":"
 		out.RawString(prefix)
-		out.String(string(in.Field924))
+		(in.Field924).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field925\":"
 		out.RawString(prefix)
-		out.String(string(in.Field925))
+		(in.Field925).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field926\":"
 		out.RawString(prefix)
-		out.String(string(in.Field926))
+		(in.Field926).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field927\":"
 		out.RawString(prefix)
-		out.String(string(in.Field927))
+		(in.Field927).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field928\":"
 		out.RawString(prefix)
-		out.String(string(in.Field928))
+		(in.Field928).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field929\":"
 		out.RawString(prefix)
-		out.String(string(in.Field929))
+		(in.Field929).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field930\":"
 		out.RawString(prefix)
-		out.String(string(in.Field930))
+		(in.Field930).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field931\":"
 		out.RawString(prefix)
-		out.String(string(in.Field931))
+		(in.Field931).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field932\":"
 		out.RawString(prefix)
-		out.String(string(in.Field932))
+		(in.Field932).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field933\":"
 		out.RawString(prefix)
-		out.String(string(in.Field933))
+		(in.Field933).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field934\":"
 		out.RawString(prefix)
-		out.String(string(in.Field934))
+		(in.Field934).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field935\":"
 		out.RawString(prefix)
-		out.String(string(in.Field935))
+		(in.Field935).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field936\":"
 		out.RawString(prefix)
-		out.String(string(in.Field936))
+		(in.Field936).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field937\":"
 		out.RawString(prefix)
-		out.String(string(in.Field937))
+		(in.Field937).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field938\":"
 		out.RawString(prefix)
-		out.String(string(in.Field938))
+		(in.Field938).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field939\":"
 		out.RawString(prefix)
-		out.String(string(in.Field939))
+		(in.Field939).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field940\":"
 		out.RawString(prefix)
-		out.String(string(in.Field940))
+		(in.Field940).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field941\":"
 		out.RawString(prefix)
-		out.String(string(in.Field941))
+		(in.Field941).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field942\":"
 		out.RawString(prefix)
-		out.String(string(in.Field942))
+		(in.Field942).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field943\":"
 		out.RawString(prefix)
-		out.String(string(in.Field943))
+		(in.Field943).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field944\":"
 		out.RawString(prefix)
-		out.String(string(in.Field944))
+		(in.Field944).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field945\":"
 		out.RawString(prefix)
-		out.String(string(in.Field945))
+		(in.Field945).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field946\":"
 		out.RawString(prefix)
-		out.String(string(in.Field946))
+		(in.Field946).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field947\":"
 		out.RawString(prefix)
-		out.String(string(in.Field947))
+		(in.Field947).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field948\":"
 		out.RawString(prefix)
-		out.String(string(in.Field948))
+		(in.Field948).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field949\":"
 		out.RawString(prefix)
-		out.String(string(in.Field949))
+		(in.Field949).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field950\":"
 		out.RawString(prefix)
-		out.String(string(in.Field950))
+		(in.Field950).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field951\":"
 		out.RawString(prefix)
-		out.String(string(in.Field951))
+		(in.Field951).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field952\":"
 		out.RawString(prefix)
-		out.String(string(in.Field952))
+		(in.Field952).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field953\":"
 		out.RawString(prefix)
-		out.String(string(in.Field953))
+		(in.Field953).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field954\":"
 		out.RawString(prefix)
-		out.String(string(in.Field954))
+		(in.Field954).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field955\":"
 		out.RawString(prefix)
-		out.String(string(in.Field955))
+		(in.Field955).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field956\":"
 		out.RawString(prefix)
-		out.String(string(in.Field956))
+		(in.Field956).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field957\":"
 		out.RawString(prefix)
-		out.String(string(in.Field957))
+		(in.Field957).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field958\":"
 		out.RawString(prefix)
-		out.String(string(in.Field958))
+		(in.Field958).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field959\":"
 		out.RawString(prefix)
-		out.String(string(in.Field959))
+		(in.Field959).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field960\":"
 		out.RawString(prefix)
-		out.String(string(in.Field960))
+		(in.Field960).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field961\":"
 		out.RawString(prefix)
-		out.String(string(in.Field961))
+		(in.Field961).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field962\":"
 		out.RawString(prefix)
-		out.String(string(in.Field962))
+		(in.Field962).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field963\":"
 		out.RawString(prefix)
-		out.String(string(in.Field963))
+		(in.Field963).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field964\":"
 		out.RawString(prefix)
-		out.String(string(in.Field964))
+		(in.Field964).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field965\":"
 		out.RawString(prefix)
-		out.String(string(in.Field965))
+		(in.Field965).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field966\":"
 		out.RawString(prefix)
-		out.String(string(in.Field966))
+		(in.Field966).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field967\":"
 		out.RawString(prefix)
-		out.String(string(in.Field967))
+		(in.Field967).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field968\":"
 		out.RawString(prefix)
-		out.String(string(in.Field968))
+		(in.Field968).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field969\":"
 		out.RawString(prefix)
-		out.String(string(in.Field969))
+		(in.Field969).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field970\":"
 		out.RawString(prefix)
-		out.String(string(in.Field970))
+		(in.Field970).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field971\":"
 		out.RawString(prefix)
-		out.String(string(in.Field971))
+		(in.Field971).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field972\":"
 		out.RawString(prefix)
-		out.String(string(in.Field972))
+		(in.Field972).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field973\":"
 		out.RawString(prefix)
-		out.String(string(in.Field973))
+		(in.Field973).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field974\":"
 		out.RawString(prefix)
-		out.String(string(in.Field974))
+		(in.Field974).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field975\":"
 		out.RawString(prefix)
-		out.String(string(in.Field975))
+		(in.Field975).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field976\":"
 		out.RawString(prefix)
-		out.String(string(in.Field976))
+		(in.Field976).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field977\":"
 		out.RawString(prefix)
-		out.String(string(in.Field977))
+		(in.Field977).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field978\":"
 		out.RawString(prefix)
-		out.String(string(in.Field978))
+		(in.Field978).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field979\":"
 		out.RawString(prefix)
-		out.String(string(in.Field979))
+		(in.Field979).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field980\":"
 		out.RawString(prefix)
-		out.String(string(in.Field980))
+		(in.Field980).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field981\":"
 		out.RawString(prefix)
-		out.String(string(in.Field981))
+		(in.Field981).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field982\":"
 		out.RawString(prefix)
-		out.String(string(in.Field982))
+		(in.Field982).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field983\":"
 		out.RawString(prefix)
-		out.String(string(in.Field983))
+		(in.Field983).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field984\":"
 		out.RawString(prefix)
-		out.String(string(in.Field984))
+		(in.Field984).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field985\":"
 		out.RawString(prefix)
-		out.String(string(in.Field985))
+		(in.Field985).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field986\":"
 		out.RawString(prefix)
-		out.String(string(in.Field986))
+		(in.Field986).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field987\":"
 		out.RawString(prefix)
-		out.String(string(in.Field987))
+		(in.Field987).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field988\":"
 		out.RawString(prefix)
-		out.String(string(in.Field988))
+		(in.Field988).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field989\":"
 		out.RawString(prefix)
-		out.String(string(in.Field989))
+		(in.Field989).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field990\":"
 		out.RawString(prefix)
-		out.String(string(in.Field990))
+		(in.Field990).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field991\":"
 		out.RawString(prefix)
-		out.String(string(in.Field991))
+		(in.Field991).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field992\":"
 		out.RawString(prefix)
-		out.String(string(in.Field992))
+		(in.Field992).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field993\":"
 		out.RawString(prefix)
-		out.String(string(in.Field993))
+		(in.Field993).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field994\":"
 		out.RawString(prefix)
-		out.String(string(in.Field994))
+		(in.Field994).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field995\":"
 		out.RawString(prefix)
-		out.String(string(in.Field995))
+		(in.Field995).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field996\":"
 		out.RawString(prefix)
-		out.String(string(in.Field996))
+		(in.Field996).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field997\":"
 		out.RawString(prefix)
-		out.String(string(in.Field997))
+		(in.Field997).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field998\":"
 		out.RawString(prefix)
-		out.String(string(in.Field998))
+		(in.Field998).MarshalEasyJSON(out)
 	}
 	{
 		const prefix string = ",\"Field999\":"
 		out.RawString(prefix)
-		out.String(string(in.Field999))
+		(in.Field999).MarshalEasyJSON(out)
 	}
 	out.RawByte('}')
 }
 
 // MarshalJSON supports json.Marshaler interface
-func (v valueBig) MarshalJSON() ([]byte, error) {
+func (v nanBig) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson8e3959a1EncodeGithubComKakTusNan(&w, v)
+	easyjson1a4aeb6dEncodeGithubComKakTusNanBench(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
-func (v valueBig) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson8e3959a1EncodeGithubComKakTusNan(w, v)
+func (v nanBig) MarshalEasyJSON(w *jwriter.Writer) {
+	easyjson1a4aeb6dEncodeGithubComKakTusNanBench(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
-func (v *valueBig) UnmarshalJSON(data []byte) error {
+func (v *nanBig) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson8e3959a1DecodeGithubComKakTusNan(&r, v)
+	easyjson1a4aeb6dDecodeGithubComKakTusNanBench(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
-func (v *valueBig) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson8e3959a1DecodeGithubComKakTusNan(l, v)
+func (v *nanBig) UnmarshalEasyJSON(l *jlexer.Lexer) {
+	easyjson1a4aeb6dDecodeGithubComKakTusNanBench(l, v)
 }
