@@ -3,6 +3,11 @@
 Package nan - Zero allocation Nullable structures in one library with handy conversion functions,
 marshallers and unmarshallers.
 
+[![Godoc](https://godoc.org/github.com/kak-tus/nan?status.svg)](https://pkg.go.dev/github.com/kak-tus/nan?tab=doc)
+[![Coverage Status](https://coveralls.io/repos/github/kak-tus/nan/badge.svg?branch=master)](https://coveralls.io/github/kak-tus/nan?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kak-tus/nan)](https://goreportcard.com/report/github.com/kak-tus/nan)
+![Go](https://github.com/kak-tus/nan/workflows/Go/badge.svg)
+
 Features:
 - short name "nan"
 - handy conversion functions
