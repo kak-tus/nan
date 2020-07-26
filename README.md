@@ -163,4 +163,4 @@ BenchmarkPointerBigEasyJSON-8   	     364	   3204100 ns/op	 2357440 B/op	    306
 BenchmarkValueBigEasyJSON-8     	     380	   3058639 ns/op	 2302248 B/op	    1063 allocs/op
 ```
 
-**Final conclusion**: Don't do optimisations at first code stage - prefer to use struct with Values, then struct with Pointers. And only when perfomance tuning needed - review your processing pipeline and try swith to struct with Pointers on hot places. Prefer to use codegens (easyjson and others) then native runtime processing - they get better results in mostly cases.
+**Final conclusion**: Don't do optimisations at first code stage - prefer to use struct with Values, then struct with Pointers. And only when perfomance tuning needed - review your processing pipeline and try switch to struct with Pointers on hot places. Prefer to use codegens (easyjson and others) then native runtime processing - they get better results in mostly cases.
