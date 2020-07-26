@@ -93,7 +93,7 @@ Small notice: here we can see two Go mechanics, that can explain this results.
 
 First - is inlining, that do replace of function call to the body of this function. In this case inlining allow to don't do escape Pointer to heap. As result - no allocations. All next benchmarks will be doing with enabled inlining, as in usual Go code.
 
-Second - is copying structs. Spended time for copy struct get worse processing time per operation.
+Second - is copying structs. Spended time for copy struct get worse processing time per operation for struct with Values.
 
 ```
 BenchmarkPointerSmall-8   	1000000000	         0.295 ns/op	       0 B/op	       0 allocs/op
