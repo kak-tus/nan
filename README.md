@@ -108,7 +108,7 @@ BenchmarkPointerSmallJSON-8   	   49522	     23724 ns/op	   14122 B/op	      28 
 BenchmarkValueSmallJSON-8     	   52234	     22806 ns/op	   14011 B/op	      15 allocs/op
 ```
 
-Let's try to improve json speed with easyjson. Better mostly all results for both structs, except slihtly bigger memory usage per operations.
+Let's try to improve json speed with easyjson. Better mostly all results for both structs, except slightly bigger memory usage per operations.
 
 ```
 BenchmarkPointerSmallEasyJSON-8   	   64482	     17815 ns/op	   14591 B/op	      21 allocs/op
@@ -117,7 +117,7 @@ BenchmarkValueSmallEasyJSON-8     	   63136	     17537 ns/op	   14444 B/op	     
 
 **Intermediate conclusion**: if your code processing pipeline is to produce some value, chains it thru some function call and got some result - sometimes better to use struct with Pointers. But if your processing is to do some conversions (marshalling, unmarshalling) with structs - prefer to use struct with Values.
 
-Go next. Sometimes struct groth bigger.
+Go next. Sometimes struct growths bigger.
 
 ```
 type pointerBig struct {
@@ -135,7 +135,7 @@ type valueBig struct {
 }
 ```
 
-Try to do this struct. Here we see, that struct with Values left zero allocations and got bigger processing time (this is normal, because struct is bigger). And struct with Pointers lost advantage - non zero allocations, much worst processing time and memory usage.
+Try to do benchmark for this struct. Here we see, that struct with Values left zero allocations and got bigger processing time (this is normal, because struct is bigger). And struct with Pointers lost advantage - non zero allocations, much worst processing time and memory usage.
 
 ```
 BenchmarkPointerBig-8   	   36787	     32243 ns/op	   24192 B/op	    1001 allocs/op
