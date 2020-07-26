@@ -1,4 +1,4 @@
-# nan - **N**o more **A**llocations **N**ever
+# nan - **N**o **A**llocations **N**evermore
 
 Package nan - Zero allocation Nullable structures in one library with handy conversion functions,
 marshallers and unmarshallers.
