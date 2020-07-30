@@ -13,11 +13,15 @@ Features:
 - handy conversion functions
 
 Supported types:
-- time.Time
-- string
-- int64
 - bool
+- float32
 - float64
+- int16
+- int32
+- int64
+- int8
+- string
+- time.Time
 - more types will be added at necessary
 
 Supported marshallers:
