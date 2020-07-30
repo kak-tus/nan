@@ -29,7 +29,7 @@ func doCQLTest(t *testing.T, cType gocql.Type, val1, val2 interface{}, nanVal1, 
 	assert.Equal(t, nanVal1, nanVal2)
 
 	// not decode nil values
-	if val1 != nil {
+	if val2 != nil {
 		err = gocql.Unmarshal(cTypeEnc, encodedVal, val2)
 		assert.NoError(t, err)
 
