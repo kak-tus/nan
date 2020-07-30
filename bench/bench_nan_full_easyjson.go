@@ -46,6 +46,14 @@ func easyjson3c6c109cDecodeGithubComKakTusNanBench(in *jlexer.Lexer, out *nanFul
 			(out.Field003).UnmarshalEasyJSON(in)
 		case "Field004":
 			(out.Field004).UnmarshalEasyJSON(in)
+		case "Field005":
+			(out.Field005).UnmarshalEasyJSON(in)
+		case "Field006":
+			(out.Field006).UnmarshalEasyJSON(in)
+		case "Field007":
+			(out.Field007).UnmarshalEasyJSON(in)
+		case "Field008":
+			(out.Field008).UnmarshalEasyJSON(in)
 		default:
 			in.SkipRecursive()
 		}
@@ -84,6 +92,26 @@ func easyjson3c6c109cEncodeGithubComKakTusNanBench(out *jwriter.Writer, in nanFu
 		const prefix string = ",\"Field004\":"
 		out.RawString(prefix)
 		(in.Field004).MarshalEasyJSON(out)
+	}
+	{
+		const prefix string = ",\"Field005\":"
+		out.RawString(prefix)
+		(in.Field005).MarshalEasyJSON(out)
+	}
+	{
+		const prefix string = ",\"Field006\":"
+		out.RawString(prefix)
+		(in.Field006).MarshalEasyJSON(out)
+	}
+	{
+		const prefix string = ",\"Field007\":"
+		out.RawString(prefix)
+		(in.Field007).MarshalEasyJSON(out)
+	}
+	{
+		const prefix string = ",\"Field008\":"
+		out.RawString(prefix)
+		(in.Field008).MarshalEasyJSON(out)
 	}
 	out.RawByte('}')
 }
