@@ -10,6 +10,7 @@ func (n NullTime) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	if !n.Valid {
 		return nil, nil
 	}
+
 	if n.Time.IsZero() {
 		return []byte{}, nil
 	}

@@ -5,6 +5,7 @@ func encShort(x int16) []byte {
 	p := make([]byte, 2)
 	p[0] = byte(x >> 8)
 	p[1] = byte(x)
+
 	return p
 }
 
@@ -13,6 +14,7 @@ func decShort(p []byte) int16 {
 	if len(p) != 2 {
 		return 0
 	}
+
 	return int16(p[0])<<8 | int16(p[1])
 }
 
@@ -26,6 +28,7 @@ func decInt(x []byte) int32 {
 	if len(x) != 4 {
 		return 0
 	}
+
 	return int32(x[0])<<24 | int32(x[1])<<16 | int32(x[2])<<8 | int32(x[3])
 }
 
@@ -52,5 +55,6 @@ func decTiny(p []byte) int8 {
 	if len(p) != 1 {
 		return 0
 	}
+
 	return int8(p[0])
 }
