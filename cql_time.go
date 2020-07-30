@@ -10,6 +10,9 @@ func (n NullTime) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	if !n.Valid {
 		return nil, nil
 	}
+	if n.Time.IsZero() {
+		return []byte{}, nil
+	}
 
 	// https://github.com/gocql/gocql/blob/b454769479c6201d26d2a2d7a29ac9a0e6fbc9fc/marshal.go#L1160
 	x := int64(n.Time.UTC().Unix()*1e3) + int64(n.Time.UTC().Nanosecond()/1e6)
@@ -20,7 +23,14 @@ func (n NullTime) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 }
 
 func (n *NullTime) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
-	if len(data) != 8 {
+	switch {
+	case data == nil:
+		*n = NullTime{}
+		return nil
+	case len(data) == 0:
+		*n = NullTime{Valid: true}
+		return nil
+	case len(data) != 8:
 		*n = NullTime{}
 		return nil
 	}
