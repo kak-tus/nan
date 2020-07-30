@@ -11,7 +11,7 @@ func (n NullString) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 }
 
 func (n *NullString) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
-	if len(data) == 0 {
+	if data == nil {
 		*n = NullString{}
 		return nil
 	}
