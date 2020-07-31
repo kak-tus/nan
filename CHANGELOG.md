@@ -1,3 +1,6 @@
+2020-07-31 v0.1.3
+- Add helpers for recently added types.
+
 2020-07-30 v0.1.2
 - Add float32, int8, int16, int32 (creker).
 - Bugfix with processing null string value (creker).
