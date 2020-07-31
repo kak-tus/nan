@@ -1,3 +1,6 @@
+unreleased
+- Remove unneded sql dependency.
+
 2020-07-31 v0.1.4
 - Add int type (creker).
 - Ability to marshal and unmarshal mixed sized integers like in qocql (creker).

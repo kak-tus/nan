@@ -1,13 +1,36 @@
 package nan
 
-import "database/sql"
+import "time"
 
-type NullInt64 sql.NullInt64
-type NullInt32 sql.NullInt32
-type NullTime sql.NullTime
-type NullString sql.NullString
-type NullBool sql.NullBool
-type NullFloat64 sql.NullFloat64
+type NullInt64 struct {
+	Int64 int64
+	Valid bool // Valid is true if Int64 is not NULL
+}
+
+type NullInt32 struct {
+	Int32 int32
+	Valid bool // Valid is true if Int32 is not NULL
+}
+
+type NullTime struct {
+	Time  time.Time
+	Valid bool // Valid is true if Time is not NULL
+}
+
+type NullString struct {
+	String string
+	Valid  bool // Valid is true if String is not NULL
+}
+
+type NullBool struct {
+	Bool  bool
+	Valid bool // Valid is true if Bool is not NULL
+}
+
+type NullFloat64 struct {
+	Float64 float64
+	Valid   bool // Valid is true if Float64 is not NULL
+}
 
 type NullFloat32 struct {
 	Float32 float32
