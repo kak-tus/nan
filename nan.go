@@ -23,3 +23,8 @@ type NullInt8 struct {
 	Int8  int8
 	Valid bool // Valid is true if Int8 is not NULL
 }
+
+type NullInt struct {
+	Int   int
+	Valid bool // Valid is true if Int8 is not NULL
+}

@@ -13,17 +13,17 @@ type cqlNanCoder interface {
 }
 
 func doCQLTest(t *testing.T, cType gocql.Type, val1, val2 interface{}, nanVal1, nanVal2 cqlNanCoder) {
-	encodedNan, err := nanVal1.MarshalCQL(gocql.TupleTypeInfo{})
-	assert.NoError(t, err)
-
 	cTypeEnc := gocql.NewNativeType(5, cType, "")
+
+	encodedNan, err := nanVal1.MarshalCQL(cTypeEnc)
+	assert.NoError(t, err)
 
 	encodedVal, err := gocql.Marshal(cTypeEnc, val1)
 	assert.NoError(t, err)
 
 	assert.Equal(t, encodedNan, encodedVal)
 
-	err = nanVal2.UnmarshalCQL(gocql.TupleTypeInfo{}, encodedNan)
+	err = nanVal2.UnmarshalCQL(cTypeEnc, encodedNan)
 	assert.NoError(t, err)
 
 	assert.Equal(t, nanVal1, nanVal2)

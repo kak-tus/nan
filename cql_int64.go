@@ -1,23 +1,27 @@
 package nan
 
-import "github.com/gocql/gocql"
+import (
+	"github.com/gocql/gocql"
+)
 
 func (n NullInt64) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	if !n.Valid {
 		return nil, nil
 	}
 
-	return encBigInt(n.Int64), nil
+	return marshalIntLike(info, n.Int64)
 }
 
 func (n *NullInt64) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
-	if len(data) != 8 {
+	if data == nil {
 		*n = NullInt64{}
 		return nil
 	}
 
-	dec := decBigInt(data)
-
+	dec, err := unmarshalIntLike(info, data)
+	if err != nil {
+		return err
+	}
 	*n = NullInt64{Valid: true, Int64: dec}
 
 	return nil

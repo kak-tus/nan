@@ -1,5 +1,12 @@
 package nan
 
+import (
+	"fmt"
+	"math"
+
+	"github.com/gocql/gocql"
+)
+
 // https://github.com/gocql/gocql/blob/b454769479c6201d26d2a2d7a29ac9a0e6fbc9fc/marshal.go#L519
 func encShort(x int16) []byte {
 	p := make([]byte, 2)
@@ -57,4 +64,47 @@ func decTiny(p []byte) int8 {
 	}
 
 	return int8(p[0])
+}
+
+func cqlMarshalErrorf(format string, args ...interface{}) gocql.MarshalError {
+	return gocql.MarshalError(fmt.Sprintf(format, args...))
+}
+
+func marshalIntLike(info gocql.TypeInfo, value int64) ([]byte, error) {
+	switch info.Type() {
+	case gocql.TypeTinyInt:
+		if value > math.MaxInt8 || value < math.MinInt8 {
+			return nil, cqlMarshalErrorf("marshal tinyint: value %d out of range", value)
+		}
+		return []byte{byte(value)}, nil
+	case gocql.TypeSmallInt:
+		if value > math.MaxInt16 || value < math.MinInt16 {
+			return nil, cqlMarshalErrorf("marshal smallint: value %d out of range", value)
+		}
+		return encShort(int16(value)), nil
+	case gocql.TypeInt:
+		if value > math.MaxInt32 || value < math.MinInt32 {
+			return nil, cqlMarshalErrorf("marshal int: value %d out of range", value)
+		}
+		return encInt(int32(value)), nil
+	case gocql.TypeBigInt:
+		return encBigInt(value), nil
+	default:
+		return nil, cqlMarshalErrorf("marshal %v: cannot marshal from integer", info.Type())
+	}
+}
+
+func unmarshalIntLike(info gocql.TypeInfo, data []byte) (int64, error) {
+	switch info.Type() {
+	case gocql.TypeTinyInt:
+		return int64(decTiny(data)), nil
+	case gocql.TypeSmallInt:
+		return int64(decShort(data)), nil
+	case gocql.TypeInt:
+		return int64(decInt(data)), nil
+	case gocql.TypeBigInt:
+		return decBigInt(data), nil
+	default:
+		return 0, cqlMarshalErrorf("unmarshal %v: cannot unmarshal into integer", info.Type())
+	}
 }
