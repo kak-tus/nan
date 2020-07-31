@@ -15,6 +15,7 @@ type nanFull struct {
 	Field006 nan.NullInt8
 	Field007 nan.NullInt16
 	Field008 nan.NullInt32
+	Field009 nan.NullInt
 }
 
 // Use separate value for encoding with jsoniter to ignore generated easyjson
@@ -29,4 +30,5 @@ type nanFullJSON struct {
 	Field006 nan.NullInt8
 	Field007 nan.NullInt16
 	Field008 nan.NullInt32
+	Field009 nan.NullInt
 }
