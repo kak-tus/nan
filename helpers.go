@@ -37,3 +37,7 @@ func Int16ToNullInt16(v int16) NullInt16 {
 func Int32ToNullInt32(v int32) NullInt32 {
 	return NullInt32{Int32: v, Valid: true}
 }
+
+func IntToNullInt(v int) NullInt {
+	return NullInt{Int: v, Valid: true}
+}
