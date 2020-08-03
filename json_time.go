@@ -52,6 +52,7 @@ func init() {
 	)
 }
 
+// MarshalJSON - marshaller for json
 func (n NullTime) MarshalJSON() ([]byte, error) {
 	if !n.Valid {
 		return []byte("null"), nil
@@ -60,6 +61,7 @@ func (n NullTime) MarshalJSON() ([]byte, error) {
 	return jsoniter.Marshal(n.Time.Format(time.RFC3339Nano))
 }
 
+// UnmarshalJSON - unmarshaller for json
 func (n *NullTime) UnmarshalJSON(data []byte) error {
 	if bytes.Equal(data, []byte("null")) {
 		*n = NullTime{}
@@ -83,6 +85,7 @@ func (n *NullTime) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
+// MarshalJSON - marshaller for easyjson
 func (n NullTime) MarshalEasyJSON(out *jwriter.Writer) {
 	if !n.Valid {
 		out.RawString("null")
