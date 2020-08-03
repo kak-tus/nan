@@ -65,7 +65,7 @@ func (n *NullBool) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// MarshalJSON - marshaller for easyjson
+// MarshalEasyJSON - marshaller for easyjson
 func (n NullBool) MarshalEasyJSON(out *jwriter.Writer) {
 	if !n.Valid {
 		out.RawString("null")
@@ -75,7 +75,7 @@ func (n NullBool) MarshalEasyJSON(out *jwriter.Writer) {
 	out.Bool(n.Bool)
 }
 
-// UnmarshalJSON - unmarshaller for easyjson
+// UnmarshalEasyJSON - unmarshaller for easyjson
 func (n *NullBool) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
 		*n = NullBool{}

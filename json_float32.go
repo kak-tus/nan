@@ -65,7 +65,7 @@ func (n *NullFloat32) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// MarshalJSON - marshaller for easyjson
+// MarshalEasyJSON - marshaller for easyjson
 func (n NullFloat32) MarshalEasyJSON(out *jwriter.Writer) {
 	if !n.Valid {
 		out.RawString("null")
@@ -75,7 +75,7 @@ func (n NullFloat32) MarshalEasyJSON(out *jwriter.Writer) {
 	out.Float32(n.Float32)
 }
 
-// UnmarshalJSON - unmarshaller for easyjson
+// UnmarshalEasyJSON - unmarshaller for easyjson
 func (n *NullFloat32) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
 		*n = NullFloat32{}

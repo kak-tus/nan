@@ -85,7 +85,7 @@ func (n *NullTime) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// MarshalJSON - marshaller for easyjson
+// MarshalEasyJSON - marshaller for easyjson
 func (n NullTime) MarshalEasyJSON(out *jwriter.Writer) {
 	if !n.Valid {
 		out.RawString("null")
@@ -95,6 +95,7 @@ func (n NullTime) MarshalEasyJSON(out *jwriter.Writer) {
 	out.String(n.Time.Format(time.RFC3339Nano))
 }
 
+// UnmarshalEasyJSON - unmarshaller for easyjson
 func (n *NullTime) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	if in.IsNull() {
 		*n = NullTime{}
