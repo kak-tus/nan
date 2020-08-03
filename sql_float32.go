@@ -2,6 +2,7 @@ package nan
 
 import "database/sql/driver"
 
+// Scan - scan value from sql driver
 func (n *NullFloat32) Scan(value interface{}) error {
 	if value == nil {
 		n.Float32, n.Valid = 0, false
