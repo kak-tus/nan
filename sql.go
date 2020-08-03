@@ -1,6 +1,6 @@
+package nan
 //From https://github.com/golang/go/blob/go1.14.6/src/database/sql/convert.go
 //sql.Null* types use these methods internally but they're not exposed.
-package nan
 
 import (
 	"database/sql"
