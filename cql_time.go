@@ -6,6 +6,7 @@ import (
 	"github.com/gocql/gocql"
 )
 
+// MarshalCQL - marshaller for cql
 func (n NullTime) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	if !n.Valid {
 		return nil, nil
@@ -23,6 +24,7 @@ func (n NullTime) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	return enc, nil
 }
 
+// UnmarshalCQL - unmarshaller for cql
 func (n *NullTime) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	switch {
 	case data == nil:

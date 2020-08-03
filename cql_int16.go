@@ -6,6 +6,7 @@ import (
 	"github.com/gocql/gocql"
 )
 
+// MarshalCQL - marshaller for cql
 func (n NullInt16) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	if !n.Valid {
 		return nil, nil
@@ -14,6 +15,7 @@ func (n NullInt16) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	return marshalIntLike(info, int64(n.Int16))
 }
 
+// UnmarshalCQL - unmarshaller for cql
 func (n *NullInt16) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if data == nil {
 		*n = NullInt16{}

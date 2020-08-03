@@ -6,6 +6,7 @@ import (
 	"github.com/gocql/gocql"
 )
 
+// MarshalCQL - marshaller for cql
 func (n NullFloat32) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	if !n.Valid {
 		return nil, nil
@@ -15,6 +16,7 @@ func (n NullFloat32) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
 	return encInt(int32(math.Float32bits(n.Float32))), nil
 }
 
+// UnmarshalCQL - unmarshaller for cql
 func (n *NullFloat32) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if len(data) != 4 {
 		*n = NullFloat32{}
