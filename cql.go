@@ -102,9 +102,11 @@ func (n *NullInt) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if err != nil {
 		return err
 	}
+
 	if ^uint(0) == math.MaxUint32 && (dec > math.MaxInt32 || dec < math.MinInt32) {
 		return cqlMarshalErrorf("unmarshal int: value %d out of range", dec)
 	}
+
 	*n = NullInt{Valid: true, Int: int(dec)}
 
 	return nil
@@ -130,9 +132,11 @@ func (n *NullInt8) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if err != nil {
 		return err
 	}
+
 	if dec > math.MaxInt8 || dec < math.MinInt8 {
 		return cqlMarshalErrorf("unmarshal int8: value %d out of range", dec)
 	}
+
 	*n = NullInt8{Valid: true, Int8: int8(dec)}
 
 	return nil
@@ -158,9 +162,11 @@ func (n *NullInt16) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if err != nil {
 		return err
 	}
+
 	if dec > math.MaxInt16 || dec < math.MinInt16 {
 		return cqlMarshalErrorf("unmarshal int16: value %d out of range", dec)
 	}
+
 	*n = NullInt16{Valid: true, Int16: int16(dec)}
 
 	return nil
@@ -186,9 +192,11 @@ func (n *NullInt32) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if err != nil {
 		return err
 	}
+
 	if dec > math.MaxInt32 || dec < math.MinInt32 {
 		return cqlMarshalErrorf("unmarshal int32: value %d out of range", dec)
 	}
+
 	*n = NullInt32{Valid: true, Int32: int32(dec)}
 
 	return nil
@@ -214,6 +222,7 @@ func (n *NullInt64) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 	if err != nil {
 		return err
 	}
+
 	*n = NullInt64{Valid: true, Int64: dec}
 
 	return nil

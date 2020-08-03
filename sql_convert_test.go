@@ -7,6 +7,8 @@ import (
 	"runtime"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/assert"
 )
 
 // from https://github.com/golang/go/blob/go1.14.6/src/database/sql/convert_test.go
@@ -78,7 +80,8 @@ func conversionTests() []conversionTest {
 
 		// From time.Time:
 		{s: time.Unix(1, 0).UTC(), d: &scanstr, wantstr: "1970-01-01T00:00:01Z"},
-		{s: time.Unix(1453874597, 0).In(time.FixedZone("here", -3600*8)), d: &scanstr, wantstr: "2016-01-26T22:03:17-08:00"},
+		{s: time.Unix(1453874597, 0).In(time.FixedZone("here", -3600*8)),
+			d: &scanstr, wantstr: "2016-01-26T22:03:17-08:00"},
 		{s: time.Unix(1, 2).UTC(), d: &scanstr, wantstr: "1970-01-01T00:00:01.000000002Z"},
 		{s: time.Time{}, d: &scanstr, wantstr: "0001-01-01T00:00:00Z"},
 		{s: time.Unix(1, 2).UTC(), d: &scanbytes, wantbytes: []byte("1970-01-01T00:00:01.000000002Z")},
@@ -122,9 +125,11 @@ func conversionTests() []conversionTest {
 
 		// int64 to smaller integers
 		{s: int64(5), d: &scanuint8, wantuint: 5},
-		{s: int64(256), d: &scanuint8, wanterr: "converting driver.Value type int64 (\"256\") to a uint8: value out of range"},
+		{s: int64(256), d: &scanuint8,
+			wanterr: "converting driver.Value type int64 (\"256\") to a uint8: value out of range"},
 		{s: int64(256), d: &scanuint16, wantuint: 256},
-		{s: int64(65536), d: &scanuint16, wanterr: "converting driver.Value type int64 (\"65536\") to a uint16: value out of range"},
+		{s: int64(65536), d: &scanuint16,
+			wanterr: "converting driver.Value type int64 (\"65536\") to a uint16: value out of range"},
 
 		// True bools
 		{s: true, d: &scanbool, wantbool: true},
@@ -172,7 +177,8 @@ func conversionTests() []conversionTest {
 		{s: 1.5, d: new(userDefined), wantusrdef: 1.5},
 		{s: int64(123), d: new(userDefined), wantusrdef: 123},
 		{s: "1.5", d: new(userDefined), wantusrdef: 1.5},
-		{s: []byte{1, 2, 3}, d: new(userDefinedSlice), wanterr: `unsupported Scan, storing driver.Value type []uint8 into type *nan.userDefinedSlice`},
+		{s: []byte{1, 2, 3}, d: new(userDefinedSlice),
+			wanterr: `unsupported Scan, storing driver.Value type []uint8 into type *nan.userDefinedSlice`},
 		{s: "str", d: new(userDefinedString), wantusrstr: "str"},
 
 		// Other errors
@@ -208,46 +214,60 @@ func TestConversions(t *testing.T) {
 	for n, ct := range conversionTests() {
 		err := convertAssign(ct.d, ct.s)
 		errstr := ""
+
 		if err != nil {
 			errstr = err.Error()
 		}
+
 		errf := func(format string, args ...interface{}) {
 			base := fmt.Sprintf("convertAssign #%d: for %v (%T) -> %T, ", n, ct.s, ct.s, ct.d)
 			t.Errorf(base+format, args...)
 		}
+
 		if errstr != ct.wanterr {
 			errf("got error %q, want error %q", errstr, ct.wanterr)
 		}
+
 		if ct.wantstr != "" && ct.wantstr != scanstr {
 			errf("want string %q, got %q", ct.wantstr, scanstr)
 		}
+
 		if ct.wantbytes != nil && string(ct.wantbytes) != string(scanbytes) {
 			errf("want byte %q, got %q", ct.wantbytes, scanbytes)
 		}
+
 		if ct.wantraw != nil && string(ct.wantraw) != string(scanraw) {
 			errf("want RawBytes %q, got %q", ct.wantraw, scanraw)
 		}
+
 		if ct.wantint != 0 && ct.wantint != intValue(ct.d) {
 			errf("want int %d, got %d", ct.wantint, intValue(ct.d))
 		}
+
 		if ct.wantuint != 0 && ct.wantuint != uintValue(ct.d) {
 			errf("want uint %d, got %d", ct.wantuint, uintValue(ct.d))
 		}
+
 		if ct.wantf32 != 0 && ct.wantf32 != float32Value(ct.d) {
 			errf("want float32 %v, got %v", ct.wantf32, float32Value(ct.d))
 		}
+
 		if ct.wantf64 != 0 && ct.wantf64 != float64Value(ct.d) {
 			errf("want float32 %v, got %v", ct.wantf64, float64Value(ct.d))
 		}
+
 		if bp, boolTest := ct.d.(*bool); boolTest && *bp != ct.wantbool && ct.wanterr == "" {
 			errf("want bool %v, got %v", ct.wantbool, *bp)
 		}
+
 		if !ct.wanttime.IsZero() && !ct.wanttime.Equal(timeValue(ct.d)) {
 			errf("want time %v, got %v", ct.wanttime, timeValue(ct.d))
 		}
+
 		if ct.wantnil && *ct.d.(**int64) != nil {
 			errf("want nil, got %v", intPtrValue(ct.d))
 		}
+
 		if ct.wantptr != nil {
 			if *ct.d.(**int64) == nil {
 				errf("want pointer to %v, got nil", *ct.wantptr)
@@ -255,11 +275,13 @@ func TestConversions(t *testing.T) {
 				errf("want pointer to %v, got %v", *ct.wantptr, intPtrValue(ct.d))
 			}
 		}
+
 		if ifptr, ok := ct.d.(*interface{}); ok {
 			if !reflect.DeepEqual(ct.wantiface, scaniface) {
 				errf("want interface %#v, got %#v", ct.wantiface, scaniface)
 				continue
 			}
+
 			if srcBytes, ok := ct.s.([]byte); ok {
 				dstBytes := (*ifptr).([]byte)
 				if len(srcBytes) > 0 && &dstBytes[0] == &srcBytes[0] {
@@ -267,9 +289,11 @@ func TestConversions(t *testing.T) {
 				}
 			}
 		}
+
 		if ct.wantusrdef != 0 && ct.wantusrdef != *ct.d.(*userDefined) {
 			errf("want userDefined %f, got %f", ct.wantusrdef, *ct.d.(*userDefined))
 		}
+
 		if len(ct.wantusrstr) != 0 && ct.wantusrstr != *ct.d.(*userDefinedString) {
 			errf("want userDefined %q, got %q", ct.wantusrstr, *ct.d.(*userDefinedString))
 		}
@@ -278,17 +302,25 @@ func TestConversions(t *testing.T) {
 
 func TestNullString(t *testing.T) {
 	var ns NullString
-	convertAssign(&ns, []byte("foo"))
+
+	err := convertAssign(&ns, []byte("foo"))
+	assert.NoError(t, err)
+
 	if !ns.Valid {
 		t.Errorf("expecting not null")
 	}
+
 	if ns.String != "foo" {
 		t.Errorf("expecting foo; got %q", ns.String)
 	}
-	convertAssign(&ns, nil)
+
+	err = convertAssign(&ns, nil)
+	assert.NoError(t, err)
+
 	if ns.Valid {
 		t.Errorf("expecting null on nil")
 	}
+
 	if ns.String != "" {
 		t.Errorf("expecting blank on nil; got %q", ns.String)
 	}
@@ -322,6 +354,7 @@ func TestRawBytesAllocs(t *testing.T) {
 		if err := convertAssign(&buf, in); err != nil {
 			t.Fatalf("%s: convertAssign = %v", name, err)
 		}
+		
 		match := len(buf) == len(want)
 		if match {
 			for i, b := range buf {
@@ -331,6 +364,7 @@ func TestRawBytesAllocs(t *testing.T) {
 				}
 			}
 		}
+
 		if !match {
 			t.Fatalf("%s: got %q (len %d); want %q (len %d)", name, buf, len(buf), want, len(want))
 		}
@@ -364,10 +398,14 @@ func TestRawBytesAllocs(t *testing.T) {
 // https://golang.org/issues/13905
 func TestUserDefinedBytes(t *testing.T) {
 	type userDefinedBytes []byte
+
 	var u userDefinedBytes
+
 	v := []byte("foo")
 
-	convertAssign(&u, v)
+	err := convertAssign(&u, v)
+	assert.NoError(t, err)
+
 	if &u[0] == &v[0] {
 		t.Fatal("userDefinedBytes got potentially dirty driver memory")
 	}

@@ -76,16 +76,19 @@ func marshalIntLike(info gocql.TypeInfo, value int64) ([]byte, error) {
 		if value > math.MaxInt8 || value < math.MinInt8 {
 			return nil, cqlMarshalErrorf("marshal tinyint: value %d out of range", value)
 		}
+
 		return []byte{byte(value)}, nil
 	case gocql.TypeSmallInt:
 		if value > math.MaxInt16 || value < math.MinInt16 {
 			return nil, cqlMarshalErrorf("marshal smallint: value %d out of range", value)
 		}
+
 		return encShort(int16(value)), nil
 	case gocql.TypeInt:
 		if value > math.MaxInt32 || value < math.MinInt32 {
 			return nil, cqlMarshalErrorf("marshal int: value %d out of range", value)
 		}
+
 		return encInt(int32(value)), nil
 	case gocql.TypeBigInt:
 		return encBigInt(value), nil
