@@ -1,5 +1,7 @@
-unreleased
+2020-08-03 v0.1.5
 - Remove unneded sql dependency.
+- Add support for sql marhsalling (Scan and Value methods) (creker).
+- Some refactoring - files merged by types (creker).
 
 2020-07-31 v0.1.4
 - Add int type (creker).

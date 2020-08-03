@@ -30,6 +30,7 @@ Supported marshallers:
 - jsoniter
 - easyjson
 - Scylla and Cassandra (gocql, gocqlx)
+- SQL
 
 ## Usage
 
