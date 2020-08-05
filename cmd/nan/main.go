@@ -19,15 +19,15 @@ func main() {
 	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
 	sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
-	moduleName := flag.String("module", "", "specify generated module name. By default will user working directory name")
+	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 	flag.Parse()
 
-	if *moduleName == "" {
+	if *pkgName == "" {
 		wd, err := os.Getwd()
 		if err != nil {
 			panic(err)
 		}
-		_, *moduleName = filepath.Split(wd)
+		_, *pkgName = filepath.Split(wd)
 	}
 
 	files := []string{pkger.Include("/nan.go"), pkger.Include("/LICENSE")}
@@ -63,7 +63,7 @@ func main() {
 		for {
 			line, err := reader.ReadBytes('\n')
 			if strings.HasPrefix(string(line), "package ") {
-				line = []byte(fmt.Sprintf("package %s\n", *moduleName))
+				line = []byte(fmt.Sprintf("package %s\n", *pkgName))
 			}
 			src = append(src, line...)
 
