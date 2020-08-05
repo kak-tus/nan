@@ -2,6 +2,8 @@ package nan
 
 import "time"
 
+//go:generate pkger -o cmd/nan
+
 // NullInt64 - nullable int64
 type NullInt64 struct {
 	Int64 int64
