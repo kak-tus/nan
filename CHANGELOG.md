@@ -1,3 +1,9 @@
+2020-08-06 v0.1.7
+- Validator interface
+
+2020-08-05 v0.1.6
+- nan command that generates marshalers
+
 2020-08-03 v0.1.5
 - Remove unneded sql dependency.
 - Add support for sql marhsalling (Scan and Value methods) (creker).
