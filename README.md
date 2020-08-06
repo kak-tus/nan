@@ -53,7 +53,7 @@ with gocql.
 	// {"code":null}
 	fmt.Println(string(b))
 
-	data.Code = nan.StringToNullString("1")
+	data.Code = nan.String("1")
 	// Or
 	// data.Code = nan.NullString{String: "1", Valid: true}
 

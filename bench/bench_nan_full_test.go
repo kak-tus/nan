@@ -10,7 +10,7 @@ import (
 
 func newNanFull() nanFull {
 	return nanFull{
-		Field000: nan.StringToNullString("7676"),
+		Field000: nan.String("7676"),
 		Field001: nan.BoolToNullBool(true),
 		Field002: nan.Int64ToNullInt64(7676),
 		Field003: nan.TimeToNullTime(time.Now()),
@@ -19,7 +19,7 @@ func newNanFull() nanFull {
 
 func newNanFullJSON() nanFullJSON {
 	return nanFullJSON{
-		Field000: nan.StringToNullString("7676"),
+		Field000: nan.String("7676"),
 		Field001: nan.BoolToNullBool(true),
 		Field002: nan.Int64ToNullInt64(7676),
 		Field003: nan.TimeToNullTime(time.Now()),
