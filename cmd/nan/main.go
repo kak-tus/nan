@@ -81,4 +81,6 @@ func main() {
 
 		in.Close()
 	}
+
+	generateForFiles(flag.Args())
 }
