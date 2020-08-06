@@ -11,18 +11,18 @@ import (
 func newNanFull() nanFull {
 	return nanFull{
 		Field000: nan.String("7676"),
-		Field001: nan.BoolToNullBool(true),
-		Field002: nan.Int64ToNullInt64(7676),
-		Field003: nan.TimeToNullTime(time.Now()),
+		Field001: nan.Bool(true),
+		Field002: nan.Int64(7676),
+		Field003: nan.Time(time.Now()),
 	}
 }
 
 func newNanFullJSON() nanFullJSON {
 	return nanFullJSON{
 		Field000: nan.String("7676"),
-		Field001: nan.BoolToNullBool(true),
-		Field002: nan.Int64ToNullInt64(7676),
-		Field003: nan.TimeToNullTime(time.Now()),
+		Field001: nan.Bool(true),
+		Field002: nan.Int64(7676),
+		Field003: nan.Time(time.Now()),
 	}
 }
 
