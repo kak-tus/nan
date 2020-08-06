@@ -4,6 +4,8 @@ marshallers and unmarshallers.
 
 Features:
 - short name "nan"
+- handy conversion functions
+- select which marshalers you want and limit dependencies to only those you actually need
 
 Supported types:
 - bool
@@ -22,15 +24,15 @@ Supported marshallers:
 - Standart JSON
 - jsoniter
 - easyjson
-- Scylla and Cassandra (gocql, gocqlx)
+- Scylla and Cassandra. Compatible with gocql
 - SQL
 
 Usage
 
-Simply create struct field or variable with one of exported types and use it without any changes in external API.
+Simply create struct field or variable with one of the exported types and use it without any changes to external API.
 
-JSON input/output will be converted to null or non null values. Scylla and Cassandra will
-be save this variables correctly.
+JSON input/output will be converted to null or non null values. Scylla and Cassandra will use wire format compatible
+with gocql.
 
 	var data struct {
 		Code nan.NullString `json:"code"`

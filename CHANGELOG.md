@@ -1,3 +1,6 @@
+unreleased
+- Shorter helpers. Old helpers - deprecated.
+
 2020-08-06 v0.1.8
 - Validator interface
 
