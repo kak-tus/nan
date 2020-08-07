@@ -1,3 +1,6 @@
+2020-08-07 v0.1.10
+- implement easyjson.Optional
+
 2020-08-07 v0.1.9
 - Shorter helpers. Old helpers - deprecated.
 - generate helpers
