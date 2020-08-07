@@ -66,6 +66,9 @@ func TestJSONNullBool(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullBool{Valid: false}, &NullBool{})
 	doJSONTest(t, nil, nil, &NullBool{Valid: false}, &NullBool{Valid: true})
+
+	v := NullBool{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullFloat32(t *testing.T) {
@@ -74,6 +77,9 @@ func TestJSONNullFloat32(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullFloat32{Valid: false}, &NullFloat32{})
 	doJSONTest(t, nil, nil, &NullFloat32{Valid: false}, &NullFloat32{Valid: true})
+
+	v := NullFloat32{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullFloat64(t *testing.T) {
@@ -82,6 +88,9 @@ func TestJSONNullFloat64(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullFloat64{Valid: false}, &NullFloat64{})
 	doJSONTest(t, nil, nil, &NullFloat64{Valid: false}, &NullFloat64{Valid: true})
+
+	v := NullFloat64{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullInt(t *testing.T) {
@@ -90,6 +99,9 @@ func TestJSONNullInt(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullInt{Valid: false}, &NullInt{})
 	doJSONTest(t, nil, nil, &NullInt{Valid: false}, &NullInt{Valid: true})
+
+	v := NullInt{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullInt8(t *testing.T) {
@@ -98,6 +110,9 @@ func TestJSONNullInt8(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullInt8{Valid: false}, &NullInt8{})
 	doJSONTest(t, nil, nil, &NullInt8{Valid: false}, &NullInt8{Valid: true})
+
+	v := NullInt8{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullInt16(t *testing.T) {
@@ -106,6 +121,9 @@ func TestJSONNullInt16(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullInt16{Valid: false}, &NullInt16{})
 	doJSONTest(t, nil, nil, &NullInt16{Valid: false}, &NullInt16{Valid: true})
+
+	v := NullInt16{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullInt32(t *testing.T) {
@@ -114,6 +132,9 @@ func TestJSONNullInt32(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullInt32{Valid: false}, &NullInt32{})
 	doJSONTest(t, nil, nil, &NullInt32{Valid: false}, &NullInt32{Valid: true})
+
+	v := NullInt32{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullInt64(t *testing.T) {
@@ -122,6 +143,9 @@ func TestJSONNullInt64(t *testing.T) {
 
 	doJSONTest(t, nil, nil, &NullInt64{Valid: false}, &NullInt64{})
 	doJSONTest(t, nil, nil, &NullInt64{Valid: false}, &NullInt64{Valid: true})
+
+	v := NullInt64{}
+	assert.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }
 
 func TestJSONNullString(t *testing.T) {
@@ -132,6 +156,9 @@ func TestJSONNullString(t *testing.T) {
 	doJSONTest(t, v1, v2, &NullString{String: v1, Valid: true}, &NullString{})
 
 	doJSONTest(t, nil, nil, &NullString{Valid: false}, &NullString{})
+
+	v := NullString{}
+	assert.Error(t, json.Unmarshal([]byte("123"), &v))
 }
 
 func TestJSONNullTime(t *testing.T) {
@@ -144,13 +171,19 @@ func TestJSONNullTime(t *testing.T) {
 	err := jsoniter.Unmarshal([]byte(""), &NullTime{})
 	assert.Error(t, err)
 
-	err = jsoniter.Unmarshal([]byte("wrong"), &NullTime{})
+	err = jsoniter.Unmarshal([]byte("\"wrong\""), &NullTime{})
 	assert.Error(t, err)
 
-	err = json.Unmarshal([]byte("wrong"), &NullTime{})
+	err = jsoniter.Unmarshal([]byte("\"wrong\""), &NullTime{})
 	assert.Error(t, err)
 
-	r := jlexer.Lexer{Data: []byte("wrong")}
+	err = json.Unmarshal([]byte("\"wrong\""), &NullTime{})
+	assert.Error(t, err)
+
+	err = json.Unmarshal([]byte("123"), &NullTime{})
+	assert.Error(t, err)
+
+	r := jlexer.Lexer{Data: []byte("\"wrong\"")}
 
 	var nanVal NullTime
 
