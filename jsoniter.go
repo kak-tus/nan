@@ -31,7 +31,9 @@ func init() {
 
 			stream.WriteBool(t.Bool)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullBool)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -56,7 +58,9 @@ func init() {
 
 			stream.WriteFloat32(t.Float32)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullFloat32)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -81,7 +85,9 @@ func init() {
 
 			stream.WriteFloat64(t.Float64)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullFloat64)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -106,7 +112,9 @@ func init() {
 
 			stream.WriteInt(t.Int)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullInt)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -131,7 +139,9 @@ func init() {
 
 			stream.WriteInt8(t.Int8)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullInt8)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -156,7 +166,9 @@ func init() {
 
 			stream.WriteInt16(t.Int16)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullInt16)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -181,7 +193,9 @@ func init() {
 
 			stream.WriteInt32(t.Int32)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullInt32)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -206,7 +220,9 @@ func init() {
 
 			stream.WriteInt64(t.Int64)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullInt64)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -231,7 +247,9 @@ func init() {
 
 			stream.WriteString(t.String)
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullString)(ptr)).Valid
+		},
 	)
 
 	jsoniter.RegisterTypeDecoderFunc(
@@ -269,6 +287,8 @@ func init() {
 
 			stream.WriteString(t.Time.Format(time.RFC3339Nano))
 		},
-		nil,
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullTime)(ptr)).Valid
+		},
 	)
 }

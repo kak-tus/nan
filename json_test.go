@@ -190,3 +190,23 @@ func TestJSONNullTime(t *testing.T) {
 	nanVal.UnmarshalEasyJSON(&r)
 	assert.Error(t, r.Error())
 }
+
+func TestOmitempty(t *testing.T) {
+	var decoded struct {
+		Bool    NullBool    `json:"bool,omitempty"`
+		Float32 NullFloat32 `json:"float32,omitempty"`
+		Float64 NullFloat64 `json:"float64,omitempty"`
+		Int     NullInt     `json:"int,omitempty"`
+		Int8    NullInt8    `json:"int8,omitempty"`
+		Int16   NullInt16   `json:"int16,omitempty"`
+		Int32   NullInt32   `json:"int32,omitempty"`
+		Int64   NullInt64   `json:"int64,omitempty"`
+		String  NullString  `json:"string,omitempty"`
+		Time    NullTime    `json:"time,omitempty"`
+	}
+
+	encoded, err := jsoniter.MarshalToString(decoded)
+	assert.NoError(t, err)
+
+	assert.Equal(t, "{}", encoded)
+}
