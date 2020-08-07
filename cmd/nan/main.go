@@ -32,7 +32,7 @@ func main() {
 		_, *pkgName = filepath.Split(wd)
 	}
 
-	files := []string{pkger.Include("/nan.go"), pkger.Include("/LICENSE")}
+	files := []string{pkger.Include("/nan.go"), pkger.Include("/LICENSE"), pkger.Include("/helpers.go")}
 	if *cql || *checksum {
 		files = append(files, pkger.Include("/cql.go"))
 		files = append(files, pkger.Include("/cql_helpers.go"))
