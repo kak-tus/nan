@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"crypto/md5"
 	"flag"
 	"fmt"
 	"io"
@@ -14,6 +15,7 @@ import (
 )
 
 func main() {
+	checksum := flag.Bool("checksum", false, "calculates checksum over embedded files. Used in CI")
 	cql := flag.Bool("cql", false, "emit implementation of gocql.Marshaler and gocql.Unmarshaler")
 	easyjson := flag.Bool("easyjson", false, "emit implementation of easyjson.Marshaler and easyjson.Unmarshaler")
 	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
@@ -31,22 +33,35 @@ func main() {
 	}
 
 	files := []string{pkger.Include("/nan.go"), pkger.Include("/LICENSE")}
-	if *cql {
+	if *cql || *checksum {
 		files = append(files, pkger.Include("/cql.go"))
 		files = append(files, pkger.Include("/cql_helpers.go"))
 	}
-	if *easyjson {
+	if *easyjson || *checksum {
 		files = append(files, pkger.Include("/easyjson.go"))
 	}
-	if *json {
+	if *json || *checksum {
 		files = append(files, pkger.Include("/json.go"))
 	}
-	if *jsoniter {
+	if *jsoniter || *checksum {
 		files = append(files, pkger.Include("/jsoniter.go"))
 	}
-	if *sql {
+	if *sql || *checksum {
 		files = append(files, pkger.Include("/sql.go"))
 		files = append(files, pkger.Include("/sql_convert.go"))
+	}
+	if *checksum {
+		sum := md5.New()
+		for i := range files {
+			in, err := pkger.Open(files[i])
+			if err != nil {
+				panic(err)
+			}
+			io.Copy(sum, in)
+			in.Close()
+		}
+		fmt.Printf("%x\n", sum.Sum(nil))
+		return
 	}
 
 	for i := range files {
