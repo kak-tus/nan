@@ -1,3 +1,6 @@
+2020-08-07 v0.1.11
+- Omitempty support for jsoniter.
+
 2020-08-07 v0.1.10
 - implement easyjson.Optional
 
