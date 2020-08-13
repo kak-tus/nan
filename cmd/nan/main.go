@@ -20,6 +20,7 @@ func main() {
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
 	sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
+
 	flag.Parse()
 
 	if *pkgName == "" {
@@ -30,7 +31,7 @@ func main() {
 		_, *pkgName = filepath.Split(wd)
 	}
 
-	files := []string{pkger.Include("/nan.go"), pkger.Include("/LICENSE")}
+	files := make([]string, 0)
 	if *cql {
 		files = append(files, pkger.Include("/cql.go"))
 		files = append(files, pkger.Include("/cql_helpers.go"))
@@ -47,6 +48,11 @@ func main() {
 	if *sql {
 		files = append(files, pkger.Include("/sql.go"))
 		files = append(files, pkger.Include("/sql_convert.go"))
+	}
+
+	// We have files to generate (user pass some options), so add other files
+	if len(files) != 0 {
+		files = append(files, pkger.Include("/nan.go"), pkger.Include("/LICENSE"))
 	}
 
 	for i := range files {

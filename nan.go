@@ -108,3 +108,6 @@ type NullFloat32 struct {
 func (n NullFloat32) IsValid() bool {
 	return n.Valid
 }
+
+// type needed for template for custom types generator
+type initialTemplateType string
