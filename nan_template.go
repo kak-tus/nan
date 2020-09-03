@@ -1,6 +1,6 @@
 package nan
 
-// nullTemplateType - nullable type for templates generation
+// nullTemplateType - generated for nullTemplateType
 type nullTemplateType struct {
 	Value initialTemplateType
 	Valid bool // Valid is true if Value is not NULL
