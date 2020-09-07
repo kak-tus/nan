@@ -11,7 +11,7 @@ func (n nullTemplateType) MarshalJSON() ([]byte, error) {
 		return []byte("null"), nil
 	}
 
-	return json.Marshal(n.Value)
+	return json.Marshal(n.NullTemplateValue)
 }
 
 // UnmarshalJSON - unmarshaller for json
@@ -28,7 +28,7 @@ func (n *nullTemplateType) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	*n = nullTemplateType{Value: res, Valid: true}
+	*n = nullTemplateType{NullTemplateValue: res, Valid: true}
 
 	return nil
 }
