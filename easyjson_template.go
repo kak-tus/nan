@@ -12,8 +12,15 @@ func (n nullTemplateType) MarshalEasyJSON(out *jwriter.Writer) {
 		return
 	}
 
-	out.
-	// out.Bool(n.Bool)
+	n.NullTemplateValue.MarshalEasyJSON(out) // EasyJSON template
+
+	enc, err := n.NullTemplateValue.MarshalJSON() // JSON template
+	if err != nil {                               // JSON template
+		out.Error = err // JSON template
+		return          // JSON template
+	} // JSON template
+	// JSON template
+	out.RawString(string(enc)) // JSON template
 }
 
 // UnmarshalEasyJSON - unmarshaller for easyjson
@@ -26,5 +33,15 @@ func (n *nullTemplateType) UnmarshalEasyJSON(in *jlexer.Lexer) {
 		return
 	}
 
-	// *n = NullBool{Bool: in.Bool(), Valid: true}
+	var val initialTemplateType
+
+	val.UnmarshalEasyJSON(in) // EasyJSON template
+
+	err := val.UnmarshalJSON(in.Raw()) // JSON template
+	if err != nil {                    // JSON template
+		in.AddError(err) // JSON template
+		return           // JSON template
+	} // JSON template
+
+	*n = nullTemplateType{NullTemplateValue: val, Valid: true}
 }

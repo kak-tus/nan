@@ -1,5 +1,7 @@
 package nan
 
+// imports
+
 // nullTemplateType - generated for nullTemplateType
 type nullTemplateType struct {
 	NullTemplateValue initialTemplateType
