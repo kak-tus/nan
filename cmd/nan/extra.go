@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"go/ast"
+	"go/format"
 	"go/parser"
 	"go/token"
 	"io/ioutil"
@@ -22,6 +23,8 @@ const (
 	valueStructName  = "NullTemplateValue:"
 	packageName      = "package nan"
 	importsTemplate  = "// imports"
+	jsonTemplate     = "// JSON template"
+	easyjsonTemplate = "// EasyJSON template"
 )
 
 type definition struct {
@@ -40,6 +43,7 @@ type visitor struct {
 func generateExtra() {
 	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
+	easyjson := flag.Bool("easyjson", false, "emit implementation of easyjson.Marshaler and easyjson.Unmarshaler")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 
 	flag.Parse()
@@ -61,6 +65,8 @@ func generateExtra() {
 	dataJSON := readTemplate(templateFilename)
 	templateFilename = pkger.Include("/jsoniter_template.go")
 	dataJsoniter := readTemplate(templateFilename)
+	templateFilename = pkger.Include("/easyjson_template.go")
+	dataEasyjson := readTemplate(templateFilename)
 
 	files := flag.Args()
 
@@ -89,19 +95,6 @@ func generateExtra() {
 		out := fmt.Sprintf(genStr, strings.Join(os.Args[1:], " "))
 
 		for _, def := range currVisitor.definitions {
-			if currVisitor.hasEasyJSONMarshaller[def.name] {
-				println(1)
-			}
-			if currVisitor.hasEasyJSONUnmarshaller[def.name] {
-				println(2)
-			}
-			if currVisitor.hasJSONMarshaller[def.name] {
-				println(3)
-			}
-			if currVisitor.hasJSONUnmarshaller[def.name] {
-				println(4)
-			}
-
 			var nullPrefix string
 
 			// Name starts with uppercased letter - exported
@@ -143,7 +136,6 @@ func generateExtra() {
 
 			if *json {
 				withoutImport, imp := findImports(replacer.Replace(string(dataJSON)))
-
 				out += "\n" + withoutImport
 
 				imports = append(imports, imp...)
@@ -157,6 +149,27 @@ func generateExtra() {
 				imports = append(imports, imp...)
 			}
 
+			if *easyjson {
+				withoutImport, imp := findImports(replacer.Replace(string(dataEasyjson)))
+
+				switch {
+				case currVisitor.hasEasyJSONMarshaller[def.name] && currVisitor.hasEasyJSONUnmarshaller[def.name]:
+					withoutImport = removeLinesWithSuffix(withoutImport, jsonTemplate)
+				case currVisitor.hasJSONMarshaller[def.name] && currVisitor.hasJSONUnmarshaller[def.name]:
+					withoutImport = removeLinesWithSuffix(withoutImport, easyjsonTemplate)
+				default:
+					panic(fmt.Sprintf("Not found\n"+
+						"MarshalEasyJSON/UnmarshalEasyJSON (preferred)\n"+
+						"or MarshalJSON/UnmarshalJSON functions for %s\n"+
+						"Run easyjson for your structs before nan",
+						def.name))
+				}
+
+				out += "\n" + withoutImport
+
+				imports = append(imports, imp...)
+			}
+
 			if len(imports) > 0 {
 				joined := strings.Join(imports, "\n")
 				formatted := fmt.Sprintf("import (\n%s\n)\n", joined)
@@ -164,11 +177,16 @@ func generateExtra() {
 			}
 		}
 
+		formatted, err := format.Source([]byte(out))
+		if err != nil {
+			panic(err)
+		}
+
 		ext := filepath.Ext(file)
 
 		resName := file[0:len(file)-len(ext)] + "_nan" + ext
 
-		if err := ioutil.WriteFile(resName, []byte(out), 0644); err != nil {
+		if err := ioutil.WriteFile(resName, formatted, 0644); err != nil {
 			panic(err)
 		}
 	}
@@ -269,4 +287,20 @@ func findImports(data string) (string, []string) {
 
 	// exclude first and last line from imports with "import (" and ")"
 	return withoutIncludes, imports[1 : len(imports)-1]
+}
+
+func removeLinesWithSuffix(s, suffix string) string {
+	splitted := strings.Split(s, "\n")
+
+	res := make([]string, 0, len(splitted))
+
+	for _, line := range splitted {
+		if strings.HasSuffix(line, suffix) {
+			continue
+		}
+
+		res = append(res, line)
+	}
+
+	return strings.Join(res, "\n")
 }
