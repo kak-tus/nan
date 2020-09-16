@@ -13,7 +13,7 @@ func (n nullTemplateType) MarshalEasyJSON(out *jwriter.Writer) {
 	}
 
 	n.NullTemplateValue.MarshalEasyJSON(out) // EasyJSON template
-
+	// JSON template
 	enc, err := n.NullTemplateValue.MarshalJSON() // JSON template
 	if err != nil {                               // JSON template
 		out.Error = err // JSON template
