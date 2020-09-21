@@ -1,0 +1,2 @@
+Example for easyjson generation.
+
