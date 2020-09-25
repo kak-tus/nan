@@ -19,7 +19,15 @@ func TestStructs(t *testing.T) {
 	assert.NoError(t, err)
 	fmt.Println(string(encJSON))
 
-	encJsoniter, err := jsoniter.Marshal(val)
+	// use separate struct without easyjson coders
+	// Because easyjson generates marshallers for encode/decode and original
+	// jsoniter registered functions not used
+	valJsoniter := MyStruct3{
+		Val3: NullMyStruct{MyStruct: MyStruct{ID: 1}, Valid: true},
+		Val4: MyStruct{ID: 1},
+	}
+
+	encJsoniter, err := jsoniter.Marshal(valJsoniter)
 	assert.NoError(t, err)
 	fmt.Println(string(encJsoniter))
 
@@ -35,4 +43,9 @@ func TestStructs(t *testing.T) {
 	err = json.Unmarshal(encJSON, &targetJSON)
 	assert.NoError(t, err)
 	assert.Equal(t, val, targetJSON)
+
+	var targetJsoniter MyStruct3
+	err = jsoniter.Unmarshal(encJsoniter, &targetJsoniter)
+	assert.NoError(t, err)
+	assert.Equal(t, valJsoniter, targetJsoniter)
 }

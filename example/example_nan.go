@@ -5,7 +5,6 @@ package example
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"unsafe"
 
 	jsoniter "github.com/json-iterator/go"
@@ -54,22 +53,22 @@ func (n *NullMyStruct) UnmarshalJSON(data []byte) error {
 
 func init() {
 	jsoniter.RegisterTypeDecoderFunc(
-		"NullMyStruct",
+		"example.NullMyStruct",
 		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
 			if iter.ReadNil() {
 				return
 			}
 
-			// val := iter.ReadAny()
-			// val.
-			// *((*NullMyStruct)(ptr)) = NullMyStruct{Bool: iter.ReadBool(), Valid: true}
+			var val MyStruct
+			iter.ReadVal(&val)
+
+			*((*NullMyStruct)(ptr)) = NullMyStruct{MyStruct: val, Valid: true}
 		},
 	)
 	jsoniter.RegisterTypeEncoderFunc(
-		"github.com/kak-tus/nan/example.NullMyStruct",
+		"example.NullMyStruct",
 		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
 			n := *((*NullMyStruct)(ptr))
-			fmt.Println(1)
 
 			if !n.Valid {
 				stream.WriteNil()

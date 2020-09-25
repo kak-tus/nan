@@ -8,19 +8,20 @@ import (
 
 func init() {
 	jsoniter.RegisterTypeDecoderFunc(
-		"nullTemplateType",
+		"nan.nullTemplateType",
 		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
 			if iter.ReadNil() {
 				return
 			}
 
-			// val := iter.ReadAny()
-			// val.
-			// *((*nullTemplateType)(ptr)) = nullTemplateType{Bool: iter.ReadBool(), Valid: true}
+			var val initialTemplateType
+			iter.ReadVal(&val)
+
+			*((*nullTemplateType)(ptr)) = nullTemplateType{NullTemplateValue: val, Valid: true}
 		},
 	)
 	jsoniter.RegisterTypeEncoderFunc(
-		"nullTemplateType",
+		"nan.nullTemplateType",
 		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
 			n := *((*nullTemplateType)(ptr))
 

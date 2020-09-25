@@ -25,6 +25,7 @@ const (
 	importsTemplate  = "// imports"
 	jsonTemplate     = "// JSON template"
 	easyjsonTemplate = "// EasyJSON template"
+	registerTemplate = "nan.nullTemplateType"
 )
 
 type definition struct {
@@ -70,6 +71,18 @@ func generateExtra() {
 
 	files := flag.Args()
 
+	if len(files) == 0 {
+		return
+	}
+
+	currVisitor := visitor{
+		definitions:             make([]definition, 0),
+		hasEasyJSONMarshaller:   make(map[string]bool),
+		hasEasyJSONUnmarshaller: make(map[string]bool),
+		hasJSONMarshaller:       make(map[string]bool),
+		hasJSONUnmarshaller:     make(map[string]bool),
+	}
+
 	for _, file := range files {
 		fset := token.NewFileSet()
 
@@ -78,117 +91,112 @@ func generateExtra() {
 			panic(err)
 		}
 
-		currVisitor := visitor{
-			definitions:             make([]definition, 0),
-			hasEasyJSONMarshaller:   make(map[string]bool),
-			hasEasyJSONUnmarshaller: make(map[string]bool),
-			hasJSONMarshaller:       make(map[string]bool),
-			hasJSONUnmarshaller:     make(map[string]bool),
-		}
-
 		ast.Walk(&currVisitor, parsed)
+	}
 
-		if len(currVisitor.definitions) == 0 {
-			continue
+	if len(currVisitor.definitions) == 0 {
+		return
+	}
+
+	out := fmt.Sprintf(genStr, strings.Join(os.Args[1:], " "))
+
+	for _, def := range currVisitor.definitions {
+		var nullPrefix string
+
+		// Name starts with uppercased letter - exported
+		if strings.ToUpper(string([]rune(def.name)[0])) == string([]rune(def.name)[0]) {
+			nullPrefix = "Null"
+		} else {
+			nullPrefix = "null"
 		}
 
-		out := fmt.Sprintf(genStr, strings.Join(os.Args[1:], " "))
+		nameUC := strings.ToUpper(string([]rune(def.name)[0])) + string([]rune(def.name)[1:])
+		nameNan := nullPrefix + nameUC
 
-		for _, def := range currVisitor.definitions {
-			var nullPrefix string
+		namePkg := "package " + *pkgName
+		nameCall := "n." + def.name
+		nameStruct := def.name + ":"
 
-			// Name starts with uppercased letter - exported
-			if strings.ToUpper(string([]rune(def.name)[0])) == string([]rune(def.name)[0]) {
-				nullPrefix = "Null"
-			} else {
-				nullPrefix = "null"
-			}
+		replacer := strings.NewReplacer(
+			initialTypeName, def.name,
+			generateTypeName, nameNan,
+			valueFieldName, def.name,
+			valueCallName, nameCall,
+			valueStructName, nameStruct,
+			packageName, namePkg,
+		)
 
-			nameUC := strings.ToUpper(string([]rune(def.name)[0])) + string([]rune(def.name)[1:])
-			nameNan := nullPrefix + nameUC
+		out += replacer.Replace(string(dataNan))
 
-			namePkg := "package " + *pkgName
-			nameCall := "n." + def.name
-			nameStruct := def.name + ":"
+		registerTemplateTarget := fmt.Sprintf("%s.%s", *pkgName, nameNan)
 
-			replacer := strings.NewReplacer(
-				initialTypeName, def.name,
-				generateTypeName, nameNan,
-				valueFieldName, def.name,
-				valueCallName, nameCall,
-				valueStructName, nameStruct,
-				packageName, namePkg,
-			)
+		// for other files replace "package" to empty string
+		replacer = strings.NewReplacer(
+			initialTypeName, def.name,
+			generateTypeName, nameNan,
+			valueFieldName, def.name,
+			valueCallName, nameCall,
+			valueStructName, nameStruct,
+			packageName, "",
+			registerTemplate, registerTemplateTarget,
+		)
 
-			out += replacer.Replace(string(dataNan))
+		imports := make([]string, 0)
 
-			// for other files replace "package" to empty string
-			replacer = strings.NewReplacer(
-				initialTypeName, def.name,
-				generateTypeName, nameNan,
-				valueFieldName, def.name,
-				valueCallName, nameCall,
-				valueStructName, nameStruct,
-				packageName, "",
-			)
+		if *json {
+			withoutImport, imp := findImports(replacer.Replace(string(dataJSON)))
+			out += "\n" + withoutImport
 
-			imports := make([]string, 0)
-
-			if *json {
-				withoutImport, imp := findImports(replacer.Replace(string(dataJSON)))
-				out += "\n" + withoutImport
-
-				imports = append(imports, imp...)
-			}
-
-			if *jsoniter {
-				withoutImport, imp := findImports(replacer.Replace(string(dataJsoniter)))
-
-				out += "\n" + withoutImport
-
-				imports = append(imports, imp...)
-			}
-
-			if *easyjson {
-				withoutImport, imp := findImports(replacer.Replace(string(dataEasyjson)))
-
-				switch {
-				case currVisitor.hasEasyJSONMarshaller[def.name] && currVisitor.hasEasyJSONUnmarshaller[def.name]:
-					withoutImport = removeLinesWithSuffix(withoutImport, jsonTemplate)
-				case currVisitor.hasJSONMarshaller[def.name] && currVisitor.hasJSONUnmarshaller[def.name]:
-					withoutImport = removeLinesWithSuffix(withoutImport, easyjsonTemplate)
-				default:
-					panic(fmt.Sprintf("Not found\n"+
-						"MarshalEasyJSON/UnmarshalEasyJSON (preferred)\n"+
-						"or MarshalJSON/UnmarshalJSON functions for %s\n"+
-						"Run easyjson for your structs before nan",
-						def.name))
-				}
-
-				out += "\n" + withoutImport
-
-				imports = append(imports, imp...)
-			}
-
-			if len(imports) > 0 {
-				joined := strings.Join(imports, "\n")
-				formatted := fmt.Sprintf("import (\n%s\n)\n", joined)
-				out = strings.Replace(out, importsTemplate, formatted, 1)
-			}
+			imports = append(imports, imp...)
 		}
 
-		formatted, err := format.Source([]byte(out))
-		if err != nil {
-			panic(err)
+		if *jsoniter {
+			withoutImport, imp := findImports(replacer.Replace(string(dataJsoniter)))
+
+			out += "\n" + withoutImport
+
+			imports = append(imports, imp...)
 		}
 
-		ext := filepath.Ext(file)
+		if *easyjson {
+			withoutImport, imp := findImports(replacer.Replace(string(dataEasyjson)))
 
-		resName := file[0:len(file)-len(ext)] + "_nan" + ext
+			switch {
+			case currVisitor.hasEasyJSONMarshaller[def.name] && currVisitor.hasEasyJSONUnmarshaller[def.name]:
+				withoutImport = removeLinesWithSuffix(withoutImport, jsonTemplate)
+			case currVisitor.hasJSONMarshaller[def.name] && currVisitor.hasJSONUnmarshaller[def.name]:
+				withoutImport = removeLinesWithSuffix(withoutImport, easyjsonTemplate)
+			default:
+				panic(fmt.Sprintf("Not found\n"+
+					"MarshalEasyJSON/UnmarshalEasyJSON (preferred)\n"+
+					"or MarshalJSON/UnmarshalJSON functions for %s\n"+
+					"Run easyjson for your structs before nan",
+					def.name))
+			}
 
-		if err := ioutil.WriteFile(resName, formatted, 0644); err != nil {
-			panic(err)
+			out += "\n" + withoutImport
+
+			imports = append(imports, imp...)
 		}
+
+		if len(imports) > 0 {
+			joined := strings.Join(imports, "\n")
+			formatted := fmt.Sprintf("import (\n%s\n)\n", joined)
+			out = strings.Replace(out, importsTemplate, formatted, 1)
+		}
+	}
+
+	formatted, err := format.Source([]byte(out))
+	if err != nil {
+		panic(err)
+	}
+
+	genDir := filepath.Dir(files[0])
+
+	resName := filepath.Join(genDir, *pkgName+"_nan.go")
+
+	if err := ioutil.WriteFile(resName, formatted, 0644); err != nil {
+		panic(err)
 	}
 }
 
