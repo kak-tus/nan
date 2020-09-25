@@ -109,7 +109,7 @@ nullVal := NanMyStruct(val)
 fmt.Println(nullVal.ID)
 ```
 
-See [example](./example/README.md) to specific of easyjson generation.
+See [example](./example/README.md) to specific of easyjson, cql, sql generation.
 
 nan extra coommand supports any number of file names at command line.
 
