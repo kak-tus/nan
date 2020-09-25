@@ -9,7 +9,7 @@ type nullTemplateType struct {
 	Valid             bool // Valid is true if Value is not NULL
 }
 
-func NaninitialTemplateType(v initialTemplateType) nullTemplateType {
+func naninitialTemplateType(v initialTemplateType) nullTemplateType {
 	return nullTemplateType{NullTemplateValue: v, Valid: true}
 }
 

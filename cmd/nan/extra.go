@@ -26,6 +26,7 @@ const (
 	jsonTemplate     = "// JSON template"
 	easyjsonTemplate = "// EasyJSON template"
 	registerTemplate = "nan.nullTemplateType"
+	helperTemplate   = "naninitialTemplateType"
 )
 
 type definition struct {
@@ -45,6 +46,7 @@ func generateExtra() {
 	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
 	easyjson := flag.Bool("easyjson", false, "emit implementation of easyjson.Marshaler and easyjson.Unmarshaler")
+	// sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 
 	flag.Parse()
@@ -116,6 +118,7 @@ func generateExtra() {
 		namePkg := "package " + *pkgName
 		nameCall := "n." + def.name
 		nameStruct := def.name + ":"
+		helperTemplateTarget := "Nan" + def.name
 
 		replacer := strings.NewReplacer(
 			initialTypeName, def.name,
@@ -124,6 +127,7 @@ func generateExtra() {
 			valueCallName, nameCall,
 			valueStructName, nameStruct,
 			packageName, namePkg,
+			helperTemplate, helperTemplateTarget,
 		)
 
 		out += replacer.Replace(string(dataNan))
