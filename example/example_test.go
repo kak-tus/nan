@@ -48,4 +48,9 @@ func TestStructs(t *testing.T) {
 	err = jsoniter.Unmarshal(encJsoniter, &targetJsoniter)
 	assert.NoError(t, err)
 	assert.Equal(t, valJsoniter, targetJsoniter)
+
+	var targetEasyjson MyStruct2
+	err = targetEasyjson.UnmarshalJSON(encEasyJSON)
+	assert.NoError(t, err)
+	assert.Equal(t, val, targetEasyjson)
 }
