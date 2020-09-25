@@ -19,6 +19,10 @@ type NullMyStruct struct {
 	Valid bool // Valid is true if Value is not NULL
 }
 
+func NanMyStruct(v MyStruct) NullMyStruct {
+	return NullMyStruct{MyStruct: v, Valid: true}
+}
+
 func (n NullMyStruct) IsValid() bool {
 	return n.Valid
 }
