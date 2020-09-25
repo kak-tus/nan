@@ -12,6 +12,7 @@ Features:
 - short name "nan"
 - handy conversion functions
 - select which marshalers you want and limit dependencies to only those you actually need
+- ability to convert your custom structs to nan compatible type with Valid field and all requested encoders/decoders
 
 Supported types:
 - bool
@@ -75,10 +76,42 @@ with gocql.
 
 Instead of depending on the whole github.com/kak-tus/nan you can also use `nan` command to select which marshalers you want. Simply run `nan` with one or more arguments and it will generate implementations for the specified marshalers in the current directory. For example, running
 ```
-# nan -json -jsoniter
+# nan gen -json -jsoniter
 ```
 will generate nan.go, json.go, jsoniter.go files in the current working directory that contain only encoding/json and jsoniter marshalers. Nothing else will be generated so you don't have to depend on all the marshalers that github.com/kak-tus/nan supports. Generated files will use current directory name as its package name. You can also specify your own package name with `-pkg` argument.
+
+## Custom structs generator
+
+Imagine, that you have custom struct
+
+```
+type MyStruct struct {
+	ID   int
+	Name string
+}
+```
+
+Use nan command on its file
+
+```
+# nan extra -json -jsoniter example/structs.go
+```
+
+This will generate *_nan.go near source files with json (or any other supported marshallers). And now you have nan compatible struct with all needed marshallers
+
+```
+var val MyStruct
+
+nullVal := NanMyStruct(val)
+// Or
+// nullVal := NullMyStruct{MyStruct: val, Valid: true}
+
+fmt.Println(nullVal.ID)
+```
+
+See [example](./example/README.md) to specific of easyjson generation.
 
 ## Benchmarks
 
 [See here](./bench/README.md).
+
