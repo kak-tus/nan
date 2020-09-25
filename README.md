@@ -111,6 +111,8 @@ fmt.Println(nullVal.ID)
 
 See [example](./example/README.md) to specific of easyjson generation.
 
+nan extra coommand supports any number of file names at command line.
+
 ## Benchmarks
 
 [See here](./bench/README.md).
