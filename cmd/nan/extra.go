@@ -34,12 +34,9 @@ type definition struct {
 }
 
 type visitor struct {
-	definitions             []definition
-	hasEasyJSONMarshaller   map[string]bool
-	hasEasyJSONUnmarshaller map[string]bool
-	hasJSONMarshaller       map[string]bool
-	hasJSONUnmarshaller     map[string]bool
-	name                    string
+	definitions []definition
+	functions   map[string]map[string]bool
+	name        string
 }
 
 func generateExtra() {
@@ -78,11 +75,8 @@ func generateExtra() {
 	}
 
 	currVisitor := visitor{
-		definitions:             make([]definition, 0),
-		hasEasyJSONMarshaller:   make(map[string]bool),
-		hasEasyJSONUnmarshaller: make(map[string]bool),
-		hasJSONMarshaller:       make(map[string]bool),
-		hasJSONUnmarshaller:     make(map[string]bool),
+		definitions: make([]definition, 0),
+		functions:   make(map[string]map[string]bool),
 	}
 
 	for _, file := range files {
@@ -166,9 +160,9 @@ func generateExtra() {
 			withoutImport, imp := findImports(replacer.Replace(string(dataEasyjson)))
 
 			switch {
-			case currVisitor.hasEasyJSONMarshaller[def.name] && currVisitor.hasEasyJSONUnmarshaller[def.name]:
+			case currVisitor.hasFunction(def.name, "MarshalEasyJSON") && currVisitor.hasFunction(def.name, "UnmarshalEasyJSON"):
 				withoutImport = removeLinesWithSuffix(withoutImport, jsonTemplate)
-			case currVisitor.hasJSONMarshaller[def.name] && currVisitor.hasJSONUnmarshaller[def.name]:
+			case currVisitor.hasFunction(def.name, "MarshalJSON") && currVisitor.hasFunction(def.name, "UnmarshalJSON"):
 				withoutImport = removeLinesWithSuffix(withoutImport, easyjsonTemplate)
 			default:
 				panic(fmt.Sprintf("Not found\n"+
@@ -244,16 +238,11 @@ func (v *visitor) Visit(node ast.Node) (w ast.Visitor) {
 				continue
 			}
 
-			switch val.Name.Name {
-			case "MarshalEasyJSON":
-				v.hasEasyJSONMarshaller[rname] = true
-			case "UnmarshalEasyJSON":
-				v.hasEasyJSONUnmarshaller[rname] = true
-			case "MarshalJSON":
-				v.hasJSONMarshaller[rname] = true
-			case "UnmarshalJSON":
-				v.hasJSONUnmarshaller[rname] = true
+			if _, ok := v.functions[rname]; !ok {
+				v.functions[rname] = make(map[string]bool)
 			}
+
+			v.functions[rname][val.Name.Name] = true
 		}
 
 		return nil
@@ -315,4 +304,16 @@ func removeLinesWithSuffix(s, suffix string) string {
 	}
 
 	return strings.Join(res, "\n")
+}
+
+func (v *visitor) hasFunction(varType, function string) bool {
+	if _, ok := v.functions[varType]; !ok {
+		return false
+	}
+
+	if _, ok := v.functions[varType]; !ok {
+		return false
+	}
+
+	return true
 }
