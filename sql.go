@@ -217,3 +217,13 @@ func (n NullTime) Value() (driver.Value, error) {
 
 	return n.Time, nil
 }
+
+func (n *initialTemplateType) Scan(value interface{}) error {
+	// Function only for code validity
+	return nil
+}
+
+func (n initialTemplateType) Value() (driver.Value, error) {
+	// Function only for code validity
+	return 0, nil
+}

@@ -292,3 +292,13 @@ func (n *NullTime) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 
 	return nil
 }
+
+func (n initialTemplateType) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
+	// Function only for code validity
+	return nil, nil
+}
+
+func (n *initialTemplateType) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
+	// Function only for code validity
+	return nil
+}

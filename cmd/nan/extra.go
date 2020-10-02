@@ -43,7 +43,8 @@ func generateExtra() {
 	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
 	easyjson := flag.Bool("easyjson", false, "emit implementation of easyjson.Marshaler and easyjson.Unmarshaler")
-	// sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
+	sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
+	cql := flag.Bool("cql", false, "emit implementation of gocql.Marshaler and gocql.Unmarshaler")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 
 	flag.Parse()
@@ -67,6 +68,10 @@ func generateExtra() {
 	dataJsoniter := readTemplate(templateFilename)
 	templateFilename = pkger.Include("/easyjson_template.go")
 	dataEasyjson := readTemplate(templateFilename)
+	templateFilename = pkger.Include("/sql_template.go")
+	dataSQL := readTemplate(templateFilename)
+	templateFilename = pkger.Include("/cql_template.go")
+	dataCQL := readTemplate(templateFilename)
 
 	files := flag.Args()
 
@@ -168,9 +173,39 @@ func generateExtra() {
 				panic(fmt.Sprintf("Not found\n"+
 					"MarshalEasyJSON/UnmarshalEasyJSON (preferred)\n"+
 					"or MarshalJSON/UnmarshalJSON functions for %s\n"+
-					"Run easyjson for your structs before nan",
+					"Run easyjson for your structs before run nan",
 					def.name))
 			}
+
+			out += "\n" + withoutImport
+
+			imports = append(imports, imp...)
+		}
+
+		if *sql {
+			if !(currVisitor.hasFunction(def.name, "Value") && currVisitor.hasFunction(def.name, "Scan")) {
+				panic(fmt.Sprintf("Not found\n"+
+					"Value/Scan functions for %s\n"+
+					"Write them for your structs before run nan",
+					def.name))
+			}
+
+			withoutImport, imp := findImports(replacer.Replace(string(dataSQL)))
+
+			out += "\n" + withoutImport
+
+			imports = append(imports, imp...)
+		}
+
+		if *cql {
+			if !(currVisitor.hasFunction(def.name, "MarshalCQL") && currVisitor.hasFunction(def.name, "UnmarshalCQL")) {
+				panic(fmt.Sprintf("Not found\n"+
+					"MarshalCQL/UnmarshalCQL functions for %s\n"+
+					"Write them for your structs before run nan",
+					def.name))
+			}
+
+			withoutImport, imp := findImports(replacer.Replace(string(dataCQL)))
 
 			out += "\n" + withoutImport
 
@@ -268,6 +303,15 @@ func readTemplate(name string) []byte {
 }
 
 func findImports(data string) (string, []string) {
+	res, imports := findMultilineImports(data)
+	if len(imports) > 0 {
+		return res, imports
+	}
+
+	return findSingleImports(data)
+}
+
+func findMultilineImports(data string) (string, []string) {
 	from := strings.Index(data, "\nimport (")
 	if from < 0 {
 		return data, nil
@@ -288,6 +332,24 @@ func findImports(data string) (string, []string) {
 
 	// exclude first and last line from imports with "import (" and ")"
 	return withoutIncludes, imports[1 : len(imports)-1]
+}
+
+func findSingleImports(data string) (string, []string) {
+	from := strings.Index(data, "\nimport \"")
+	if from < 0 {
+		return data, nil
+	}
+
+	to := strings.Index(data[from:], "\"\n")
+	if to < 0 {
+		return data, nil
+	}
+
+	imports := data[from+7 : from+to+1]
+
+	withoutIncludes := data[:from] + "\n" + data[from+to+2:]
+
+	return withoutIncludes, []string{imports}
 }
 
 func removeLinesWithSuffix(s, suffix string) string {
@@ -311,7 +373,7 @@ func (v *visitor) hasFunction(varType, function string) bool {
 		return false
 	}
 
-	if _, ok := v.functions[varType]; !ok {
+	if _, ok := v.functions[varType][function]; !ok {
 		return false
 	}
 
