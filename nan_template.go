@@ -1,7 +1,5 @@
 package nan
 
-// imports
-
 // nullTemplateType - generated for nullTemplateType
 //easyjson:skip
 type nullTemplateType struct {

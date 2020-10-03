@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 
 	"github.com/markbates/pkger"
@@ -101,6 +102,13 @@ func generateExtra() {
 
 	out := fmt.Sprintf(genStr, strings.Join(os.Args[1:], " "))
 
+	out += fmt.Sprintf("\npackage %s\n", *pkgName)
+
+	// To add imports later
+	out += "\n" + importsTemplate + "\n"
+
+	imports := make([]string, 0)
+
 	for _, def := range currVisitor.definitions {
 		var nullPrefix string
 
@@ -114,10 +122,10 @@ func generateExtra() {
 		nameUC := strings.ToUpper(string([]rune(def.name)[0])) + string([]rune(def.name)[1:])
 		nameNan := nullPrefix + nameUC
 
-		namePkg := "package " + *pkgName
 		nameCall := "n." + def.name
 		nameStruct := def.name + ":"
 		helperTemplateTarget := "Nan" + def.name
+		registerTemplateTarget := fmt.Sprintf("%s.%s", *pkgName, nameNan)
 
 		replacer := strings.NewReplacer(
 			initialTypeName, def.name,
@@ -125,29 +133,20 @@ func generateExtra() {
 			valueFieldName, def.name,
 			valueCallName, nameCall,
 			valueStructName, nameStruct,
-			packageName, namePkg,
-			helperTemplate, helperTemplateTarget,
-		)
-
-		out += replacer.Replace(string(dataNan))
-
-		registerTemplateTarget := fmt.Sprintf("%s.%s", *pkgName, nameNan)
-
-		// for other files replace "package" to empty string
-		replacer = strings.NewReplacer(
-			initialTypeName, def.name,
-			generateTypeName, nameNan,
-			valueFieldName, def.name,
-			valueCallName, nameCall,
-			valueStructName, nameStruct,
 			packageName, "",
+			helperTemplate, helperTemplateTarget,
 			registerTemplate, registerTemplateTarget,
 		)
 
-		imports := make([]string, 0)
+		withoutImport, imp := findImports(replacer.Replace(string(dataNan)))
+
+		out += "\n" + withoutImport
+
+		imports = append(imports, imp...)
 
 		if *json {
 			withoutImport, imp := findImports(replacer.Replace(string(dataJSON)))
+
 			out += "\n" + withoutImport
 
 			imports = append(imports, imp...)
@@ -211,12 +210,15 @@ func generateExtra() {
 
 			imports = append(imports, imp...)
 		}
+	}
 
-		if len(imports) > 0 {
-			joined := strings.Join(imports, "\n")
-			formatted := fmt.Sprintf("import (\n%s\n)\n", joined)
-			out = strings.Replace(out, importsTemplate, formatted, 1)
-		}
+	if len(imports) > 0 {
+		sort.Strings(imports)
+
+		joined := strings.Join(uniq(imports), "\n")
+		formatted := fmt.Sprintf("import (\n%s\n)\n", joined)
+
+		out = strings.Replace(out, importsTemplate, formatted, 1)
 	}
 
 	formatted, err := format.Source([]byte(out))
@@ -378,4 +380,24 @@ func (v *visitor) hasFunction(varType, function string) bool {
 	}
 
 	return true
+}
+
+func uniq(strs []string) []string {
+	vals := make(map[string]bool)
+
+	for _, str := range strs {
+		if str == "" {
+			continue
+		}
+
+		vals[str] = true
+	}
+
+	res := make([]string, 0, len(vals))
+
+	for k := range vals {
+		res = append(res, k)
+	}
+
+	return res
 }

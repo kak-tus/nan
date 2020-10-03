@@ -4,14 +4,13 @@ package example
 
 import (
 	"bytes"
-	"encoding/json"
-	"unsafe"
-
 	"database/sql/driver"
+	"encoding/json"
 	"github.com/gocql/gocql"
 	jsoniter "github.com/json-iterator/go"
 	jlexer "github.com/mailru/easyjson/jlexer"
 	jwriter "github.com/mailru/easyjson/jwriter"
+	"unsafe"
 )
 
 // NullMyStruct - generated for NullMyStruct
