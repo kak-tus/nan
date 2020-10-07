@@ -26,9 +26,9 @@ jobs:
       - name: check generated files
         run: |
           export PATH=$PATH:$(go env GOPATH)/bin
-          sum_before=$(go run ./cmd/nan/ -checksum)
+          sum_before=$(go run ./cmd/nan/ checksum)
           go generate
-          sum_after=$(go run ./cmd/nan/ -checksum)
+          sum_after=$(go run ./cmd/nan/ checksum)
           echo "$sum_before"
           echo "$sum_after"
           if [ "$sum_before" != "$sum_after" ] ; then

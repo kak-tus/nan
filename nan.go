@@ -158,3 +158,7 @@ func (n NullFloat32) IsValid() bool {
 func (n NullFloat32) IsDefined() bool {
 	return n.Valid
 }
+
+// type needed for template for custom types generator
+//easyjson:skip
+type initialTemplateType string

@@ -242,3 +242,21 @@ func (n *NullTime) UnmarshalEasyJSON(in *jlexer.Lexer) {
 
 	*n = NullTime{Time: res, Valid: true}
 }
+
+func (n initialTemplateType) MarshalEasyJSON(out *jwriter.Writer) {
+	// Function only for code validity
+}
+
+func (n *initialTemplateType) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	// Function only for code validity
+}
+
+func (n initialTemplateType) MarshalJSON() ([]byte, error) {
+	// Function only for code validity
+	return nil, nil
+}
+
+func (n *initialTemplateType) UnmarshalJSON(data []byte) error {
+	// Function only for code validity
+	return nil
+}
