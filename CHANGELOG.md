@@ -1,3 +1,6 @@
+2020-10-07 v0.1.12
+- Fixed easyjson generation with -all option enabled for custom user-generated types.
+
 2020-08-07 v0.1.11
 - Omitempty support for jsoniter.
 

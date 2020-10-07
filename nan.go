@@ -10,6 +10,7 @@ type Validator interface {
 }
 
 // NullInt64 - nullable int64
+//easyjson:skip
 type NullInt64 struct {
 	Int64 int64
 	Valid bool // Valid is true if Int64 is not NULL
@@ -24,6 +25,7 @@ func (n NullInt64) IsDefined() bool {
 }
 
 // NullInt32 - nullable int32
+//easyjson:skip
 type NullInt32 struct {
 	Int32 int32
 	Valid bool // Valid is true if Int32 is not NULL
@@ -38,6 +40,7 @@ func (n NullInt32) IsDefined() bool {
 }
 
 // NullInt16 - nullable int16
+//easyjson:skip
 type NullInt16 struct {
 	Int16 int16
 	Valid bool // Valid is true if Int16 is not NULL
@@ -52,6 +55,7 @@ func (n NullInt16) IsDefined() bool {
 }
 
 // NullInt8 - nullable int8
+//easyjson:skip
 type NullInt8 struct {
 	Int8  int8
 	Valid bool // Valid is true if Int8 is not NULL
@@ -66,6 +70,7 @@ func (n NullInt8) IsDefined() bool {
 }
 
 // NullInt - nullable int
+//easyjson:skip
 type NullInt struct {
 	Int   int
 	Valid bool // Valid is true if Int8 is not NULL
@@ -80,6 +85,7 @@ func (n NullInt) IsDefined() bool {
 }
 
 // NullTime - nullable time.Time
+//easyjson:skip
 type NullTime struct {
 	Time  time.Time
 	Valid bool // Valid is true if Time is not NULL
@@ -94,6 +100,7 @@ func (n NullTime) IsDefined() bool {
 }
 
 // NullString - nullable string
+//easyjson:skip
 type NullString struct {
 	String string
 	Valid  bool // Valid is true if String is not NULL
@@ -108,6 +115,7 @@ func (n NullString) IsDefined() bool {
 }
 
 // NullBool - nullable bool
+//easyjson:skip
 type NullBool struct {
 	Bool  bool
 	Valid bool // Valid is true if Bool is not NULL
@@ -122,6 +130,7 @@ func (n NullBool) IsDefined() bool {
 }
 
 // NullFloat64 - nullable float64
+//easyjson:skip
 type NullFloat64 struct {
 	Float64 float64
 	Valid   bool // Valid is true if Float64 is not NULL
@@ -136,6 +145,7 @@ func (n NullFloat64) IsDefined() bool {
 }
 
 // NullFloat32 - nullable float32
+//easyjson:skip
 type NullFloat32 struct {
 	Float32 float32
 	Valid   bool // Valid is true if Float32 is not NULL
