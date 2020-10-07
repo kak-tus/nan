@@ -14,3 +14,7 @@ func naninitialTemplateType(v initialTemplateType) nullTemplateType {
 func (n nullTemplateType) IsValid() bool {
 	return n.Valid
 }
+
+func (n nullTemplateType) IsDefined() bool {
+	return n.Valid
+}
