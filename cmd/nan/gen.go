@@ -57,7 +57,12 @@ func generateDefault() {
 
 	// We have files to generate (user pass some options), so add other files
 	if len(files) != 0 {
-		files = append(files, pkger.Include("/nan.go"), pkger.Include("/LICENSE"))
+		files = append(
+			files,
+			pkger.Include("/nan.go"),
+			pkger.Include("/helpers.go"),
+			pkger.Include("/LICENSE"),
+		)
 	}
 
 	for i := range files {

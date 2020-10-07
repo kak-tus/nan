@@ -37,6 +37,7 @@ nan extra - generate marshalers implementations for extra types, defined by user
 func generateChecksum() {
 	files := []string{
 		pkger.Include("/nan.go"),
+		pkger.Include("/helpers.go"),
 		pkger.Include("/LICENSE"),
 		pkger.Include("/cql.go"),
 		pkger.Include("/cql_helpers.go"),

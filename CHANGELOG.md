@@ -1,3 +1,6 @@
+2020-10-07 v0.2.2
+- Include basic helpers in data generation.
+
 2020-10-07 v0.2.1
 - Fixed generation for "go generate" commend (exclude our go generate).
 
