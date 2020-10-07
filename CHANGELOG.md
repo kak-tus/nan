@@ -1,3 +1,6 @@
+2020-10-07 v0.2.1
+- Fixed generation for "go generate" commend (exclude our go generate).
+
 2020-10-07 v0.2.0
 - Support for generate nullable tuper for custom structs.
 

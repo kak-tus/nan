@@ -76,6 +76,8 @@ func generateDefault() {
 			line, err := reader.ReadBytes('\n')
 			if strings.HasPrefix(string(line), "package ") {
 				line = []byte(fmt.Sprintf("package %s\n", *pkgName))
+			} else if strings.HasPrefix(string(line), "//go:generate ") {
+				continue
 			}
 
 			src = append(src, line...)
