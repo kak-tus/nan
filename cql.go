@@ -294,6 +294,9 @@ func (n *NullTime) UnmarshalCQL(info gocql.TypeInfo, data []byte) error {
 }
 
 func (n initialTemplateType) MarshalCQL(info gocql.TypeInfo) ([]byte, error) {
+	// This fixes warning "unused code" for naninitialTemplateType
+	naninitialTemplateType(initialTemplateType(""))
+
 	// Function only for code validity
 	return nil, nil
 }

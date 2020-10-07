@@ -33,9 +33,11 @@ func TestNanValidator(t *testing.T) {
 		NullString{Valid: true, String: "1"},
 		NullTime{Valid: true, Time: time.Now()},
 	}
+
 	for _, v := range nullValues {
 		assert.False(t, v.IsValid())
 	}
+
 	for _, v := range nonnullvalues {
 		assert.True(t, v.IsValid())
 	}
@@ -66,9 +68,11 @@ func TestNanDefined(t *testing.T) {
 		NullString{Valid: true, String: "1"},
 		NullTime{Valid: true, Time: time.Now()},
 	}
+
 	for _, v := range nullValues {
 		assert.False(t, v.IsDefined())
 	}
+
 	for _, v := range nonnullvalues {
 		assert.True(t, v.IsDefined())
 	}
