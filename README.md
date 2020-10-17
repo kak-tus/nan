@@ -42,7 +42,7 @@ JSON input/output will be converted to null or non null values. Scylla and Cassa
 with gocql.
 
 ```
-	var data struct {
+	type data struct {
 		Code nan.NullString `json:"code"`
 	}
 
