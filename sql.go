@@ -225,5 +225,5 @@ func (n *initialTemplateType) Scan(value interface{}) error {
 
 func (n initialTemplateType) Value() (driver.Value, error) {
 	// Function only for code validity
-	return 0, nil
+	return initialTemplateType(""), nil
 }
