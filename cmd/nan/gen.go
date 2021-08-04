@@ -16,12 +16,18 @@ import (
 func generateDefault() {
 	cql := flag.Bool("cql", false, "emit implementation of gocql.Marshaler and gocql.Unmarshaler")
 	easyjson := flag.Bool("easyjson", false, "emit implementation of easyjson.Marshaler and easyjson.Unmarshaler")
-	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
+	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler. Conflicts with -goccyjson")
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
+	goccyjson := flag.Bool("goccyjson", false, "emit implementation of json.Marshaler and json.Unmarshaler that uses goccy/go-json. Conflicts with -json")
 	sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 
 	flag.Parse()
+
+	if *json && *goccyjson {
+		fmt.Println("-json and -goccyjson are mutually exclusive. Choose one")
+		return
+	}
 
 	if *pkgName == "" {
 		wd, err := os.Getwd()
@@ -48,6 +54,10 @@ func generateDefault() {
 
 	if *jsoniter {
 		files = append(files, pkger.Include("/jsoniter.go"))
+	}
+
+	if *goccyjson {
+		files = append(files, pkger.Include("/json.go"))
 	}
 
 	if *sql {
@@ -83,6 +93,9 @@ func generateDefault() {
 				line = []byte(fmt.Sprintf("package %s\n", *pkgName))
 			} else if strings.HasPrefix(string(line), "//go:generate ") {
 				continue
+			}
+			if *goccyjson {
+				line = convertJsonToGoccyJson(line, true)
 			}
 
 			src = append(src, line...)
