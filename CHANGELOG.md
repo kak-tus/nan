@@ -1,3 +1,6 @@
+2021-08-14 v0.2.4
+- Add support for go-json (creker).
+
 2020-10-07 v0.2.3
 - Fixed bug with generating marhallers for custom structs with omitempty.
 

@@ -31,6 +31,7 @@ Supported marshallers:
 - Standart JSON
 - jsoniter
 - easyjson
+- go-json
 - Scylla and Cassandra. Compatible with gocql
 - SQL
 

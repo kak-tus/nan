@@ -23,6 +23,7 @@ Supported types:
 Supported marshallers:
 - Standart JSON
 - jsoniter
+- go-json
 - easyjson
 - Scylla and Cassandra. Compatible with gocql
 - SQL
