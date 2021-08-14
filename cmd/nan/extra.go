@@ -41,14 +41,20 @@ type visitor struct {
 }
 
 func generateExtra() {
-	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler")
+	json := flag.Bool("json", false, "emit implementation of json.Marshaler and json.Unmarshaler. Conflicts with -goccyjson")
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
 	easyjson := flag.Bool("easyjson", false, "emit implementation of easyjson.Marshaler and easyjson.Unmarshaler")
+	goccyjson := flag.Bool("goccyjson", false, "emit implementation of json.Marshaler and json.Unmarshaler that uses goccy/go-json. Conflicts with -json")
 	sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
 	cql := flag.Bool("cql", false, "emit implementation of gocql.Marshaler and gocql.Unmarshaler")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 
 	flag.Parse()
+
+	if *json && *goccyjson {
+		fmt.Println("-json and -goccyjson are mutually exclusive. Choose one")
+		return
+	}
 
 	if *pkgName == "" {
 		wd, err := os.Getwd()
@@ -65,6 +71,8 @@ func generateExtra() {
 	dataNan := readTemplate(templateFilename)
 	templateFilename = pkger.Include("/json_template.go")
 	dataJSON := readTemplate(templateFilename)
+	templateFilename = pkger.Include("/json_template.go")
+	dataGoccyJSON := convertJsonToGoccyJson(readTemplate(templateFilename), false)
 	templateFilename = pkger.Include("/jsoniter_template.go")
 	dataJsoniter := readTemplate(templateFilename)
 	templateFilename = pkger.Include("/easyjson_template.go")
@@ -146,6 +154,14 @@ func generateExtra() {
 
 		if *json {
 			withoutImport, imp := findImports(replacer.Replace(string(dataJSON)))
+
+			out += "\n" + withoutImport
+
+			imports = append(imports, imp...)
+		}
+
+		if *goccyjson {
+			withoutImport, imp := findImports(replacer.Replace(string(dataGoccyJSON)))
 
 			out += "\n" + withoutImport
 
