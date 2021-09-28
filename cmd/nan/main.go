@@ -46,6 +46,7 @@ func generateChecksum() {
 		pkger.Include("/jsoniter.go"),
 		pkger.Include("/sql.go"),
 		pkger.Include("/sql_convert.go"),
+		pkger.Include("/text.go"),
 	}
 
 	sum := md5.New()

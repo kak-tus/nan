@@ -29,6 +29,7 @@ Supported types:
 
 Supported marshallers:
 - Standart JSON
+- encoding.TextMarshaler/TextUnmarshaler. Reuses standard JSON logic and format
 - jsoniter
 - easyjson
 - go-json
