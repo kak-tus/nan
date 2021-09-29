@@ -1,3 +1,6 @@
+2021-09-29 v0.4.0
+- Add support for encoding.TextMarshaler and encoding.TextUnmarshaler (creker).
+
 2021-08-14 v0.3.0
 - Add support for go-json (creker).
 
