@@ -20,6 +20,7 @@ func generateDefault() {
 	jsoniter := flag.Bool("jsoniter", false, "emit json-iterator encoder/decoder registration code")
 	goccyjson := flag.Bool("goccyjson", false, "emit implementation of json.Marshaler and json.Unmarshaler that uses goccy/go-json. Conflicts with -json")
 	sql := flag.Bool("sql", false, "emit implementation of sql.Scanner and value")
+	text := flag.Bool("text", false, "emit implementation of encoding.TextMarshaler and encoding.TextUnmarshaler")
 	pkgName := flag.String("pkg", "", "specify generated package name. By default will use working directory name")
 
 	flag.Parse()
@@ -63,6 +64,10 @@ func generateDefault() {
 	if *sql {
 		files = append(files, pkger.Include("/sql.go"))
 		files = append(files, pkger.Include("/sql_convert.go"))
+	}
+
+	if *text {
+		files = append(files, pkger.Include("/text.go"))
 	}
 
 	// We have files to generate (user pass some options), so add other files
