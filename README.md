@@ -72,7 +72,7 @@ with gocql.
 ## Generate marshalers
 
 ```
-# go get github.com/kak-tus/nan/cmd/nan
+# go install github.com/kak-tus/nan/cmd/nan@latest
 # nan -help
 ```
 
