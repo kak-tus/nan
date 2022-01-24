@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"runtime/debug"
 
 	"github.com/markbates/pkger"
 )
@@ -26,6 +27,8 @@ func main() {
 		generateExtra()
 	case "checksum":
 		generateChecksum()
+	case "version":
+		printVersion()
 	default:
 		fmt.Println(`
 nan gen - generate implementations for the specified marshalers
@@ -66,4 +69,13 @@ func generateChecksum() {
 	}
 
 	fmt.Printf("%x\n", sum.Sum(nil))
+}
+
+func printVersion() {
+	info, ok := debug.ReadBuildInfo()
+	if !ok || info == nil {
+		fmt.Println("version not found in build")
+	}
+
+	fmt.Println(info.Main.Version)
 }

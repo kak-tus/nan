@@ -1,3 +1,6 @@
+2022-01-25 v0.5.0
+- Add version command.
+
 2021-09-29 v0.4.0
 - Add support for encoding.TextMarshaler and encoding.TextUnmarshaler (creker).
 
