@@ -7,42 +7,14 @@ on:
     branches: [master]
 
 jobs:
-  pkger:
-    name: pkger
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Go 1.14
-        uses: actions/setup-go@v1
-        with:
-          go-version: 1.14
-        id: go
-
-      - name: Install pkger
-        run: go get github.com/markbates/pkger/cmd/pkger
-
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
-
-      - name: check generated files
-        run: |
-          export PATH=$PATH:$(go env GOPATH)/bin
-          sum_before=$(go run ./cmd/nan/ checksum)
-          go generate
-          sum_after=$(go run ./cmd/nan/ checksum)
-          echo "$sum_before"
-          echo "$sum_after"
-          if [ "$sum_before" != "$sum_after" ] ; then
-            exit 2
-          fi
-
   coverage:
     name: Coverage
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go 1.14
+      - name: Set up Go 1.16
         uses: actions/setup-go@v1
         with:
-          go-version: 1.14
+          go-version: 1.16
         id: go
 
       - name: Check out code into the Go module directory

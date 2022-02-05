@@ -15,6 +15,7 @@ import (
 
 var errNilPtr = errors.New("destination pointer is nil")
 
+//nolint:errorlint
 func convertAssign(dest, src interface{}) error {
 	// Common cases, without reflect.
 	switch s := src.(type) {
@@ -342,6 +343,7 @@ func asBytes(buf []byte, rv reflect.Value) (b []byte, ok bool) {
 	return
 }
 
+//nolint:errorlint
 func strconvErr(err error) error {
 	if ne, ok := err.(*strconv.NumError); ok {
 		return ne.Err
