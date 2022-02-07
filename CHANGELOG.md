@@ -1,3 +1,6 @@
+2022-02-08 v0.6.1
+  - Update all dependencies.
+
 2022-02-08 v0.6.0
 - Replace markbates/pkger with native Go embed #11 (creker).
 - Minimum go version changed to 1.16 (creker).
