@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/markbates/pkger"
+	"github.com/kak-tus/nan"
 )
 
 const (
@@ -65,22 +65,13 @@ func generateExtra() {
 		_, *pkgName = filepath.Split(wd)
 	}
 
-	var templateFilename string
-
-	templateFilename = pkger.Include("/nan_template.go")
-	dataNan := readTemplate(templateFilename)
-	templateFilename = pkger.Include("/json_template.go")
-	dataJSON := readTemplate(templateFilename)
-	templateFilename = pkger.Include("/json_template.go")
-	dataGoccyJSON := convertJsonToGoccyJson(readTemplate(templateFilename), false)
-	templateFilename = pkger.Include("/jsoniter_template.go")
-	dataJsoniter := readTemplate(templateFilename)
-	templateFilename = pkger.Include("/easyjson_template.go")
-	dataEasyjson := readTemplate(templateFilename)
-	templateFilename = pkger.Include("/sql_template.go")
-	dataSQL := readTemplate(templateFilename)
-	templateFilename = pkger.Include("/cql_template.go")
-	dataCQL := readTemplate(templateFilename)
+	dataNan := readEmbeddedTemplate("nan_template.go")
+	dataJSON := readEmbeddedTemplate("json_template.go")
+	dataGoccyJSON := convertJsonToGoccyJson(readEmbeddedTemplate("json_template.go"), false)
+	dataJsoniter := readEmbeddedTemplate("jsoniter_template.go")
+	dataEasyjson := readEmbeddedTemplate("easyjson_template.go")
+	dataSQL := readEmbeddedTemplate("sql_template.go")
+	dataCQL := readEmbeddedTemplate("cql_template.go")
 
 	files := flag.Args()
 
@@ -304,8 +295,8 @@ func (v *visitor) Visit(node ast.Node) (w ast.Visitor) {
 	return nil
 }
 
-func readTemplate(name string) []byte {
-	templateFile, err := pkger.Open(name)
+func readEmbeddedTemplate(name string) []byte {
+	templateFile, err := nan.EmbeddedSources.Open(name)
 	if err != nil {
 		panic(err)
 	}

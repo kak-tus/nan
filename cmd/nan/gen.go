@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/markbates/pkger"
+	"github.com/kak-tus/nan"
 )
 
 func generateDefault() {
@@ -41,49 +41,49 @@ func generateDefault() {
 
 	files := make([]string, 0)
 	if *cql {
-		files = append(files, pkger.Include("/cql.go"))
-		files = append(files, pkger.Include("/cql_helpers.go"))
+		files = append(files, "cql.go")
+		files = append(files, "cql_helpers.go")
 	}
 
 	if *easyjson {
-		files = append(files, pkger.Include("/easyjson.go"))
+		files = append(files, "easyjson.go")
 	}
 
 	if *json {
-		files = append(files, pkger.Include("/json.go"))
+		files = append(files, "json.go")
 	}
 
 	if *jsoniter {
-		files = append(files, pkger.Include("/jsoniter.go"))
+		files = append(files, "jsoniter.go")
 	}
 
 	if *goccyjson {
-		files = append(files, pkger.Include("/json.go"))
+		files = append(files, "json.go")
 	}
 
 	if *sql {
-		files = append(files, pkger.Include("/sql.go"))
-		files = append(files, pkger.Include("/sql_convert.go"))
+		files = append(files, "sql.go")
+		files = append(files, "sql_convert.go")
 	}
 
 	if *text {
-		files = append(files, pkger.Include("/text.go"))
+		files = append(files, "text.go")
 	}
 
-	// We have files to generate (user pass some options), so add other files
-	if len(files) != 0 {
-		files = append(
-			files,
-			pkger.Include("/nan.go"),
-			pkger.Include("/helpers.go"),
-			pkger.Include("/LICENSE"),
-		)
+	if len(files) == 0 {
+		flag.PrintDefaults()
+		return
 	}
+
+	files = append(
+		files,
+		"nan.go",
+		"helpers.go",
+		"LICENSE",
+	)
 
 	for i := range files {
-		_, filename := filepath.Split(files[i])
-
-		in, err := pkger.Open(files[i])
+		in, err := nan.EmbeddedSources.Open(files[i])
 		if err != nil {
 			panic(err)
 		}
@@ -114,7 +114,7 @@ func generateDefault() {
 			}
 		}
 
-		if err := ioutil.WriteFile(filename, src, 0644); err != nil {
+		if err := ioutil.WriteFile(files[i], src, 0644); err != nil {
 			panic(err)
 		}
 

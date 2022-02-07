@@ -2,8 +2,6 @@ package nan
 
 import "time"
 
-//go:generate pkger -o cmd/nan
-
 // Validator is implemented by all nan types and returns Valid field
 type Validator interface {
 	IsValid() bool
