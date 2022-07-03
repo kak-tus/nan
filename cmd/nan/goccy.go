@@ -20,5 +20,6 @@ func convertJsonToGoccyJson(str []byte, noEscape bool) []byte {
 			}
 		}
 	}
+
 	return str
 }

@@ -99,6 +99,7 @@ func generateDefault() {
 			} else if strings.HasPrefix(string(line), "//go:generate ") {
 				continue
 			}
+
 			if *goccyjson {
 				line = convertJsonToGoccyJson(line, true)
 			}

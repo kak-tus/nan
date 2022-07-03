@@ -1,3 +1,6 @@
+2022-06-03 v0.7.0
+  - Support for pointer (*type) helpers.
+
 2022-02-08 v0.6.1
   - Update all dependencies.
 

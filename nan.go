@@ -22,6 +22,14 @@ func (n NullInt64) IsDefined() bool {
 	return n.Valid
 }
 
+func (n NullInt64) Addr() *int64 {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Int64
+}
+
 // NullInt32 - nullable int32
 //easyjson:skip
 type NullInt32 struct {
@@ -35,6 +43,14 @@ func (n NullInt32) IsValid() bool {
 
 func (n NullInt32) IsDefined() bool {
 	return n.Valid
+}
+
+func (n NullInt32) Addr() *int32 {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Int32
 }
 
 // NullInt16 - nullable int16
@@ -52,6 +68,14 @@ func (n NullInt16) IsDefined() bool {
 	return n.Valid
 }
 
+func (n NullInt16) Addr() *int16 {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Int16
+}
+
 // NullInt8 - nullable int8
 //easyjson:skip
 type NullInt8 struct {
@@ -65,6 +89,14 @@ func (n NullInt8) IsValid() bool {
 
 func (n NullInt8) IsDefined() bool {
 	return n.Valid
+}
+
+func (n NullInt8) Addr() *int8 {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Int8
 }
 
 // NullInt - nullable int
@@ -82,6 +114,14 @@ func (n NullInt) IsDefined() bool {
 	return n.Valid
 }
 
+func (n NullInt) Addr() *int {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Int
+}
+
 // NullTime - nullable time.Time
 //easyjson:skip
 type NullTime struct {
@@ -95,6 +135,14 @@ func (n NullTime) IsValid() bool {
 
 func (n NullTime) IsDefined() bool {
 	return n.Valid
+}
+
+func (n NullTime) Addr() *time.Time {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Time
 }
 
 // NullString - nullable string
@@ -112,6 +160,14 @@ func (n NullString) IsDefined() bool {
 	return n.Valid
 }
 
+func (n NullString) Addr() *string {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.String
+}
+
 // NullBool - nullable bool
 //easyjson:skip
 type NullBool struct {
@@ -125,6 +181,14 @@ func (n NullBool) IsValid() bool {
 
 func (n NullBool) IsDefined() bool {
 	return n.Valid
+}
+
+func (n NullBool) Addr() *bool {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Bool
 }
 
 // NullFloat64 - nullable float64
@@ -142,6 +206,14 @@ func (n NullFloat64) IsDefined() bool {
 	return n.Valid
 }
 
+func (n NullFloat64) Addr() *float64 {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Float64
+}
+
 // NullFloat32 - nullable float32
 //easyjson:skip
 type NullFloat32 struct {
@@ -155,6 +227,14 @@ func (n NullFloat32) IsValid() bool {
 
 func (n NullFloat32) IsDefined() bool {
 	return n.Valid
+}
+
+func (n NullFloat32) Addr() *float32 {
+	if !n.Valid {
+		return nil
+	}
+
+	return &n.Float32
 }
 
 // type needed for template for custom types generator
