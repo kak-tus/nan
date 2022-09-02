@@ -6,6 +6,7 @@ Features:
 - short name "nan"
 - handy conversion functions
 - select which marshalers you want and limit dependencies to only those you actually need
+- ability to convert your custom structs to nan compatible type with Valid field and all requested encoders/decoders
 
 Supported types:
 - bool
@@ -18,14 +19,14 @@ Supported types:
 - int64
 - string
 - time.Time
-- more types will be added at necessary
+- more types will be added as necessary
 
 Supported marshallers:
 - Standart JSON
 - encoding.TextMarshaler/TextUnmarshaler. Reuses standard JSON logic and format
 - jsoniter
-- go-json
 - easyjson
+- go-json
 - Scylla and Cassandra. Compatible with gocql
 - SQL
 
@@ -49,7 +50,7 @@ with gocql.
 	fmt.Println(string(b))
 
 	data.Code = nan.String("1")
-	// Or
+	// Equals to
 	// data.Code = nan.NullString{String: "1", Valid: true}
 
 	b, err = jsoniter.Marshal(data)
@@ -59,5 +60,30 @@ with gocql.
 
 	// {"code":"1"}
 	fmt.Println(string(b))
+
+  code := "2"
+
+  // From addr. Can has value or be nil
+  data.Code = nan.StringAddr(&code)
+
+	b, err = jsoniter.Marshal(data)
+	if err != nil {
+		panic(err)
+	}
+
+	// {"code":"2"}
+	fmt.Println(string(b))
+
+  // To usual value from nan
+  codeVal := data.Code.String
+
+  // 2
+  fmt.Println(codeVal)
+
+  // To value addr from nan
+  codeAddr := data.Code.Addr()
+
+  // 2
+  fmt.Println(*codeAddr)
 */
 package nan

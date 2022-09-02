@@ -1,3 +1,6 @@
+2022-09-03 v0.8.0
+  - Support for pointer (*type) helpers to create nan values.
+
 2022-06-03 v0.7.0
   - Support for pointer (*type) helpers.
 

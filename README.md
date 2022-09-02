@@ -57,7 +57,7 @@ with gocql.
 	fmt.Println(string(b))
 
 	data.Code = nan.String("1")
-	// Or
+	// Equals to
 	// data.Code = nan.NullString{String: "1", Valid: true}
 
 	b, err = jsoniter.Marshal(data)
@@ -67,6 +67,31 @@ with gocql.
 
 	// {"code":"1"}
 	fmt.Println(string(b))
+
+  code := "2"
+
+  // From addr. Can has value or be nil
+  data.Code = nan.StringAddr(&code)
+
+	b, err = jsoniter.Marshal(data)
+	if err != nil {
+		panic(err)
+	}
+
+	// {"code":"2"}
+	fmt.Println(string(b))
+
+  // To usual value from nan
+  codeVal := data.Code.String
+
+  // 2
+  fmt.Println(codeVal)
+
+  // To value addr from nan
+  codeAddr := data.Code.Addr()
+
+  // 2
+  fmt.Println(*codeAddr)
 ```
 
 ## Generate marshalers
@@ -105,7 +130,7 @@ This will generate *_nan.go near source files with json (or any other supported 
 var val MyStruct
 
 nullVal := NanMyStruct(val)
-// Or
+// Equals to
 // nullVal := NullMyStruct{MyStruct: val, Valid: true}
 
 fmt.Println(nullVal.ID)
