@@ -8,7 +8,7 @@ To use nan with sqlc add this config to sqlc.yaml and use it as-is replacement.
 
 ```
 overrides:
-  // From https://github.com/kak-tus/nan/sqlc.md
+  # From https://github.com/kak-tus/nan/sqlc.md
   - db_type: "pg_catalog.int8"
     go_type: "github.com/kak-tus/nan.NullInt64"
     nullable: true
