@@ -42,6 +42,9 @@ overrides:
   - db_type: "pg_catalog.timestamptz"
     go_type: "github.com/kak-tus/nan.NullTime"
     nullable: true
+  - db_type: "timestamptz"
+    go_type: "github.com/kak-tus/nan.NullTime"
+    nullable: true
   - db_type: "pg_catalog.varchar"
     go_type: "github.com/kak-tus/nan.NullString"
     nullable: true
@@ -49,6 +52,9 @@ overrides:
     go_type: "github.com/kak-tus/nan.NullString"
     nullable: true
   - db_type: "pg_catalog.numeric"
+    go_type: "github.com/kak-tus/nan.NullString"
+    nullable: true
+  - db_type: "text"
     go_type: "github.com/kak-tus/nan.NullString"
     nullable: true
   - db_type: "pg_catalog.bool"
