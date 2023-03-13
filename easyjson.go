@@ -243,6 +243,121 @@ func (n *NullTime) UnmarshalEasyJSON(in *jlexer.Lexer) {
 	*n = NullTime{Time: res, Valid: true}
 }
 
+// MarshalEasyJSON - marshaller for easyjson
+func (n NullUint) MarshalEasyJSON(out *jwriter.Writer) {
+	if !n.Valid {
+		out.RawString("null")
+		return
+	}
+
+	out.Uint(n.Uint)
+}
+
+// UnmarshalEasyJSON - unmarshaller for easyjson
+func (n *NullUint) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	if in.IsNull() {
+		*n = NullUint{}
+
+		in.Skip()
+
+		return
+	}
+
+	*n = NullUint{Uint: in.Uint(), Valid: true}
+}
+
+// MarshalEasyJSON - marshaller for easyjson
+func (n NullUint8) MarshalEasyJSON(out *jwriter.Writer) {
+	if !n.Valid {
+		out.RawString("null")
+		return
+	}
+
+	out.Uint8(n.Uint8)
+}
+
+// UnmarshalEasyJSON - unmarshaller for easyjson
+func (n *NullUint8) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	if in.IsNull() {
+		*n = NullUint8{}
+
+		in.Skip()
+
+		return
+	}
+
+	*n = NullUint8{Uint8: in.Uint8(), Valid: true}
+}
+
+// MarshalEasyJSON - marshaller for easyjson
+func (n NullUint16) MarshalEasyJSON(out *jwriter.Writer) {
+	if !n.Valid {
+		out.RawString("null")
+		return
+	}
+
+	out.Uint16(n.Uint16)
+}
+
+// UnmarshalEasyJSON - unmarshaller for easyjson
+func (n *NullUint16) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	if in.IsNull() {
+		*n = NullUint16{}
+
+		in.Skip()
+
+		return
+	}
+
+	*n = NullUint16{Uint16: in.Uint16(), Valid: true}
+}
+
+// MarshalEasyJSON - marshaller for easyjson
+func (n NullUint32) MarshalEasyJSON(out *jwriter.Writer) {
+	if !n.Valid {
+		out.RawString("null")
+		return
+	}
+
+	out.Uint32(n.Uint32)
+}
+
+// UnmarshalEasyJSON - unmarshaller for easyjson
+func (n *NullUint32) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	if in.IsNull() {
+		*n = NullUint32{}
+
+		in.Skip()
+
+		return
+	}
+
+	*n = NullUint32{Uint32: in.Uint32(), Valid: true}
+}
+
+// MarshalEasyJSON - marshaller for easyjson
+func (n NullUint64) MarshalEasyJSON(out *jwriter.Writer) {
+	if !n.Valid {
+		out.RawString("null")
+		return
+	}
+
+	out.Uint64(n.Uint64)
+}
+
+// UnmarshalEasyJSON - unmarshaller for easyjson
+func (n *NullUint64) UnmarshalEasyJSON(in *jlexer.Lexer) {
+	if in.IsNull() {
+		*n = NullUint64{}
+
+		in.Skip()
+
+		return
+	}
+
+	*n = NullUint64{Uint64: in.Uint64(), Valid: true}
+}
+
 func (n initialTemplateType) MarshalEasyJSON(out *jwriter.Writer) {
 	// Function only for code validity
 }

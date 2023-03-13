@@ -122,6 +122,31 @@ func Int(v int) NullInt {
 	return NullInt{Int: v, Valid: true}
 }
 
+// Uint - converts uint to NullUint
+func Uint(v uint) NullUint {
+	return NullUint{Uint: v, Valid: true}
+}
+
+// Uint8 - converts uint8 to NullUint8
+func Uint8(v uint8) NullUint8 {
+	return NullUint8{Uint8: v, Valid: true}
+}
+
+// Uint16 - converts uint16 to NullUint16
+func Uint16(v uint16) NullUint16 {
+	return NullUint16{Uint16: v, Valid: true}
+}
+
+// Uint32 - converts uint32 to NullUint32
+func Uint32(v uint32) NullUint32 {
+	return NullUint32{Uint32: v, Valid: true}
+}
+
+// Uint64 - converts uint64 to NullUint64
+func Uint64(v uint64) NullUint64 {
+	return NullUint64{Uint64: v, Valid: true}
+}
+
 // StringAddr - converts string address to NullString
 func StringAddr(v *string) NullString {
 	if v == nil {
@@ -210,4 +235,49 @@ func IntAddr(v *int) NullInt {
 	}
 
 	return NullInt{Int: *v, Valid: true}
+}
+
+// UintAddr - converts uint address to NullUint
+func UintAddr(v *uint) NullUint {
+	if v == nil {
+		return NullUint{}
+	}
+
+	return NullUint{Uint: *v, Valid: true}
+}
+
+// Uint8Addr - converts uint8 address to NullUint8
+func Uint8Addr(v *uint8) NullUint8 {
+	if v == nil {
+		return NullUint8{}
+	}
+
+	return NullUint8{Uint8: *v, Valid: true}
+}
+
+// Uint16Addr - converts uint16 address to NullUint16
+func Uint16Addr(v *uint16) NullUint16 {
+	if v == nil {
+		return NullUint16{}
+	}
+
+	return NullUint16{Uint16: *v, Valid: true}
+}
+
+// Uint32Addr - converts uint32 address to NullUint32
+func Uint32Addr(v *uint32) NullUint32 {
+	if v == nil {
+		return NullUint32{}
+	}
+
+	return NullUint32{Uint32: *v, Valid: true}
+}
+
+// Uint64Addr - converts uint64 address to NullUint64
+func Uint64Addr(v *uint64) NullUint64 {
+	if v == nil {
+		return NullUint64{}
+	}
+
+	return NullUint64{Uint64: *v, Valid: true}
 }

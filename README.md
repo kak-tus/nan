@@ -25,6 +25,11 @@ Supported types:
 - int64
 - string
 - time.Time
+- uint
+- uint8
+- uint16
+- uint32
+- uint64
 - more types will be added as necessary
 
 Supported marshallers:

@@ -289,3 +289,143 @@ func (n *NullTime) UnmarshalText(text []byte) error {
 
 	return nil
 }
+
+// MarshalText - marshaller for text
+func (n NullUint) MarshalText() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint)
+}
+
+// UnmarshalText - unmarshaller for text
+func (n *NullUint) UnmarshalText(text []byte) error {
+	if bytes.Equal(text, []byte("null")) {
+		*n = NullUint{}
+		return nil
+	}
+
+	var res uint
+
+	err := json.Unmarshal(text, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint{Uint: res, Valid: true}
+
+	return nil
+}
+
+// MarshalText - marshaller for text
+func (n NullUint8) MarshalText() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint8)
+}
+
+// UnmarshalText - unmarshaller for text
+func (n *NullUint8) UnmarshalText(text []byte) error {
+	if bytes.Equal(text, []byte("null")) {
+		*n = NullUint8{}
+		return nil
+	}
+
+	var res uint8
+
+	err := json.Unmarshal(text, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint8{Uint8: res, Valid: true}
+
+	return nil
+}
+
+// MarshalText - marshaller for text
+func (n NullUint16) MarshalText() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint16)
+}
+
+// UnmarshalText - unmarshaller for text
+func (n *NullUint16) UnmarshalText(text []byte) error {
+	if bytes.Equal(text, []byte("null")) {
+		*n = NullUint16{}
+		return nil
+	}
+
+	var res uint16
+
+	err := json.Unmarshal(text, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint16{Uint16: res, Valid: true}
+
+	return nil
+}
+
+// MarshalText - marshaller for text
+func (n NullUint32) MarshalText() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint32)
+}
+
+// UnmarshalText - unmarshaller for text
+func (n *NullUint32) UnmarshalText(text []byte) error {
+	if bytes.Equal(text, []byte("null")) {
+		*n = NullUint32{}
+		return nil
+	}
+
+	var res uint32
+
+	err := json.Unmarshal(text, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint32{Uint32: res, Valid: true}
+
+	return nil
+}
+
+// MarshalText - marshaller for text
+func (n NullUint64) MarshalText() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint64)
+}
+
+// UnmarshalText - unmarshaller for text
+func (n *NullUint64) UnmarshalText(text []byte) error {
+	if bytes.Equal(text, []byte("null")) {
+		*n = NullUint64{}
+		return nil
+	}
+
+	var res uint64
+
+	err := json.Unmarshal(text, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint64{Uint64: res, Valid: true}
+
+	return nil
+}

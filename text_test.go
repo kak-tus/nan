@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 type textNanEncoder interface {
@@ -112,4 +113,49 @@ func TestTextNullTime(t *testing.T) {
 
 	v := NullTime{}
 	assert.Error(t, v.UnmarshalText([]byte("wrong")))
+}
+
+func TestTextNullUint(t *testing.T) {
+	max := strconv.FormatUint(math.MaxUint, 10)
+	doTextTest(t, true, &NullUint{Uint: math.MaxUint, Valid: true}, &NullUint{}, max)
+	doTextTest(t, nil, &NullUint{Valid: false}, &NullUint{}, "null")
+
+	v := NullUint{}
+	require.Error(t, v.UnmarshalText([]byte("wrong")))
+}
+
+func TestTextNullUint8(t *testing.T) {
+	max := strconv.FormatUint(math.MaxUint8, 10)
+	doTextTest(t, true, &NullUint8{Uint8: math.MaxUint8, Valid: true}, &NullUint8{}, max)
+	doTextTest(t, nil, &NullUint8{Valid: false}, &NullUint8{}, "null")
+
+	v := NullUint8{}
+	require.Error(t, v.UnmarshalText([]byte("wrong")))
+}
+
+func TestTextNullUint16(t *testing.T) {
+	max := strconv.FormatUint(math.MaxUint16, 10)
+	doTextTest(t, true, &NullUint16{Uint16: math.MaxUint16, Valid: true}, &NullUint16{}, max)
+	doTextTest(t, nil, &NullUint16{Valid: false}, &NullUint16{}, "null")
+
+	v := NullUint16{}
+	require.Error(t, v.UnmarshalText([]byte("wrong")))
+}
+
+func TestTextNullUint32(t *testing.T) {
+	max := strconv.FormatUint(math.MaxUint32, 10)
+	doTextTest(t, true, &NullUint32{Uint32: math.MaxUint32, Valid: true}, &NullUint32{}, max)
+	doTextTest(t, nil, &NullUint32{Valid: false}, &NullUint32{}, "null")
+
+	v := NullUint32{}
+	require.Error(t, v.UnmarshalText([]byte("wrong")))
+}
+
+func TestTextNullUint64(t *testing.T) {
+	max := strconv.FormatUint(math.MaxUint64, 10)
+	doTextTest(t, true, &NullUint64{Uint64: math.MaxUint64, Valid: true}, &NullUint64{}, max)
+	doTextTest(t, nil, &NullUint64{Valid: false}, &NullUint64{}, "null")
+
+	v := NullUint64{}
+	require.Error(t, v.UnmarshalText([]byte("wrong")))
 }

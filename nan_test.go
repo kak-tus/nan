@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/mailru/easyjson"
-	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestNanValidator(t *testing.T) {
@@ -20,6 +20,11 @@ func TestNanValidator(t *testing.T) {
 		NullFloat32{},
 		NullString{},
 		NullTime{},
+		NullUint64{},
+		NullUint32{},
+		NullUint16{},
+		NullUint8{},
+		NullUint{},
 	}
 	nonnullvalues := []Validator{
 		NullInt64{Valid: true, Int64: 1},
@@ -32,14 +37,19 @@ func TestNanValidator(t *testing.T) {
 		NullFloat32{Valid: true, Float32: 1},
 		NullString{Valid: true, String: "1"},
 		NullTime{Valid: true, Time: time.Now()},
+		NullUint64{Valid: true, Uint64: 1},
+		NullUint32{Valid: true, Uint32: 1},
+		NullUint16{Valid: true, Uint16: 1},
+		NullUint8{Valid: true, Uint8: 1},
+		NullUint{Valid: true, Uint: 1},
 	}
 
 	for _, v := range nullValues {
-		assert.False(t, v.IsValid())
+		require.False(t, v.IsValid())
 	}
 
 	for _, v := range nonnullvalues {
-		assert.True(t, v.IsValid())
+		require.True(t, v.IsValid())
 	}
 }
 
@@ -55,6 +65,11 @@ func TestNanDefined(t *testing.T) {
 		NullFloat32{},
 		NullString{},
 		NullTime{},
+		NullUint64{},
+		NullUint32{},
+		NullUint16{},
+		NullUint8{},
+		NullUint{},
 	}
 	nonnullvalues := []easyjson.Optional{
 		NullInt64{Valid: true, Int64: 1},
@@ -67,13 +82,18 @@ func TestNanDefined(t *testing.T) {
 		NullFloat32{Valid: true, Float32: 1},
 		NullString{Valid: true, String: "1"},
 		NullTime{Valid: true, Time: time.Now()},
+		NullUint64{Valid: true, Uint64: 1},
+		NullUint32{Valid: true, Uint32: 1},
+		NullUint16{Valid: true, Uint16: 1},
+		NullUint8{Valid: true, Uint8: 1},
+		NullUint{Valid: true, Uint: 1},
 	}
 
 	for _, v := range nullValues {
-		assert.False(t, v.IsDefined())
+		require.False(t, v.IsDefined())
 	}
 
 	for _, v := range nonnullvalues {
-		assert.True(t, v.IsDefined())
+		require.True(t, v.IsDefined())
 	}
 }

@@ -290,3 +290,143 @@ func (n *NullTime) UnmarshalJSON(data []byte) error {
 
 	return nil
 }
+
+// MarshalJSON - marshaller for json
+func (n NullUint) MarshalJSON() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint)
+}
+
+// UnmarshalJSON - unmarshaller for json
+func (n *NullUint) UnmarshalJSON(data []byte) error {
+	if bytes.Equal(data, []byte("null")) {
+		*n = NullUint{}
+		return nil
+	}
+
+	var res uint
+
+	err := json.Unmarshal(data, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint{Uint: res, Valid: true}
+
+	return nil
+}
+
+// MarshalJSON - marshaller for json
+func (n NullUint8) MarshalJSON() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint8)
+}
+
+// UnmarshalJSON - unmarshaller for json
+func (n *NullUint8) UnmarshalJSON(data []byte) error {
+	if bytes.Equal(data, []byte("null")) {
+		*n = NullUint8{}
+		return nil
+	}
+
+	var res uint8
+
+	err := json.Unmarshal(data, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint8{Uint8: res, Valid: true}
+
+	return nil
+}
+
+// MarshalJSON - marshaller for json
+func (n NullUint16) MarshalJSON() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint16)
+}
+
+// UnmarshalJSON - unmarshaller for json
+func (n *NullUint16) UnmarshalJSON(data []byte) error {
+	if bytes.Equal(data, []byte("null")) {
+		*n = NullUint16{}
+		return nil
+	}
+
+	var res uint16
+
+	err := json.Unmarshal(data, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint16{Uint16: res, Valid: true}
+
+	return nil
+}
+
+// MarshalJSON - marshaller for json
+func (n NullUint32) MarshalJSON() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint32)
+}
+
+// UnmarshalJSON - unmarshaller for json
+func (n *NullUint32) UnmarshalJSON(data []byte) error {
+	if bytes.Equal(data, []byte("null")) {
+		*n = NullUint32{}
+		return nil
+	}
+
+	var res uint32
+
+	err := json.Unmarshal(data, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint32{Uint32: res, Valid: true}
+
+	return nil
+}
+
+// MarshalJSON - marshaller for json
+func (n NullUint64) MarshalJSON() ([]byte, error) {
+	if !n.Valid {
+		return []byte("null"), nil
+	}
+
+	return json.Marshal(n.Uint64)
+}
+
+// UnmarshalJSON - unmarshaller for json
+func (n *NullUint64) UnmarshalJSON(data []byte) error {
+	if bytes.Equal(data, []byte("null")) {
+		*n = NullUint64{}
+		return nil
+	}
+
+	var res uint64
+
+	err := json.Unmarshal(data, &res)
+	if err != nil {
+		return err
+	}
+
+	*n = NullUint64{Uint64: res, Valid: true}
+
+	return nil
+}

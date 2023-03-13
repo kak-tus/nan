@@ -9,6 +9,7 @@ import (
 	jlexer "github.com/mailru/easyjson/jlexer"
 	jwriter "github.com/mailru/easyjson/jwriter"
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 type jsonNanCoder interface {
@@ -209,4 +210,59 @@ func TestOmitempty(t *testing.T) {
 	assert.NoError(t, err)
 
 	assert.Equal(t, "{}", encoded)
+}
+
+func TestJSONNullUint(t *testing.T) {
+	v1, v2 := uint(7676), uint(7676)
+	doJSONTest(t, v1, v2, &NullUint{Uint: v1, Valid: true}, &NullUint{})
+
+	doJSONTest(t, nil, nil, &NullUint{Valid: false}, &NullUint{})
+	doJSONTest(t, nil, nil, &NullUint{Valid: false}, &NullUint{Valid: true})
+
+	v := NullUint{}
+	require.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
+}
+
+func TestJSONNullUint8(t *testing.T) {
+	v1, v2 := uint8(76), uint8(76)
+	doJSONTest(t, v1, v2, &NullUint8{Uint8: v1, Valid: true}, &NullUint8{})
+
+	doJSONTest(t, nil, nil, &NullUint8{Valid: false}, &NullUint8{})
+	doJSONTest(t, nil, nil, &NullUint8{Valid: false}, &NullUint8{Valid: true})
+
+	v := NullUint8{}
+	require.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
+}
+
+func TestJSONNullUint16(t *testing.T) {
+	v1, v2 := uint16(7676), uint16(7676)
+	doJSONTest(t, v1, v2, &NullUint16{Uint16: v1, Valid: true}, &NullUint16{})
+
+	doJSONTest(t, nil, nil, &NullUint16{Valid: false}, &NullUint16{})
+	doJSONTest(t, nil, nil, &NullUint16{Valid: false}, &NullUint16{Valid: true})
+
+	v := NullUint16{}
+	require.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
+}
+
+func TestJSONNullUint32(t *testing.T) {
+	v1, v2 := uint32(7676), uint32(7676)
+	doJSONTest(t, v1, v2, &NullUint32{Uint32: v1, Valid: true}, &NullUint32{})
+
+	doJSONTest(t, nil, nil, &NullUint32{Valid: false}, &NullUint32{})
+	doJSONTest(t, nil, nil, &NullUint32{Valid: false}, &NullUint32{Valid: true})
+
+	v := NullUint32{}
+	require.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
+}
+
+func TestJSONNullUint64(t *testing.T) {
+	v1, v2 := uint64(7676), uint64(7676)
+	doJSONTest(t, v1, v2, &NullUint64{Uint64: v1, Valid: true}, &NullUint64{})
+
+	doJSONTest(t, nil, nil, &NullUint64{Valid: false}, &NullUint64{})
+	doJSONTest(t, nil, nil, &NullUint64{Valid: false}, &NullUint64{Valid: true})
+
+	v := NullUint64{}
+	require.Error(t, json.Unmarshal([]byte("\"wrong\""), &v))
 }

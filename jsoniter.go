@@ -291,4 +291,140 @@ func init() {
 			return !((*NullTime)(ptr)).Valid
 		},
 	)
+
+	jsoniter.RegisterTypeDecoderFunc(
+		"nan.NullUint",
+		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
+			if iter.ReadNil() {
+				return
+			}
+
+			*((*NullUint)(ptr)) = NullUint{Uint: iter.ReadUint(), Valid: true}
+		},
+	)
+	jsoniter.RegisterTypeEncoderFunc(
+		"nan.NullUint",
+		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
+			t := *((*NullUint)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
+			stream.WriteUint(t.Uint)
+		},
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullUint)(ptr)).Valid
+		},
+	)
+
+	jsoniter.RegisterTypeDecoderFunc(
+		"nan.NullUint8",
+		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
+			if iter.ReadNil() {
+				return
+			}
+
+			*((*NullUint8)(ptr)) = NullUint8{Uint8: iter.ReadUint8(), Valid: true}
+		},
+	)
+	jsoniter.RegisterTypeEncoderFunc(
+		"nan.NullUint8",
+		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
+			t := *((*NullUint8)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
+			stream.WriteUint8(t.Uint8)
+		},
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullUint8)(ptr)).Valid
+		},
+	)
+
+	jsoniter.RegisterTypeDecoderFunc(
+		"nan.NullUint16",
+		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
+			if iter.ReadNil() {
+				return
+			}
+
+			*((*NullUint16)(ptr)) = NullUint16{Uint16: iter.ReadUint16(), Valid: true}
+		},
+	)
+	jsoniter.RegisterTypeEncoderFunc(
+		"nan.NullUint16",
+		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
+			t := *((*NullUint16)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
+			stream.WriteUint16(t.Uint16)
+		},
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullUint16)(ptr)).Valid
+		},
+	)
+
+	jsoniter.RegisterTypeDecoderFunc(
+		"nan.NullUint32",
+		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
+			if iter.ReadNil() {
+				return
+			}
+
+			*((*NullUint32)(ptr)) = NullUint32{Uint32: iter.ReadUint32(), Valid: true}
+		},
+	)
+	jsoniter.RegisterTypeEncoderFunc(
+		"nan.NullUint32",
+		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
+			t := *((*NullUint32)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
+			stream.WriteUint32(t.Uint32)
+		},
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullUint32)(ptr)).Valid
+		},
+	)
+
+	jsoniter.RegisterTypeDecoderFunc(
+		"nan.NullUint64",
+		func(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
+			if iter.ReadNil() {
+				return
+			}
+
+			*((*NullUint64)(ptr)) = NullUint64{Uint64: iter.ReadUint64(), Valid: true}
+		},
+	)
+	jsoniter.RegisterTypeEncoderFunc(
+		"nan.NullUint64",
+		func(ptr unsafe.Pointer, stream *jsoniter.Stream) {
+			t := *((*NullUint64)(ptr))
+
+			if !t.Valid {
+				stream.WriteNil()
+				return
+			}
+
+			stream.WriteUint64(t.Uint64)
+		},
+		func(ptr unsafe.Pointer) bool {
+			return !((*NullUint64)(ptr)).Valid
+		},
+	)
+
 }
