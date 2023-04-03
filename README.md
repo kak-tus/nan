@@ -99,6 +99,23 @@ codeAddr := data.Code.Addr()
 println(*codeAddr)
 ```
 
+## Helpers
+
+How often you write something like this?
+
+```
+val := true
+addr := &val
+```
+
+With nan helpers you can write shorter
+
+```
+addr := nan.Bool(true).Addr()
+```
+
+With this you got less lines of code without readability loose.
+
 ## Generate marshalers
 
 ```
