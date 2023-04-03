@@ -59,7 +59,7 @@ with gocql.
 	}
 
 	// {"code":null}
-	fmt.Println(string(b))
+	println(string(b))
 
 	data.Code = nan.String("1")
 	// Equals to
@@ -71,12 +71,12 @@ with gocql.
 	}
 
 	// {"code":"1"}
-	fmt.Println(string(b))
+	println(string(b))
 
-  code := "2"
+	code := "2"
 
-  // From addr. Can has value or be nil
-  data.Code = nan.StringAddr(&code)
+	// From addr. Can has value or be nil
+	data.Code = nan.StringAddr(&code)
 
 	b, err = jsoniter.Marshal(data)
 	if err != nil {
@@ -84,19 +84,19 @@ with gocql.
 	}
 
 	// {"code":"2"}
-	fmt.Println(string(b))
+	println(string(b))
 
-  // To usual value from nan
-  codeVal := data.Code.String
+	// To usual value from nan
+	codeVal := data.Code.String
 
-  // 2
-  fmt.Println(codeVal)
+	// 2
+	println(codeVal)
 
-  // To value addr from nan
-  codeAddr := data.Code.Addr()
+	// To value addr from nan
+	codeAddr := data.Code.Addr()
 
-  // 2
-  fmt.Println(*codeAddr)
+	// 2
+	println(*codeAddr)
 ```
 
 ## Generate marshalers
